@@ -1,3 +1,4 @@
+# Copied from jackyzha0/quartz's ci.yaml
 name: Build vault
 
 on:
@@ -17,6 +18,11 @@ jobs:
     runs-on: ${{ matrix.os }}
     permissions:
       contents: write
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v5
         with:
@@ -47,6 +53,20 @@ jobs:
 
       - name: Ensure Quartz builds, check bundle info
         run: npx quartz build --bundleInfo -d learn2live
+
+      - name: Setup GitHub Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload GitHub Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./public
+          retention-days: 1
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
 
   publish-tag:
     if: ${{ github.repository == 'jackyzha0/quartz' && github.ref == 'refs/heads/v4' }}
