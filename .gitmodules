@@ -1,0 +1,3 @@
+[submodule "learn2live"]
+	path = learn2live
+	url = git@github.com:guyueshui/learn2live.git
