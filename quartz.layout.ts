@@ -1,5 +1,27 @@
 import { PageLayout, SharedLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
+import { Options as ExplOptions } from "./quartz/components/Explorer"
+
+// add explorer customizations, cf. https://quartz.jzhao.xyz/features/explorer
+export const explMapFn : ExplOptions["mapFn"] =
+(node) => {
+  if (node.isFolder) {
+    node.displayName = "📁 " + node.displayName
+  } else {
+    node.displayName = "📄 " + node.displayName
+  }
+}
+
+export const explFilterFn : ExplOptions["filterFn"] =
+(node) => {
+  // set containing names of everything you want to filter out
+    const omit = new Set(["assets", "tags", "advanced"])
+ 
+    // can also use node.slug or by anything on node.data
+    // note that node.data is only present for files that exist on disk
+    // (e.g. implicit folder nodes that have no associated index.md)
+    return !omit.has(node.displayName.toLowerCase())
+}
 
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
@@ -8,8 +30,8 @@ export const sharedPageComponents: SharedLayout = {
   afterBody: [],
   footer: Component.Footer({
     links: {
-      GitHub: "https://github.com/jackyzha0/quartz",
-      "Discord Community": "https://discord.gg/cRFFHYye7t",
+      // GitHub: "https://github.com/jackyzha0/quartz",
+      // "Discord Community": "https://discord.gg/cRFFHYye7t",
     },
   }),
 }
@@ -38,7 +60,7 @@ export const defaultContentPageLayout: PageLayout = {
         { Component: Component.ReaderMode() },
       ],
     }),
-    Component.Explorer(),
+    Component.Explorer({'filterFn': explFilterFn}),
   ],
   right: [
     Component.Graph(),
@@ -62,7 +84,7 @@ export const defaultListPageLayout: PageLayout = {
         { Component: Component.Darkmode() },
       ],
     }),
-    Component.Explorer(),
+    Component.Explorer({'filterFn': explFilterFn}),
   ],
   right: [],
 }
