@@ -2,15 +2,15 @@
 name: Build vault
 
 on:
-  pull_request:
-    branches:
-      - master
-  push:
-    branches:
-      - master
-    paths:
-      - '.gitmodules'
-      - 'learn2live/**'
+  # pull_request:
+  #   branches:
+  #     - master
+  # push:
+  #   branches:
+  #     - master
+  #   paths:
+  #     - '.gitmodules'
+  #     - 'learn2live/**'
   # receive event of submodule update
   repository_dispatch:
     types: [submodule_updated]
