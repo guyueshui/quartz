@@ -8,7 +8,14 @@ on:
   push:
     branches:
       - master
+      - paths:
+        - '.gitmodules'
+        - 'learn2live/**'
+
   workflow_dispatch:
+  # receive event of submodule update
+  repository_dispatch:
+    types: [submodule_updated]
 
 jobs:
   build-and-test:
