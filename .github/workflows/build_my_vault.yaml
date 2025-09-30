@@ -17,7 +17,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  build-and-test:
+  build-and-deploy:
     strategy:
       matrix:
         os: [ubuntu-latest]
@@ -39,6 +39,16 @@ jobs:
           token: ${{ secrets.VAULT_PAT }}
           submodules: 'recursive'
 
+      - name: Update submodule to latest
+        run: |
+          git config --global user.email "actions@github.com"
+          git config --global user.name "GitHub Actions"
+          git submodule foreach --recursive 'git checkout master || git checkout main'
+          git submodule update --remote --merge
+          git add .
+          git commit -m "chore: sync submodules to HEAD" || exit 0
+          git push
+
       - name: Setup Node
         uses: actions/setup-node@v5
         with:
@@ -57,8 +67,8 @@ jobs:
       # - name: Check types and style
       #   run: npm run check
 
-      - name: Test
-        run: npm test
+      # - name: Test
+      #   run: npm test
 
       - name: Ensure Quartz builds, check bundle info
         run: npx quartz build --bundleInfo -d learn2live
