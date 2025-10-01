@@ -19,6 +19,28 @@
     font-display: swap;
 }
 
-body {
-    font-family: "Libertinus Serif", "FZFW ZhuZi A Old Mincho", var(--bodyFont);
+// Only article body use custom fonts.
+article {
+    font-family: "KingHwa_OldSong", var(--bodyFont);
+    font-weight: 400;
+    font-display: swap;
+    h1, h2, h3, h4, h5, h6, thead {
+        font-family: "KingHwa_OldSong", var(--headerFont);
+        font-display: swap;
+    }
+}
+
+// Article title use header font.
+.article-title {
+    font-family: var(--headerFont);
+}
+
+// Explorer use header font.
+div.explorer {
+    font-family: var(--headerFont);
+    > button.title-button.explorer-toggle.desktop-explorer {
+        > h2 {
+            font-family: var(--headerFont);
+        }
+    }
 }

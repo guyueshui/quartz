@@ -50,6 +50,8 @@ export default (() => {
             )}
           </>
         )}
+        <link rel="preconnect" href="https://ik.imagekit.io/fonts131" crossOrigin="anonymous" />
+        <link rel='stylesheet' href='https://ik.imagekit.io/fonts131/packages/jhlst/dist/%E4%BA%AC%E8%8F%AF%E8%80%81%E5%AE%8B%E4%BD%93v1_007/result.css' /> 
         <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossOrigin="anonymous" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
