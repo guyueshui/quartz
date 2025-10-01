@@ -31,8 +31,8 @@ const config: QuartzConfig = {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        header: "Linux Biolinum O",
-        body: "Linux Libertine O",
+        header: "Libertinus Sans",
+        body: "Libertinus Serif",
         code: "Consolas",
       },
       colors: {

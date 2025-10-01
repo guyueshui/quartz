@@ -1,3 +1,24 @@
 @use "./base.scss";
 
 // put your custom CSS here!
+
+@font-face {
+    font-family: myfont;
+    src: local('myfont'),
+        url('myfont.woff2') format('woff2'),
+        url('myfont.woff') format('woff'),
+        url('myfont.ttf') format('truetype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "FZFW ZhuZi A Old Mincho";
+    src:
+        local("FZFW ZhuZi A Old Mincho"),
+        url('static/FZFWZhuZiAOldMinchoR.woff2') format('woff2');
+    font-display: swap;
+}
+
+body {
+    font-family: "Libertinus Serif", "FZFW ZhuZi A Old Mincho", var(--bodyFont);
+}
