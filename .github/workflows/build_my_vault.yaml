@@ -71,7 +71,7 @@ jobs:
       #   run: npm test
 
       - name: Ensure Quartz builds, check bundle info
-        run: npx quartz build --bundleInfo -d learn2live
+        run: npx quartz build --bundleInfo -d learn2live --concurrency 16
 
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v4
