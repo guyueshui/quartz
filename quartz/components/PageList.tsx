@@ -67,7 +67,15 @@ export const PageList: QuartzComponent = ({ cfg, fileData, allFiles, limit, sort
   return (
     <ul class="section-ul">
       {list.map((page) => {
-        const title = page.frontmatter?.title
+        // use filename instead of page title, yychi@2025/10/04
+        const slugParts = page.slug!.split("/")
+        let title = null
+        for (let i = slugParts.length - 1; i >= 0; --i) {
+          if (slugParts[i] != "index") {
+            title = slugParts[i]
+            break
+          }
+        }
         const tags = page.frontmatter?.tags ?? []
 
         return (
