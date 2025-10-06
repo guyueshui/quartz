@@ -1,6 +1,9 @@
 # Copied from jackyzha0/quartz's ci.yaml
 name: Build vault
 
+env:
+  TZ: Asia/Shanghai
+
 on:
   pull_request:
     branches:
@@ -85,6 +88,22 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+  publish-to-branch:
+    needs: build-and-deploy
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+
+    steps:
+      - name: Deploy to pub
+        uses: peaceiris/actions-gh-pages@v2
+        env:
+          PERSONAL_TOKEN: ${{ secrets.VAULT_PAT }}
+          PUBLISH_BRANCH: pub
+          PUBLISH_DIR: ./public
 
 
   publish-tag:
