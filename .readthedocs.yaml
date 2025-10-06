@@ -8,9 +8,11 @@ build:
   os: ubuntu-lts-latest
   # The `jobs` key defines a list of commands to run.
   jobs:
-    # Here, we run a single command that does nothing.
-    # This effectively skips the default Sphinx or MkDocs build.
-    - echo "Skipping standard build and using pre-built files"
+    pre_build:
+      - echo "execute prebuild jobs"
+      - ls -al
+      - echo "$READTHEDOCS_OUTPUT/html"
+      - mv * $READTHEDOCS_OUTPUT/html
 
 # This section defines the directory where the built artifacts are located.
 # Read the Docs will publish the contents of this directory.
