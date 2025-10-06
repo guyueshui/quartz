@@ -14,4 +14,4 @@ build:
 # This section defines the directory where the built artifacts are located.
 # Read the Docs will publish the contents of this directory.
 formats:
-  - html
+  - htmlzip
