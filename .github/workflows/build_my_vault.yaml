@@ -77,11 +77,11 @@ jobs:
         run: npx quartz build --bundleInfo -d learn2live --concurrency 16
 
       - name: Deploy to pub
-        uses: peaceiris/actions-gh-pages@v2
-        env:
-          PERSONAL_TOKEN: ${{ secrets.VAULT_PAT }}
-          PUBLISH_BRANCH: pub
-          PUBLISH_DIR: ./public
+        uses: peaceiris/actions-gh-pages@v4.0.0
+        with:
+          github_token: ${{ secrets.VAULT_PAT }}
+          publish_dir: ./public
+          publish_branch: pub
 
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v4
