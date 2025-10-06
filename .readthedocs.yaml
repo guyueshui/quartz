@@ -5,6 +5,7 @@ version: 2
 # This section tells Read the Docs to skip its usual build steps.
 # The 'build.jobs' key allows you to completely customize the build process.
 build:
+  os: ubuntu-lts-latest
   # The `jobs` key defines a list of commands to run.
   jobs:
     # Here, we run a single command that does nothing.
