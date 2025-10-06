@@ -15,18 +15,6 @@ build:
     - mkdir -p ${READTHEDOCS_OUTPUT}/html
     - tar -xavf ../tmp.tar -C ${READTHEDOCS_OUTPUT}/html
     - rm ../tmp.tar
-    - |
-      cd ${READTHEDOCS_OUTPUT}/html
-      # 遍历当前目录及子目录中所有.html文件（排除index.html）
-      find . -type f -name "*.html" ! -name "index.html" | while read -r file; do
-        # 获取文件名（不含路径和后缀）
-        base_name=$(basename "$file" .html)
-        dir_name=$(dirname "$file")
-    
-        # 构建新文件名并重命名
-        new_file="$dir_name/$base_name"
-        mv "$file" "$new_file" && echo "Renamed: $file → $new_file"
-      done
     - echo "successfully release site to ${READTHEDOCS_OUTPUT}html"
 
 # This section defines the directory where the built artifacts are located.
