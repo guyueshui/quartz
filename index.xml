@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+      <title>Learn2Live</title>
+      <link>https://guyueshui.github.io/quartz</link>
+      <description>最近的10条笔记 on Learn2Live</description>
+      <generator>Quartz -- quartz.jzhao.xyz</generator>
+      <item>
+    <title>🌱欢迎👏</title>
+    <link>https://guyueshui.github.io/quartz/</link>
+    <guid>https://guyueshui.github.io/quartz/</guid>
+    <description><![CDATA[  Learn2live stands for “learn to live”, learn something for fun, for work, for life… 学而乐，学而用，学而活。 心系红尘万千事，辗转百年始读书。 闲言碎语何堪记，且予岁月证蹉跎。 这是一个欢迎页面。这里（下称本站）实际上是我个人obsidian仓库的一个子集。在平时工作生活中，我会将学到的知识点、踩过的坑、觉得有趣的东西，简要记录在obsidian仓库。除去其中可能包含公司、个人隐私的部分，其余部分均是可以公开的。本页面是公开之后特意新增的介绍页面。 这些笔记不会详细阐述一个话题，而是包含基础信息和必要的链接（... ]]></description>
+    <pubDate>Mon, 06 Oct 2025 12:29:16 GMT</pubDate>
+  </item><item>
+    <title>CVX notes</title>
+    <link>https://guyueshui.github.io/quartz/notes/CVX-notes</link>
+    <guid>https://guyueshui.github.io/quartz/notes/CVX-notes</guid>
+    <description><![CDATA[ CVX notes Preliminaries 1. ]]></description>
+    <pubDate>Sun, 05 Oct 2025 11:41:29 GMT</pubDate>
+  </item><item>
+    <title>202509302140</title>
+    <link>https://guyueshui.github.io/quartz/__zettel/202509302140quartz%E5%8F%91%E5%B8%83obsidian</link>
+    <guid>https://guyueshui.github.io/quartz/__zettel/202509302140quartz%E5%8F%91%E5%B8%83obsidian</guid>
+    <description><![CDATA[ 问题 我有一个obsidian仓库，私有的，因为里面有一些笔记涉及公司和个人隐私。但其余部分都是可公开的，有没有一个方案同时满足， 免费 可以控制哪些发布，哪些不发布 原始仓库是私有的 方案 工具名称优点缺点obsidian-digital-garden1. ]]></description>
+    <pubDate>Tue, 30 Sep 2025 13:40:02 GMT</pubDate>
+  </item><item>
+    <title>202509291120</title>
+    <link>https://guyueshui.github.io/quartz/__zettel/202509291120deploy-github-page</link>
+    <guid>https://guyueshui.github.io/quartz/__zettel/202509291120deploy-github-page</guid>
+    <description><![CDATA[ 下面的例子演示了直接从action deploy到github page的工作流，cf. ]]></description>
+    <pubDate>Mon, 29 Sep 2025 03:20:27 GMT</pubDate>
+  </item><item>
+    <title>202509032035</title>
+    <link>https://guyueshui.github.io/quartz/__zettel/202509032035override%E5%85%B3%E9%94%AE%E5%AD%97</link>
+    <guid>https://guyueshui.github.io/quartz/__zettel/202509032035override%E5%85%B3%E9%94%AE%E5%AD%97</guid>
+    <description><![CDATA[ 析构函数与override virtual override final 上面三个关键字在继承体系中起着重要作用。virtual不用多说，声明虚函数必备的关键字。override和final是C++11中引入的，二者的作用其实更多是提醒开发者自己， 我正在重写一个虚函数 我正在重写一个虚函数，并且不希望再被派生类重写这个函数 当然，final也可以用来修饰类，表示这是最后一次继承，即我这个类不能再被继承了。很形象，例如 class A {}; class B : public A {}; class C final : pubilc B {}; class D : public C {}; /... ]]></description>
+    <pubDate>Wed, 03 Sep 2025 12:35:56 GMT</pubDate>
+  </item><item>
+    <title>202509011620</title>
+    <link>https://guyueshui.github.io/quartz/__zettel/202509011620vector%E5%B0%8F%E5%9D%91</link>
+    <guid>https://guyueshui.github.io/quartz/__zettel/202509011620vector%E5%B0%8F%E5%9D%91</guid>
+    <description><![CDATA[ std::vector::emplace_back有时会调用copy ctor！大意就是，如果发生扩容，且没有定义move ctor，那么会调用copy ctor。如果提供了move ctor，优先调用move ctor。 from cppreference: Notes Since reallocation may take place, emplace_back requires the element type to be MoveInsertable for vector. ]]></description>
+    <pubDate>Mon, 01 Sep 2025 08:20:41 GMT</pubDate>
+  </item><item>
+    <title>Untitled -1</title>
+    <link>https://guyueshui.github.io/quartz/Untitled--1</link>
+    <guid>https://guyueshui.github.io/quartz/Untitled--1</guid>
+    <description><![CDATA[ write some thing, and insert a base filters: and: - file.hasTag(&quot;cpp&quot;) views: - type: table name: Sample Table Base order: - file.name - date - file.folder - file.tags sort: - property: date direction: ASC . ]]></description>
+    <pubDate>Sun, 24 Aug 2025 15:02:00 GMT</pubDate>
+  </item><item>
+    <title>202305161028内存模型-202306291048.excalidraw</title>
+    <link>https://guyueshui.github.io/quartz/assets/202305161028%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B-202306291048.excalidraw</link>
+    <guid>https://guyueshui.github.io/quartz/assets/202305161028%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B-202306291048.excalidraw</guid>
+    <description><![CDATA[ ⚠ Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ]]></description>
+    <pubDate>Sun, 24 Aug 2025 14:30:53 GMT</pubDate>
+  </item><item>
+    <title>cache-coherency.excalidraw</title>
+    <link>https://guyueshui.github.io/quartz/assets/cache-coherency.excalidraw</link>
+    <guid>https://guyueshui.github.io/quartz/assets/cache-coherency.excalidraw</guid>
+    <description><![CDATA[ ⚠ Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ]]></description>
+    <pubDate>Sun, 24 Aug 2025 14:30:53 GMT</pubDate>
+  </item><item>
+    <title>202305300948.excalidraw</title>
+    <link>https://guyueshui.github.io/quartz/assets/excalidraw/202305300948.excalidraw</link>
+    <guid>https://guyueshui.github.io/quartz/assets/excalidraw/202305300948.excalidraw</guid>
+    <description><![CDATA[ ⚠ Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ]]></description>
+    <pubDate>Sun, 24 Aug 2025 14:30:53 GMT</pubDate>
+  </item>
+    </channel>
+  </rss>

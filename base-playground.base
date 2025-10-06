@@ -1,0 +1,26 @@
+formulas:
+  未命名: icon("arrow-right")
+views:
+  - type: table
+    name: 表格
+    filters:
+      and:
+        - or:
+            - file.path.contains("__zettel")
+            - file.path.contains("notes")
+            - file.path.contains("Blogs")
+        - and:
+            - note["dg-publish"] == true
+    order:
+      - formula.未命名
+      - file.name
+      - date
+      - file.tags
+      - file.mtime
+      - author
+      - dg-publish
+    sort:
+      - property: file.mtime
+        direction: DESC
+  - type: cards
+    name: 视图

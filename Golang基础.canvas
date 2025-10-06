@@ -1,0 +1,11 @@
+{
+	"nodes":[
+		{"type":"link","url":"https://draveness.me/golang/docs/part2-foundation/ch05-keyword/golang-make-and-new/","id":"4550054b5aa41f5b","x":-340,"y":-280,"width":400,"height":400},
+		{"id":"3f339e203fec8114","type":"text","text":"学习材料\n\n1. [mastering go - gitbook][1]\n2. [Go语言圣经][2]\n\n\n[1]:https://wskdsgcf.gitbook.io/mastering-go-zh-cn/09.0/09.4/09.4.3\n[2]:https://docs.hacknode.org/gopl-zh/index.html","x":-902,"y":360,"width":325,"height":300,"color":"5"},
+		{"type":"file","file":"__zettel/202305310919GO语言基础.md","id":"3fbb7e3fc953920f","x":-939,"y":-280,"width":400,"height":400}
+	],
+	"edges":[
+		{"id":"1dd5ed4b5385b141","fromNode":"3fbb7e3fc953920f","fromSide":"right","toNode":"4550054b5aa41f5b","toSide":"left"},
+		{"id":"5af8aab9b0621d25","fromNode":"3fbb7e3fc953920f","fromSide":"bottom","toNode":"3f339e203fec8114","toSide":"top"}
+	]
+}

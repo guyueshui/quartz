@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="zh" dir="ltr"><head><title>sdg-notes</title><meta charset="utf-8"/><link rel="preconnect" href="https://ik.imagekit.io/fonts131" crossorigin="anonymous"/><link rel="stylesheet" href="https://ik.imagekit.io/fonts131/packages/jhlst/dist/%E4%BA%AC%E8%8F%AF%E8%80%81%E5%AE%8B%E4%BD%93v1_007/result.css"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Learn2Live"/><meta property="og:title" content="sdg-notes"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="sdg-notes"/><meta name="twitter:description" content="sdg-notes __ __ __ __ ____ ___ /\ \ /\ \ /\ \ __ /\ \ /\ _`\ /\_ \ \ `\`\\/'/__ __ ___\ \ \___ /\_\\ \/ ____ \ \ \L\ \//\ \ ___ __ `\ `\ /'/\ \/\ \ /'___\ \ _ `\/\ \\/ /',__\ \ \ _ &lt;'\ \ \ / __`\ /'_ `\ `\ \ \\ \ \_\ \/\ \__/\ \ \ \ \ \ \ /\__, `\ \ \ \L\ \\_\ \_/\ \..."/><meta property="og:description" content="sdg-notes __ __ __ __ ____ ___ /\ \ /\ \ /\ \ __ /\ \ /\ _`\ /\_ \ \ `\`\\/'/__ __ ___\ \ \___ /\_\\ \/ ____ \ \ \L\ \//\ \ ___ __ `\ `\ /'/\ \/\ \ /'___\ \ _ `\/\ \\/ /',__\ \ \ _ &lt;'\ \ \ / __`\ /'_ `\ `\ \ \\ \ \_\ \/\ \__/\ \ \ \ \ \ \ /\__, `\ \ \ \L\ \\_\ \_/\ \..."/><meta property="og:image:alt" content="sdg-notes __ __ __ __ ____ ___ /\ \ /\ \ /\ \ __ /\ \ /\ _`\ /\_ \ \ `\`\\/'/__ __ ___\ \ \___ /\_\\ \/ ____ \ \ \L\ \//\ \ ___ __ `\ `\ /'/\ \/\ \ /'___\ \ _ `\/\ \\/ /',__\ \ \ _ &lt;'\ \ \ / __`\ /'_ `\ `\ \ \\ \ \_\ \/\ \__/\ \ \ \ \ \ \ /\__, `\ \ \ \L\ \\_\ \_/\ \..."/><meta property="og:image" content="https://guyueshui.github.io/quartz/static/og-image.png"/><meta property="og:image:url" content="https://guyueshui.github.io/quartz/static/og-image.png"/><meta name="twitter:image" content="https://guyueshui.github.io/quartz/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="guyueshui.github.io/quartz"/><meta property="og:url" content="https://guyueshui.github.io/quartz/notes/cpp/sdg-notes"/><meta property="twitter:url" content="https://guyueshui.github.io/quartz/notes/cpp/sdg-notes"/><meta name="description" content="sdg-notes __ __ __ __ ____ ___ /\ \ /\ \ /\ \ __ /\ \ /\ _`\ /\_ \ \ `\`\\/'/__ __ ___\ \ \___ /\_\\ \/ ____ \ \ \L\ \//\ \ ___ __ `\ `\ /'/\ \/\ \ /'___\ \ _ `\/\ \\/ /',__\ \ \ _ &lt;'\ \ \ / __`\ /'_ `\ `\ \ \\ \ \_\ \/\ \__/\ \ \ \ \ \ \ /\__, `\ \ \ \L\ \\_\ \_/\ \..."/><meta name="generator" content="Quartz"/><link href="../../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvcXVhcnR6L3F1YXJ0ei9xdWFydHovY29tcG9uZW50cy9zdHlsZXMiLCJzb3VyY2VzIjpbIm1lcm1haWQuaW5saW5lLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTtFQUNBOztBQUdGO0VBQ0U7OztBQUtGO0VBQ0U7RUFDQTs7O0FBSUo7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBSUo7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUdGO0VBQ0U7O0FBSUY7RUFDRTtFQUNBO0VBQ0EiLCJzb3VyY2VzQ29udGVudCI6WyIuZXhwYW5kLWJ1dHRvbiB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxvYXQ6IHJpZ2h0O1xuICBwYWRkaW5nOiAwLjRyZW07XG4gIG1hcmdpbjogMC4zcmVtO1xuICByaWdodDogMDsgLy8gTk9URTogcmlnaHQgd2lsbCBiZSBzZXQgaW4gbWVybWFpZC5pbmxpbmUudHNcbiAgY29sb3I6IHZhcigtLWdyYXkpO1xuICBib3JkZXItY29sb3I6IHZhcigtLWRhcmspO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gIGJvcmRlcjogMXB4IHNvbGlkO1xuICBib3JkZXItcmFkaXVzOiA1cHg7XG4gIG9wYWNpdHk6IDA7XG4gIHRyYW5zaXRpb246IDAuMnM7XG5cbiAgJiA+IHN2ZyB7XG4gICAgZmlsbDogdmFyKC0tbGlnaHQpO1xuICAgIGZpbHRlcjogY29udHJhc3QoMC4zKTtcbiAgfVxuXG4gICY6aG92ZXIge1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICBib3JkZXItY29sb3I6IHZhcigtLXNlY29uZGFyeSk7XG4gIH1cblxuICAmOmZvY3VzIHtcbiAgICBvdXRsaW5lOiAwO1xuICB9XG59XG5cbnByZSB7XG4gICY6aG92ZXIgPiAuZXhwYW5kLWJ1dHRvbiB7XG4gICAgb3BhY2l0eTogMTtcbiAgICB0cmFuc2l0aW9uOiAwLjJzO1xuICB9XG59XG5cbiNtZXJtYWlkLWNvbnRhaW5lciB7XG4gIHBvc2l0aW9uOiBmaXhlZDtcbiAgY29udGFpbjogbGF5b3V0O1xuICB6LWluZGV4OiA5OTk7XG4gIGxlZnQ6IDA7XG4gIHRvcDogMDtcbiAgd2lkdGg6IDEwMHZ3O1xuICBoZWlnaHQ6IDEwMHZoO1xuICBvdmVyZmxvdzogaGlkZGVuO1xuICBkaXNwbGF5OiBub25lO1xuICBiYWNrZHJvcC1maWx0ZXI6IGJsdXIoNHB4KTtcbiAgYmFja2dyb3VuZDogcmdiYSgwLCAwLCAwLCAwLjUpO1xuXG4gICYuYWN0aXZlIHtcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gIH1cblxuICAmID4gI21lcm1haWQtc3BhY2Uge1xuICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tbGlnaHQpO1xuICAgIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgICBwb3NpdGlvbjogZml4ZWQ7XG4gICAgdG9wOiA1MCU7XG4gICAgbGVmdDogNTAlO1xuICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlKC01MCUsIC01MCUpO1xuICAgIGhlaWdodDogODB2aDtcbiAgICB3aWR0aDogODB2dztcbiAgICBvdmVyZmxvdzogaGlkZGVuO1xuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRlbnQge1xuICAgICAgcGFkZGluZzogMnJlbTtcbiAgICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgICAgIHRyYW5zZm9ybS1vcmlnaW46IDAgMDtcbiAgICAgIHRyYW5zaXRpb246IHRyYW5zZm9ybSAwLjFzIGVhc2U7XG4gICAgICBvdmVyZmxvdzogdmlzaWJsZTtcbiAgICAgIG1pbi1oZWlnaHQ6IDIwMHB4O1xuICAgICAgbWluLXdpZHRoOiAyMDBweDtcblxuICAgICAgcHJlIHtcbiAgICAgICAgbWFyZ2luOiAwO1xuICAgICAgICBib3JkZXI6IG5vbmU7XG4gICAgICB9XG5cbiAgICAgIHN2ZyB7XG4gICAgICAgIG1heC13aWR0aDogbm9uZTtcbiAgICAgICAgaGVpZ2h0OiBhdXRvO1xuICAgICAgfVxuICAgIH1cblxuICAgICYgPiAubWVybWFpZC1jb250cm9scyB7XG4gICAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgICBib3R0b206IDIwcHg7XG4gICAgICByaWdodDogMjBweDtcbiAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICBnYXA6IDhweDtcbiAgICAgIHBhZGRpbmc6IDhweDtcbiAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICBib3JkZXItcmFkaXVzOiA2cHg7XG4gICAgICBib3gtc2hhZG93OiAwIDJweCA0cHggcmdiYSgwLCAwLCAwLCAwLjEpO1xuICAgICAgei1pbmRleDogMjtcblxuICAgICAgLm1lcm1haWQtY29udHJvbC1idXR0b24ge1xuICAgICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgICAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICAgICAgd2lkdGg6IDMycHg7XG4gICAgICAgIGhlaWdodDogMzJweDtcbiAgICAgICAgcGFkZGluZzogMDtcbiAgICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgICBjb2xvcjogdmFyKC0tZGFyayk7XG4gICAgICAgIGJvcmRlci1yYWRpdXM6IDRweDtcbiAgICAgICAgY3Vyc29yOiBwb2ludGVyO1xuICAgICAgICBmb250LXNpemU6IDE2cHg7XG4gICAgICAgIGZvbnQtZmFtaWx5OiB2YXIoLS1ib2R5Rm9udCk7XG4gICAgICAgIHRyYW5zaXRpb246IGFsbCAwLjJzIGVhc2U7XG5cbiAgICAgICAgJjpob3ZlciB7XG4gICAgICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgICAgfVxuXG4gICAgICAgICY6YWN0aXZlIHtcbiAgICAgICAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZVkoMXB4KTtcbiAgICAgICAgfVxuXG4gICAgICAgIC8vIFN0eWxlIHRoZSByZXNldCBidXR0b24gZGlmZmVyZW50bHlcbiAgICAgICAgJjpudGgtY2hpbGQoMikge1xuICAgICAgICAgIHdpZHRoOiBhdXRvO1xuICAgICAgICAgIHBhZGRpbmc6IDAgMTJweDtcbiAgICAgICAgICBmb250LXNpemU6IDE0cHg7XG4gICAgICAgIH1cbiAgICAgIH1cbiAgICB9XG4gIH1cbn1cbiJdfQ== */</style><link href="https://cdn.bootcdn.net/ajax/libs/KaTeX/0.16.9/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://guyueshui.github.io/quartz/index.xml"/></head><body data-slug="notes/cpp/sdg-notes"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="../..">Learn2Live</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>搜索</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="搜索些什么" placeholder="搜索些什么"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="暗色模式"><title>暗色模式</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="亮色模式"><title>亮色模式</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="阅读模式"><title>阅读模式</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>!new Set([\&quot;assets\&quot;,\&quot;tags\&quot;,\&quot;advanced\&quot;]).has(node.displayName.toLowerCase())&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-524"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>探索</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-524" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../notes/">notes</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../notes/cpp/">cpp</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>sdg notes</a></div></nav><h1 class="article-title">sdg-notes</h1><p show-comma="true" class="content-meta"><time datetime="2022-09-27T15:00:22.000Z">2022年9月27日</time><span>39分钟阅读</span></p></div></div><article class="popover-hint"><h1 id="sdg-notes">sdg-notes<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#sdg-notes" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<pre><code> __    __               __           __               ____    ___                       
+/\ \  /\ \             /\ \      __ /\ \             /\  _`\ /\_ \                      
+\ `\`\\/'/__  __    ___\ \ \___ /\_\\ \/      ____   \ \ \L\ \//\ \     ___      __     
+ `\ `\ /'/\ \/\ \  /'___\ \  _ `\/\ \\/      /',__\   \ \  _ &lt;'\ \ \   / __`\  /'_ `\   
+   `\ \ \\ \ \_\ \/\ \__/\ \ \ \ \ \ \      /\__, `\   \ \ \L\ \\_\ \_/\ \L\ \/\ \L\ \  
+     \ \_\\/`____ \ \____\\ \_\ \_\ \_\     \/\____/    \ \____//\____\ \____/\ \____ \ 
+      \/_/ `/___/> \/____/ \/_/\/_/\/_/      \/___/      \/___/ \/____/\/___/  \/___L\ \
+              /\___/                                                             /\____/
+              \/__/                                                              \_/__/ '`
+</code></pre>
+<p>epll/wait: reactor模式：不停轮询，发现有事做，就做！
+asio: proactor模式，先注册好事件，如果事情发生了，通过回调函数处理。</p>
+<h2 id="互斥">互斥<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#互斥" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>所有线程共享一个共同的的时间（不必是同一个公共时钟）。一个线程是一个<em>状态机</em>，其状态的转换称为<em>事件</em>。</p>
+<p>两个线程在“start of danger zone”那一行读了value域的值，随后又都在“end of danger zone”那一行修改了value域的值。这就造成了data race. 我们将这两行代码放入临界区内：某个时刻仅能被一个线程执行的代码段。</p>
+<p>如果一个线程满足下列条件，则称它是良构的：</p>
+<ol>
+<li>一个临界区只和唯一的mutex对象相关联，</li>
+<li>线程准备进入临界区时申请占有mutex，</li>
+<li>线程离开临界区时申请释放mutex。</li>
+</ol>
+<h2 id="自旋锁与争用">自旋锁与争用<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#自旋锁与争用" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>任何互斥协议都会产生这样的问题：如果不能获得锁，应该怎么做？对此有两种选择。一种方案是让其继续进行尝试，这种锁称为自旋锁，对锁的反复测试过程称为旋转或忙等待。在希望锁延迟较短的情形下，选择旋转的方式比较合乎情理。另一种方案就是挂起自己，请求操作系统调度器在处理器上调度另外一个线程，这种方式称为阻塞。由于从一个线程切换到另一个线程的代价比较大，所以只有在允许锁延迟较长的情形下，阻塞才有意义。许多操作系统将这两种策略综合起来使用，先旋转一个小的时间段然后再阻塞。旋转和阻塞都是重要的技术。</p>
+<p>争用指多个线程试图同时获得一个锁；高争用则意味着存在大量正在争用的线程；低争用的意思与高争用相反。</p>
+<h2 id="小米面经之二">小米面经之二<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#小米面经之二" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>自我介绍，实习工作内容</li>
+<li>局部静态对象和全局静态对象有什么区别</li>
+<li>进程间通信的方式</li>
+<li>有哪些同步原语</li>
+<li>堆内存和栈内存的区别</li>
+<li><code>int a, *b;</code>有什么区别？（考察指针默认不开辟内存）</li>
+</ul>
+<h2 id="函数模板">函数模板<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#函数模板" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>6.2.4 重载与特化
+​ 为编译到函数模板的调用，编译器必须在非模板重载、模板重载和模板重载的特化间决定。</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="cpp" data-theme="github-light github-dark"><code data-language="cpp" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">template</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&lt; </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">class</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"> T</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> > </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">void</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"> f</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">(</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;">T</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">);</span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;">              // #1 ：模板重载</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">template</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&lt; </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">class</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"> T</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> > </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">void</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"> f</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">(</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;">T</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">*</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">);</span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;">             // #2 ：模板重载</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">void</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;">                     f</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">(</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">double</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">);</span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;">         // #3 ：非模板重载</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">template</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&lt;>          </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">void</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"> f</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">(</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">int</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">);</span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;">            // #4 ： #1 的特化</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;">f</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">'a'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">);</span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;">        // 调用 #1</span></span>
+<span data-line><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;">f</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">(</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">new</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;"> int</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">(</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">1</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">));</span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;"> // 调用 #2</span></span>
+<span data-line><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;">f</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">(</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">1.0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">);</span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;">        // 调用 #3</span></span>
+<span data-line><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;">f</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">(</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">1</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">);</span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;">          // 调用 #4</span></span></code></pre></figure>
+<p>​ 注意只有非模板和初等模板重载参与重载决议。特化不是重载，且不受考虑。只有在重载决议选择最佳匹配初等函数模板后，才检验其特化以查看何为最佳匹配。</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="cpp" data-theme="github-light github-dark"><code data-language="cpp" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">template</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&lt; </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">class</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"> T</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> > </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">void</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"> f</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">(</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;">T</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">);</span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;">    // #1 ：所有类型的重载</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">template</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&lt;>          </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">void</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"> f</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">(</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">int*</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">);</span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;"> // #2 ：为指向 int 的指针特化 #1</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">template</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&lt; </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">class</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"> T</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> > </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">void</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"> f</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">(</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;">T</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">*</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">);</span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;">   // #3 ：所有指针类型的重载</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;">f</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">(</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">new</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;"> int</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">(</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">1</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">));</span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;"> // 调用 #3 ，即使通过 #1 的特化会是完美匹配</span></span></code></pre></figure>
+<p>​ 即重载的优先级要高于特化。
+​ 关于模板函数重载的更多内容，参考function_template。</p>
+<h2 id="memcpy-和-memmove-的区别">memcpy 和 memmove 的区别<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#memcpy-和-memmove-的区别" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>memcpy不能应对内存重叠，memmove可以。详见man pages.</p>
+<h2 id="编写多线程需要注意的点">编写多线程需要注意的点<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#编写多线程需要注意的点" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ol>
+<li>在脑中先大致想好每个线程的工作是什么，什么时候开始，什么时候结束。</li>
+<li>捋清楚了之后再开始动手写。</li>
+</ol>
+<p>调用<code>t.join()</code>的作用类似于，如果线程结束，主线程执行到join就可以立即返回，如果线程为结束，主线程执行到join会阻塞，直到线程结束。然后主线程继续执行。</p>
+<pre><code>            main  thread1
+              +      +
+              |      |
+              |      |
+              |      |
+              |      |
+thread1.join()+------+
+              |
+              |
+              |
+              v
+</code></pre>
+<p>如果某线程申请占有互斥量时，该互斥量被其他线程占有，则会引起该线程阻塞。观察者模式在计算机系统中使用甚广。</p>
+<p>线程安全性两个主要保证：</p>
+<ol>
+<li>原子操作</li>
+<li>CAS操作</li>
+</ol>
+<h2 id="使用stdconditional_variable注意事项">使用<code>std::conditional_variable</code>注意事项<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#使用stdconditional_variable注意事项" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>调用wait的线程必须占有mutex，否则undefined</li>
+<li>所有并发线程（如果使用同一个条件变量交互）必须使用同一个mutex，否则undefined</li>
+</ul>
+<h2 id="使用stdthread注意事项">使用<code>std::thread</code>注意事项<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#使用stdthread注意事项" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>thread对象构造完成即开始执行</li>
+<li>使用detach之后，程序失去该线程的控制权，线程结束之后资源全部释放</li>
+<li>使用detach之后，主线程结束时，所有资源都被释放，即便该线程还未停止</li>
+<li>线程之间没有父/子关系。如果线程A创建线程B，然后线程A终止，则线程B将继续执行。但如果主线程终止，则整个进程终止，自然进程下的所有线程都终止，资源释放</li>
+<li>Any thread can potentially access any object in the program (objects with automatic and thread-local storage duration may still be accessed by another thread through a pointer or by reference).</li>
+</ul>
+<h2 id="使用stdatomic注意事项">使用<code>std::atomic</code>注意事项<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#使用stdatomic注意事项" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>atomic is neither copyable nor movable</li>
+<li>mutex is neither copyable nor movable</li>
+</ul>
+<p>加一次锁耗时大概25ns，使用lock-free的话能够提高到十几纳秒，事实上提升不大。加锁并没有想象中那么耗时，提高效率的关键是减少锁的碰撞。即一个线程占有锁的时候，其他线程不会去申请锁，因为在锁被占用的情况下去申请锁比较耗时，会先去loop一段时间，拿不到锁才会进入内核陷入睡眠等待锁，这样的耗时是比较浪费的。所以关键要减少锁的碰撞。</p>
+<p>有原子的函数吗，就是要么执行成功，要么失败？
+不存在，一个函数内部多少指令，在多线程的情况下，很难保证可以全部的顺序的原子的执行完成。</p>
+<h2 id="from-shuos-blog">From Shuo’s blog<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#from-shuos-blog" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>依据《Java 并发编程实践》/《Java Concurrency in Practice》一书，一个线程安全的 class 应当满足三个条件：</p>
+<ul>
+<li>从多个线程访问时，其表现出正确的行为</li>
+<li>无论操作系统如何调度这些线程，无论这些线程的执行顺序如何交织</li>
+<li>调用端代码无需额外的同步或其他协调动作</li>
+</ul>
+<p>对象构造要做到线程安全，惟一的要求是在构造期间不要泄露 this 指针，即</p>
+<ul>
+<li>不要在构造函数中注册任何回调</li>
+<li>也不要在构造函数中把 this 传给跨线程的对象</li>
+<li>即便在构造函数的最后一行也不行</li>
+</ul>
+<p>作为 class 数据成员的 Mutex 只能用于同步本 class 的其他数据成员的读和写，它不能保护安全地析构。因为成员 mutex 的生命期最多与对象一样长，而析构动作可说是发生在对象身故之后（或者身亡之时）。另外，对于基类对象，那么调用到基类析构函数的时候，派生类对象的那部分已经析构了，那么基类对象拥有的 mutex 不能保护整个析构过程。</p>
+<h2 id="不要在ctor里调用虚函数">不要在ctor里调用虚函数<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#不要在ctor里调用虚函数" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>总结来说：基类部分在派生类部分之前被构造，当基类构造函数执行时派生类中的数据成员还没被初始化。如果基类构造函数中的虚函数调用被解析成调用派生类的虚函数，而派生类的虚函数中又访问到未初始化的派生类数据，将导致程序出现一些未定义行为和bug。</p>
+<p>ctor应该设计的尽量简单，确保对象可以被正确构造。在ctor中调用本类的非静态成员都是不安全的，因为他们还没被构造，而有些成员是依赖对象的，而此时对象还没有被成功构造。</p>
+<h2 id="ctor不能是虚函数">ctor不能是虚函数<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ctor不能是虚函数" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ol>
+<li>
+<p>从存储空间角度：虚函数对应一个vtable（虚函数表），这大家都知道，可是这个vtable其实是存储在对象的内存空间的。问题出来了，如果构造函数是虚的，就需要通过 vtable来调用，可是对象还没有实例化，也就是内存空间还没有，无法找到vtable，所以构造函数不能是虚函数。</p>
+</li>
+<li>
+<p>从使用角度：虚函数主要用于在信息不全的情况下，能使重载的函数得到对应的调用。构造函数本身就是要初始化实例，那使用虚函数也没有实际意义呀。所以构造函数没有必要是虚函数。</p>
+</li>
+</ol>
+<p>虚函数的作用在于通过父类的指针或者引用来调用它的时候能够变成调用子类的那个成员函数。而构造函数是在创建对象时自动调用的，不可能通过父类的指针或者引用去调用，因此也就规定构造函数不能是虚函数。</p>
+<ol start="3">
+<li>构造函数不需要是虚函数，也不允许是虚函数，因为创建一个对象时我们总是要明确指定对象的类型，尽管我们可能通过实验室的基类的指针或引用去访问它。但析构却不一定，我们往往通过基类的指针来销毁对象。这时候如果析构函数不是虚函数，就不能正确识别对象类型从而不能正确调用析构函数。</li>
+</ol>
+<p>④从实现上看，vbtl在构造函数调用后才建立，因而构造函数不可能成为虚函数  </p>
+<p>  从实际含义上看，在调用构造函数时还不能确定对象的真实类型（因为子类会调父类的构造函数）；而且构造函数的作用是提供初始化，在对象生命期只执行一次，不是对象的动态行为，也没有太大的必要成为虚函数</p>
+<p>⑤当一个构造函数被调用时，它做的首要的事情之一是初始化它的V P T R。因此，它只能知道它是“当前”类的，而完全忽视这个对象后面是否还有继承者。当编译器为这个构造函数产生代码时，它是为这个类的构造函数产生代码- -既不是为基类，也不是为它的派生类（因为类不知道谁继承它）。
+————————————————
+版权声明：本文为CSDN博主「cainiao000001」的原创文章，遵循CC 4.0 by-sa版权协议，转载请附上原文出处链接及本声明。
+原文链接：<a href="https://blog.csdn.net/cainiao000001/article/details/81603782" class="external">https://blog.csdn.net/cainiao000001/article/details/81603782<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+<h2 id="虚函数的工作原理">虚函数的工作原理<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#虚函数的工作原理" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><a href="https://zhuanlan.zhihu.com/p/60543586" class="external">https://zhuanlan.zhihu.com/p/60543586<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+<p>C++ 规定了虚函数的行为，但将实现方法留给了编译器的作者。不需要知道实现方法也可以很好的使用虚函数，但了解虚函数的工作原理有助于更好地理解概念。</p>
+<p>通常，编译器处理虚函数的方法是：给每个对象添加一个隐藏成员。隐藏成员中保存了一个指向函数地址数组的指针。</p>
+<p>这种数组称为虚函数表（Virtual Function Table, vtbl）。</p>
+<p>虚函数表是一个数组，数组的元素是指针，指针指的是虚函数的地址。</p>
+<p>具有虚函数的类的实例，都会在头部存一个指向虚函数表的指针。</p>
+<h2 id="常见类型所占空间大小">常见类型所占空间大小<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#常见类型所占空间大小" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>单位：bytes</p>
+<ul>
+<li>(unsigned) int: 4</li>
+<li>(unsigned) short: 2</li>
+<li>(unsigned) long: 8</li>
+<li>float: 4</li>
+<li>double: 8</li>
+<li>long double: 16</li>
+<li>(unsigned) char: 1</li>
+<li>bool: 1</li>
+</ul>
+<p>指针占几个字节 指针即为地址，指针几个字节跟语言无关，而是跟系统的寻址能力有关，譬如以前是16为地址，指针即为2个字节，现在一般是32位系统，所以是4个字节，以后64位，则就为8个字节。</p>
+<h2 id="析构函数的调用">析构函数的调用<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#析构函数的调用" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>The destructor is called whenever an object’s lifetime ends, which includes</p>
+<ul>
+<li>program termination, for objects with static storage duration</li>
+<li>thread exit, for objects with thread-local storage duration</li>
+<li>end of scope, for objects with automatic storage duration and for temporaries whose life was extended by binding to reference</li>
+<li>delete-expressin, for objects with dynamic storage duration</li>
+<li>end of the full expression, for nameless temporaries</li>
+<li>stack unwinding (栈回溯), for objects with automatic storage duration when an exception escapes their block, uncaught.</li>
+</ul>
+<p>c.f. <a href="https://en.cppreference.com/w/cpp/language/destructor" class="external">https://en.cppreference.com/w/cpp/language/destructor<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+<h2 id="几个常用的宏">几个常用的宏<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#几个常用的宏" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><code>__func__</code>: name of an function, exists in C99/C++11 (<code>__FUNCTION__</code> is non standard)</li>
+<li><code>__LINE__</code>: line number of the code</li>
+<li><code>__FILE__</code>: filename of the file</li>
+<li><code>__DATE__</code> and <code>__TIME__</code>: as you wish</li>
+</ul>
+<h2 id="joseph-ring">Joseph Ring<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#joseph-ring" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>牛客网上类似的题：
+<a href="https://www.nowcoder.com/questionTerminal/f78a359491e64a50bce2d89cff857eb6" class="external">https://www.nowcoder.com/questionTerminal/f78a359491e64a50bce2d89cff857eb6<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+<p>描述：人们站在一个等待被处决的圈子里。 计数从圆圈中的指定点开始，并沿指定方向围绕圆圈进行。 在跳过指定数量的人之后，执行下一个人。 对剩下的人重复该过程，从下一个人开始，朝同一方向跳过相同数量的人，直到只剩下一个人，并被释放。</p>
+<p>问题即，给定人数、起点、方向和要跳过的数字，选择初始圆圈中的位置以避免被处决。</p>
+<p>解法：维基百科上也有，GeeksforGeeks还有视频教程。
+<a href="https://en.wikipedia.org/wiki/Josephus%5C_problem" class="external">https://en.wikipedia.org/wiki/Josephus\_problem<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+<a href="https://www.geeksforgeeks.org/josephus-problem-set-1-a-on-solution/" class="external">https://www.geeksforgeeks.org/josephus-problem-set-1-a-on-solution/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+<p>常见的有两种解法：</p>
+<ul>
+<li>单链表模拟</li>
+<li>数学递推<span>⇒</span>递归求解</li>
+</ul>
+<p>显然，假设n个人编号：0,1,2,3,…,n-1. 从0号开始报数（报数从0开始），报到m-1的将被处决，然后从下一个人开始报数。直到剩下最后一个人，赦免之。</p>
+<p>第一趟：报到m的自然是编号为(m-1)%n.
+接着从 m%n 开始报数，接下来又会是谁被处决呢？</p>
+<p>等等，先来看看问题是什么，我希望知道幸免者的编号。在n个人，报m个数的设定下，我希望知道幸免者编号，假设这个编号就是f(n,m).</p>
+<p>在第一趟之后，报数从编号k=m%n开始，但是此时只有n-1个人，我还是想知道幸存者的编号。如果此时将编号重新映射一下，比如：</p>
+<pre><code>k   -> 0
+k+1 -> 1
+...
+k-2 -> n-2
+</code></pre>
+<p>那么问题就变成了n-1个人，从0开始报数，报到m-1被处决，完完全全成了一个拥有同样结构的问题，但是规模更小了。显然，这个问题的解是 f(n-1, m). 但是呢，我们得到的编号却不是原来的编号了，得把编号还原回去。这很简单，假设得到的编号是x，那么映射回原编号x’</p>
+<pre><code>x' = (x+k)%n
+</code></pre>
+<p>于是，如果我们能够知道 f(n-1, m), 那么 f(n, m) = (f(n-1,m) + m)%n. 这就得到了递推公式。接着看一下边界条件，当n = 1时， f(1, m) = 0; 结束。</p>
+<h2 id="c内存布局">C++内存布局<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#c内存布局" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="结构体">结构体<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#结构体" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>C++规范在“结构”上使用了和C相同的，简单的<a href="./内存布局" class="internal alias" data-slug="notes/cpp/内存布局">内存布局</a>原则：成员变量按其被声明的顺序排列，按具体实现所规定的对齐原则在内存地址上对齐。</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="cpp" data-theme="github-light github-dark"><code data-language="cpp" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">struct</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"> S</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> {</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">    char</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> a;</span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;">     // memory location #1</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">    int</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> b : </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">5</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">;</span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;">  // memory location #2</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">    int</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> c : </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">11</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">,</span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;"> // memory location #2 (continued)</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">          : </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">,</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">        d : </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">8</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">;</span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;">  // memory location #3</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">    struct</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> {</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">        int</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> ee : </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">8</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">;</span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;"> // memory location #4</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">    } e;</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">} obj;</span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;"> // The object 'obj' consists of 4 separate memory locations</span></span></code></pre></figure>
+<ul>
+<li>类的静态成员不占用类的空间，静态成员在程序数据段中。</li>
+</ul>
+<h2 id="udp介绍">UDP介绍<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#udp介绍" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote>
+<p>摘自《计算机网络 第四版》</p>
+</blockquote>
+<p>UDP面向无连接，它传输的数据段（segment）是由8字节的头和净荷域构成的。头包含源端口和目标端口，各占16位，共4字节。两个端口分别被用来标识源机器和目标机器内部的端点。当一个UDP分组到来的时候，它的净荷部分被递交给与目标端口相关联的那个进程。这种关联关系是在调用了bind原语或者其他某一种类似的做法之后建立起来的。实际上，采用UDP而不是原始的IP，其最主要的价值是增加了源端口和目标端口。如果没有端口域，则传输层将不知道该如何处理分组；而有了端口之后，它就可以正确地提交数据段了。</p>
+<p>当目标端必须将一个应答送回给源端地时候，源端口是必须地。发送应答的进程只要将进来的数据段中的source port域复制道输出的数据段中的destination port域，就可以指定在发送方机器上由哪个进程来接受应答。</p>
+<p>另外值得提出来的可能是UDP没有做到一些事情。UDP并不考虑流控制、错误控制，在收到一个坏的数据段之后它也不重传。所有这些工作都留给用户进程。UDP所作的事情就是提供一个接口，并且在接口中增加复用（demultiplexing）的特性。他利用端口的概念将数据段解复用到多个进程中。这就是它所做的全部工作。</p>
+<p>UDP尤其适用域C-S架构下，客户端给服务器发送一个短的请求，并且期望一个短的应答回来，如果请求或者应答丢失，只需要超时重传。</p>
+<p>UDP的一个应用时DNS（Domain Name System），简单来说，如果一个程序需要根据某一个主机名（比如www.cs.berkeley.edu）来查找它的IP地址，那么，它可以给DNS服务器发送一个包含该主机名的UDP分组。服务器用一个包含该主机IP地址的UDP分组作为应答。实现不需要建立连接，事后也不需要释放连接。在网络上只要两条消息就够了。DNS在进行区域传输(主从dns server之间的数据同步)的时候使用TCP，普通的查询使用UDP。因为普通查询数据量小，比较适合用udp这种速度更快。</p>
+<h3 id="rpc">RPC<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#rpc" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>从某种意义上讲，向一台远程主机发送一个消息并获得一个应答，就如同在编程语言中执行一个函数调用一样。在这两种情况下，你都要提供一个或多个参数，然后获得一个结果。这种现象导致人们试图将网络上的请求-应答交互过程，做成像过程调用那样可以进行类型匹配和转换。这样的结构是的网络应用更加易于编程，而且人们对这种处理方式也更加熟悉。例如，假设有一个名为<code>getIPaddress(hostname)</code>的过程，它的工作方式为：向DNS服务器发送一个UDP分组，然后等待应答，如果在规定的时间内没有接收到应答的话，则超时并重试。通过这种方式，网络的所有细节对于程序员而言全部隐藏。</p>
+<p>这个领域中的关键工作由Birrel和Nelson（1984）完成。简单来说：允许本地的程序调用远程主机上的过程。当机器A上的进程调用机器B上的一个过程的时候，机器A上的调用进程被挂起，而机器B上被调用的过程则开始执行。参数信息从调用方传输到被调用方，而过程的执行结果则从反方向传递回来。对于程序员而言，所有的消息传递都是不可见的。这项技术称为RPC（Remote Procedure Call），目前已成为许多网络应用的基础。按照传统，调用过程称为客户，被调用过程称为服务器。</p>
+<p>当然，RPC不一定非得使用UDP分组，但是，RPC和UDP是一对很好的搭档，而且，UDP常常被用于RPC。然而，当参数或者结果值可能超过最大的UDP分组的时候，或者当所请求的操作并不幂等（即不能安全地重复多次执行，比如计数器递增地操作）的时候，可能有必要建立一个TCP连接，然后利用该连接来发送请求，而不是使用UDP来完成远程调用。</p>
+<h3 id="rtc">RTC<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#rtc" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>UDP的还被广泛应用在实时多媒体：Internet广播电台、Internet电话、音乐点播、视频会议、视频点播等。人们发现每一种应用都在重复设计几乎相同的实时传输协议，逐渐地人们意识到，为多媒体应用制定一个通用的协议是一个很好的想法，因此就诞生了RTP（Real-time Transport Protocol）。</p>
+<h2 id="tcp介绍">TCP介绍<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#tcp介绍" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>UDP是一个简单的协议，它有一些非常合适的用途。但是对于大多数Internet应用来说，他们更需要可靠的，按序递交的特性。所以还需要另一个协议，这就是TCP，目前它是Internet上承担任务最为繁重的一个协议。</p>
+<p>TCP是专门为了在不可靠的互联网上提供一个可靠的端到端字节流而设计的。每台支持TCP的机器都有一个TCP传输实体，它或者是一个库过程，或者是一个用户进程，或者是内核的一部分。在所有这些情形下，它管理TCP流，以及与IP层之间的接口。TCP传输实体接受本地进程和用户数据流，并且将他们分割成不超过64KB（在实践中，考虑到每个帧中都希望有IP和TCP头，所以通常不超过1460数据字节）的分片，然后以单独的IP数据报的形式发送每一个分片。当包含TCP数据的数据报到达一台机器的时候，他们被递交给TCP传输实体，然后TCP传输实体再重构出原始的字节流。</p>
+<p>IP层并不保证数据报一定被正确的递交到目标端，所以TCP需要判断超时的情况，并且需要根据需要重传数据报。即使被正确递交的数据报，也可能存在错序的问题，这也是TCP的责任，他必须把接收到的数据报按照正确的顺序重新装配成用户消息。</p>
+<h3 id="tcp服务模型">TCP服务模型<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#tcp服务模型" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>要想获得TCP服务，发送方和接收方必须创建一种被称为套接字的端点。每个套接字有一个套接字号（地址），它是由主机的IP地址以及本地主机局部的一个16为数值组成的，此16为数值被称为端口（port）。端口是一个TSAP的TCP名字。为了获得TCP服务，首先必须要显示的再发送机器的套接字和接受机器的套接字之间建立一个连接。</p>
+<p>一个套接字有可能同时被用于多个连接。换句话说，两个或者多个连接可能终止与同一个套接字。每个连接可以用两端的套接字标识符来标识，即（socket1, socket2）。TCP不适用虚电路号或者其他的标识符。</p>
+<p>1024以下的端口号被称为知名端口（well-known port），其实就是系统保留端口，有很多约定的服务和特定的端口号对应，如ssh默认端口号是22.</p>
+<p>所有的TCP连接都是全双工的，并且是点到点的。所谓全双工，意味着同时可在两个方向上传输数据；二点到点则意味着每个连接恰好有两个端点。TCP并不支持多播或者广播传输模式。</p>
+<p>一个TCP连接就是一个字节流，而不是消息流。端到端之间并不比保留消息的边界。例如，如果发送进程将4个512字节的数据块写到一个TCP流中，那么在接收进程中，这些数据有可能按4个512字节快的方式被递交，也可能是2个1024字节的数据块，或是一个2048字节的数据块，或者其他方式。接收方无法获知这些数据被写入字节流时候的单元大小。</p>
+<p>正如Unix中文件一样，读文件的程序无法判断该文件是怎么写成的，是一次性还是分块写入，然而，程序也无意于去弄清这个事情。一个TCP软件不理解TCP字节流的含义，也无意于弄清其含义，一个字节就是一个字节而已。</p>
+<p>当一个应用将数据传递给TCP的时候，TCP可能立即将数据发送出去，也可能将它缓冲起来（为了收集更多的数据从而一次发送出去），这完全由TCP软件自己来决定。然而，有时候应用程序确实希望自己的数据立即被发送出去，例如，假设一个用户已经登陆到一台远程服务器上，用户每输入一行命令就会敲入回车键，这时候该命令行应该被立即发送到远程主机，而不应该缓冲起来等待下一行命令。为了强迫将数据发送出去，应用程序可以使用PUSH标志，它相当于告诉TCP不要延迟传输过程。</p>
+<p>有关TCP服务的最后一个值得在这里提出来的特性是紧急数据（urgent data）。当一个交互用户通过敲入<kbd>DEL</kbd>或者<kbd>CTRL-C</kbd>来打断一个已经开始运行的远程计算过程的时候，发送方应用把一些控制信息放在数据流中，然后将它联通URGETN标志一起交给TCP。这一事件将使得TCP停止继续积累数据，而是将该连接上已有的所有数据立即传输出去。当目标端接收到紧急数据的时候，接收方应用被中断（比如，按Unix的术语来说得到了一个信号），所以它停止当前正在做的工作，并且读入数据流以找到紧急数据。紧急数据的尾部应该被标记出来，所以，如何发现紧急数据要取决于具体的应用程序。这种方案基本上只是提供了一种原始的信号机制，其余的工作全部留给应用程序自己来处理。</p>
+<h3 id="tcp协议">TCP协议<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#tcp协议" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>TCP的一个关键特征，也是主导了整个协议设计的特征是，TCP连接上的每个字节都有它独有的32位序列号。发送端和接收端的TCP实体以数据段的形式交换数据。TCP数据段（TCP segment）是由一个固定的20字节的头（加上可选的部分）以及随后的0个或者多个数据字节构成的。TCP软件决定数据段的大小，它可以将多次写操作的数据累积起来放到一个数据段中，也可以将一次写操作的数据分割到多个数据段中。有两个因素限制了段的长度：第一，每个数据段，包括TCP头在内，必须适合IP的65515字节净荷大小；其次，每个网络都有一个<strong>最大传输单元（Maximum Transfer Unit）MTU</strong>，每个数据段必须适合于MTU。在实践中，MTU通常是1500字节（以太网的净荷大小），因此它规定了数据段长度的上界。</p>
+<h3 id="tcp连接的建立">TCP连接的建立<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#tcp连接的建立" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>TCP使用三步握手法建立连接。为了一个建立一个连接，某一方，比如说服务器，通过执行LISTEN和ACCEPT primitives（既可以指定一个特定的源，也可以不指定）被动地等待一个进来地连接请求。</p>
+<p>另一端，比如客户端，执行一个CONNECT primitive，同时指定以下参数：它希望连接地IP地址和端口、它愿意接受地最大TCP分段长度，以及一些可选地用户数据（比如口令）。CONNECT primitive发送一个SYN=1和ACK=0的TCP数据段，然后等待应答。</p>
+<p>当这个数据段到达目标端的时候，那里的TCP实体查看一下是否有一个进程已经在Destination port域中指定的端口上执行的LISTEN。如果没有的话，它送回一个设置了RST位的应答，已拒绝客户的连接请求。</p>
+<p>如果某个进程正在监听端口，那么，TCP实体将进来的TCP数据段交给该进程。然后该进程可以接受或者拒绝这个连接请求。如果它接受的话，则送回一个确认数据段。在正常情况下发送的TCP数据段顺序如图（a）所示。请注意，SYN数据段只消耗1字节的序列号空间，所以它的确认是非常明确的，毫无二义性。</p>
+<p><img src="https://s2.ax1x.com/2019/09/06/nKaiH1.png" alt="nKaiH1.png" loading="lazy"/></p>
+<p>如果两台主机同时企图在同样的两个套接字之间建立一个连接，则事件序列如上图（b）所示。这些事件的结果是，只有一个连接被建立起来，而不是两个，因为所有的连接都是由它们的端点来标识的。如果第一个请求导致建立了一个由(x,y)标识的连接，而第二个请求也建立了这样一个连接，那么，在TCP实体内部只有一个表项，即(x,y).</p>
+<h3 id="tcp连接的释放">TCP连接的释放<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#tcp连接的释放" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>虽然TCP连接时全双工的，但是，为了理解TCP连接的释放过程，最好将TCP连接看成一对单工连接。每个单工连接被单独释放，两个单工连接之间相互独立。为了释放一个连接，任何一方都可以发送一个设置了FIN位的TCP数据段，这表示它已经没有数据要发送了。当FIN数据段被确认的时候，这个方向上就停止传送新数据。然而，另一个方向上可能还在继续无限制地传送数据，当两个方向都停止的时候，连接才被释放。通常情况下，为了释放一个连接，需要4个TCP数据段：每个方向一个FIN和一个ACK。然而，第一个ACK和第二个FIN有可能被包含在同一个数据段中，从而将总数降低到3个。</p>
+<p>四次挥手。<a href="https://blog.csdn.net/qq_33951180/article/details/60767876" class="external">https://blog.csdn.net/qq_33951180/article/details/60767876<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+<a href="https://www.imooc.com/article/17411" class="external">https://www.imooc.com/article/17411<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>关系图谱</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-110" aria-expanded="true"><h3>目录</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-0"><a href="#sdg-notes" data-for="sdg-notes">sdg-notes</a></li><li class="depth-1"><a href="#互斥" data-for="互斥">互斥</a></li><li class="depth-1"><a href="#自旋锁与争用" data-for="自旋锁与争用">自旋锁与争用</a></li><li class="depth-1"><a href="#小米面经之二" data-for="小米面经之二">小米面经之二</a></li><li class="depth-1"><a href="#函数模板" data-for="函数模板">函数模板</a></li><li class="depth-1"><a href="#memcpy-和-memmove-的区别" data-for="memcpy-和-memmove-的区别">memcpy 和 memmove 的区别</a></li><li class="depth-1"><a href="#编写多线程需要注意的点" data-for="编写多线程需要注意的点">编写多线程需要注意的点</a></li><li class="depth-1"><a href="#使用stdconditional_variable注意事项" data-for="使用stdconditional_variable注意事项">使用std::conditional_variable注意事项</a></li><li class="depth-1"><a href="#使用stdthread注意事项" data-for="使用stdthread注意事项">使用std::thread注意事项</a></li><li class="depth-1"><a href="#使用stdatomic注意事项" data-for="使用stdatomic注意事项">使用std::atomic注意事项</a></li><li class="depth-1"><a href="#from-shuos-blog" data-for="from-shuos-blog">From Shuo’s blog</a></li><li class="depth-1"><a href="#不要在ctor里调用虚函数" data-for="不要在ctor里调用虚函数">不要在ctor里调用虚函数</a></li><li class="depth-1"><a href="#ctor不能是虚函数" data-for="ctor不能是虚函数">ctor不能是虚函数</a></li><li class="depth-1"><a href="#虚函数的工作原理" data-for="虚函数的工作原理">虚函数的工作原理</a></li><li class="depth-1"><a href="#常见类型所占空间大小" data-for="常见类型所占空间大小">常见类型所占空间大小</a></li><li class="depth-1"><a href="#析构函数的调用" data-for="析构函数的调用">析构函数的调用</a></li><li class="depth-1"><a href="#几个常用的宏" data-for="几个常用的宏">几个常用的宏</a></li><li class="depth-1"><a href="#joseph-ring" data-for="joseph-ring">Joseph Ring</a></li><li class="depth-1"><a href="#c内存布局" data-for="c内存布局">C++内存布局</a></li><li class="depth-2"><a href="#结构体" data-for="结构体">结构体</a></li><li class="depth-1"><a href="#udp介绍" data-for="udp介绍">UDP介绍</a></li><li class="depth-2"><a href="#rpc" data-for="rpc">RPC</a></li><li class="depth-2"><a href="#rtc" data-for="rtc">RTC</a></li><li class="depth-1"><a href="#tcp介绍" data-for="tcp介绍">TCP介绍</a></li><li class="depth-2"><a href="#tcp服务模型" data-for="tcp服务模型">TCP服务模型</a></li><li class="depth-2"><a href="#tcp协议" data-for="tcp协议">TCP协议</a></li><li class="depth-2"><a href="#tcp连接的建立" data-for="tcp连接的建立">TCP连接的建立</a></li><li class="depth-2"><a href="#tcp连接的释放" data-for="tcp连接的释放">TCP连接的释放</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2025 ❤️ Yychi</p><ul></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.bootcdn.net/ajax/libs/KaTeX/0.16.9/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../../postscript.js" type="module"></script></html>

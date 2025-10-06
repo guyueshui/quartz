@@ -1,0 +1,23 @@
+{
+	"nodes":[
+		{"type":"group","id":"9202fe12fc49f639","x":143,"y":97,"width":561,"height":739,"color":"1","label":"Untitled group"},
+		{"type":"file","file":"life/人文.md","id":"6ff94629d4d63b6a","x":-356,"y":-240,"width":400,"height":400},
+		{"type":"link","url":"https://taifua.com/psst-compile-link.html","id":"256819ae9b3b909a","x":618,"y":1040,"width":665,"height":723},
+		{"type":"text","text":"```cpp\nListNode* MergeLinkList(ListNode* a, ListNode* b)\n{\n    // two base cases.\n    if (!a) return b;\n    if (!b) return a;\n\n    ListNode ret(a);\n    ListNode* pa = &ret;\n\n    while (a && b)\n    {\n        if (a->val <= b->val)\n        {\n            pa = a;\n            a = a->next;\n        }\n        else\n        {\n            ListNode* b_nex = b->next;\n            pa->next = b;\n            b->next = a;\n            pa = b;\n            b = b_nex;\n        }\n    }\n\n    // append tail\n    if (!a && b) pa->next = b;\n    return ret.next;\n}\n```","id":"d01e5e091ec213ec","x":-1180,"y":1220,"width":523,"height":600},
+		{"type":"link","url":"https://www.cnblogs.com/EasonJim/p/8357973.html","id":"3fefc451d46cd948","x":196,"y":396,"width":400,"height":400,"color":"5"},
+		{"type":"file","file":"assets/animal-blurred-background-cat-1443710.jpg","id":"fbac782aa9325eed","x":-469,"y":360,"width":400,"height":259,"color":"4"},
+		{"type":"text","text":"kjkl [Swap分区扩容](Linux/Swap分区扩容.md)","id":"32b27e688805f9ba","x":233,"y":216,"width":250,"height":79,"color":"2"},
+		{"type":"link","url":"https://pic.taifua.com/Picture/website/psst/2/4.png","id":"367051f29a06f4e0","x":618,"y":1860,"width":822,"height":800},
+		{"type":"link","url":"https://pic.taifua.com/Picture/website/psst/2/1.jpg","id":"9c7c383e367e8159","x":-180,"y":1720,"width":717,"height":395,"color":"4"},
+		{"type":"link","url":"https://vicfree.com/2023/02/install-zsh-in-git-bash-for-windows/","id":"ab9c4c3ac04ce1b7","x":-477,"y":2472,"width":757,"height":928},
+		{"type":"link","url":"https://juejin.cn/post/7043778638802518052","id":"4f56768bfbfbc747","x":-180,"y":840,"width":400,"height":400,"color":"#172d22"}
+	],
+	"edges":[
+		{"id":"4fac98dc6dd12529","fromNode":"6ff94629d4d63b6a","fromSide":"right","toNode":"32b27e688805f9ba","toSide":"left"},
+		{"id":"ce2fdf956acaa18e","fromNode":"4f56768bfbfbc747","fromSide":"bottom","toNode":"256819ae9b3b909a","toSide":"top"},
+		{"id":"5e56823fc1807075","fromNode":"d01e5e091ec213ec","fromSide":"right","toNode":"4f56768bfbfbc747","toSide":"left","label":"compile"},
+		{"id":"47f1a852dfea654a","fromNode":"d01e5e091ec213ec","fromSide":"right","toNode":"256819ae9b3b909a","toSide":"left","label":"link"},
+		{"id":"d781c8c8444c8138","fromNode":"d01e5e091ec213ec","fromSide":"right","toNode":"6ff94629d4d63b6a","toSide":"bottom"},
+		{"id":"73647fa844de3d71","fromNode":"d01e5e091ec213ec","fromSide":"right","toNode":"ab9c4c3ac04ce1b7","toSide":"top","label":"git-bash安装zsh"}
+	]
+}
