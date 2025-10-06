@@ -11,7 +11,7 @@ build:
     - echo "execute prebuild jobs, cwd is $(pwd)"
     - echo "$READTHEDOCS_OUTPUT and $(id)"
     - ls -al
-    - tar --exclude-vcs -caf ../tmp/.tar . && \
+    - tar --exclude-vcs -caf ../tmp.tar . && \
       mkdir html && \
       tar -xavf ../tmp.tar -C html && \
       rm ../tmp.tar
