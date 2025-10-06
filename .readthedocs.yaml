@@ -8,7 +8,7 @@ build:
   tools:
     python: "3.11"
   commands:
-    - echo "execute prebuild jobs, cwd: $(pwd)"
+    - echo "execute prebuild jobs, cwd is $(pwd)"
     - ls -al
     - echo "$READTHEDOCS_OUTPUT"
     - cd $READTHEDOCS_OUTPUT && mkdir html
