@@ -19,7 +19,7 @@ build:
       # 遍历当前目录及子目录中所有.html文件（排除index.html）
       find . -type f -name "*.html" ! -name "index.html" | while read -r file; do
         cp "$file" "${file%.html}" && echo "Renamed: $file → ${file%.html}"
-        bash -c 'echo "<meta http-equiv=\"refresh\" content=\"0; url=${file##*/}.html\">" > "${file%.html}"'
+        echo "<meta http-equiv=\"refresh\" content=\"0; url=${file##*/}.html\">" > "${file%.html}"
       done
     - echo "successfully release site to ${READTHEDOCS_OUTPUT}html"
 
