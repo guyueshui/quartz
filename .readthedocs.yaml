@@ -12,8 +12,8 @@ build:
     - echo "$READTHEDOCS_OUTPUT and $(id)"
     - ls -al
     - tar --exclude-vcs -caf ../tmp.tar .
-    - mkdir html
-    - tar -xavf ../tmp.tar -C html
+    - mkdir -p ${READTHEDOCS_OUTPUT}/html
+    - tar -xavf ../tmp.tar -C ${READTHEDOCS_OUTPUT}/html
     - rm ../tmp.tar
     - echo "successfully release site to ${READTHEDOCS_OUTPUT}html"
 
