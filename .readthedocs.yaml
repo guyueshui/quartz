@@ -1,12 +1,12 @@
 # .readthedocs.yaml
+# see: https://docs.readthedocs.com/platform/stable/config-file/v2.html#build-jobs
 # Required: The version of the configuration file.
 version: 2
 
-# This section tells Read the Docs to skip its usual build steps.
-# The 'build.jobs' key allows you to completely customize the build process.
 build:
   os: ubuntu-lts-latest
-  # The `jobs` key defines a list of commands to run.
+  tools:
+    python: "3.11"
   jobs:
     pre_build:
       - echo "execute prebuild jobs"
