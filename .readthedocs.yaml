@@ -11,10 +11,10 @@ build:
     - echo "execute prebuild jobs, cwd is $(pwd)"
     - echo "$READTHEDOCS_OUTPUT and $(id)"
     - ls -al
-    - tar --exclude-vcs -caf ../tmp.tar . && \
-      mkdir html && \
-      tar -xavf ../tmp.tar -C html && \
-      rm ../tmp.tar
+    - tar --exclude-vcs -caf ../tmp.tar .
+    - mkdir html
+    - tar -xavf ../tmp.tar -C html
+    - rm ../tmp.tar
     - echo "successfully release site to ${READTHEDOCS_OUTPUT}html"
 
 # This section defines the directory where the built artifacts are located.
