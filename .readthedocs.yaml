@@ -10,8 +10,8 @@ build:
   commands:
     - echo "execute prebuild jobs, cwd is $(pwd)"
     - ls -al
-    - echo "$READTHEDOCS_OUTPUT"
-    - cd $READTHEDOCS_OUTPUT && mkdir html
+    - echo "$READTHEDOCS_OUTPUT and $(id)"
+    - mkdir -p ${READTHEDOCS_OUTPUT}/html
     - echo "after create html directory, now cwd is $(pwd)"
     - mv * $READTHEDOCS_OUTPUT/html
 
