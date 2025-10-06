@@ -8,9 +8,11 @@ build:
   tools:
     python: "3.11"
   commands:
-    - echo "execute prebuild jobs"
+    - echo "execute prebuild jobs, cwd: $(pwd)"
     - ls -al
-    - echo "$READTHEDOCS_OUTPUT/html"
+    - echo "$READTHEDOCS_OUTPUT"
+    - cd $READTHEDOCS_OUTPUT && mkdir html
+    - echo "after create html directory, now cwd is $(pwd)"
     - mv * $READTHEDOCS_OUTPUT/html
 
 # This section defines the directory where the built artifacts are located.
