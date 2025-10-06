@@ -19,7 +19,7 @@ build:
       # 遍历当前目录及子目录中所有.html文件（排除index.html）
       find . -type f -name "*.html" ! -name "index.html" | while read -r file; do
         # echo "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">" | sed -i "1i\\" - "$file"
-        sed -i '1i <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">' "$file"
+        sed -i '1i "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">"' "$file"
         mv "$file" "${file%.html}" && echo "Renamed: $file → ${file%.html}"
       done
     - echo "successfully release site to ${READTHEDOCS_OUTPUT}html"
