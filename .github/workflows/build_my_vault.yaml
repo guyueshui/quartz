@@ -76,6 +76,13 @@ jobs:
       - name: Ensure Quartz builds, check bundle info
         run: npx quartz build --bundleInfo -d learn2live --concurrency 16
 
+      - name: Deploy to pub
+        uses: peaceiris/actions-gh-pages@v2
+        env:
+          PERSONAL_TOKEN: ${{ secrets.VAULT_PAT }}
+          PUBLISH_BRANCH: pub
+          PUBLISH_DIR: ./public
+
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v4
 
@@ -90,6 +97,8 @@ jobs:
         uses: actions/deploy-pages@v4
 
   publish-to-branch:
+    # currently disabled
+    if: ${{ github.repository == 'jackyzha0/quartz' && github.ref == 'refs/heads/v4' }}
     needs: build-and-deploy
     runs-on: ubuntu-latest
     permissions:
