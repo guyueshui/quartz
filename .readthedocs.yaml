@@ -9,11 +9,13 @@ build:
     python: "3.11"
   commands:
     - echo "execute prebuild jobs, cwd is $(pwd)"
-    - ls -al
     - echo "$READTHEDOCS_OUTPUT and $(id)"
-    - mkdir -p ${READTHEDOCS_OUTPUT}/html
-    - echo "after create html directory, now cwd is $(pwd)"
-    - mv * $READTHEDOCS_OUTPUT/html
+    - ls -al
+    - tar --exclude-vcs -caf ../tmp/.tar . && \
+      mkdir html && \
+      tar -xavf ../tmp.tar -C html && \
+      rm ../tmp.tar
+    - echo "successfully release site to ${READTHEDOCS_OUTPUT}html"
 
 # This section defines the directory where the built artifacts are located.
 # Read the Docs will publish the contents of this directory.
