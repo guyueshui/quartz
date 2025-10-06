@@ -7,12 +7,11 @@ build:
   os: ubuntu-lts-latest
   tools:
     python: "3.11"
-  jobs:
-    pre_build:
-      - echo "execute prebuild jobs"
-      - ls -al
-      - echo "$READTHEDOCS_OUTPUT/html"
-      - mv * $READTHEDOCS_OUTPUT/html
+  commands:
+    - echo "execute prebuild jobs"
+    - ls -al
+    - echo "$READTHEDOCS_OUTPUT/html"
+    - mv * $READTHEDOCS_OUTPUT/html
 
 # This section defines the directory where the built artifacts are located.
 # Read the Docs will publish the contents of this directory.
