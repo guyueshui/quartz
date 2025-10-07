@@ -76,18 +76,6 @@ jobs:
       - name: Ensure Quartz builds, check bundle info
         run: npx quartz build --bundleInfo -d learn2live --concurrency 16
 
-      - name: Copy readthedocs.yaml
-        run: |
-          ls -al
-          cp quartz/static/.readthedocs.yaml public
-
-      - name: Deploy to pub
-        uses: peaceiris/actions-gh-pages@v4.0.0
-        with:
-          github_token: ${{ secrets.VAULT_PAT }}
-          publish_dir: ./public
-          publish_branch: pub
-
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v4
 
