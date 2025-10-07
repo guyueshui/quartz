@@ -131,22 +131,8 @@ pre:hover > .expand-button {
 </div>
 </blockquote>
 <p>例如：</p>
-<p></p><blockquote class="transclude" data-url="../assets/cache-coherency.excalidraw" data-block data-embed-alias="cache-coherency.excalidraw|1000"><h1>cache-coherency.excalidraw</h1><p><span class="text-highlight">⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠</span></p>
-<h1 id="excalidraw-data">Excalidraw Data<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#excalidraw-data" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
-<h2 id="text-elements">Text Elements<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#text-elements" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
-<p id="x8CFQFy4">CPU Core2 </p>
-<p id="EZFJ5cmz">CPU Core1 </p>
-<p id="jbCW04Au">memory </p>
-<p id="s8nU81Eq">cache: A=0; B=2; </p>
-<p id="XzB00LSM">cache: A=1; B=0; </p>
-<p>A=0; B=0;</p>
-<p>// thread 1
-A = 1;
-print(B);</p>
-<p id="GMcQpra9">// thread 2
-B = 2;
-print(A); </p><a href="../assets/cache-coherency.excalidraw" class="internal transclude-src">指向原始笔记的链接</a></blockquote><p></p>
-<p>正常理解，无论线程1，2的执行顺序如何，最后不可能出现打印出0，0的情况。但是在这种情况下，如果各自都从缓存中读数据，那就可能出现0，0的情况。这也进一步引出了<a href="./202304202149volatile-specifier" class="internal alias" data-slug="__zettel/202304202149volatile-specifier">volatile</a>关键字<a href="./202304202149volatile-specifier" class="internal alias" data-slug="__zettel/202304202149volatile-specifier">volatile wiki link</a>。</p>
+<p></p><blockquote class="transclude" data-url="../assets/cache-coherency.excalidraw" data-block data-embed-alias="cache-coherency.excalidraw|1000"><a href="../assets/cache-coherency.excalidraw.html" class="transclude-inner internal alias" data-slug="assets/cache-coherency.excalidraw.html">cache-coherency.excalidraw</a></blockquote><p></p>
+<p>正常理解，无论线程1，2的执行顺序如何，最后不可能出现打印出0，0的情况。但是在这种情况下，如果各自都从缓存中读数据，那就可能出现0，0的情况。这也进一步引出了<a href="./202304202149volatile-specifier.html" class="internal alias" data-slug="__zettel/202304202149volatile-specifier.html">volatile</a>关键字<a href="./202304202149volatile-specifier.html" class="internal alias" data-slug="__zettel/202304202149volatile-specifier.html">volatile wiki link</a>。</p>
 <h2 id="sequential-consistency">Sequential Consistency<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#sequential-consistency" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
 <p>顺序一致性，是一致性最严格的内存模型，他有两条要求：</p>
 <ol>
@@ -192,21 +178,7 @@ print(A); </p><a href="../assets/cache-coherency.excalidraw" class="internal tra
 <p>根据acquire和release的语义，线程A中所有发生在atomic store之前的内存写（包括非原子的和松弛原子【memory_order_relaxed】的），在线程B中将变得可见。也就是说，当线程B atmoic load之后且load到的值确实是线程A写入的那个值，则B能够保证看到everything thread A wrote to memory.</p>
 <p>这个同步仅仅存在于load with acuqire, store with release, on the same atomic variable的任意两个线程之间。其他线程不保证。</p>
 <p>Mutual exclusion locks, such as <a href="https://en.cppreference.com/w/cpp/thread/mutex" title="cpp/thread/mutex" class="external">std::mutex<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> or <a href="https://en.cppreference.com/w/cpp/atomic/atomic_flag" title="cpp/atomic/atomic flag" class="external">atomic spinlock<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>, are an example of release-acquire synchronization: when the lock is released by thread A and acquired by thread B, everything that took place in the critical section (before the release) in the context of thread A has to be visible to thread B (after the acquire) which is executing the same critical section.</p>
-<p></p><blockquote class="transclude" data-url="../assets/202305161028内存模型-202306291048.excalidraw" data-block data-embed-alias="1000"><h1>202305161028内存模型-202306291048.excalidraw</h1><p><span class="text-highlight">⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠</span></p>
-<h1 id="excalidraw-data">Excalidraw Data<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#excalidraw-data" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
-<h2 id="text-elements">Text Elements<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#text-elements" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
-<p>atomic<int> x; ^EaLfjD5E</int></p>
-<p id="LsvvuRLU">thread A </p>
-<p id="tPg2MLwk">thread B </p>
-<p>// dome
-// some
-// write</p>
-<p id="AzajFeco">x.store(23, memory_order_realse); </p>
-<p id="xwlSwItr">if (x.load(memory_order_acquire) == 23) {
-// at this point, all writes in A
-// before x.store(23, memory_order_release)
-// is visible in B.
-} </p><a href="../assets/202305161028内存模型-202306291048.excalidraw" class="internal transclude-src">指向原始笔记的链接</a></blockquote><p></p>
+<p></p><blockquote class="transclude" data-url="../assets/202305161028内存模型-202306291048.excalidraw" data-block data-embed-alias="1000"><a href="../assets/202305161028内存模型-202306291048.excalidraw.html" class="transclude-inner internal alias" data-slug="assets/202305161028内存模型-202306291048.excalidraw.html">202305161028内存模型-202306291048.excalidraw</a></blockquote><p></p>
 <p>内存屏障：<a href="https://github.com/torvalds/linux/blob/master/Documentation/memory-barriers.txt" class="external">内核文档<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>关系图谱</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
                 s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
                 c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562

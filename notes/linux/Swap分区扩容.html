@@ -120,7 +120,7 @@ pre:hover > .expand-button {
 <p>可以通过如下步骤设置一个swap分区：</p>
 <figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="bash" data-theme="github-light github-dark"><code data-language="bash" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;">mkswap</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> /dev/swap_partition</span></span>
 <span data-line><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;">swapon</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> /dev/swap_partition</span></span></code></pre></figure>
-<p>先前安装系统的时候，swap分区给小了（机器内存的一半）。我的笔记本内存8G，swap给了4G，当系统已用内存超过4G，会导致无法<a href="../Blogs/post/linux-hibernate#确保swap分区足够大" class="internal alias" data-slug="notes/Blogs/post/linux-hibernate">休眠</a>。如果swap给的和本机内存一样大，那么就不会存在swap放不下当前工作镜像的问题。但重新分区追加swap显然不现实，所以只能让两块swap拼凑一下，达到总体有8G可用swap的效果。</p>
+<p>先前安装系统的时候，swap分区给小了（机器内存的一半）。我的笔记本内存8G，swap给了4G，当系统已用内存超过4G，会导致无法<a href="../Blogs/post/linux-hibernate.html#确保swap分区足够大" class="internal alias" data-slug="notes/Blogs/post/linux-hibernate.html">休眠</a>。如果swap给的和本机内存一样大，那么就不会存在swap放不下当前工作镜像的问题。但重新分区追加swap显然不现实，所以只能让两块swap拼凑一下，达到总体有8G可用swap的效果。</p>
 <blockquote>
 <p>像我之前，每当要休眠的时候，都要清一下系统内存，保证已用内存在4G以下再休眠。十分繁琐。</p>
 </blockquote>

@@ -137,7 +137,7 @@ pre:hover > .expand-button {
 <li>如果你用<code>override</code>和<code>final</code>修饰一个函数，但基类没有这个函数，或者这个函数在基类没有被声明为虚函数，就会引发编译错误。当然，你可能只是手滑打错字了。但确实，编译错误帮你很快定位到这个问题。</li>
 <li>如果你用<code>override</code>和<code>final</code>修饰一个函数，你就不必再用<code>virtual</code>修饰。因为这两个修饰已经暗示这个函数是虚函数。当然，如果基类中声明已经声明了<code>virtual</code>，无论你用不用这些修饰词，这个函数在派生类中都是虚函数。</li>
 </ul>
-<p>然而，有一个很纠结的问题。在多态体系中，基类的析构函数必须是<a href="../notes/cpp/多态#when-should-my-destructor-be-virtual" class="internal alias" data-slug="notes/cpp/多态">虚</a>的。这就要问了，那对于派生类的析构函数，到底要不要声明为<code>virtual</code>，又或者用<code>override</code>或<code>final</code>修饰呢？这个问题很让人纠结，从下面这个issue出发，你可以看到大家的讨论</p>
+<p>然而，有一个很纠结的问题。在多态体系中，基类的析构函数必须是<a href="../notes/cpp/多态.html#when-should-my-destructor-be-virtual" class="internal alias" data-slug="notes/cpp/多态.html">虚</a>的。这就要问了，那对于派生类的析构函数，到底要不要声明为<code>virtual</code>，又或者用<code>override</code>或<code>final</code>修饰呢？这个问题很让人纠结，从下面这个issue出发，你可以看到大家的讨论</p>
 <ul>
 <li><a href="https://github.com/isocpp/CppCoreGuidelines/issues/721" class="external">C.128: Should destructors be marked “override”?<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
 </ul>
@@ -151,7 +151,7 @@ pre:hover > .expand-button {
 <ol>
 <li>析构函数可以被重写吗？你不敢确信，于是上网搜寻相关资料，发现并不能重写析构函数。过了一个月，你看到这段代码，又重演一遍上述剧情！</li>
 </ol>
-<p>确实，<em>用<code>override</code>修饰析构函数会造成困惑</em>！但是，它利大于弊。事实上，虚析构函数中的“虚”和普通的虚函数有着不一样的语义。对于普通成员函数，让他成为虚函数的目的是，我摆明了想在派生类中重写它，进而达到多态的效果。而析构函数的虚，是一种机制上的必须。当你用基类指针或引用使用<a href="../notes/cpp/多态#dynamic-binding" class="internal alias" data-slug="notes/cpp/多态">动态绑定</a>时，对象的销毁依赖于虚析构函数。如果基类的析构函数非虚，那么对象销毁时，只会调用基类的析构函数，这可能造成派生类的资源没有释放，进而导致内存泄漏。而如果基类的析构函数是虚的，那么会调用到派生类的析构函数，而派生类的析构函数保证会调用基类的析构函数（C++标准保证），这样一来，就能保证资源以合理的顺序释放。</p>
+<p>确实，<em>用<code>override</code>修饰析构函数会造成困惑</em>！但是，它利大于弊。事实上，虚析构函数中的“虚”和普通的虚函数有着不一样的语义。对于普通成员函数，让他成为虚函数的目的是，我摆明了想在派生类中重写它，进而达到多态的效果。而析构函数的虚，是一种机制上的必须。当你用基类指针或引用使用<a href="../notes/cpp/多态.html#dynamic-binding" class="internal alias" data-slug="notes/cpp/多态.html">动态绑定</a>时，对象的销毁依赖于虚析构函数。如果基类的析构函数非虚，那么对象销毁时，只会调用基类的析构函数，这可能造成派生类的资源没有释放，进而导致内存泄漏。而如果基类的析构函数是虚的，那么会调用到派生类的析构函数，而派生类的析构函数保证会调用基类的析构函数（C++标准保证），这样一来，就能保证资源以合理的顺序释放。</p>
 <p>所以，用<code>override</code>修饰析构函数，并不是重写基类的析构函数（事实上我们也无法做到），而是在提醒编译器检查基类的虚构函数必须是虚的。</p>
 <h2 id="为什么不用final修饰析构函数">为什么不用<code>final</code>修饰析构函数？<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#为什么不用final修饰析构函数" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
 <p>事实上，<code>final</code>用来修饰函数，可以防止这个函数继续被派生类重写。但是，每个类都必须有析构函数！一旦析构函数被<code>final</code>修饰，那么这个类将无法再被继承。因为继承这个类，默认会带上生成析构函数，无论用不用这三个关键字修饰。然而，这个行为被基类的<code>final</code>阻止了，冲突了。这里，编译器认为是重写了被<code>final</code>修饰的函数，编译无法通过。</p>
