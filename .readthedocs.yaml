@@ -1,6 +1,6 @@
 # .readthedocs.yaml
+# Read the Docs configuration file
 # see: https://docs.readthedocs.com/platform/stable/config-file/v2.html#build-jobs
-# Required: The version of the configuration file.
 version: 2
 
 build:
@@ -15,15 +15,6 @@ build:
     - mkdir -p ${READTHEDOCS_OUTPUT}/html
     - tar -xavf ../tmp.tar -C ${READTHEDOCS_OUTPUT}/html
     - rm ../tmp.tar
-    - |
-      echo "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">" > meta
-      cat meta
-      # 遍历当前目录及子目录中所有.html文件（排除index.html）
-      find . -type f -name "*.html" ! -name "index.html" | while read -r file; do
-        # echo "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">" | sed -i "1i\\" - "$file"
-        cat meta "$file" | tee "$file" > /dev/null
-        mv "$file" "${file%.html}" && echo "Renamed: $file → ${file%.html}"
-      done
     - echo "successfully release site to ${READTHEDOCS_OUTPUT}html"
 
 # This section defines the directory where the built artifacts are located.

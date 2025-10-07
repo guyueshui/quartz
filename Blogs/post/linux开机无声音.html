@@ -126,7 +126,7 @@ pre:hover > .expand-button {
 <p>记录一下排查问题的大致流程：</p>
 <p>首先上网查了一下相关问题，怀疑是pulseaudio的问题，结果偶然某一次正常播放音频的时候，我发现杀掉pulseaudio的进程竟然毫无影响，因此可能不是它的问题。</p>
 <p>然后查看alsamixer得知：</p>
-<p><img src="./AlsaMixer.png" alt loading="lazy"/></p>
+<p><img src="./AlsaMixer.png.html" alt loading="lazy"/></p>
 <p>可以看到有两张声卡，一个是<code>default</code>，一个是<code>HDA Intel PCH</code>，但其实我只有一张声卡</p>
 <figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="bash" data-theme="github-light github-dark"><code data-language="bash" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;">$</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> aplay</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;"> -l</span></span>
 <span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">****</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> List of PLAYBACK Hardware Devices </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">****</span></span>
@@ -294,7 +294,7 @@ pre:hover > .expand-button {
 <figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="bash" data-theme="github-light github-dark"><code data-language="bash" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;">pacmd</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> set-card-profile</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> alsa_card.pci-0000_00_1f.3</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> output:analog-stereo+input:analog-stereo</span></span></code></pre></figure>
 <p>设置声卡的情景模式，敲完之后外部扬声器就有声音了，而且耳机插拔也是正常生效的。值得注意的是，插入耳机后，上述注释处就变成yes了。</p>
 <p>这个问题暂时解决到这里，等以后有时间看能否完全解决！</p>
-<p>当天更新：重启之后发现不用重新再走一遍上述流程，可以看到”active profile: <a href="./output:hdmi-stereo-extra1+input:analog-stereo" class="internal" data-slug="Blogs/post/output:hdmi-stereo-extra1+input:analog-stereo">output:hdmi-stereo-extra1+input:analog-stereo</a>”已经持久化改变了。那么这个问题就算解决啦！</p>
+<p>当天更新：重启之后发现不用重新再走一遍上述流程，可以看到”active profile: <a href="./output:hdmi-stereo-extra1+input:analog-stereo.html" class="internal" data-slug="Blogs/post/output:hdmi-stereo-extra1+input:analog-stereo.html">output:hdmi-stereo-extra1+input:analog-stereo</a>”已经持久化改变了。那么这个问题就算解决啦！</p>
 <h2 id="references">References<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#references" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
 <ol>
 <li><a href="https://unix.stackexchange.com/questions/62818/how-can-i-switch-between-different-audio-output-hardware-using-the-shell" class="external">How can I switch between different audio output hardware using the shell?<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
