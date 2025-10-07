@@ -89,9 +89,7 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
 
-  publish-to-branch:
-    # currently disabled
-    if: ${{ github.repository == 'jackyzha0/quartz' && github.ref == 'refs/heads/v4' }}
+  build-readthedocs-site:
     needs: build-and-deploy
     runs-on: ubuntu-latest
     permissions:
@@ -100,12 +98,23 @@ jobs:
       id-token: write
 
     steps:
+      - name: Apply readthedocs patch
+        run: git apply rtd_mod.patch
+
+      - name: Build site
+        run: npx quartz build --bundleInfo -d learn2live --concurrency 16
+
+      - name: Copy readthedocs.yaml
+        run: |
+          ls -al
+          cp quartz/static/.readthedocs.yaml public
+
       - name: Deploy to pub
-        uses: peaceiris/actions-gh-pages@v2
-        env:
-          PERSONAL_TOKEN: ${{ secrets.VAULT_PAT }}
-          PUBLISH_BRANCH: pub
-          PUBLISH_DIR: ./public
+        uses: peaceiris/actions-gh-pages@v4.0.0
+        with:
+          github_token: ${{ secrets.VAULT_PAT }}
+          publish_dir: ./public
+          publish_branch: pub
 
 
   publish-tag:
