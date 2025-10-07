@@ -87,10 +87,17 @@ export function slugifyFilePath(fp: FilePath, excludeExt?: boolean): FullSlug {
   return (slug + ext) as FullSlug
 }
 
-export function simplifySlug(fp: FullSlug): SimpleSlug {
+export function simplifySlug(fp: FullSlug, isRtd: boolean=false): SimpleSlug {
   const res = stripSlashes(trimSuffix(fp, "index"), true)
-  const rtd_res = res.endsWith("/") ? res : res + ".html"
-  return (res.length === 0 ? "/" : rtd_res) as SimpleSlug
+  let ret = res.length === 0 ? "/" : res;
+  if (isRtd) {
+    if (ret.endsWith("/") || ret.endsWith(".png") || ret.includes("assets/")) {
+      ;
+    } else {
+      ret += ".html"
+    }
+  }
+  return ret as SimpleSlug
 }
 
 export function transformInternalLink(link: string): RelativeURL {
@@ -102,7 +109,7 @@ export function transformInternalLink(link: string): RelativeURL {
   let fp = segments.filter((seg) => !isRelativeSegment(seg) && seg !== "").join("/")
 
   // manually add ext here as we want to not strip 'index' if it has an extension
-  const simpleSlug = simplifySlug(slugifyFilePath(fp as FilePath))
+  const simpleSlug = simplifySlug(slugifyFilePath(fp as FilePath), true)
   const joined = joinSegments(stripSlashes(prefix), stripSlashes(simpleSlug))
   const trail = folderPath ? "/" : ""
   const res = (_addRelativeToStart(joined) + trail + anchor) as RelativeURL
@@ -170,7 +177,7 @@ export function pathToRoot(slug: FullSlug): RelativeURL {
 }
 
 export function resolveRelative(current: FullSlug, target: FullSlug | SimpleSlug): RelativeURL {
-  const res = joinSegments(pathToRoot(current), simplifySlug(target as FullSlug)) as RelativeURL
+  const res = joinSegments(pathToRoot(current), simplifySlug(target as FullSlug, true)) as RelativeURL
   return res
 }
 
