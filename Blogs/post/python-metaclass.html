@@ -135,7 +135,7 @@ pre:hover > .expand-button {
 <span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">tmp </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;"> type</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">'A'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">, (</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">object</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">,), {</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">'a'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">1</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">})</span></span>
 <span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">A </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> tmp</span></span></code></pre></figure>
 <p>as verified by the picture below：
-<img src="./demo1.png.html" alt="meta-demo1" title="a, b两个对象结构一致" loading="lazy"/></p>
+<img src="./demo1.png" alt="meta-demo1" title="a, b两个对象结构一致" loading="lazy"/></p>
 <p>The <a href="https://docs.python.org/3/library/functions.html#type" class="external"><code>type</code> function<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> is special:</p>
 <blockquote>
 <p>With one argument, return the type of an object. The return value is a type object and generally the same object as returned by <code>object.__class__</code>.</p>
@@ -237,7 +237,7 @@ pre:hover > .expand-button {
 <span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">    d </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> D(</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">3</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">4</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">)</span></span>
 <span data-line><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">    print</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">(d)</span></span></code></pre></figure>
 <p>we see the memory when hit the following breakpoint,
-<img src="./demo2.png.html" alt="demo2" loading="lazy"/></p>
+<img src="./demo2.png" alt="demo2" loading="lazy"/></p>
 <p>From the picture we see:</p>
 <ol>
 <li>the class name ‘D’ is passed as parameter <code>cls_name</code> of <code>MyMeta.__new__</code>,</li>
@@ -245,14 +245,14 @@ pre:hover > .expand-button {
 <li>the keyword arguments of <code>D</code> — <code>foo</code> and <code>bar</code> are passed as keyword arguments of <code>MyMeta.__new__</code>.</li>
 </ol>
 <p>The next breakpoint:
-<img src="./demo3.png.html" alt="demo3" loading="lazy"/>
+<img src="./demo3.png" alt="demo3" loading="lazy"/>
 gives</p>
 <ol>
 <li>the <code>self</code> variable passed to <code>MyMeta.__call__</code> is just the class <code>D</code>,</li>
 <li>the <code>D(3, 4)</code> pass 3, 4 to parameter <code>args</code> of <code>MyMeta.__call__</code>.</li>
 </ol>
 <p>The last breakpoint gives the memory of instance <code>d</code>,
-<img src="./demo4.png.html" alt="demo4" loading="lazy"/></p>
+<img src="./demo4.png" alt="demo4" loading="lazy"/></p>
 <ol>
 <li>the class <code>D</code> has class attributes ‘AAA’ and ‘BBB’, which are converted to uppercase in <code>MyMeta.__new__</code>,</li>
 <li>the instance <code>d</code> has instance attributes ‘a=9’ and ‘b=16’, which are processed in <code>MyMeta.__call__</code>,</li>

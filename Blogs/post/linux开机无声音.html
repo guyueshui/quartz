@@ -126,7 +126,7 @@ pre:hover > .expand-button {
 <p>记录一下排查问题的大致流程：</p>
 <p>首先上网查了一下相关问题，怀疑是pulseaudio的问题，结果偶然某一次正常播放音频的时候，我发现杀掉pulseaudio的进程竟然毫无影响，因此可能不是它的问题。</p>
 <p>然后查看alsamixer得知：</p>
-<p><img src="./AlsaMixer.png.html" alt loading="lazy"/></p>
+<p><img src="./AlsaMixer.png" alt loading="lazy"/></p>
 <p>可以看到有两张声卡，一个是<code>default</code>，一个是<code>HDA Intel PCH</code>，但其实我只有一张声卡</p>
 <figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="bash" data-theme="github-light github-dark"><code data-language="bash" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;">$</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> aplay</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;"> -l</span></span>
 <span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">****</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> List of PLAYBACK Hardware Devices </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">****</span></span>

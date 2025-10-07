@@ -123,7 +123,7 @@ pre:hover > .expand-button {
 <p>安装过程主要可以分为以下几个步骤：</p>
 <p><strong>1.分区</strong></p>
 <p>一般而言只需要分 3 个区：根（<code>/</code>），用户主目录(<code>/home</code>) 以及 <code>swap</code> 交换。贴一下我的分区图
-<img src="../../assets/kpjHnx.png.html" alt="分区信息" loading="lazy"/></p>
+<img src="../../assets/kpjHnx.png" alt="分区信息" loading="lazy"/></p>
 <p>可以看到，一块磁盘 (disk) 被分成很多的分区 (partition) . 其中，稍微现代一点的电脑主板都启用了 <a href="https://wiki.archlinux.org/index.php/Unified_Extensible_Firmware_Interface_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)" class="external">UEFI<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>，所以在磁盘第一个分区是 <a href="https://wiki.archlinux.org/index.php/EFI_system_partition_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)" class="external">ESP<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> 分区。这个分区中就包含了所有可启动系统的启动文件。在没有安装 Linux 之前，它里面只包含有 Windows 自带的启动文件。在安装完成 Linux 后，由于有两个可启动的系统，所以需要一个引导程序(<a href="https://wiki.archlinux.org/index.php/REFInd" class="external">rEFInd<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>, Grub 等)来将选择权交给用户。</p>
 <p>上图中的最后三个分区即为 Linux 系统的分区。分区大小的划分事实上很讲究，我根据之前的经验，<code>/home</code> 分 50GB 够用了，如果不放什么大型视频和音频文件的话。swap 分区的大小一般为已安装内存的一半，比如我的系统内存 8GB，swap 就分 4GB.</p>
 <p><strong>2.格式化分区</strong></p>
@@ -184,7 +184,7 @@ pre:hover > .expand-button {
 
 <div class="table-container"><table><thead><tr><th>Package</th><th>Command</th><th>Note</th></tr></thead><tbody><tr><td>dialog</td><td><code>wifi-menu</code></td><td>WiFi 直连</td></tr><tr><td>net-tools</td><td><code>ifconfig</code></td><td>查看网络状态</td></tr><tr><td>wpa_supplicant</td><td><code>wpa_supplicant, wpa_passphrase</code></td><td>连接 WiFi</td></tr><tr><td>dhcpcd</td><td><code>dhcpcd</code></td><td>动态 IP 地址获取</td></tr></tbody></table></div>
 <p><strong>获取无线接口名称</strong></p>
-<p><img src="../../assets/kpjqHK.png.html" alt loading="lazy"/></p>
+<p><img src="../../assets/kpjqHK.png" alt loading="lazy"/></p>
 <p>好了，现在知道了，是 <code>wlp2s0</code>. 一般也可能是 <code>wlan0</code>. 然后确认该接口的状态是 up，如图所示。</p>
 <p><strong>扫描可用网络</strong></p>
 <figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="sh" data-theme="github-light github-dark"><code data-language="sh" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;">iw</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> wlp2s0</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> scan</span></span></code></pre></figure>
@@ -208,7 +208,7 @@ pre:hover > .expand-button {
 <p>英文字体的话，<a href="https://fonts.google.com/" class="external">Google Fonts<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> 基本可以完全搞定。</p>
 <p>关于中文字体，目前推荐的只有两个：<a href="./wenq.org.html" class="internal alias" data-slug="Blogs/post/wenq.org.html">文泉驿</a>，<a href="http://www.arphic.com.tw/" class="external">文鼎<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>。</p>
 <p>例如要将下载好的 Alegreya.zip 字体安装到系统，只需要将其解压：
-<img src="../../assets/kpjOAO.png.html" alt loading="lazy"/></p>
+<img src="../../assets/kpjOAO.png" alt loading="lazy"/></p>
 <p>可以看到里面的字体文件。挑几个解释一下</p>
 <pre><code>Alegreya-Regular.ttf    # 常规字体
 Alegreya-Italic.ttf    # 斜体
@@ -235,7 +235,7 @@ Alegreya-BoldItalic.ttf    # 粗斜体
 <span data-line> </span></code></pre></figure>
 <p><strong>确认安装是否成功</strong></p>
 <figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="sh" data-theme="github-light github-dark"><code data-language="sh" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;">fc-list</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;"> |</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"> grep</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> userfonts</span></span></code></pre></figure>
-<p><img src="../../assets/kpvPDP.png.html" alt loading="lazy"/></p>
+<p><img src="../../assets/kpvPDP.png" alt loading="lazy"/></p>
 <p>如图所示，可以看到在指定目录下的字体已经安装成功！</p>
 <p><strong>卸载字体</strong></p>
 <p>删除相应字体文件，刷新系统字体缓存即可</p>

@@ -259,7 +259,7 @@ NO
 <blockquote>
 <p>这题最恶心的是输入格式，居然不是直接给一颗建好的二叉树的根节点，而是给数据让你自己建树。处理输入还比较麻烦，首先每个节点都有编号，得先存起来，然后一个一个构造节点，然后再连接起来，关键是连好以后，头节点在哪？还得找一下，最后的判断，实际上是二叉树的层次遍历，遍历得到一个向量，判断是否为严格单调递增即可。</p>
 </blockquote>
-<p><img src="./assets/coding-problems/image-20220702124258842.png.html" alt loading="lazy"/></p>
+<p><img src="./assets/coding-problems/image-20220702124258842.png" alt loading="lazy"/></p>
 <p>上图是第一个样例画出来的二叉树，左边圆圈中对应的是节点编号，右边的数字是节点的权值。要画这棵树，首先画左边的编号之间的连接图，然后把对应编号换作节点的权值即可。那么头节点在哪呢？入度为0的就是了！</p>
 <figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="cpp" data-theme="github-light github-dark"><code data-language="cpp" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">#include</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> &lt;iostream></span></span>
 <span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">#include</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> &lt;vector></span></span>
@@ -390,7 +390,7 @@ NO
 <p>网易雷火游戏2019校招</p>
 </blockquote>
 <p>The Stern-Brocot tree is an infinite complete binary tree in which the verices correspond one-for-one to the positive rational numbers, whose values are ordered from the left to the right as in a search tree.</p>
-<p><img src="./sb-tree.png.html" alt="Stern-Brocot Tree" loading="lazy"/></p>
+<p><img src="./sb-tree.png" alt="Stern-Brocot Tree" loading="lazy"/></p>
 <p>Figure above shows a part of the Stern-Brocot tree, which has the first 4 rows. The value in the node is the mediant of the left and right fractions. The mediant of two fractions A/B and C/D is defined as (A+C)/(B+D).</p>
 <p>To construct the Stern-Brocot tree, we first define the left fraction of the root node is 0/1, and the right fraction of the root node is 1/0. So the value in the root node is the mediant of 0/1 and 1/0, which is (0+1)/(1+0)=1/1. Then the value of root node becomes the right fraction of the left child, and the left fraction of the right child. For example, the 1st node in row2 has 0/1 as its left fraction and 1/1(which is the value of its parent node) as its right fraction. So the value of the 1st node on row2 is (0+1)(1+1)=1/2. For the same reason, the value of the 2nd node in row2 is (1+1)/(1+0)=2/1. This construction progress goes on infinity. As a result, every positive rational number can be found on the Stern-Brocot tree, and can be found only once.</p>
 <p>Give a rational nunmber in form P/Q, find the position of P/Q in the Stern-Borcot tree.</p>
