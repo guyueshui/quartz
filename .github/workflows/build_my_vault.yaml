@@ -5,18 +5,14 @@ env:
   TZ: Asia/Shanghai
 
 on:
-  pull_request:
+  workflow_run:
+    workflows: ["Build vault*"]
+    types: [requested]
     branches:
-      - rtd_pub
-  push:
-    branches:
-      - rtd_pub
-    paths:
-      - '.gitmodules'
-      - 'learn2live/**'
-  # receive event of submodule update
-  repository_dispatch:
-    types: [submodule_updated]
+      - master
+
+
+  # enable manual trigger
   workflow_dispatch:
 
 jobs:
@@ -29,11 +25,6 @@ jobs:
       contents: write
       pages: write
       id-token: write
-
-    # Seems like it will generate a protection rule for branch master.
-    # environment:
-    #   name: github-pages
-    #   url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
       - uses: actions/checkout@v5
@@ -65,14 +56,6 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
 
-      - run: npm ci
-
-      # - name: Check types and style
-      #   run: npm run check
-
-      # - name: Test
-      #   run: npm test
-
       - name: Ensure Quartz builds, check bundle info
         run: npx quartz build --bundleInfo -d learn2live --concurrency 16
 
@@ -87,47 +70,3 @@ jobs:
           github_token: ${{ secrets.VAULT_PAT }}
           publish_dir: ./public
           publish_branch: pub
-
-
-  publish-to-branch:
-    # currently disabled
-    if: ${{ github.repository == 'jackyzha0/quartz' && github.ref == 'refs/heads/v4' }}
-    needs: build-and-deploy
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-      pages: write
-      id-token: write
-
-    steps:
-      - name: Deploy to pub
-        uses: peaceiris/actions-gh-pages@v2
-        env:
-          PERSONAL_TOKEN: ${{ secrets.VAULT_PAT }}
-          PUBLISH_BRANCH: pub
-          PUBLISH_DIR: ./public
-
-
-  publish-tag:
-    if: ${{ github.repository == 'jackyzha0/quartz' && github.ref == 'refs/heads/v4' }}
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    steps:
-      - uses: actions/checkout@v5
-        with:
-          fetch-depth: 0
-      - name: Setup Node
-        uses: actions/setup-node@v5
-        with:
-          node-version: 22
-      - name: Get package version
-        run: node -p -e '`PACKAGE_VERSION=${require("./package.json").version}`' >> $GITHUB_ENV
-      - name: Create release tag
-        uses: pkgdeps/git-tag-action@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          github_repo: ${{ github.repository }}
-          version: ${{ env.PACKAGE_VERSION }}
-          git_commit_sha: ${{ github.sha }}
-          git_tag_prefix: "v"
