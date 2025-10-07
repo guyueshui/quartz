@@ -28,9 +28,9 @@ export class FileTrieNode<T extends FileTrieData = ContentDetails> {
   }
 
   get displayName(): string {
-    // use filename instead of page title, yychi@2025/10/04
+    const nonIndexTitle = this.data?.title === "index" ? undefined : this.data?.title
     return (
-      this.displayNameOverride ?? this.fileSegmentHint ?? this.slugSegment ?? ""
+      this.displayNameOverride ?? nonIndexTitle ?? this.fileSegmentHint ?? this.slugSegment ?? ""
     )
   }
 
