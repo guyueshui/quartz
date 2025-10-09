@@ -19,6 +19,7 @@ const config: QuartzConfig = {
       "private", "templates", ".obsidian",
       "__obex", ".+", "work",
       "life/亲子",
+      "**/*.excalidraw.md",
       "**/202304261834*.md",
       "**/202304271002*.md",
       "**/202305040939*.md",
