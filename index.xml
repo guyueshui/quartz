@@ -30,6 +30,24 @@
     <description><![CDATA[ 下面的例子演示了直接从action deploy到github page的工作流，cf. ]]></description>
     <pubDate>Mon, 29 Sep 2025 03:20:27 GMT</pubDate>
   </item><item>
+    <title>202509181005virtualbox-qcow磁盘扩容</title>
+    <link>https://guyueshui.github.io/quartz/__zettel/202509181005virtualbox-qcow%E7%A3%81%E7%9B%98%E6%89%A9%E5%AE%B9</link>
+    <guid>https://guyueshui.github.io/quartz/__zettel/202509181005virtualbox-qcow%E7%A3%81%E7%9B%98%E6%89%A9%E5%AE%B9</guid>
+    <description><![CDATA[ 随着vm的使用，预分配的磁盘空间可能会逐渐填满。虽然qcow是一种动态增长的虚拟磁盘格式，但一开始也舍不得分配太多（其实真的建议一开始多分配点，省事儿！）。所以，难免会遇到要给qcow虚拟磁盘扩容的情景。 但是virtualbox自带的工具，不支持直接resize qcow磁盘。会报下面的错误： &gt;&gt; .\VBoxManage.exe modifymedium 529b1ef0-005f-4e42-a70f-74dbc5086864 --resize 102400 0%...VBOX_E_NOT_SUPPORTED VBoxManage.exe: error: Failed to ... ]]></description>
+    <pubDate>Thu, 18 Sep 2025 02:05:53 GMT</pubDate>
+  </item><item>
+    <title>202509151012指定动态库搜索路径</title>
+    <link>https://guyueshui.github.io/quartz/__zettel/202509151012%E6%8C%87%E5%AE%9A%E5%8A%A8%E6%80%81%E5%BA%93%E6%90%9C%E7%B4%A2%E8%B7%AF%E5%BE%84</link>
+    <guid>https://guyueshui.github.io/quartz/__zettel/202509151012%E6%8C%87%E5%AE%9A%E5%8A%A8%E6%80%81%E5%BA%93%E6%90%9C%E7%B4%A2%E8%B7%AF%E5%BE%84</guid>
+    <description><![CDATA[ 编译器可以通过-Wl将选项传递给链接器ld。 例如指定动态库搜索路径，see also ^0d5d11 gcc -Wl,-rpath=./ # 等价于 gcc -Wl,rpath,./ # 传多个path gcc -Wl,-rpath=/path1,-rpath=/path2 gcc -Wl,-rpath=/path1 -Wl,-rpath=/path2. ]]></description>
+    <pubDate>Mon, 15 Sep 2025 02:12:03 GMT</pubDate>
+  </item><item>
+    <title>202509151001静态库移除符号表</title>
+    <link>https://guyueshui.github.io/quartz/__zettel/202509151001%E9%9D%99%E6%80%81%E5%BA%93%E7%A7%BB%E9%99%A4%E7%AC%A6%E5%8F%B7%E8%A1%A8</link>
+    <guid>https://guyueshui.github.io/quartz/__zettel/202509151001%E9%9D%99%E6%80%81%E5%BA%93%E7%A7%BB%E9%99%A4%E7%AC%A6%E5%8F%B7%E8%A1%A8</guid>
+    <description><![CDATA[ 静态库不能像动态库那样直接strip -s移除所有符号，否则链接时会报错找不到符号，或者没有重定位入口。 see also 静态链接. ]]></description>
+    <pubDate>Mon, 15 Sep 2025 02:01:20 GMT</pubDate>
+  </item><item>
     <title>202509032035override关键字</title>
     <link>https://guyueshui.github.io/quartz/__zettel/202509032035override%E5%85%B3%E9%94%AE%E5%AD%97</link>
     <guid>https://guyueshui.github.io/quartz/__zettel/202509032035override%E5%85%B3%E9%94%AE%E5%AD%97</guid>
@@ -47,24 +65,6 @@
     <guid>https://guyueshui.github.io/quartz/Untitled--1</guid>
     <description><![CDATA[ write some thing, and insert a base filters: and: - file.hasTag(&quot;cpp&quot;) views: - type: table name: Sample Table Base order: - file.name - date - file.folder - file.tags sort: - property: date direction: ASC . ]]></description>
     <pubDate>Sun, 24 Aug 2025 15:02:00 GMT</pubDate>
-  </item><item>
-    <title>202305161028内存模型-202306291048.excalidraw</title>
-    <link>https://guyueshui.github.io/quartz/assets/202305161028%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B-202306291048.excalidraw</link>
-    <guid>https://guyueshui.github.io/quartz/assets/202305161028%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B-202306291048.excalidraw</guid>
-    <description><![CDATA[ ⚠ Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ]]></description>
-    <pubDate>Sun, 24 Aug 2025 14:30:53 GMT</pubDate>
-  </item><item>
-    <title>cache-coherency.excalidraw</title>
-    <link>https://guyueshui.github.io/quartz/assets/cache-coherency.excalidraw</link>
-    <guid>https://guyueshui.github.io/quartz/assets/cache-coherency.excalidraw</guid>
-    <description><![CDATA[ ⚠ Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ]]></description>
-    <pubDate>Sun, 24 Aug 2025 14:30:53 GMT</pubDate>
-  </item><item>
-    <title>202305300948.excalidraw</title>
-    <link>https://guyueshui.github.io/quartz/assets/excalidraw/202305300948.excalidraw</link>
-    <guid>https://guyueshui.github.io/quartz/assets/excalidraw/202305300948.excalidraw</guid>
-    <description><![CDATA[ ⚠ Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ]]></description>
-    <pubDate>Sun, 24 Aug 2025 14:30:53 GMT</pubDate>
   </item>
     </channel>
   </rss>
