@@ -2,69 +2,69 @@
 <rss version="2.0">
     <channel>
       <title>Learn2Live</title>
-      <link>https://guyueshui.github.io/quartz</link>
+      <link>https://guyueshui.github.io</link>
       <description>最近的10条笔记 on Learn2Live</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>🌱欢迎👏</title>
-    <link>https://guyueshui.github.io/quartz/</link>
-    <guid>https://guyueshui.github.io/quartz/</guid>
-    <description><![CDATA[  Learn2live stands for “learn to live”, learn something for fun, for work, for life… 学而乐，学而用，学而活。 心系红尘万千事，辗转百年始读书。 闲言碎语何堪记，且予岁月证蹉跎。 这是一个欢迎页面。这里（下称本站）实际上是我个人obsidian仓库的一个子集。在平时工作生活中，我会将学到的知识点、踩过的坑、觉得有趣的东西，简要记录在obsidian仓库。除去其中可能包含公司、个人隐私的部分，其余部分均是可以公开的。本页面是公开之后特意新增的介绍页面。 这些笔记不会详细阐述一个话题，而是包含基础信息和必要的链接（... ]]></description>
-    <pubDate>Tue, 07 Oct 2025 11:51:18 GMT</pubDate>
+    <title>202305161028内存模型</title>
+    <link>https://guyueshui.github.io/__zettel/202305161028%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B</link>
+    <guid>https://guyueshui.github.io/__zettel/202305161028%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B</guid>
+    <description><![CDATA[ 为什么需要内存模型 编译器会优化代码，会在不影响正确结果的前提下，调整代码执行顺序，此外cpu也会乱序执行，提高效率。所以，你的代码跑起来未必是按照你写的顺序执行的。这在单线程环境下毫无问题，一旦进入多线程，这种乱序会带来不可预期的结果。 因此，我们需要一种方式来（向底层：编译器）控制，告诉，声明我这段代码必须要按顺序执行。内存模型应运而生。 此外，还有 Cache coherency 现代cpu拥有多级cache，其中cache是有访问权限的。有些cahce中的数据只能被一个核心看到，这在多线程访问数据时就会出现很大的问题。 例如： 正常理解，无论线程1，2的执行顺序如何，最后不可能出现打印... ]]></description>
+    <pubDate>Thu, 09 Oct 2025 14:24:26 GMT</pubDate>
   </item><item>
-    <title>CVX notes</title>
-    <link>https://guyueshui.github.io/quartz/notes/CVX-notes</link>
-    <guid>https://guyueshui.github.io/quartz/notes/CVX-notes</guid>
-    <description><![CDATA[ CVX notes Preliminaries 1. ]]></description>
-    <pubDate>Sun, 05 Oct 2025 11:41:29 GMT</pubDate>
+    <title>202306071056对称加密和非对称加密</title>
+    <link>https://guyueshui.github.io/__zettel/202306071056%E5%AF%B9%E7%A7%B0%E5%8A%A0%E5%AF%86%E5%92%8C%E9%9D%9E%E5%AF%B9%E7%A7%B0%E5%8A%A0%E5%AF%86</link>
+    <guid>https://guyueshui.github.io/__zettel/202306071056%E5%AF%B9%E7%A7%B0%E5%8A%A0%E5%AF%86%E5%92%8C%E9%9D%9E%E5%AF%B9%E7%A7%B0%E5%8A%A0%E5%AF%86</guid>
+    <description><![CDATA[ 明文通信的弊端 冒充 窃听 篡改 flowchart LR id1(A)-- 我是A今晚7点小树林见 --&gt;id2(B) style id1 fill:#f9f,stroke:#333,stroke-width:4px style id2 fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff,stroke-dasharray: 5 5 冒充： flowchart LR id3(C)-- 我是A今晚7点小树林见 --&gt;id2(B) style id3 fill:#49a,stroke:#333,stroke-width:4px style... ]]></description>
+    <pubDate>Thu, 09 Oct 2025 14:24:26 GMT</pubDate>
   </item><item>
-    <title>202509302140quartz发布obsidian</title>
-    <link>https://guyueshui.github.io/quartz/__zettel/202509302140quartz%E5%8F%91%E5%B8%83obsidian</link>
-    <guid>https://guyueshui.github.io/quartz/__zettel/202509302140quartz%E5%8F%91%E5%B8%83obsidian</guid>
-    <description><![CDATA[ 问题 我有一个obsidian仓库，私有的，因为里面有一些笔记涉及公司和个人隐私。但其余部分都是可公开的，有没有一个方案同时满足， 免费 可以控制哪些发布，哪些不发布 原始仓库是私有的 方案 工具名称优点缺点obsidian-digital-garden1. ]]></description>
-    <pubDate>Tue, 30 Sep 2025 13:40:02 GMT</pubDate>
-  </item><item>
-    <title>202509291120deploy-github-page</title>
-    <link>https://guyueshui.github.io/quartz/__zettel/202509291120deploy-github-page</link>
-    <guid>https://guyueshui.github.io/quartz/__zettel/202509291120deploy-github-page</guid>
-    <description><![CDATA[ 下面的例子演示了直接从action deploy到github page的工作流，cf. ]]></description>
-    <pubDate>Mon, 29 Sep 2025 03:20:27 GMT</pubDate>
-  </item><item>
-    <title>202509181005virtualbox-qcow磁盘扩容</title>
-    <link>https://guyueshui.github.io/quartz/__zettel/202509181005virtualbox-qcow%E7%A3%81%E7%9B%98%E6%89%A9%E5%AE%B9</link>
-    <guid>https://guyueshui.github.io/quartz/__zettel/202509181005virtualbox-qcow%E7%A3%81%E7%9B%98%E6%89%A9%E5%AE%B9</guid>
-    <description><![CDATA[ 随着vm的使用，预分配的磁盘空间可能会逐渐填满。虽然qcow是一种动态增长的虚拟磁盘格式，但一开始也舍不得分配太多（其实真的建议一开始多分配点，省事儿！）。所以，难免会遇到要给qcow虚拟磁盘扩容的情景。 但是virtualbox自带的工具，不支持直接resize qcow磁盘。会报下面的错误： &gt;&gt; .\VBoxManage.exe modifymedium 529b1ef0-005f-4e42-a70f-74dbc5086864 --resize 102400 0%...VBOX_E_NOT_SUPPORTED VBoxManage.exe: error: Failed to ... ]]></description>
-    <pubDate>Thu, 18 Sep 2025 02:05:53 GMT</pubDate>
-  </item><item>
-    <title>202509151012指定动态库搜索路径</title>
-    <link>https://guyueshui.github.io/quartz/__zettel/202509151012%E6%8C%87%E5%AE%9A%E5%8A%A8%E6%80%81%E5%BA%93%E6%90%9C%E7%B4%A2%E8%B7%AF%E5%BE%84</link>
-    <guid>https://guyueshui.github.io/quartz/__zettel/202509151012%E6%8C%87%E5%AE%9A%E5%8A%A8%E6%80%81%E5%BA%93%E6%90%9C%E7%B4%A2%E8%B7%AF%E5%BE%84</guid>
-    <description><![CDATA[ 编译器可以通过-Wl将选项传递给链接器ld。 例如指定动态库搜索路径，see also ^0d5d11 gcc -Wl,-rpath=./ # 等价于 gcc -Wl,rpath,./ # 传多个path gcc -Wl,-rpath=/path1,-rpath=/path2 gcc -Wl,-rpath=/path1 -Wl,-rpath=/path2. ]]></description>
-    <pubDate>Mon, 15 Sep 2025 02:12:03 GMT</pubDate>
+    <title>202411251922动态库链接问题</title>
+    <link>https://guyueshui.github.io/__zettel/202411251922%E5%8A%A8%E6%80%81%E5%BA%93%E9%93%BE%E6%8E%A5%E9%97%AE%E9%A2%98</link>
+    <guid>https://guyueshui.github.io/__zettel/202411251922%E5%8A%A8%E6%80%81%E5%BA%93%E9%93%BE%E6%8E%A5%E9%97%AE%E9%A2%98</guid>
+    <description><![CDATA[ 参考修改：github.com/tbuktu/libntru/pull/47/files 该仓库是纯C代码，构建工具是make. ]]></description>
+    <pubDate>Thu, 09 Oct 2025 02:47:20 GMT</pubDate>
   </item><item>
     <title>202509151001静态库移除符号表</title>
-    <link>https://guyueshui.github.io/quartz/__zettel/202509151001%E9%9D%99%E6%80%81%E5%BA%93%E7%A7%BB%E9%99%A4%E7%AC%A6%E5%8F%B7%E8%A1%A8</link>
-    <guid>https://guyueshui.github.io/quartz/__zettel/202509151001%E9%9D%99%E6%80%81%E5%BA%93%E7%A7%BB%E9%99%A4%E7%AC%A6%E5%8F%B7%E8%A1%A8</guid>
+    <link>https://guyueshui.github.io/__zettel/202509151001%E9%9D%99%E6%80%81%E5%BA%93%E7%A7%BB%E9%99%A4%E7%AC%A6%E5%8F%B7%E8%A1%A8</link>
+    <guid>https://guyueshui.github.io/__zettel/202509151001%E9%9D%99%E6%80%81%E5%BA%93%E7%A7%BB%E9%99%A4%E7%AC%A6%E5%8F%B7%E8%A1%A8</guid>
     <description><![CDATA[ 静态库不能像动态库那样直接strip -s移除所有符号，否则链接时会报错找不到符号，或者没有重定位入口。 see also 静态链接. ]]></description>
-    <pubDate>Mon, 15 Sep 2025 02:01:20 GMT</pubDate>
+    <pubDate>Thu, 09 Oct 2025 02:47:20 GMT</pubDate>
   </item><item>
-    <title>202509032035override关键字</title>
-    <link>https://guyueshui.github.io/quartz/__zettel/202509032035override%E5%85%B3%E9%94%AE%E5%AD%97</link>
-    <guid>https://guyueshui.github.io/quartz/__zettel/202509032035override%E5%85%B3%E9%94%AE%E5%AD%97</guid>
-    <description><![CDATA[ 析构函数与override virtual override final 上面三个关键字在继承体系中起着重要作用。virtual不用多说，声明虚函数必备的关键字。override和final是C++11中引入的，二者的作用其实更多是提醒开发者自己， 我正在重写一个虚函数 我正在重写一个虚函数，并且不希望再被派生类重写这个函数 当然，final也可以用来修饰类，表示这是最后一次继承，即我这个类不能再被继承了。很形象，例如 class A {}; class B : public A {}; class C final : pubilc B {}; class D : public C {}; /... ]]></description>
-    <pubDate>Wed, 03 Sep 2025 12:35:56 GMT</pubDate>
+    <title>202509151012指定动态库搜索路径</title>
+    <link>https://guyueshui.github.io/__zettel/202509151012%E6%8C%87%E5%AE%9A%E5%8A%A8%E6%80%81%E5%BA%93%E6%90%9C%E7%B4%A2%E8%B7%AF%E5%BE%84</link>
+    <guid>https://guyueshui.github.io/__zettel/202509151012%E6%8C%87%E5%AE%9A%E5%8A%A8%E6%80%81%E5%BA%93%E6%90%9C%E7%B4%A2%E8%B7%AF%E5%BE%84</guid>
+    <description><![CDATA[ 编译器可以通过-Wl将选项传递给链接器ld。 例如指定动态库搜索路径，see also ^0d5d11 gcc -Wl,-rpath=./ # 等价于 gcc -Wl,rpath,./ # 传多个path gcc -Wl,-rpath=/path1,-rpath=/path2 gcc -Wl,-rpath=/path1 -Wl,-rpath=/path2. ]]></description>
+    <pubDate>Thu, 09 Oct 2025 02:47:20 GMT</pubDate>
   </item><item>
-    <title>202509011620vector小坑</title>
-    <link>https://guyueshui.github.io/quartz/__zettel/202509011620vector%E5%B0%8F%E5%9D%91</link>
-    <guid>https://guyueshui.github.io/quartz/__zettel/202509011620vector%E5%B0%8F%E5%9D%91</guid>
-    <description><![CDATA[ std::vector::emplace_back有时会调用copy ctor！大意就是，如果发生扩容，且没有定义move ctor，那么会调用copy ctor。如果提供了move ctor，优先调用move ctor。 from cppreference: Notes Since reallocation may take place, emplace_back requires the element type to be MoveInsertable for vector. ]]></description>
-    <pubDate>Mon, 01 Sep 2025 08:20:41 GMT</pubDate>
+    <title>202509181005virtualbox-qcow磁盘扩容</title>
+    <link>https://guyueshui.github.io/__zettel/202509181005virtualbox-qcow%E7%A3%81%E7%9B%98%E6%89%A9%E5%AE%B9</link>
+    <guid>https://guyueshui.github.io/__zettel/202509181005virtualbox-qcow%E7%A3%81%E7%9B%98%E6%89%A9%E5%AE%B9</guid>
+    <description><![CDATA[ 随着vm的使用，预分配的磁盘空间可能会逐渐填满。虽然qcow是一种动态增长的虚拟磁盘格式，但一开始也舍不得分配太多（其实真的建议一开始多分配点，省事儿！）。所以，难免会遇到要给qcow虚拟磁盘扩容的情景。 但是virtualbox自带的工具，不支持直接resize qcow磁盘。会报下面的错误： &gt;&gt; .\VBoxManage.exe modifymedium 529b1ef0-005f-4e42-a70f-74dbc5086864 --resize 102400 0%...VBOX_E_NOT_SUPPORTED VBoxManage.exe: error: Failed to ... ]]></description>
+    <pubDate>Thu, 09 Oct 2025 02:47:20 GMT</pubDate>
   </item><item>
-    <title>Untitled -1</title>
-    <link>https://guyueshui.github.io/quartz/Untitled--1</link>
-    <guid>https://guyueshui.github.io/quartz/Untitled--1</guid>
-    <description><![CDATA[ write some thing, and insert a base filters: and: - file.hasTag(&quot;cpp&quot;) views: - type: table name: Sample Table Base order: - file.name - date - file.folder - file.tags sort: - property: date direction: ASC . ]]></description>
-    <pubDate>Sun, 24 Aug 2025 15:02:00 GMT</pubDate>
+    <title>CPP基础</title>
+    <link>https://guyueshui.github.io/notes/cpp/CPP%E5%9F%BA%E7%A1%80</link>
+    <guid>https://guyueshui.github.io/notes/cpp/CPP%E5%9F%BA%E7%A1%80</guid>
+    <description><![CDATA[ CPP基础 名字（name，变量、函数、类等）拥有两种属性： storage duration，简称duration，约等于一个名字的生命周期（lifetime），表明了它何时创建，何时销毁 linkage，表明了该名字的链接属性。Internal linkage只有单文件可见，external linkage是所有文件可见。一言蔽之，就是名字暴露给链接器的可见性。 Storage class specifiers 用于修饰一个名字，控制上面两种独立属性的变化。 Storage duration有以下几种： automatic storage duration: 局部变量（名字），始于代码段开... ]]></description>
+    <pubDate>Thu, 09 Oct 2025 02:47:20 GMT</pubDate>
+  </item><item>
+    <title>博客迁移记录</title>
+    <link>https://guyueshui.github.io/Blogs/post/blog-trans</link>
+    <guid>https://guyueshui.github.io/Blogs/post/blog-trans</guid>
+    <description><![CDATA[ 终于还是干了！很早以前就有了这个想法，起初使用Hexo搭的博客，折腾了一段时间，选了一个不错的主题Melody。一切都进行的很好，直到有一天又发现Hugo这么个东西，登时就忍不住了，不是说原来的不好，二十Hugo太特么快了，无论是渲染速度还是博客生成，几乎就像是在本地打开html一样。相比之下Hexo的生成速度就显得很慢了，思来想去，博客应该更多关注内容，之前那个配置的有些花哨了，现在换了Hugo，也使用了一个比较简单的主题，相比之下更轻量，打开速度更快，以后就该专注于内容了。这里烧纸纪念下一下我之前的皮肤： 如你所见，还可以在 guyueshui.github.io/blog_archive... ]]></description>
+    <pubDate>Tue, 07 Oct 2025 11:51:18 GMT</pubDate>
+  </item><item>
+    <title>202307261811vscode开发cpp配置</title>
+    <link>https://guyueshui.github.io/__zettel/202307261811vscode%E5%BC%80%E5%8F%91cpp%E9%85%8D%E7%BD%AE</link>
+    <guid>https://guyueshui.github.io/__zettel/202307261811vscode%E5%BC%80%E5%8F%91cpp%E9%85%8D%E7%BD%AE</guid>
+    <description><![CDATA[ 首先安装必要插件， ms-vscode-remote.remote-ssh：远程开发必备插件，可以使用ssh连接打开远端目录作为workspace llvm-vs-code-extensions.vscode-clangd：提供c++ code intelligence功能，安装完此插件后，需要禁用或移除微软本身提供的c++插件（如已安装） vadimcn.vscode-lldb：提供调试功能 如遇网络问题，可从vsixhub手动下载安装插件。 列一下我的插件列表： 本地： $ code --list-extensions huizhou.githd jeff-hykin.better-cpp... ]]></description>
+    <pubDate>Tue, 07 Oct 2025 11:51:18 GMT</pubDate>
+  </item><item>
+    <title>202509302140quartz发布obsidian</title>
+    <link>https://guyueshui.github.io/__zettel/202509302140quartz%E5%8F%91%E5%B8%83obsidian</link>
+    <guid>https://guyueshui.github.io/__zettel/202509302140quartz%E5%8F%91%E5%B8%83obsidian</guid>
+    <description><![CDATA[ 问题 我有一个obsidian仓库，私有的，因为里面有一些笔记涉及公司和个人隐私。但其余部分都是可公开的，有没有一个方案同时满足， 免费 可以控制哪些发布，哪些不发布 原始仓库是私有的 方案 工具名称优点缺点obsidian-digital-garden1. ]]></description>
+    <pubDate>Tue, 07 Oct 2025 11:51:18 GMT</pubDate>
   </item>
     </channel>
   </rss>
