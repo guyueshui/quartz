@@ -1,8 +1,74 @@
+diff --git a/quartz.config.ts b/quartz.config.ts
+index 72c4f9c..d133430 100644
+--- a/quartz.config.ts
++++ b/quartz.config.ts
+@@ -14,7 +14,7 @@ const config: QuartzConfig = {
+     enablePopovers: true,
+     analytics: null,
+     locale: "zh-CN",
+-    baseUrl: "guyueshui.github.io/quartz",
++    baseUrl: "guyueshui.github.io",
+     ignorePatterns: [
+       "private", "templates", ".obsidian",
+       "__obex", ".+", "work",
+diff --git a/quartz/components/Backlinks.tsx b/quartz/components/Backlinks.tsx
+index 0d34457..46d53b0 100644
+--- a/quartz/components/Backlinks.tsx
++++ b/quartz/components/Backlinks.tsx
+@@ -23,7 +23,7 @@ export default ((opts?: Partial<BacklinksOptions>) => {
+     displayClass,
+     cfg,
+   }: QuartzComponentProps) => {
+-    const slug = simplifySlug(fileData.slug!)
++    const slug = simplifySlug(fileData.slug!, true)
+     const backlinkFiles = allFiles.filter((file) => file.links?.includes(slug))
+     if (options.hideWhenEmpty && backlinkFiles.length == 0) {
+       return null
+diff --git a/quartz/components/scripts/graph.inline.ts b/quartz/components/scripts/graph.inline.ts
+index a669b05..50b7df8 100644
+--- a/quartz/components/scripts/graph.inline.ts
++++ b/quartz/components/scripts/graph.inline.ts
+@@ -69,7 +69,7 @@ type TweenNode = {
+ }
+ 
+ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
+-  const slug = simplifySlug(fullSlug)
++  const slug = simplifySlug(fullSlug, true)
+   const visited = getVisited()
+   removeAllChildren(graph)
+ 
+@@ -91,7 +91,7 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
+ 
+   const data: Map<SimpleSlug, ContentDetails> = new Map(
+     Object.entries<ContentDetails>(await fetchData).map(([k, v]) => [
+-      simplifySlug(k as FullSlug),
++      simplifySlug(k as FullSlug, true),
+       v,
+     ]),
+   )
+@@ -112,7 +112,7 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
+     if (showTags) {
+       const localTags = details.tags
+         .filter((tag) => !removeTags.includes(tag))
+-        .map((tag) => simplifySlug(("tags/" + tag) as FullSlug))
++        .map((tag) => simplifySlug(("tags/" + tag) as FullSlug), true)
+ 
+       tags.push(...localTags.filter((tag) => !tags.includes(tag)))
+ 
+@@ -575,7 +575,7 @@ function cleanupGlobalGraphs() {
+ 
+ document.addEventListener("nav", async (e: CustomEventMap["nav"]) => {
+   const slug = e.detail.url
+-  addToVisited(simplifySlug(slug))
++  addToVisited(simplifySlug(slug, true))
+ 
+   async function renderLocalGraph() {
+     cleanupLocalGraphs()
 diff --git a/quartz/util/path.ts b/quartz/util/path.ts
-index b957701..dd91e5d 100644
+index b957701..a638d9c 100644
 --- a/quartz/util/path.ts
 +++ b/quartz/util/path.ts
-@@ -87,9 +87,17 @@ export function slugifyFilePath(fp: FilePath, excludeExt?: boolean): FullSlug {
+@@ -87,9 +87,18 @@ export function slugifyFilePath(fp: FilePath, excludeExt?: boolean): FullSlug {
    return (slug + ext) as FullSlug
  }
  
@@ -12,7 +78,8 @@ index b957701..dd91e5d 100644
 -  return (res.length === 0 ? "/" : res) as SimpleSlug
 +  let ret = res.length === 0 ? "/" : res;
 +  if (isRtd) {
-+    if (ret.endsWith("/") || ret.endsWith(".png") || ret.includes("assets/")) {
++    if (ret.endsWith("/") || ret.endsWith(".png") ||
++        ret.endsWith(".html") || ret.includes("assets/")) {
 +      ;
 +    } else {
 +      ret += ".html"
@@ -22,7 +89,7 @@ index b957701..dd91e5d 100644
  }
  
  export function transformInternalLink(link: string): RelativeURL {
-@@ -101,7 +109,7 @@ export function transformInternalLink(link: string): RelativeURL {
+@@ -101,7 +110,7 @@ export function transformInternalLink(link: string): RelativeURL {
    let fp = segments.filter((seg) => !isRelativeSegment(seg) && seg !== "").join("/")
  
    // manually add ext here as we want to not strip 'index' if it has an extension
@@ -31,7 +98,7 @@ index b957701..dd91e5d 100644
    const joined = joinSegments(stripSlashes(prefix), stripSlashes(simpleSlug))
    const trail = folderPath ? "/" : ""
    const res = (_addRelativeToStart(joined) + trail + anchor) as RelativeURL
-@@ -169,7 +177,7 @@ export function pathToRoot(slug: FullSlug): RelativeURL {
+@@ -169,7 +178,7 @@ export function pathToRoot(slug: FullSlug): RelativeURL {
  }
  
  export function resolveRelative(current: FullSlug, target: FullSlug | SimpleSlug): RelativeURL {
