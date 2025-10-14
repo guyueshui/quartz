@@ -18,7 +18,8 @@ const config: QuartzConfig = {
     ignorePatterns: [
       "private", "templates", ".obsidian",
       "__obex", ".+", "work",
-      "life/亲子",
+      "life/亲子", "求职/ToLearn.md",
+      "求职/信息汇总.md",
       "**/*.excalidraw.md",
       "**/202304261834*.md",
       "**/202304271002*.md",
@@ -73,7 +74,7 @@ const config: QuartzConfig = {
     transformers: [
       Plugin.FrontMatter(),
       Plugin.CreatedModifiedDate({
-        priority: ["frontmatter", "git", "filesystem"],
+        priority: ["git", "frontmatter", "filesystem"],
       }),
       Plugin.SyntaxHighlighting({
         theme: {
