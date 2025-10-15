@@ -6,6 +6,24 @@
       <description>最近的10条笔记 on Learn2Live</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>202501082036suckless-windows</title>
+    <link>https://guyueshui.github.io/__zettel/202501082036suckless-windows</link>
+    <guid>https://guyueshui.github.io/__zettel/202501082036suckless-windows</guid>
+    <description><![CDATA[ Windows毛病例举， 祖传蓝屏（这一点在xp尤为严重，win7以上已经少见许多）。 静默更新。悄悄下载更新，强制更新，莫名其妙跳出来说要更新，关机时强迫更新。恶心的默认策略！ 万年难用的资源管理器，不带标签页，窗口开一堆。 开发上来说，编译工具链体验比不上linux. ]]></description>
+    <pubDate>Wed, 15 Oct 2025 09:46:10 GMT</pubDate>
+  </item><item>
+    <title>202510100935网络小工具</title>
+    <link>https://guyueshui.github.io/__zettel/202510100935%E7%BD%91%E7%BB%9C%E5%B0%8F%E5%B7%A5%E5%85%B7</link>
+    <guid>https://guyueshui.github.io/__zettel/202510100935%E7%BD%91%E7%BB%9C%E5%B0%8F%E5%B7%A5%E5%85%B7</guid>
+    <description><![CDATA[ 网络小工具 网址描述ifconfig.co/port/24320测试公网端口是否可达你的内网设备，会自动获取你的公网IP（nat转换）然后判断指定端口是否可达。www.ip138.com查IP归属地 NAT (Network Address Translation) nat 网络地址转换。私网地址（A）访问公网服务，如果经过NAT转换，报文源IP和端口会被NAT转换为私网出口IP（隶属公网IP），然后再发往指定的公网目的IP。返回的报文同样被NAT处理，将目的IP转换为私网地址（A）。 具体参考：info.support.huawei.com/info-finder/encyclopedia/... ]]></description>
+    <pubDate>Wed, 15 Oct 2025 09:46:10 GMT</pubDate>
+  </item><item>
+    <title>202510101522tcp连接异常case</title>
+    <link>https://guyueshui.github.io/__zettel/202510101522tcp%E8%BF%9E%E6%8E%A5%E5%BC%82%E5%B8%B8case</link>
+    <guid>https://guyueshui.github.io/__zettel/202510101522tcp%E8%BF%9E%E6%8E%A5%E5%BC%82%E5%B8%B8case</guid>
+    <description><![CDATA[ tcp连接异常case 一端显示ESTABLISHED，另一端FIN_WAIT1持续一段时间后，连接关闭 使用netstat -anp查看连接状态，假设显示ESTABLISHED一端为A，另一端为B。显然B端主动发起断开，进入FIN_WAIT1，但是A端迟迟没有回复ack，B端触发超时重传，达到最大重传次数tcp_orphan_retries后，进入close状态。 参考：zhuanlan.zhihu.com/p/398890723 # 查看tcp_orphan_retries cat /proc/sys/net/ipv4/tcp_orphan_retries # or sysctl net.... ]]></description>
+    <pubDate>Wed, 15 Oct 2025 09:46:10 GMT</pubDate>
+  </item><item>
     <title>202305161028内存模型</title>
     <link>https://guyueshui.github.io/__zettel/202305161028%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B</link>
     <guid>https://guyueshui.github.io/__zettel/202305161028%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B</guid>
@@ -47,24 +65,6 @@
     <guid>https://guyueshui.github.io/notes/cpp/CPP%E5%9F%BA%E7%A1%80</guid>
     <description><![CDATA[ CPP基础 名字（name，变量、函数、类等）拥有两种属性： storage duration，简称duration，约等于一个名字的生命周期（lifetime），表明了它何时创建，何时销毁 linkage，表明了该名字的链接属性。Internal linkage只有单文件可见，external linkage是所有文件可见。一言蔽之，就是名字暴露给链接器的可见性。 Storage class specifiers 用于修饰一个名字，控制上面两种独立属性的变化。 Storage duration有以下几种： automatic storage duration: 局部变量（名字），始于代码段开... ]]></description>
     <pubDate>Thu, 09 Oct 2025 02:47:20 GMT</pubDate>
-  </item><item>
-    <title>博客迁移记录</title>
-    <link>https://guyueshui.github.io/Blogs/post/blog-trans</link>
-    <guid>https://guyueshui.github.io/Blogs/post/blog-trans</guid>
-    <description><![CDATA[ 终于还是干了！很早以前就有了这个想法，起初使用Hexo搭的博客，折腾了一段时间，选了一个不错的主题Melody。一切都进行的很好，直到有一天又发现Hugo这么个东西，登时就忍不住了，不是说原来的不好，二十Hugo太特么快了，无论是渲染速度还是博客生成，几乎就像是在本地打开html一样。相比之下Hexo的生成速度就显得很慢了，思来想去，博客应该更多关注内容，之前那个配置的有些花哨了，现在换了Hugo，也使用了一个比较简单的主题，相比之下更轻量，打开速度更快，以后就该专注于内容了。这里烧纸纪念下一下我之前的皮肤： 如你所见，还可以在 guyueshui.github.io/blog_archive... ]]></description>
-    <pubDate>Tue, 07 Oct 2025 11:51:18 GMT</pubDate>
-  </item><item>
-    <title>202307261811vscode开发cpp配置</title>
-    <link>https://guyueshui.github.io/__zettel/202307261811vscode%E5%BC%80%E5%8F%91cpp%E9%85%8D%E7%BD%AE</link>
-    <guid>https://guyueshui.github.io/__zettel/202307261811vscode%E5%BC%80%E5%8F%91cpp%E9%85%8D%E7%BD%AE</guid>
-    <description><![CDATA[ 首先安装必要插件， ms-vscode-remote.remote-ssh：远程开发必备插件，可以使用ssh连接打开远端目录作为workspace llvm-vs-code-extensions.vscode-clangd：提供c++ code intelligence功能，安装完此插件后，需要禁用或移除微软本身提供的c++插件（如已安装） vadimcn.vscode-lldb：提供调试功能 如遇网络问题，可从vsixhub手动下载安装插件。 列一下我的插件列表： 本地： $ code --list-extensions huizhou.githd jeff-hykin.better-cpp... ]]></description>
-    <pubDate>Tue, 07 Oct 2025 11:51:18 GMT</pubDate>
-  </item><item>
-    <title>202509302140quartz发布obsidian</title>
-    <link>https://guyueshui.github.io/__zettel/202509302140quartz%E5%8F%91%E5%B8%83obsidian</link>
-    <guid>https://guyueshui.github.io/__zettel/202509302140quartz%E5%8F%91%E5%B8%83obsidian</guid>
-    <description><![CDATA[ 问题 我有一个obsidian仓库，私有的，因为里面有一些笔记涉及公司和个人隐私。但其余部分都是可公开的，有没有一个方案同时满足， 免费 可以控制哪些发布，哪些不发布 原始仓库是私有的 方案 工具名称优点缺点obsidian-digital-garden1. ]]></description>
-    <pubDate>Tue, 07 Oct 2025 11:51:18 GMT</pubDate>
   </item>
     </channel>
   </rss>
