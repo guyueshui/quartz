@@ -10,7 +10,7 @@
     <link>https://guyueshui.github.io/__zettel/202305310919GO%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80</link>
     <guid>https://guyueshui.github.io/__zettel/202305310919GO%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80</guid>
     <description><![CDATA[ m := map[string]int {&quot;a&quot;:1, &quot;b&quot;:2} 其实是make的语法糖，它等价于 var m map[string]int = make(map[string]int, 2) m = {&quot;a&quot;:1, &quot;b&quot;:2} 内建函数 make 用来为 slice，map 或 chan 类型分配内存和初始化一个对象(注意：只能用在这三种类型上)，跟 new 类似，第一个参数也是一个类型而不是一个值，跟 new 不同的是，make 返回类型的引用而不是指针，而返回值也依赖于具体传入的类型。 make 的作用... ]]></description>
-    <pubDate>Tue, 28 Oct 2025 07:03:29 GMT</pubDate>
+    <pubDate>Tue, 28 Oct 2025 07:26:27 GMT</pubDate>
   </item><item>
     <title>202510100935网络小工具</title>
     <link>https://guyueshui.github.io/__zettel/202510100935%E7%BD%91%E7%BB%9C%E5%B0%8F%E5%B7%A5%E5%85%B7</link>
