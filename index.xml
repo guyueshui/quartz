@@ -6,16 +6,34 @@
       <description>最近的10条笔记 on Learn2Live</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>202501082036suckless-windows</title>
-    <link>https://guyueshui.github.io/__zettel/202501082036suckless-windows</link>
-    <guid>https://guyueshui.github.io/__zettel/202501082036suckless-windows</guid>
-    <description><![CDATA[ Windows毛病例举， 祖传蓝屏（这一点在xp尤为严重，win7以上已经少见许多）。 静默更新。悄悄下载更新，强制更新，莫名其妙跳出来说要更新，关机时强迫更新。恶心的默认策略！ 万年难用的资源管理器，不带标签页，窗口开一堆。 开发上来说，编译工具链体验比不上linux. ]]></description>
-    <pubDate>Wed, 15 Oct 2025 09:46:10 GMT</pubDate>
+    <title>202305310919GO语言基础</title>
+    <link>https://guyueshui.github.io/__zettel/202305310919GO%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80</link>
+    <guid>https://guyueshui.github.io/__zettel/202305310919GO%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80</guid>
+    <description><![CDATA[ m := map[string]int {&quot;a&quot;:1, &quot;b&quot;:2} 其实是make的语法糖，它等价于 var m map[string]int = make(map[string]int, 2) m = {&quot;a&quot;:1, &quot;b&quot;:2} 内建函数 make 用来为 slice，map 或 chan 类型分配内存和初始化一个对象(注意：只能用在这三种类型上)，跟 new 类似，第一个参数也是一个类型而不是一个值，跟 new 不同的是，make 返回类型的引用而不是指针，而返回值也依赖于具体传入的类型。 make 的作用... ]]></description>
+    <pubDate>Tue, 28 Oct 2025 07:03:29 GMT</pubDate>
   </item><item>
     <title>202510100935网络小工具</title>
     <link>https://guyueshui.github.io/__zettel/202510100935%E7%BD%91%E7%BB%9C%E5%B0%8F%E5%B7%A5%E5%85%B7</link>
     <guid>https://guyueshui.github.io/__zettel/202510100935%E7%BD%91%E7%BB%9C%E5%B0%8F%E5%B7%A5%E5%85%B7</guid>
-    <description><![CDATA[ 网络小工具 网址描述ifconfig.co/port/24320测试公网端口是否可达你的内网设备，会自动获取你的公网IP（nat转换）然后判断指定端口是否可达。www.ip138.com查IP归属地 NAT (Network Address Translation) nat 网络地址转换。私网地址（A）访问公网服务，如果经过NAT转换，报文源IP和端口会被NAT转换为私网出口IP（隶属公网IP），然后再发往指定的公网目的IP。返回的报文同样被NAT处理，将目的IP转换为私网地址（A）。 具体参考：info.support.huawei.com/info-finder/encyclopedia/... ]]></description>
+    <description><![CDATA[ 网络小工具 网址描述ifconfig.co/port/24320测试公网端口是否可达你的内网设备，会自动获取你的公网IP（nat转换）然后判断指定端口是否可达。www.ip138.com查IP归属地 curl查询本机公网ip curl ifconfig.me curl icanhazip.com curl ipinfo.io/ip curl ipecho.net/plain curl cip.cc # 返回IP、地址及运营商详情 curl myip.ipip.net # 显示IP及归属地 curl ipinfo.io/json curl ifconfig.co/json NAT (Networ... ]]></description>
+    <pubDate>Tue, 28 Oct 2025 07:03:29 GMT</pubDate>
+  </item><item>
+    <title>202510271629git-sparse-checkout</title>
+    <link>https://guyueshui.github.io/__zettel/202510271629git-sparse-checkout</link>
+    <guid>https://guyueshui.github.io/__zettel/202510271629git-sparse-checkout</guid>
+    <description><![CDATA[ git-sparse-checkout 有时，一个项目依赖另一个项目的部分头文件。在构建CI时，只希望获得依赖的文件，不希望拉取全量仓库。此时，sparse-checkout可以派上用场。 示例脚本 #!/bin/bash # This script sets up a sparse checkout for the projectV repository, focusing on specific directories. ]]></description>
+    <pubDate>Tue, 28 Oct 2025 07:03:29 GMT</pubDate>
+  </item><item>
+    <title>202510281152jenkins引用sshkey凭据</title>
+    <link>https://guyueshui.github.io/__zettel/202510281152jenkins%E5%BC%95%E7%94%A8sshkey%E5%87%AD%E6%8D%AE</link>
+    <guid>https://guyueshui.github.io/__zettel/202510281152jenkins%E5%BC%95%E7%94%A8sshkey%E5%87%AD%E6%8D%AE</guid>
+    <description><![CDATA[ Jenkins引用sshkey凭据 原始问题：Jenkins job中，用户脚本中如何使用已经配置好的ssh-key凭据？ 有时一个项目的编译，依赖另一个项目的部分代码。同样的场景再度上演了！在Jenkins流水线中，主仓库的clone很简单，直接配置使用哪个凭据就好了。如下图所示，ci-key-2是一个jenkins凭据，类型为ssh username with private key. ]]></description>
+    <pubDate>Tue, 28 Oct 2025 07:03:29 GMT</pubDate>
+  </item><item>
+    <title>202501082036suckless-windows</title>
+    <link>https://guyueshui.github.io/__zettel/202501082036suckless-windows</link>
+    <guid>https://guyueshui.github.io/__zettel/202501082036suckless-windows</guid>
+    <description><![CDATA[ Windows毛病例举， 祖传蓝屏（这一点在xp尤为严重，win7以上已经少见许多）。 静默更新。悄悄下载更新，强制更新，莫名其妙跳出来说要更新，关机时强迫更新。恶心的默认策略！ 万年难用的资源管理器，不带标签页，窗口开一堆。 开发上来说，编译工具链体验比不上linux. ]]></description>
     <pubDate>Wed, 15 Oct 2025 09:46:10 GMT</pubDate>
   </item><item>
     <title>202510101522tcp连接异常case</title>
@@ -46,24 +64,6 @@
     <link>https://guyueshui.github.io/__zettel/202509151001%E9%9D%99%E6%80%81%E5%BA%93%E7%A7%BB%E9%99%A4%E7%AC%A6%E5%8F%B7%E8%A1%A8</link>
     <guid>https://guyueshui.github.io/__zettel/202509151001%E9%9D%99%E6%80%81%E5%BA%93%E7%A7%BB%E9%99%A4%E7%AC%A6%E5%8F%B7%E8%A1%A8</guid>
     <description><![CDATA[ 静态库不能像动态库那样直接strip -s移除所有符号，否则链接时会报错找不到符号，或者没有重定位入口。 see also 静态链接. ]]></description>
-    <pubDate>Thu, 09 Oct 2025 02:47:20 GMT</pubDate>
-  </item><item>
-    <title>202509151012指定动态库搜索路径</title>
-    <link>https://guyueshui.github.io/__zettel/202509151012%E6%8C%87%E5%AE%9A%E5%8A%A8%E6%80%81%E5%BA%93%E6%90%9C%E7%B4%A2%E8%B7%AF%E5%BE%84</link>
-    <guid>https://guyueshui.github.io/__zettel/202509151012%E6%8C%87%E5%AE%9A%E5%8A%A8%E6%80%81%E5%BA%93%E6%90%9C%E7%B4%A2%E8%B7%AF%E5%BE%84</guid>
-    <description><![CDATA[ 编译器可以通过-Wl将选项传递给链接器ld。 例如指定动态库搜索路径，see also ^0d5d11 gcc -Wl,-rpath=./ # 等价于 gcc -Wl,rpath,./ # 传多个path gcc -Wl,-rpath=/path1,-rpath=/path2 gcc -Wl,-rpath=/path1 -Wl,-rpath=/path2. ]]></description>
-    <pubDate>Thu, 09 Oct 2025 02:47:20 GMT</pubDate>
-  </item><item>
-    <title>202509181005virtualbox-qcow磁盘扩容</title>
-    <link>https://guyueshui.github.io/__zettel/202509181005virtualbox-qcow%E7%A3%81%E7%9B%98%E6%89%A9%E5%AE%B9</link>
-    <guid>https://guyueshui.github.io/__zettel/202509181005virtualbox-qcow%E7%A3%81%E7%9B%98%E6%89%A9%E5%AE%B9</guid>
-    <description><![CDATA[ 随着vm的使用，预分配的磁盘空间可能会逐渐填满。虽然qcow是一种动态增长的虚拟磁盘格式，但一开始也舍不得分配太多（其实真的建议一开始多分配点，省事儿！）。所以，难免会遇到要给qcow虚拟磁盘扩容的情景。 但是virtualbox自带的工具，不支持直接resize qcow磁盘。会报下面的错误： &gt;&gt; .\VBoxManage.exe modifymedium 529b1ef0-005f-4e42-a70f-74dbc5086864 --resize 102400 0%...VBOX_E_NOT_SUPPORTED VBoxManage.exe: error: Failed to ... ]]></description>
-    <pubDate>Thu, 09 Oct 2025 02:47:20 GMT</pubDate>
-  </item><item>
-    <title>CPP基础</title>
-    <link>https://guyueshui.github.io/notes/cpp/CPP%E5%9F%BA%E7%A1%80</link>
-    <guid>https://guyueshui.github.io/notes/cpp/CPP%E5%9F%BA%E7%A1%80</guid>
-    <description><![CDATA[ CPP基础 名字（name，变量、函数、类等）拥有两种属性： storage duration，简称duration，约等于一个名字的生命周期（lifetime），表明了它何时创建，何时销毁 linkage，表明了该名字的链接属性。Internal linkage只有单文件可见，external linkage是所有文件可见。一言蔽之，就是名字暴露给链接器的可见性。 Storage class specifiers 用于修饰一个名字，控制上面两种独立属性的变化。 Storage duration有以下几种： automatic storage duration: 局部变量（名字），始于代码段开... ]]></description>
     <pubDate>Thu, 09 Oct 2025 02:47:20 GMT</pubDate>
   </item>
     </channel>
