@@ -10,7 +10,13 @@
     <link>https://guyueshui.github.io/__zettel/202305310919GO%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80</link>
     <guid>https://guyueshui.github.io/__zettel/202305310919GO%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80</guid>
     <description><![CDATA[ m := map[string]int {&quot;a&quot;:1, &quot;b&quot;:2} 其实是make的语法糖，它等价于 var m map[string]int = make(map[string]int, 2) m = {&quot;a&quot;:1, &quot;b&quot;:2} 内建函数 make 用来为 slice，map 或 chan 类型分配内存和初始化一个对象(注意：只能用在这三种类型上)，跟 new 类似，第一个参数也是一个类型而不是一个值，跟 new 不同的是，make 返回类型的引用而不是指针，而返回值也依赖于具体传入的类型。 make 的作用... ]]></description>
-    <pubDate>Tue, 28 Oct 2025 07:26:27 GMT</pubDate>
+    <pubDate>Thu, 06 Nov 2025 09:56:41 GMT</pubDate>
+  </item><item>
+    <title>202308181549SFINAE</title>
+    <link>https://guyueshui.github.io/__zettel/202308181549SFINAE</link>
+    <guid>https://guyueshui.github.io/__zettel/202308181549SFINAE</guid>
+    <description><![CDATA[ 问题背景 想要实现一个append(C&amp; contianer, T* ptr, size_t size)函数，作用是拷贝size个数组ptr中的元素到容器container中。为了防止container扩容引发的性能开销，希望如果container有reserve成员，先调用reserve分配好内存，如果没有就算了。 template &lt;typename C, typename T&gt; void append(C&amp; container, T* ptr, size_t size) { container.reserve(container.size() + size);... ]]></description>
+    <pubDate>Thu, 06 Nov 2025 09:56:41 GMT</pubDate>
   </item><item>
     <title>202510100935网络小工具</title>
     <link>https://guyueshui.github.io/__zettel/202510100935%E7%BD%91%E7%BB%9C%E5%B0%8F%E5%B7%A5%E5%85%B7</link>
@@ -58,12 +64,6 @@
     <link>https://guyueshui.github.io/__zettel/202411251922%E5%8A%A8%E6%80%81%E5%BA%93%E9%93%BE%E6%8E%A5%E9%97%AE%E9%A2%98</link>
     <guid>https://guyueshui.github.io/__zettel/202411251922%E5%8A%A8%E6%80%81%E5%BA%93%E9%93%BE%E6%8E%A5%E9%97%AE%E9%A2%98</guid>
     <description><![CDATA[ 参考修改：github.com/tbuktu/libntru/pull/47/files 该仓库是纯C代码，构建工具是make. ]]></description>
-    <pubDate>Thu, 09 Oct 2025 02:47:20 GMT</pubDate>
-  </item><item>
-    <title>202509151001静态库移除符号表</title>
-    <link>https://guyueshui.github.io/__zettel/202509151001%E9%9D%99%E6%80%81%E5%BA%93%E7%A7%BB%E9%99%A4%E7%AC%A6%E5%8F%B7%E8%A1%A8</link>
-    <guid>https://guyueshui.github.io/__zettel/202509151001%E9%9D%99%E6%80%81%E5%BA%93%E7%A7%BB%E9%99%A4%E7%AC%A6%E5%8F%B7%E8%A1%A8</guid>
-    <description><![CDATA[ 静态库不能像动态库那样直接strip -s移除所有符号，否则链接时会报错找不到符号，或者没有重定位入口。 see also 静态链接. ]]></description>
     <pubDate>Thu, 09 Oct 2025 02:47:20 GMT</pubDate>
   </item>
     </channel>
