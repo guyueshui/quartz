@@ -10,7 +10,31 @@
     <link>https://guyueshui.github.io/__zettel/202305310919GO%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80</link>
     <guid>https://guyueshui.github.io/__zettel/202305310919GO%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80</guid>
     <description><![CDATA[ m := map[string]int {&quot;a&quot;:1, &quot;b&quot;:2} 其实是make的语法糖，它等价于 var m map[string]int = make(map[string]int, 2) m = {&quot;a&quot;:1, &quot;b&quot;:2} 内建函数 make 用来为 slice，map 或 chan 类型分配内存和初始化一个对象(注意：只能用在这三种类型上)，跟 new 类似，第一个参数也是一个类型而不是一个值，跟 new 不同的是，make 返回类型的引用而不是指针，而返回值也依赖于具体传入的类型。 make 的作用... ]]></description>
-    <pubDate>Thu, 06 Nov 2025 09:56:41 GMT</pubDate>
+    <pubDate>Fri, 21 Nov 2025 09:17:49 GMT</pubDate>
+  </item><item>
+    <title>202306270923memcpy</title>
+    <link>https://guyueshui.github.io/__zettel/202306270923memcpy</link>
+    <guid>https://guyueshui.github.io/__zettel/202306270923memcpy</guid>
+    <description><![CDATA[ memcpy拷贝字符串数组时，不会自动拷贝null-terminator，除非指定的size包含它。 完美转发 c.biancheng.net/view/7868.html C++11 标准中规定，通常情况下右值引用形式的参数只能接收右值，不能接收左值。但对于函数模板中使用右值引用语法定义的参数来说，它不再遵守这一规定，既可以接收右值，也可以接收左值（此时的右值引用又被称为“万能引用”）。 template &lt;typename T&gt; class A { // 注意这里并非完美转发，因为T是类模板参数，而非函数模板参数 void foo(T&amp;&amp;); // 只能接收右值... ]]></description>
+    <pubDate>Fri, 21 Nov 2025 09:17:49 GMT</pubDate>
+  </item><item>
+    <title>202505281711lambda表达式作为参数传递</title>
+    <link>https://guyueshui.github.io/__zettel/202505281711lambda%E8%A1%A8%E8%BE%BE%E5%BC%8F%E4%BD%9C%E4%B8%BA%E5%8F%82%E6%95%B0%E4%BC%A0%E9%80%92</link>
+    <guid>https://guyueshui.github.io/__zettel/202505281711lambda%E8%A1%A8%E8%BE%BE%E5%BC%8F%E4%BD%9C%E4%B8%BA%E5%8F%82%E6%95%B0%E4%BC%A0%E9%80%92</guid>
+    <description><![CDATA[ lambda不等于std::function，传参时会发生隐式转换 cplusplus.com/forum/general/272010/ 原帖节选， The compiler writes a new class for each lambda expression that appears in the code - therefore, the type of count is not std::function&lt;void(void)&gt;. ]]></description>
+    <pubDate>Fri, 21 Nov 2025 09:17:49 GMT</pubDate>
+  </item><item>
+    <title>202510281152jenkins引用sshkey凭据</title>
+    <link>https://guyueshui.github.io/__zettel/202510281152jenkins%E5%BC%95%E7%94%A8sshkey%E5%87%AD%E6%8D%AE</link>
+    <guid>https://guyueshui.github.io/__zettel/202510281152jenkins%E5%BC%95%E7%94%A8sshkey%E5%87%AD%E6%8D%AE</guid>
+    <description><![CDATA[ Jenkins引用sshkey凭据 原始问题：Jenkins job中，用户脚本中如何使用已经配置好的ssh-key凭据？ 有时一个项目的编译，依赖另一个项目的部分代码。同样的场景再度上演了！在Jenkins流水线中，主仓库的clone很简单，直接配置使用哪个凭据就好了。如下图所示，ci-key-2是一个jenkins凭据，类型为ssh username with private key. ]]></description>
+    <pubDate>Fri, 21 Nov 2025 09:17:49 GMT</pubDate>
+  </item><item>
+    <title>202511171026auto&amp;&amp;-in-range-for</title>
+    <link>https://guyueshui.github.io/__zettel/202511171026auto-in-range-for</link>
+    <guid>https://guyueshui.github.io/__zettel/202511171026auto-in-range-for</guid>
+    <description><![CDATA[ 范围for循环中的auto&amp;&amp; 在范围for循环中，下面代码并不一定可以获取右值属性。 unsigned short TopicPubClient::AddPublishCache(int thd_idx, std::vector&lt;SharedBuffer&gt;&amp;&amp; bufs) { auto&amp; v = send_cache[thd_idx]; for (auto&amp;&amp; e : bufs) { // e is lvalue-reference of type SharedBuffer&amp; v.first.emplace_back... ]]></description>
+    <pubDate>Fri, 21 Nov 2025 09:17:49 GMT</pubDate>
   </item><item>
     <title>202308181549SFINAE</title>
     <link>https://guyueshui.github.io/__zettel/202308181549SFINAE</link>
@@ -30,12 +54,6 @@
     <description><![CDATA[ git-sparse-checkout 有时，一个项目依赖另一个项目的部分头文件。在构建CI时，只希望获得依赖的文件，不希望拉取全量仓库。此时，sparse-checkout可以派上用场。 示例脚本 #!/bin/bash # This script sets up a sparse checkout for the projectV repository, focusing on specific directories. ]]></description>
     <pubDate>Tue, 28 Oct 2025 07:03:29 GMT</pubDate>
   </item><item>
-    <title>202510281152jenkins引用sshkey凭据</title>
-    <link>https://guyueshui.github.io/__zettel/202510281152jenkins%E5%BC%95%E7%94%A8sshkey%E5%87%AD%E6%8D%AE</link>
-    <guid>https://guyueshui.github.io/__zettel/202510281152jenkins%E5%BC%95%E7%94%A8sshkey%E5%87%AD%E6%8D%AE</guid>
-    <description><![CDATA[ Jenkins引用sshkey凭据 原始问题：Jenkins job中，用户脚本中如何使用已经配置好的ssh-key凭据？ 有时一个项目的编译，依赖另一个项目的部分代码。同样的场景再度上演了！在Jenkins流水线中，主仓库的clone很简单，直接配置使用哪个凭据就好了。如下图所示，ci-key-2是一个jenkins凭据，类型为ssh username with private key. ]]></description>
-    <pubDate>Tue, 28 Oct 2025 07:03:29 GMT</pubDate>
-  </item><item>
     <title>202501082036suckless-windows</title>
     <link>https://guyueshui.github.io/__zettel/202501082036suckless-windows</link>
     <guid>https://guyueshui.github.io/__zettel/202501082036suckless-windows</guid>
@@ -47,24 +65,6 @@
     <guid>https://guyueshui.github.io/__zettel/202510101522tcp%E8%BF%9E%E6%8E%A5%E5%BC%82%E5%B8%B8case</guid>
     <description><![CDATA[ tcp连接异常case 一端显示ESTABLISHED，另一端FIN_WAIT1持续一段时间后，连接关闭 使用netstat -anp查看连接状态，假设显示ESTABLISHED一端为A，另一端为B。显然B端主动发起断开，进入FIN_WAIT1，但是A端迟迟没有回复ack，B端触发超时重传，达到最大重传次数tcp_orphan_retries后，进入close状态。 参考：zhuanlan.zhihu.com/p/398890723 # 查看tcp_orphan_retries cat /proc/sys/net/ipv4/tcp_orphan_retries # or sysctl net.... ]]></description>
     <pubDate>Wed, 15 Oct 2025 09:46:10 GMT</pubDate>
-  </item><item>
-    <title>202305161028内存模型</title>
-    <link>https://guyueshui.github.io/__zettel/202305161028%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B</link>
-    <guid>https://guyueshui.github.io/__zettel/202305161028%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B</guid>
-    <description><![CDATA[ 为什么需要内存模型 编译器会优化代码，会在不影响正确结果的前提下，调整代码执行顺序，此外cpu也会乱序执行，提高效率。所以，你的代码跑起来未必是按照你写的顺序执行的。这在单线程环境下毫无问题，一旦进入多线程，这种乱序会带来不可预期的结果。 因此，我们需要一种方式来（向底层：编译器）控制，告诉，声明我这段代码必须要按顺序执行。内存模型应运而生。 此外，还有 Cache coherency 现代cpu拥有多级cache，其中cache是有访问权限的。有些cahce中的数据只能被一个核心看到，这在多线程访问数据时就会出现很大的问题。 例如： 正常理解，无论线程1，2的执行顺序如何，最后不可能出现打印... ]]></description>
-    <pubDate>Thu, 09 Oct 2025 14:24:26 GMT</pubDate>
-  </item><item>
-    <title>202306071056对称加密和非对称加密</title>
-    <link>https://guyueshui.github.io/__zettel/202306071056%E5%AF%B9%E7%A7%B0%E5%8A%A0%E5%AF%86%E5%92%8C%E9%9D%9E%E5%AF%B9%E7%A7%B0%E5%8A%A0%E5%AF%86</link>
-    <guid>https://guyueshui.github.io/__zettel/202306071056%E5%AF%B9%E7%A7%B0%E5%8A%A0%E5%AF%86%E5%92%8C%E9%9D%9E%E5%AF%B9%E7%A7%B0%E5%8A%A0%E5%AF%86</guid>
-    <description><![CDATA[ 明文通信的弊端 冒充 窃听 篡改 flowchart LR id1(A)-- 我是A今晚7点小树林见 --&gt;id2(B) style id1 fill:#f9f,stroke:#333,stroke-width:4px style id2 fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff,stroke-dasharray: 5 5 冒充： flowchart LR id3(C)-- 我是A今晚7点小树林见 --&gt;id2(B) style id3 fill:#49a,stroke:#333,stroke-width:4px style... ]]></description>
-    <pubDate>Thu, 09 Oct 2025 14:24:26 GMT</pubDate>
-  </item><item>
-    <title>202411251922动态库链接问题</title>
-    <link>https://guyueshui.github.io/__zettel/202411251922%E5%8A%A8%E6%80%81%E5%BA%93%E9%93%BE%E6%8E%A5%E9%97%AE%E9%A2%98</link>
-    <guid>https://guyueshui.github.io/__zettel/202411251922%E5%8A%A8%E6%80%81%E5%BA%93%E9%93%BE%E6%8E%A5%E9%97%AE%E9%A2%98</guid>
-    <description><![CDATA[ 参考修改：github.com/tbuktu/libntru/pull/47/files 该仓库是纯C代码，构建工具是make. ]]></description>
-    <pubDate>Thu, 09 Oct 2025 02:47:20 GMT</pubDate>
   </item>
     </channel>
   </rss>
