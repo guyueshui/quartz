@@ -6,6 +6,30 @@
       <description>最近的10条笔记 on Learn2Live</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>202510101522tcp连接异常case</title>
+    <link>https://guyueshui.github.io/__zettel/202510101522tcp%E8%BF%9E%E6%8E%A5%E5%BC%82%E5%B8%B8case</link>
+    <guid>https://guyueshui.github.io/__zettel/202510101522tcp%E8%BF%9E%E6%8E%A5%E5%BC%82%E5%B8%B8case</guid>
+    <description><![CDATA[ tcp连接异常case 一端显示ESTABLISHED，另一端FIN_WAIT1持续一段时间后，连接关闭 使用netstat -anp查看连接状态，假设显示ESTABLISHED一端为A，另一端为B。显然B端主动发起断开，进入FIN_WAIT1，但是A端迟迟没有回复ack，B端触发超时重传，达到最大重传次数tcp_orphan_retries后，进入close状态。 参考：zhuanlan.zhihu.com/p/398890723 # 查看tcp_orphan_retries cat /proc/sys/net/ipv4/tcp_orphan_retries # or sysctl net.... ]]></description>
+    <pubDate>Mon, 24 Nov 2025 07:47:10 GMT</pubDate>
+  </item><item>
+    <title>202510281152jenkins引用sshkey凭据</title>
+    <link>https://guyueshui.github.io/__zettel/202510281152jenkins%E5%BC%95%E7%94%A8sshkey%E5%87%AD%E6%8D%AE</link>
+    <guid>https://guyueshui.github.io/__zettel/202510281152jenkins%E5%BC%95%E7%94%A8sshkey%E5%87%AD%E6%8D%AE</guid>
+    <description><![CDATA[ Jenkins引用sshkey凭据 原始问题：Jenkins job中，用户脚本中如何使用已经配置好的ssh-key凭据？ 有时一个项目的编译，依赖另一个项目的部分代码。同样的场景再度上演了！在Jenkins流水线中，主仓库的clone很简单，直接配置使用哪个凭据就好了。如下图所示，ci-key-2是一个jenkins凭据，类型为ssh username with private key. ]]></description>
+    <pubDate>Mon, 24 Nov 2025 07:47:10 GMT</pubDate>
+  </item><item>
+    <title>202511241327windows批处理demo</title>
+    <link>https://guyueshui.github.io/__zettel/202511241327windows%E6%89%B9%E5%A4%84%E7%90%86demo</link>
+    <guid>https://guyueshui.github.io/__zettel/202511241327windows%E6%89%B9%E5%A4%84%E7%90%86demo</guid>
+    <description><![CDATA[ windows批处理demo 下面是一个windows批处理编译流水线脚本，仅供参考语法（其中 // 表示后来加的注释，并非原文件中的注释）。 @rem Script to compile mdl sdk on Windows x64 platform @echo off echo &quot;COMPILE_X64.BAT: MDL SDK build begin...&quot; set PATH=C:\Windows\system32;C:\Windows;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\ID... ]]></description>
+    <pubDate>Mon, 24 Nov 2025 07:47:10 GMT</pubDate>
+  </item><item>
+    <title>202511241417bash-process-substitution</title>
+    <link>https://guyueshui.github.io/__zettel/202511241417bash-process-substitution</link>
+    <guid>https://guyueshui.github.io/__zettel/202511241417bash-process-substitution</guid>
+    <description><![CDATA[ Command Substitution（命令替换） shell-intro#command-substitution Subshell（子shell） Definition: A subshell is a child process launched by a shell (or shell script). ]]></description>
+    <pubDate>Mon, 24 Nov 2025 07:47:10 GMT</pubDate>
+  </item><item>
     <title>202305310919GO语言基础</title>
     <link>https://guyueshui.github.io/__zettel/202305310919GO%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80</link>
     <guid>https://guyueshui.github.io/__zettel/202305310919GO%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80</guid>
@@ -22,12 +46,6 @@
     <link>https://guyueshui.github.io/__zettel/202505281711lambda%E8%A1%A8%E8%BE%BE%E5%BC%8F%E4%BD%9C%E4%B8%BA%E5%8F%82%E6%95%B0%E4%BC%A0%E9%80%92</link>
     <guid>https://guyueshui.github.io/__zettel/202505281711lambda%E8%A1%A8%E8%BE%BE%E5%BC%8F%E4%BD%9C%E4%B8%BA%E5%8F%82%E6%95%B0%E4%BC%A0%E9%80%92</guid>
     <description><![CDATA[ lambda不等于std::function，传参时会发生隐式转换 cplusplus.com/forum/general/272010/ 原帖节选， The compiler writes a new class for each lambda expression that appears in the code - therefore, the type of count is not std::function&lt;void(void)&gt;. ]]></description>
-    <pubDate>Fri, 21 Nov 2025 09:17:49 GMT</pubDate>
-  </item><item>
-    <title>202510281152jenkins引用sshkey凭据</title>
-    <link>https://guyueshui.github.io/__zettel/202510281152jenkins%E5%BC%95%E7%94%A8sshkey%E5%87%AD%E6%8D%AE</link>
-    <guid>https://guyueshui.github.io/__zettel/202510281152jenkins%E5%BC%95%E7%94%A8sshkey%E5%87%AD%E6%8D%AE</guid>
-    <description><![CDATA[ Jenkins引用sshkey凭据 原始问题：Jenkins job中，用户脚本中如何使用已经配置好的ssh-key凭据？ 有时一个项目的编译，依赖另一个项目的部分代码。同样的场景再度上演了！在Jenkins流水线中，主仓库的clone很简单，直接配置使用哪个凭据就好了。如下图所示，ci-key-2是一个jenkins凭据，类型为ssh username with private key. ]]></description>
     <pubDate>Fri, 21 Nov 2025 09:17:49 GMT</pubDate>
   </item><item>
     <title>202511171026auto&amp;&amp;-in-range-for</title>
@@ -47,24 +65,6 @@
     <guid>https://guyueshui.github.io/__zettel/202510100935%E7%BD%91%E7%BB%9C%E5%B0%8F%E5%B7%A5%E5%85%B7</guid>
     <description><![CDATA[ 网络小工具 网址描述ifconfig.co/port/24320测试公网端口是否可达你的内网设备，会自动获取你的公网IP（nat转换）然后判断指定端口是否可达。www.ip138.com查IP归属地 curl查询本机公网ip curl ifconfig.me curl icanhazip.com curl ipinfo.io/ip curl ipecho.net/plain curl cip.cc # 返回IP、地址及运营商详情 curl myip.ipip.net # 显示IP及归属地 curl ipinfo.io/json curl ifconfig.co/json NAT (Networ... ]]></description>
     <pubDate>Tue, 28 Oct 2025 07:03:29 GMT</pubDate>
-  </item><item>
-    <title>202510271629git-sparse-checkout</title>
-    <link>https://guyueshui.github.io/__zettel/202510271629git-sparse-checkout</link>
-    <guid>https://guyueshui.github.io/__zettel/202510271629git-sparse-checkout</guid>
-    <description><![CDATA[ git-sparse-checkout 有时，一个项目依赖另一个项目的部分头文件。在构建CI时，只希望获得依赖的文件，不希望拉取全量仓库。此时，sparse-checkout可以派上用场。 示例脚本 #!/bin/bash # This script sets up a sparse checkout for the projectV repository, focusing on specific directories. ]]></description>
-    <pubDate>Tue, 28 Oct 2025 07:03:29 GMT</pubDate>
-  </item><item>
-    <title>202501082036suckless-windows</title>
-    <link>https://guyueshui.github.io/__zettel/202501082036suckless-windows</link>
-    <guid>https://guyueshui.github.io/__zettel/202501082036suckless-windows</guid>
-    <description><![CDATA[ Windows毛病例举， 祖传蓝屏（这一点在xp尤为严重，win7以上已经少见许多）。 静默更新。悄悄下载更新，强制更新，莫名其妙跳出来说要更新，关机时强迫更新。恶心的默认策略！ 万年难用的资源管理器，不带标签页，窗口开一堆。 开发上来说，编译工具链体验比不上linux. ]]></description>
-    <pubDate>Wed, 15 Oct 2025 09:46:10 GMT</pubDate>
-  </item><item>
-    <title>202510101522tcp连接异常case</title>
-    <link>https://guyueshui.github.io/__zettel/202510101522tcp%E8%BF%9E%E6%8E%A5%E5%BC%82%E5%B8%B8case</link>
-    <guid>https://guyueshui.github.io/__zettel/202510101522tcp%E8%BF%9E%E6%8E%A5%E5%BC%82%E5%B8%B8case</guid>
-    <description><![CDATA[ tcp连接异常case 一端显示ESTABLISHED，另一端FIN_WAIT1持续一段时间后，连接关闭 使用netstat -anp查看连接状态，假设显示ESTABLISHED一端为A，另一端为B。显然B端主动发起断开，进入FIN_WAIT1，但是A端迟迟没有回复ack，B端触发超时重传，达到最大重传次数tcp_orphan_retries后，进入close状态。 参考：zhuanlan.zhihu.com/p/398890723 # 查看tcp_orphan_retries cat /proc/sys/net/ipv4/tcp_orphan_retries # or sysctl net.... ]]></description>
-    <pubDate>Wed, 15 Oct 2025 09:46:10 GMT</pubDate>
   </item>
     </channel>
   </rss>
