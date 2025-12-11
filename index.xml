@@ -6,6 +6,18 @@
       <description>最近的10条笔记 on Learn2Live</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>202512112141eww-quick-start</title>
+    <link>https://guyueshui.github.io/__zettel/202512112141eww-quick-start</link>
+    <guid>https://guyueshui.github.io/__zettel/202512112141eww-quick-start</guid>
+    <description><![CDATA[ eww-quick-start 先看一下usage, $ eww -h Widgets for everyone! Usage: eww [OPTIONS] &lt;COMMAND&gt; Commands: shell-completions Generate a shell completion script daemon Start the Eww daemon logs Print and watch the eww logs ping Ping the eww server, checking if it is reachable update Update the value of... ]]></description>
+    <pubDate>Thu, 11 Dec 2025 14:57:50 GMT</pubDate>
+  </item><item>
+    <title>202512112229wayland初体验</title>
+    <link>https://guyueshui.github.io/__zettel/202512112229wayland%E5%88%9D%E4%BD%93%E9%AA%8C</link>
+    <guid>https://guyueshui.github.io/__zettel/202512112229wayland%E5%88%9D%E4%BD%93%E9%AA%8C</guid>
+    <description><![CDATA[ Wayland初体验 并非所有应用都原生支持wayland，所以迁移会有阵痛期。虽然可以用XWayland临时打开使用X11协议的软件，但这种方式打开的软件会有明显的像素感，像是放大了一样不清晰。 XWayland programs will be blurry when scaling is more than 1. ]]></description>
+    <pubDate>Thu, 11 Dec 2025 14:57:50 GMT</pubDate>
+  </item><item>
     <title>202510101522tcp连接异常case</title>
     <link>https://guyueshui.github.io/__zettel/202510101522tcp%E8%BF%9E%E6%8E%A5%E5%BC%82%E5%B8%B8case</link>
     <guid>https://guyueshui.github.io/__zettel/202510101522tcp%E8%BF%9E%E6%8E%A5%E5%BC%82%E5%B8%B8case</guid>
@@ -53,18 +65,6 @@
     <guid>https://guyueshui.github.io/__zettel/202511171026auto-in-range-for</guid>
     <description><![CDATA[ 范围for循环中的auto&amp;&amp; 在范围for循环中，下面代码并不一定可以获取右值属性。 unsigned short TopicPubClient::AddPublishCache(int thd_idx, std::vector&lt;SharedBuffer&gt;&amp;&amp; bufs) { auto&amp; v = send_cache[thd_idx]; for (auto&amp;&amp; e : bufs) { // e is lvalue-reference of type SharedBuffer&amp; v.first.emplace_back... ]]></description>
     <pubDate>Fri, 21 Nov 2025 09:17:49 GMT</pubDate>
-  </item><item>
-    <title>202308181549SFINAE</title>
-    <link>https://guyueshui.github.io/__zettel/202308181549SFINAE</link>
-    <guid>https://guyueshui.github.io/__zettel/202308181549SFINAE</guid>
-    <description><![CDATA[ 问题背景 想要实现一个append(C&amp; contianer, T* ptr, size_t size)函数，作用是拷贝size个数组ptr中的元素到容器container中。为了防止container扩容引发的性能开销，希望如果container有reserve成员，先调用reserve分配好内存，如果没有就算了。 template &lt;typename C, typename T&gt; void append(C&amp; container, T* ptr, size_t size) { container.reserve(container.size() + size);... ]]></description>
-    <pubDate>Thu, 06 Nov 2025 09:56:41 GMT</pubDate>
-  </item><item>
-    <title>202510100935网络小工具</title>
-    <link>https://guyueshui.github.io/__zettel/202510100935%E7%BD%91%E7%BB%9C%E5%B0%8F%E5%B7%A5%E5%85%B7</link>
-    <guid>https://guyueshui.github.io/__zettel/202510100935%E7%BD%91%E7%BB%9C%E5%B0%8F%E5%B7%A5%E5%85%B7</guid>
-    <description><![CDATA[ 网络小工具 网址描述ifconfig.co/port/24320测试公网端口是否可达你的内网设备，会自动获取你的公网IP（nat转换）然后判断指定端口是否可达。www.ip138.com查IP归属地 curl查询本机公网ip curl ifconfig.me curl icanhazip.com curl ipinfo.io/ip curl ipecho.net/plain curl cip.cc # 返回IP、地址及运营商详情 curl myip.ipip.net # 显示IP及归属地 curl ipinfo.io/json curl ifconfig.co/json NAT (Networ... ]]></description>
-    <pubDate>Tue, 28 Oct 2025 07:03:29 GMT</pubDate>
   </item>
     </channel>
   </rss>
