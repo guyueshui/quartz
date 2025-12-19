@@ -6,6 +6,18 @@
       <description>最近的10条笔记 on Learn2Live</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>202512171555c风格文件io</title>
+    <link>https://guyueshui.github.io/__zettel/202512171555c%E9%A3%8E%E6%A0%BC%E6%96%87%E4%BB%B6io</link>
+    <guid>https://guyueshui.github.io/__zettel/202512171555c%E9%A3%8E%E6%A0%BC%E6%96%87%E4%BB%B6io</guid>
+    <description><![CDATA[ c风格文件io int main(int argc, char * argv[]) { FILE * fp = fopen(data_file.c_str(), &quot;rb&quot;); if (!fp) { printf(&quot;failed to open data file &#039;%s&#039;\n\n&quot;, data_file.c_str()); return 2; } size_t total_packets = 0; uint64_t ending_packet_time = 0; while (!feof(fp)) { PktHead pkthd; a... ]]></description>
+    <pubDate>Fri, 19 Dec 2025 06:14:11 GMT</pubDate>
+  </item><item>
+    <title>基础题</title>
+    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/%E5%9F%BA%E7%A1%80%E9%A2%98</link>
+    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/%E5%9F%BA%E7%A1%80%E9%A2%98</guid>
+    <description><![CDATA[ 基础题 反转链表 /****************************************************************************** * File: reverse_list.cpp * * Author: yychi * Created: 2022-12-29 20:35 * Description: Reverse a linked list. ]]></description>
+    <pubDate>Fri, 19 Dec 2025 06:14:11 GMT</pubDate>
+  </item><item>
     <title>202505090847awk判断csv的id有序性</title>
     <link>https://guyueshui.github.io/__zettel/202505090847awk%E5%88%A4%E6%96%ADcsv%E7%9A%84id%E6%9C%89%E5%BA%8F%E6%80%A7</link>
     <guid>https://guyueshui.github.io/__zettel/202505090847awk%E5%88%A4%E6%96%ADcsv%E7%9A%84id%E6%9C%89%E5%BA%8F%E6%80%A7</guid>
@@ -53,18 +65,6 @@
     <guid>https://guyueshui.github.io/__zettel/202510281152jenkins%E5%BC%95%E7%94%A8sshkey%E5%87%AD%E6%8D%AE</guid>
     <description><![CDATA[ Jenkins引用sshkey凭据 原始问题：Jenkins job中，用户脚本中如何使用已经配置好的ssh-key凭据？ 有时一个项目的编译，依赖另一个项目的部分代码。同样的场景再度上演了！在Jenkins流水线中，主仓库的clone很简单，直接配置使用哪个凭据就好了。如下图所示，ci-key-2是一个jenkins凭据，类型为ssh username with private key. ]]></description>
     <pubDate>Mon, 24 Nov 2025 07:47:10 GMT</pubDate>
-  </item><item>
-    <title>202511241327windows批处理demo</title>
-    <link>https://guyueshui.github.io/__zettel/202511241327windows%E6%89%B9%E5%A4%84%E7%90%86demo</link>
-    <guid>https://guyueshui.github.io/__zettel/202511241327windows%E6%89%B9%E5%A4%84%E7%90%86demo</guid>
-    <description><![CDATA[ windows批处理demo 下面是一个windows批处理编译流水线脚本，仅供参考语法（其中 // 表示后来加的注释，并非原文件中的注释）。 @rem Script to compile mdl sdk on Windows x64 platform @echo off echo &quot;COMPILE_X64.BAT: MDL SDK build begin...&quot; set PATH=C:\Windows\system32;C:\Windows;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\ID... ]]></description>
-    <pubDate>Mon, 24 Nov 2025 07:47:10 GMT</pubDate>
-  </item><item>
-    <title>202305310919GO语言基础</title>
-    <link>https://guyueshui.github.io/__zettel/202305310919GO%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80</link>
-    <guid>https://guyueshui.github.io/__zettel/202305310919GO%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80</guid>
-    <description><![CDATA[ m := map[string]int {&quot;a&quot;:1, &quot;b&quot;:2} 其实是make的语法糖，它等价于 var m map[string]int = make(map[string]int, 2) m = {&quot;a&quot;:1, &quot;b&quot;:2} 内建函数 make 用来为 slice，map 或 chan 类型分配内存和初始化一个对象(注意：只能用在这三种类型上)，跟 new 类似，第一个参数也是一个类型而不是一个值，跟 new 不同的是，make 返回类型的引用而不是指针，而返回值也依赖于具体传入的类型。 make 的作用... ]]></description>
-    <pubDate>Fri, 21 Nov 2025 09:17:49 GMT</pubDate>
   </item>
     </channel>
   </rss>
