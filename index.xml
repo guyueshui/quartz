@@ -6,6 +6,18 @@
       <description>最近的10条笔记 on Learn2Live</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>202512231445gdb调试optimized out变量</title>
+    <link>https://guyueshui.github.io/__zettel/202512231445gdb%E8%B0%83%E8%AF%95optimized-out%E5%8F%98%E9%87%8F</link>
+    <guid>https://guyueshui.github.io/__zettel/202512231445gdb%E8%B0%83%E8%AF%95optimized-out%E5%8F%98%E9%87%8F</guid>
+    <description><![CDATA[ gdb调试optimized out变量 生产环境下的程序发生crash，一般都是开了编译期优化的，当查看调用栈中某个变量时，很可能遇到变量被优化的情况，这时没法简单看到变量的值。 假设函数代码为， MDLMessagePtr GetPackage(FileBufferPtr file) { const char *package_head = file-&gt;ReadHead(sizeof(MDLMessageHead)); if (!package_head) { return MDLMessagePtr(); } auto msg_Len = reinterpret_cast&lt;M... ]]></description>
+    <pubDate>Wed, 24 Dec 2025 09:11:06 GMT</pubDate>
+  </item><item>
+    <title>GDB 基本用法</title>
+    <link>https://guyueshui.github.io/notes/cpp/gdb%E5%9F%BA%E7%A1%80</link>
+    <guid>https://guyueshui.github.io/notes/cpp/gdb%E5%9F%BA%E7%A1%80</guid>
+    <description><![CDATA[ 废话以后有时间再加。 首先编译时开启调试选项： g++ main.cpp -g -O0 -O0指定编译器的优化级别为0，即不优化。 然后编译出来的可执行文件，默认名字是a.out. ]]></description>
+    <pubDate>Wed, 24 Dec 2025 09:11:06 GMT</pubDate>
+  </item><item>
     <title>202512171555c风格文件io</title>
     <link>https://guyueshui.github.io/__zettel/202512171555c%E9%A3%8E%E6%A0%BC%E6%96%87%E4%BB%B6io</link>
     <guid>https://guyueshui.github.io/__zettel/202512171555c%E9%A3%8E%E6%A0%BC%E6%96%87%E4%BB%B6io</guid>
@@ -53,18 +65,6 @@
     <guid>https://guyueshui.github.io/__zettel/202512112229wayland%E5%88%9D%E4%BD%93%E9%AA%8C</guid>
     <description><![CDATA[ Wayland初体验 并非所有应用都原生支持wayland，所以迁移会有阵痛期。虽然可以用XWayland临时打开使用X11协议的软件，但这种方式打开的软件会有明显的像素感，像是放大了一样不清晰。 XWayland programs will be blurry when scaling is more than 1. ]]></description>
     <pubDate>Thu, 11 Dec 2025 14:57:50 GMT</pubDate>
-  </item><item>
-    <title>202510101522tcp连接异常case</title>
-    <link>https://guyueshui.github.io/__zettel/202510101522tcp%E8%BF%9E%E6%8E%A5%E5%BC%82%E5%B8%B8case</link>
-    <guid>https://guyueshui.github.io/__zettel/202510101522tcp%E8%BF%9E%E6%8E%A5%E5%BC%82%E5%B8%B8case</guid>
-    <description><![CDATA[ tcp连接异常case 一端显示ESTABLISHED，另一端FIN_WAIT1持续一段时间后，连接关闭 使用netstat -anp查看连接状态，假设显示ESTABLISHED一端为A，另一端为B。显然B端主动发起断开，进入FIN_WAIT1，但是A端迟迟没有回复ack，B端触发超时重传，达到最大重传次数tcp_orphan_retries后，进入close状态。 参考：zhuanlan.zhihu.com/p/398890723 # 查看tcp_orphan_retries cat /proc/sys/net/ipv4/tcp_orphan_retries # or sysctl net.... ]]></description>
-    <pubDate>Mon, 24 Nov 2025 07:47:10 GMT</pubDate>
-  </item><item>
-    <title>202510281152jenkins引用sshkey凭据</title>
-    <link>https://guyueshui.github.io/__zettel/202510281152jenkins%E5%BC%95%E7%94%A8sshkey%E5%87%AD%E6%8D%AE</link>
-    <guid>https://guyueshui.github.io/__zettel/202510281152jenkins%E5%BC%95%E7%94%A8sshkey%E5%87%AD%E6%8D%AE</guid>
-    <description><![CDATA[ Jenkins引用sshkey凭据 原始问题：Jenkins job中，用户脚本中如何使用已经配置好的ssh-key凭据？ 有时一个项目的编译，依赖另一个项目的部分代码。同样的场景再度上演了！在Jenkins流水线中，主仓库的clone很简单，直接配置使用哪个凭据就好了。如下图所示，ci-key-2是一个jenkins凭据，类型为ssh username with private key. ]]></description>
-    <pubDate>Mon, 24 Nov 2025 07:47:10 GMT</pubDate>
   </item>
     </channel>
   </rss>
