@@ -6,6 +6,24 @@
       <description>最近的10条笔记 on Learn2Live</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>202512112229wayland初体验</title>
+    <link>https://guyueshui.github.io/__zettel/202512112229wayland%E5%88%9D%E4%BD%93%E9%AA%8C</link>
+    <guid>https://guyueshui.github.io/__zettel/202512112229wayland%E5%88%9D%E4%BD%93%E9%AA%8C</guid>
+    <description><![CDATA[ Wayland初体验 Window Manager (Sway) i3之于X11，亦即sway之于Wayland. ]]></description>
+    <pubDate>Thu, 01 Jan 2026 14:34:00 GMT</pubDate>
+  </item><item>
+    <title>202512252303obs-studio区域录制</title>
+    <link>https://guyueshui.github.io/__zettel/202512252303obs-studio%E5%8C%BA%E5%9F%9F%E5%BD%95%E5%88%B6</link>
+    <guid>https://guyueshui.github.io/__zettel/202512252303obs-studio%E5%8C%BA%E5%9F%9F%E5%BD%95%E5%88%B6</guid>
+    <description><![CDATA[ obs-studio区域录制 网上大部分教程都在胡说。什么按住Alt，调整边框到想要的大小。事实上，只要不改变画布大小，输出的视频最后就会有黑边。所以要么改为画面大小后，将画面等比拉伸到画布大小，这时候可能会有黑边，因为你的录制区域不可能完全相似于画布大小。所以你要每接受黑边，要么选择拉伸之画布大小（纵横比失调）。 更优雅的做法是，先裁剪好录制区域大小。按住Ctrl+E编辑变换。然后把输出大小定好，选择“边框类型”为“拉伸到边框”，“边框内对齐方式”为“居中对齐”。然后记录下尺寸，到设置→视频中把画布大小改为相同的尺寸。你就能得到无缝贴合的录制视频，没有黑框，且分辨率也对的上。. ]]></description>
+    <pubDate>Thu, 01 Jan 2026 14:34:00 GMT</pubDate>
+  </item><item>
+    <title>202512292109linux安装蓝牙</title>
+    <link>https://guyueshui.github.io/__zettel/202512292109linux%E5%AE%89%E8%A3%85%E8%93%9D%E7%89%99</link>
+    <guid>https://guyueshui.github.io/__zettel/202512292109linux%E5%AE%89%E8%A3%85%E8%93%9D%E7%89%99</guid>
+    <description><![CDATA[ archlinux安装蓝牙 $ pacman -Ss bluez extra/bluez 5.85-1 [已安装] Daemons for the bluetooth protocol stack extra/bluez-libs 5.85-1 [已安装: 5.84-2] Deprecated libraries for the bluetooth protocol stack extra/bluez-qt 6.21.0-1 (kf6) [已安装] Qt wrapper for Bluez 5 DBus API extra/bluez-tools 0.2.0-6 [已安装] A set of ... ]]></description>
+    <pubDate>Thu, 01 Jan 2026 14:34:00 GMT</pubDate>
+  </item><item>
     <title>202512231445gdb调试optimized out变量</title>
     <link>https://guyueshui.github.io/__zettel/202512231445gdb%E8%B0%83%E8%AF%95optimized-out%E5%8F%98%E9%87%8F</link>
     <guid>https://guyueshui.github.io/__zettel/202512231445gdb%E8%B0%83%E8%AF%95optimized-out%E5%8F%98%E9%87%8F</guid>
@@ -47,24 +65,6 @@
     <guid>https://guyueshui.github.io/__zettel/202512011107%E7%AE%80%E5%8D%95%E7%9A%84cpp%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95</guid>
     <description><![CDATA[ 简单的cpp单元测试 参考：www.cppblog.com/vczh/archive/2010/06/27/118829.html 一个really simple的测试“框架”？主要利用全局变量初始化在main函数之前的特性。 // vczh_test.h #pragma once #define TEST_CASE(name) \ extern void TEST_CASE_##name(); \ namespace vczh_unit_test_executors { \ class TEST_CASE_RUNNER_##name { \ public: \ TEST_CASE_RUNNE... ]]></description>
     <pubDate>Fri, 12 Dec 2025 06:03:33 GMT</pubDate>
-  </item><item>
-    <title>202512091438C++解析命令行参数</title>
-    <link>https://guyueshui.github.io/__zettel/202512091438C++%E8%A7%A3%E6%9E%90%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%8F%82%E6%95%B0</link>
-    <guid>https://guyueshui.github.io/__zettel/202512091438C++%E8%A7%A3%E6%9E%90%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%8F%82%E6%95%B0</guid>
-    <description><![CDATA[ C++解析命令行参数 说是c++，其实是c语言的接口。详细参考man 3 getopt。直接看例子， void show_usage(const char* exe_name) { printf( &quot;Usage:\t%s [options] file\n\n&quot; &quot; -c, --cut &lt;n&gt; Cut the mdl binary file containing first n messages.\n&quot; &quot; --calc a[,b,c,...,n] Calculate the offsets of a[b,c,...,n] messa... ]]></description>
-    <pubDate>Fri, 12 Dec 2025 06:03:33 GMT</pubDate>
-  </item><item>
-    <title>202512112141eww-quick-start</title>
-    <link>https://guyueshui.github.io/__zettel/202512112141eww-quick-start</link>
-    <guid>https://guyueshui.github.io/__zettel/202512112141eww-quick-start</guid>
-    <description><![CDATA[ eww-quick-start 先看一下usage, $ eww -h Widgets for everyone! Usage: eww [OPTIONS] &lt;COMMAND&gt; Commands: shell-completions Generate a shell completion script daemon Start the Eww daemon logs Print and watch the eww logs ping Ping the eww server, checking if it is reachable update Update the value of... ]]></description>
-    <pubDate>Thu, 11 Dec 2025 14:57:50 GMT</pubDate>
-  </item><item>
-    <title>202512112229wayland初体验</title>
-    <link>https://guyueshui.github.io/__zettel/202512112229wayland%E5%88%9D%E4%BD%93%E9%AA%8C</link>
-    <guid>https://guyueshui.github.io/__zettel/202512112229wayland%E5%88%9D%E4%BD%93%E9%AA%8C</guid>
-    <description><![CDATA[ Wayland初体验 并非所有应用都原生支持wayland，所以迁移会有阵痛期。虽然可以用XWayland临时打开使用X11协议的软件，但这种方式打开的软件会有明显的像素感，像是放大了一样不清晰。 XWayland programs will be blurry when scaling is more than 1. ]]></description>
-    <pubDate>Thu, 11 Dec 2025 14:57:50 GMT</pubDate>
   </item>
     </channel>
   </rss>
