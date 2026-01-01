@@ -62,12 +62,16 @@ export const defaultContentPageLayout: PageLayout = {
         { Component: Component.DesktopOnly(Component.ReaderMode()) },
       ],
     }),
-    Component.RandomNotes({limit: 5, title: "随机笔记"}),
+    Component.DesktopOnly(
+      Component.RandomNotes({limit: 5, title: "随机笔记"}),
+    ),
     Component.Explorer({'filterFn': explFilterFn}),
-    Component.ConditionalRender({ // only show on index page
-      component: Component.RecentNotes({limit: 3, showTags: false}),
-      condition: (page) => page.fileData.slug === "index",
-    }),
+    Component.DesktopOnly(
+      Component.ConditionalRender({ // only show on index page
+        component: Component.RecentNotes({limit: 3, showTags: false}),
+        condition: (page) => page.fileData.slug === "index",
+      }),
+    )
   ],
   right: [
     Component.Graph(),
@@ -91,7 +95,9 @@ export const defaultListPageLayout: PageLayout = {
         { Component: Component.Darkmode() },
       ],
     }),
-    Component.RandomNotes({limit: 5, title: "随机笔记"}),
+    Component.DesktopOnly(
+      Component.RandomNotes({limit: 5, title: "随机笔记"})
+    ),
     Component.Explorer({'filterFn': explFilterFn}),
   ],
   right: [],
