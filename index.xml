@@ -6,6 +6,12 @@
       <description>最近的10条笔记 on Learn2Live</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>202601122101haproxy使用小记</title>
+    <link>https://guyueshui.github.io/__zettel/202601122101haproxy%E4%BD%BF%E7%94%A8%E5%B0%8F%E8%AE%B0</link>
+    <guid>https://guyueshui.github.io/__zettel/202601122101haproxy%E4%BD%BF%E7%94%A8%E5%B0%8F%E8%AE%B0</guid>
+    <description><![CDATA[ haproxy使用小记 使用haproxy可以做到复用网云穿隧道暴露多个内网服务到公网。具体思路为， 如果隧道协议为http 根据http请求url前缀区分，转发到不同的http server 如果隧道协议为tcp，那么可以复用隧道进行ssh协议，http协议传输，二者本质都是tcp协议，在流量层面有所区分。 通过匹配流量特征，转发到ssh server或http server # file: /etc/haproxy/haproxy.cfg global maxconn 20000 log 127.0.0.1 local0 user haproxy chroot /usr/share/hap... ]]></description>
+    <pubDate>Sun, 18 Jan 2026 15:06:19 GMT</pubDate>
+  </item><item>
     <title>202512112229wayland初体验</title>
     <link>https://guyueshui.github.io/__zettel/202512112229wayland%E5%88%9D%E4%BD%93%E9%AA%8C</link>
     <guid>https://guyueshui.github.io/__zettel/202512112229wayland%E5%88%9D%E4%BD%93%E9%AA%8C</guid>
@@ -58,12 +64,6 @@
     <link>https://guyueshui.github.io/__zettel/202511241417bash-process-substitution</link>
     <guid>https://guyueshui.github.io/__zettel/202511241417bash-process-substitution</guid>
     <description><![CDATA[ Command Substitution（命令替换） shell-intro#command-substitution Subshell（子shell） Definition: A subshell is a child process launched by a shell (or shell script). ]]></description>
-    <pubDate>Fri, 12 Dec 2025 06:03:33 GMT</pubDate>
-  </item><item>
-    <title>202512011107简单的cpp单元测试</title>
-    <link>https://guyueshui.github.io/__zettel/202512011107%E7%AE%80%E5%8D%95%E7%9A%84cpp%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95</link>
-    <guid>https://guyueshui.github.io/__zettel/202512011107%E7%AE%80%E5%8D%95%E7%9A%84cpp%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95</guid>
-    <description><![CDATA[ 简单的cpp单元测试 参考：www.cppblog.com/vczh/archive/2010/06/27/118829.html 一个really simple的测试“框架”？主要利用全局变量初始化在main函数之前的特性。 // vczh_test.h #pragma once #define TEST_CASE(name) \ extern void TEST_CASE_##name(); \ namespace vczh_unit_test_executors { \ class TEST_CASE_RUNNER_##name { \ public: \ TEST_CASE_RUNNE... ]]></description>
     <pubDate>Fri, 12 Dec 2025 06:03:33 GMT</pubDate>
   </item>
     </channel>
