@@ -6,6 +6,24 @@
       <description>最近的10条笔记 on Learn2Live</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>202510100935网络小工具</title>
+    <link>https://guyueshui.github.io/__zettel/202510100935%E7%BD%91%E7%BB%9C%E5%B0%8F%E5%B7%A5%E5%85%B7</link>
+    <guid>https://guyueshui.github.io/__zettel/202510100935%E7%BD%91%E7%BB%9C%E5%B0%8F%E5%B7%A5%E5%85%B7</guid>
+    <description><![CDATA[ 网络小工具 网址描述ifconfig.co/port/24320测试公网端口是否可达你的内网设备，会自动获取你的公网IP（nat转换）然后判断指定端口是否可达。www.ip138.com查IP归属地 curl查询本机公网ip curl ifconfig.me curl icanhazip.com curl ipinfo.io/ip curl ipecho.net/plain curl cip.cc # 返回IP、地址及运营商详情 curl myip.ipip.net # 显示IP及归属地 curl ipinfo.io/json curl ifconfig.co/json NAT (Networ... ]]></description>
+    <pubDate>Wed, 11 Feb 2026 05:38:47 GMT</pubDate>
+  </item><item>
+    <title>202601201055immich部署</title>
+    <link>https://guyueshui.github.io/__zettel/202601201055immich%E9%83%A8%E7%BD%B2</link>
+    <guid>https://guyueshui.github.io/__zettel/202601201055immich%E9%83%A8%E7%BD%B2</guid>
+    <description><![CDATA[ immich部署 提示“找不到人物” 人脸识别失效，一般是机器学习模型下载失败。官方镜像（immich-machine-learning）默认会连huggingface.co下载镜像，但国内访问不了。有个镜像站：hf-mirror.com，可以替换。 有用的帖子： The ML service can’t connect to Hugging Face. ]]></description>
+    <pubDate>Wed, 11 Feb 2026 05:38:47 GMT</pubDate>
+  </item><item>
+    <title>202601271512docker常用命令</title>
+    <link>https://guyueshui.github.io/__zettel/202601271512docker%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4</link>
+    <guid>https://guyueshui.github.io/__zettel/202601271512docker%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4</guid>
+    <description><![CDATA[ docker常用命令 takeout：镜像（image）是模板，容器（container）是实例。 # 查看正在运行的容器 docker ps # 同上，包括已经停止的容器 docker ps -a # 查看容器运行状态，CPU、MEM、NET docker stats &lt;container&gt; # 查看镜像 docker images # 删除镜像 docker rmi &lt;image&gt; # 删除容器 docker rm &lt;container&gt; # 查看volume docker volume ls # 查看容器日志，追加显示，从倒数第十行显示 docker ... ]]></description>
+    <pubDate>Wed, 11 Feb 2026 05:38:47 GMT</pubDate>
+  </item><item>
     <title>202601122101haproxy使用小记</title>
     <link>https://guyueshui.github.io/__zettel/202601122101haproxy%E4%BD%BF%E7%94%A8%E5%B0%8F%E8%AE%B0</link>
     <guid>https://guyueshui.github.io/__zettel/202601122101haproxy%E4%BD%BF%E7%94%A8%E5%B0%8F%E8%AE%B0</guid>
@@ -47,24 +65,6 @@
     <guid>https://guyueshui.github.io/__zettel/202512171555c%E9%A3%8E%E6%A0%BC%E6%96%87%E4%BB%B6io</guid>
     <description><![CDATA[ c风格文件io int main(int argc, char * argv[]) { FILE * fp = fopen(data_file.c_str(), &quot;rb&quot;); if (!fp) { printf(&quot;failed to open data file &#039;%s&#039;\n\n&quot;, data_file.c_str()); return 2; } size_t total_packets = 0; uint64_t ending_packet_time = 0; while (!feof(fp)) { PktHead pkthd; a... ]]></description>
     <pubDate>Fri, 19 Dec 2025 06:14:11 GMT</pubDate>
-  </item><item>
-    <title>基础题</title>
-    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/%E5%9F%BA%E7%A1%80%E9%A2%98</link>
-    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/%E5%9F%BA%E7%A1%80%E9%A2%98</guid>
-    <description><![CDATA[ 基础题 反转链表 /****************************************************************************** * File: reverse_list.cpp * * Author: yychi * Created: 2022-12-29 20:35 * Description: Reverse a linked list. ]]></description>
-    <pubDate>Fri, 19 Dec 2025 06:14:11 GMT</pubDate>
-  </item><item>
-    <title>202505090847awk判断csv的id有序性</title>
-    <link>https://guyueshui.github.io/__zettel/202505090847awk%E5%88%A4%E6%96%ADcsv%E7%9A%84id%E6%9C%89%E5%BA%8F%E6%80%A7</link>
-    <guid>https://guyueshui.github.io/__zettel/202505090847awk%E5%88%A4%E6%96%ADcsv%E7%9A%84id%E6%9C%89%E5%BA%8F%E6%80%A7</guid>
-    <description><![CDATA[ 脚本化运行 利用shebang将awk处理命令写成脚本（注意：不是shell脚本，是awk本身的脚本文件。shebang指定以awk -f执行。 wc.awk #!/usr/bin/awk -f { count++ } END { print &quot;total line is: &quot; count } 运行 $ chmod +x wc.awk # 使用awk脚本获取文件本身的行数 $ ./wc.awk wc.awk total line is: 4 # 使用wc命令获取文件行数 $ wc -l wc.awk 4 wc.awk Example 1 #!/bin/bash # file... ]]></description>
-    <pubDate>Fri, 12 Dec 2025 06:03:33 GMT</pubDate>
-  </item><item>
-    <title>202511241417bash-process-substitution</title>
-    <link>https://guyueshui.github.io/__zettel/202511241417bash-process-substitution</link>
-    <guid>https://guyueshui.github.io/__zettel/202511241417bash-process-substitution</guid>
-    <description><![CDATA[ Command Substitution（命令替换） shell-intro#command-substitution Subshell（子shell） Definition: A subshell is a child process launched by a shell (or shell script). ]]></description>
-    <pubDate>Fri, 12 Dec 2025 06:03:33 GMT</pubDate>
   </item>
     </channel>
   </rss>
