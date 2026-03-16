@@ -9,8 +9,6 @@ views:
             - file.path.contains("__zettel")
             - file.path.contains("notes")
             - file.path.contains("Blogs")
-        - and:
-            - note["dg-publish"] == true
     order:
       - formula.未命名
       - file.name
@@ -18,9 +16,12 @@ views:
       - file.tags
       - file.mtime
       - author
-      - dg-publish
     sort:
       - property: file.mtime
+        direction: DESC
+      - property: dg-publish
+        direction: ASC
+      - property: date
         direction: DESC
   - type: cards
     name: 视图

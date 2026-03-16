@@ -6,22 +6,34 @@
       <description>最近的10条笔记 on Learn2Live</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>202510100935网络小工具</title>
-    <link>https://guyueshui.github.io/__zettel/202510100935%E7%BD%91%E7%BB%9C%E5%B0%8F%E5%B7%A5%E5%85%B7</link>
-    <guid>https://guyueshui.github.io/__zettel/202510100935%E7%BD%91%E7%BB%9C%E5%B0%8F%E5%B7%A5%E5%85%B7</guid>
-    <description><![CDATA[ 网络小工具 网址描述ifconfig.co/port/24320测试公网端口是否可达你的内网设备，会自动获取你的公网IP（nat转换）然后判断指定端口是否可达。www.ip138.com查IP归属地 curl查询本机公网ip curl ifconfig.me curl icanhazip.com curl ipinfo.io/ip curl ipecho.net/plain curl cip.cc # 返回IP、地址及运营商详情 curl myip.ipip.net # 显示IP及归属地 curl ipinfo.io/json curl ifconfig.co/json NAT (Networ... ]]></description>
-    <pubDate>Wed, 11 Feb 2026 05:38:47 GMT</pubDate>
+    <title>202505090847awk判断csv的id有序性</title>
+    <link>https://guyueshui.github.io/__zettel/202505090847awk%E5%88%A4%E6%96%ADcsv%E7%9A%84id%E6%9C%89%E5%BA%8F%E6%80%A7</link>
+    <guid>https://guyueshui.github.io/__zettel/202505090847awk%E5%88%A4%E6%96%ADcsv%E7%9A%84id%E6%9C%89%E5%BA%8F%E6%80%A7</guid>
+    <description><![CDATA[ 脚本化运行 利用shebang将awk处理命令写成脚本（注意：不是shell脚本，是awk本身的脚本文件。shebang指定以awk -f执行。 wc.awk #!/usr/bin/awk -f { count++ } END { print &quot;total line is: &quot; count } 运行 $ chmod +x wc.awk # 使用awk脚本获取文件本身的行数 $ ./wc.awk wc.awk total line is: 4 # 使用wc命令获取文件行数 $ wc -l wc.awk 4 wc.awk Example 1 #!/bin/bash # file... ]]></description>
+    <pubDate>Mon, 16 Mar 2026 09:41:32 GMT</pubDate>
   </item><item>
     <title>202601201055immich部署</title>
     <link>https://guyueshui.github.io/__zettel/202601201055immich%E9%83%A8%E7%BD%B2</link>
     <guid>https://guyueshui.github.io/__zettel/202601201055immich%E9%83%A8%E7%BD%B2</guid>
-    <description><![CDATA[ immich部署 提示“找不到人物” 人脸识别失效，一般是机器学习模型下载失败。官方镜像（immich-machine-learning）默认会连huggingface.co下载镜像，但国内访问不了。有个镜像站：hf-mirror.com，可以替换。 有用的帖子： The ML service can’t connect to Hugging Face. ]]></description>
-    <pubDate>Wed, 11 Feb 2026 05:38:47 GMT</pubDate>
+    <description><![CDATA[ Immich部署及使用 提示“找不到人物” 人脸识别失效，一般是机器学习模型下载失败。官方镜像（immich-machine-learning）默认会连huggingface.co下载镜像，但国内访问不了。有个镜像站：hf-mirror.com，可以替换。 有用的帖子： The ML service can’t connect to Hugging Face. ]]></description>
+    <pubDate>Mon, 16 Mar 2026 09:41:32 GMT</pubDate>
   </item><item>
     <title>202601271512docker常用命令</title>
     <link>https://guyueshui.github.io/__zettel/202601271512docker%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4</link>
     <guid>https://guyueshui.github.io/__zettel/202601271512docker%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4</guid>
-    <description><![CDATA[ docker常用命令 takeout：镜像（image）是模板，容器（container）是实例。 # 查看正在运行的容器 docker ps # 同上，包括已经停止的容器 docker ps -a # 查看容器运行状态，CPU、MEM、NET docker stats &lt;container&gt; # 查看镜像 docker images # 删除镜像 docker rmi &lt;image&gt; # 删除容器 docker rm &lt;container&gt; # 查看volume docker volume ls # 查看容器日志，追加显示，从倒数第十行显示 docker ... ]]></description>
+    <description><![CDATA[ docker常用命令 Takeout 镜像（image）是模板，容器（container）是实例。 # 查看正在运行的容器 docker ps # 同上，包括已经停止的容器 docker ps -a # 查看容器运行状态，CPU、MEM、NET docker stats &lt;container&gt; # 查看镜像 docker images # 删除镜像 docker rmi &lt;image&gt; # 删除容器 docker rm &lt;container&gt; # 查看volume docker volume ls # 查看容器日志，追加显示，从倒数第十行显示 docker ... ]]></description>
+    <pubDate>Mon, 16 Mar 2026 09:41:32 GMT</pubDate>
+  </item><item>
+    <title>202602260932自托管nextcloud和onlyoffice</title>
+    <link>https://guyueshui.github.io/__zettel/202602260932%E8%87%AA%E6%89%98%E7%AE%A1nextcloud%E5%92%8Conlyoffice</link>
+    <guid>https://guyueshui.github.io/__zettel/202602260932%E8%87%AA%E6%89%98%E7%AE%A1nextcloud%E5%92%8Conlyoffice</guid>
+    <description><![CDATA[ 自托管nextcloud和onlyoffice nextcloud有两种镜像（社区维护），一个是基于apache web server，一个是nextcloud:fpm，需要额外搭配一个webserver（如nginx）使用。我目前使用的是基于apache服务的镜像。除此之外，还有一个nextcloud-all-in-one镜像，由官方维护，之前试用了一下，里面配置太复杂，在反向代理的情况下无法开箱即用。 onlyoffice采用自己搭建的服务，理论上独立于nextcloud，可以和其他app集成。 services: # Note: MariaDB is external service. ]]></description>
+    <pubDate>Mon, 16 Mar 2026 09:41:32 GMT</pubDate>
+  </item><item>
+    <title>202510100935网络小工具</title>
+    <link>https://guyueshui.github.io/__zettel/202510100935%E7%BD%91%E7%BB%9C%E5%B0%8F%E5%B7%A5%E5%85%B7</link>
+    <guid>https://guyueshui.github.io/__zettel/202510100935%E7%BD%91%E7%BB%9C%E5%B0%8F%E5%B7%A5%E5%85%B7</guid>
+    <description><![CDATA[ 网络小工具 网址描述ifconfig.co/port/24320测试公网端口是否可达你的内网设备，会自动获取你的公网IP（nat转换）然后判断指定端口是否可达。www.ip138.com查IP归属地 curl查询本机公网ip curl ifconfig.me curl icanhazip.com curl ipinfo.io/ip curl ipecho.net/plain curl cip.cc # 返回IP、地址及运营商详情 curl myip.ipip.net # 显示IP及归属地 curl ipinfo.io/json curl ifconfig.co/json NAT (Networ... ]]></description>
     <pubDate>Wed, 11 Feb 2026 05:38:47 GMT</pubDate>
   </item><item>
     <title>202601122101haproxy使用小记</title>
@@ -53,18 +65,6 @@
     <guid>https://guyueshui.github.io/__zettel/202512231445gdb%E8%B0%83%E8%AF%95optimized-out%E5%8F%98%E9%87%8F</guid>
     <description><![CDATA[ gdb调试optimized out变量 生产环境下的程序发生crash，一般都是开了编译期优化的，当查看调用栈中某个变量时，很可能遇到变量被优化的情况，这时没法简单看到变量的值。 假设函数代码为， MDLMessagePtr GetPackage(FileBufferPtr file) { const char *package_head = file-&gt;ReadHead(sizeof(MDLMessageHead)); if (!package_head) { return MDLMessagePtr(); } auto msg_Len = reinterpret_cast&lt;M... ]]></description>
     <pubDate>Wed, 24 Dec 2025 09:11:06 GMT</pubDate>
-  </item><item>
-    <title>GDB 基本用法</title>
-    <link>https://guyueshui.github.io/notes/cpp/gdb%E5%9F%BA%E7%A1%80</link>
-    <guid>https://guyueshui.github.io/notes/cpp/gdb%E5%9F%BA%E7%A1%80</guid>
-    <description><![CDATA[ 废话以后有时间再加。 首先编译时开启调试选项： g++ main.cpp -g -O0 -O0指定编译器的优化级别为0，即不优化。 然后编译出来的可执行文件，默认名字是a.out. ]]></description>
-    <pubDate>Wed, 24 Dec 2025 09:11:06 GMT</pubDate>
-  </item><item>
-    <title>202512171555c风格文件io</title>
-    <link>https://guyueshui.github.io/__zettel/202512171555c%E9%A3%8E%E6%A0%BC%E6%96%87%E4%BB%B6io</link>
-    <guid>https://guyueshui.github.io/__zettel/202512171555c%E9%A3%8E%E6%A0%BC%E6%96%87%E4%BB%B6io</guid>
-    <description><![CDATA[ c风格文件io int main(int argc, char * argv[]) { FILE * fp = fopen(data_file.c_str(), &quot;rb&quot;); if (!fp) { printf(&quot;failed to open data file &#039;%s&#039;\n\n&quot;, data_file.c_str()); return 2; } size_t total_packets = 0; uint64_t ending_packet_time = 0; while (!feof(fp)) { PktHead pkthd; a... ]]></description>
-    <pubDate>Fri, 19 Dec 2025 06:14:11 GMT</pubDate>
   </item>
     </channel>
   </rss>
