@@ -110,6 +110,26 @@ jobs:
           publish_dir: ./public
           publish_branch: pub
 
+  notify-homelab:
+    needs: build-and-deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send webhook to remote server
+        run: |
+          curl -X POST "${{ secrets.WEBHOOK_URL }}" \
+            -H "Content-Type: application/json" \
+            -H "X-Webhook-Signature: sha256=$(echo -n '${{ toJson(github.event) }}' | \
+              openssl dgst -sha256 -hmac '${{ secrets.WEBHOOK_SECRET }}' | \
+              sed 's/^.* //')" \
+            -d '{
+              "repo": "${{ github.repository }}",
+              "ref": "${{ github.ref }}",
+              "sha": "${{ github.sha }}",
+              "event_name": "${{ github.event_name }}",
+              "job": "${{ github.job }}",
+              "status": "success"
+            }'
+
   build-readthedocs-site:
     # currently disabled
     if: ${{ github.repository == 'jackyzha0/quartz' && github.ref == 'refs/heads/v4' }}
