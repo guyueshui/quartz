@@ -44,3 +44,11 @@ div.explorer {
         }
     }
 }
+
+// make footnote indicator looks like [x],
+// see: https://discourse.gohugo.io/t/footnote-styling/114/7
+a[href^="#user-content-fn-"]:before{ content: '[' }
+a[href^="#user-content-fn-"]:after{ content: ']' }
+a > code {
+  text-decoration: none;
+}
