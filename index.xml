@@ -6,6 +6,12 @@
       <description>最近的10条笔记 on Learn2Live</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>202506292148texlive精简安装</title>
+    <link>https://guyueshui.github.io/__zettel/202506292148texlive%E7%B2%BE%E7%AE%80%E5%AE%89%E8%A3%85</link>
+    <guid>https://guyueshui.github.io/__zettel/202506292148texlive%E7%B2%BE%E7%AE%80%E5%AE%89%E8%A3%85</guid>
+    <description><![CDATA[ 参考： 北京理工大学社区论文模板教程 谢益辉的安装脚本：gist.github.com/yihui/7ae1144e45063c4957e5c1f6f67039f4 tug.ctan.org/info/install-latex-guide-zh-cn/install-latex-guide-zh-cn.pdf 主要参考：www.cnblogs.com/eslzzyl/p/17358405.html texlive可以将安装选项保存到一个texlive.profile文件中，安装程序直接读取这个文件进行安装，无需在进行交互。这次使用的是网络安装方式，而非下载iso文件， ./install-t... ]]></description>
+    <pubDate>Thu, 19 Mar 2026 15:05:42 GMT</pubDate>
+  </item><item>
     <title>202505090847awk判断csv的id有序性</title>
     <link>https://guyueshui.github.io/__zettel/202505090847awk%E5%88%A4%E6%96%ADcsv%E7%9A%84id%E6%9C%89%E5%BA%8F%E6%80%A7</link>
     <guid>https://guyueshui.github.io/__zettel/202505090847awk%E5%88%A4%E6%96%ADcsv%E7%9A%84id%E6%9C%89%E5%BA%8F%E6%80%A7</guid>
@@ -59,12 +65,6 @@
     <guid>https://guyueshui.github.io/__zettel/202512292109linux%E5%AE%89%E8%A3%85%E8%93%9D%E7%89%99</guid>
     <description><![CDATA[ archlinux安装蓝牙 $ pacman -Ss bluez extra/bluez 5.85-1 [已安装] Daemons for the bluetooth protocol stack extra/bluez-libs 5.85-1 [已安装: 5.84-2] Deprecated libraries for the bluetooth protocol stack extra/bluez-qt 6.21.0-1 (kf6) [已安装] Qt wrapper for Bluez 5 DBus API extra/bluez-tools 0.2.0-6 [已安装] A set of ... ]]></description>
     <pubDate>Thu, 01 Jan 2026 14:34:00 GMT</pubDate>
-  </item><item>
-    <title>202512231445gdb调试optimized out变量</title>
-    <link>https://guyueshui.github.io/__zettel/202512231445gdb%E8%B0%83%E8%AF%95optimized-out%E5%8F%98%E9%87%8F</link>
-    <guid>https://guyueshui.github.io/__zettel/202512231445gdb%E8%B0%83%E8%AF%95optimized-out%E5%8F%98%E9%87%8F</guid>
-    <description><![CDATA[ gdb调试optimized out变量 生产环境下的程序发生crash，一般都是开了编译期优化的，当查看调用栈中某个变量时，很可能遇到变量被优化的情况，这时没法简单看到变量的值。 假设函数代码为， MDLMessagePtr GetPackage(FileBufferPtr file) { const char *package_head = file-&gt;ReadHead(sizeof(MDLMessageHead)); if (!package_head) { return MDLMessagePtr(); } auto msg_Len = reinterpret_cast&lt;M... ]]></description>
-    <pubDate>Wed, 24 Dec 2025 09:11:06 GMT</pubDate>
   </item>
     </channel>
   </rss>
