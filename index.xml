@@ -6,6 +6,12 @@
       <description>最近的10条笔记 on Learn2Live</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>202412131501waydroid使用小记</title>
+    <link>https://guyueshui.github.io/__zettel/202412131501waydroid%E4%BD%BF%E7%94%A8%E5%B0%8F%E8%AE%B0</link>
+    <guid>https://guyueshui.github.io/__zettel/202412131501waydroid%E4%BD%BF%E7%94%A8%E5%B0%8F%E8%AE%B0</guid>
+    <description><![CDATA[ Waydroid是一款可以在linux体内跑android的容器。不同于虚拟机，它利用容器化技术直接在Linux启动android系统，性能比虚拟机要好得多。目前仅支持Wayland session. ]]></description>
+    <pubDate>Thu, 26 Mar 2026 15:34:54 GMT</pubDate>
+  </item><item>
     <title>202309080931code-smells</title>
     <link>https://guyueshui.github.io/__zettel/202309080931code-smells</link>
     <guid>https://guyueshui.github.io/__zettel/202309080931code-smells</guid>
@@ -59,12 +65,6 @@
     <guid>https://guyueshui.github.io/__zettel/202510100935%E7%BD%91%E7%BB%9C%E5%B0%8F%E5%B7%A5%E5%85%B7</guid>
     <description><![CDATA[ 网络小工具 网址描述ifconfig.co/port/24320测试公网端口是否可达你的内网设备，会自动获取你的公网IP（nat转换）然后判断指定端口是否可达。www.ip138.com查IP归属地 curl查询本机公网ip curl ifconfig.me curl icanhazip.com curl ipinfo.io/ip curl ipecho.net/plain curl cip.cc # 返回IP、地址及运营商详情 curl myip.ipip.net # 显示IP及归属地 curl ipinfo.io/json curl ifconfig.co/json NAT (Networ... ]]></description>
     <pubDate>Wed, 11 Feb 2026 05:38:47 GMT</pubDate>
-  </item><item>
-    <title>202601122101haproxy使用小记</title>
-    <link>https://guyueshui.github.io/__zettel/202601122101haproxy%E4%BD%BF%E7%94%A8%E5%B0%8F%E8%AE%B0</link>
-    <guid>https://guyueshui.github.io/__zettel/202601122101haproxy%E4%BD%BF%E7%94%A8%E5%B0%8F%E8%AE%B0</guid>
-    <description><![CDATA[ haproxy使用小记 使用haproxy可以做到复用网云穿隧道暴露多个内网服务到公网。具体思路为， 如果隧道协议为http 根据http请求url前缀区分，转发到不同的http server 如果隧道协议为tcp，那么可以复用隧道进行ssh协议，http协议传输，二者本质都是tcp协议，在流量层面有所区分。 通过匹配流量特征，转发到ssh server或http server # file: /etc/haproxy/haproxy.cfg global maxconn 20000 log 127.0.0.1 local0 user haproxy chroot /usr/share/hap... ]]></description>
-    <pubDate>Sun, 18 Jan 2026 15:06:19 GMT</pubDate>
   </item>
     </channel>
   </rss>
