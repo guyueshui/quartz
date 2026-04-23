@@ -6,6 +6,36 @@
       <description>最近的10条笔记 on Learn2Live</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>202304230920 cmake learn</title>
+    <link>https://guyueshui.github.io/__zettel/202304230920-cmake-learn</link>
+    <guid>https://guyueshui.github.io/__zettel/202304230920-cmake-learn</guid>
+    <description><![CDATA[ 202604140951clickhouse-cmakelists 我们从一个简单的CMakeLists.txt开始： cmake_minimum_required(VERSION 3.20) project(GREDialing VERSION 0.1) message(STATUS &quot;CMake version: &quot; ${CMAKE_VERSION}) if(NOT ${CMAKE_VERSION} VERSION_LESS &quot;3.2&quot;) set(CMAKE_CXX_STANDARD 17) set(CMAKE_CXX_STANDARD_REQUIR... ]]></description>
+    <pubDate>Thu, 23 Apr 2026 04:33:18 GMT</pubDate>
+  </item><item>
+    <title>202305191500tcpdump抓包</title>
+    <link>https://guyueshui.github.io/__zettel/202305191500tcpdump%E6%8A%93%E5%8C%85</link>
+    <guid>https://guyueshui.github.io/__zettel/202305191500tcpdump%E6%8A%93%E5%8C%85</guid>
+    <description><![CDATA[ tcpdump -i any port 30002 and host 10.136.242.200 -X # 接口不限，指定端口和ip，进行抓包 tcpdump -i any port 27371 and host 125.7.6.51 -w aa.cap # 将抓包输出写入到aa.cap文件 tcpdump -i vEth0 # 指定接口为vEth0抓包 file aa.cap aa.cap: pcap capture file, microsecond ts (little-endian) - version 2.4 (Ethernet, capture length 262144) tc... ]]></description>
+    <pubDate>Thu, 23 Apr 2026 04:33:18 GMT</pubDate>
+  </item><item>
+    <title>202604140951clickhouse-cmakelists</title>
+    <link>https://guyueshui.github.io/__zettel/202604140951clickhouse-cmakelists</link>
+    <guid>https://guyueshui.github.io/__zettel/202604140951clickhouse-cmakelists</guid>
+    <description><![CDATA[ cmake_minimum_required(VERSION 3.15) project(ClickHouse LANGUAGES C CXX ASM) set(CMAKE_THREAD_LIBS_INIT &quot;-lpthread&quot;) set(CMAKE_HAVE_THREADS_LIBRARY 1) set(CMAKE_USE_WIN32_THREADS_INIT 0) set(CMAKE_USE_PTHREADS_INIT 1) set(THREADS_PREFER_PTHREAD_FLAG ON) set(CMAKE_INCLUDE_DIRECTORIES_BEFORE... ]]></description>
+    <pubDate>Thu, 23 Apr 2026 04:33:18 GMT</pubDate>
+  </item><item>
+    <title>202604161330std::list的size</title>
+    <link>https://guyueshui.github.io/__zettel/202604161330cpp%E4%B8%ADstl_list%E7%9A%84size</link>
+    <guid>https://guyueshui.github.io/__zettel/202604161330cpp%E4%B8%ADstl_list%E7%9A%84size</guid>
+    <description><![CDATA[ 先看一段测试代码， #include &lt;iostream&gt; #include &lt;list&gt; using namespace std; struct A {int a; char b; long c; }; int main() { list&lt;int&gt; a{1,2,3}; list&lt;A&gt; b; cout &lt;&lt; &quot;sizeof list&lt;int&gt;:&quot; &lt;&lt; sizeof(a) &lt;&lt; endl; cout &lt;&lt; &quot;sizeof A:&quot; &lt;&lt; ... ]]></description>
+    <pubDate>Thu, 23 Apr 2026 04:33:18 GMT</pubDate>
+  </item><item>
+    <title>面试经历及笔记</title>
+    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%BB%8F%E5%8E%86</link>
+    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%BB%8F%E5%8E%86</guid>
+    <description><![CDATA[ 经历 拓蛮八方（2022.07.16） 算法题：10辆一模一样的小车，油箱最多装10升油，最多跑10公里。如何使得其中一辆小车跑出最大距离。例如：A车和B车同跑5公里，然后A车把剩下的油给B车加满，这样B车可以跑15公里。 Python迭代器，生成器 Python多进程，多线程，协程 Python list，append复杂度，remove复杂度 快排思想，最坏O(n^2)，如何改进 首先，清楚快排原理的同志都知道，快排特别热衷于凌乱的数据，最好情况下时间复杂度能达到O(nlogn)，空间复杂度为O(logn)；但是对于基本有序或者倒序的数据则无能为力，时间复杂度直接降到O(n^2），空间复杂... ]]></description>
+    <pubDate>Thu, 23 Apr 2026 04:33:18 GMT</pubDate>
+  </item><item>
     <title>202412131501waydroid使用小记</title>
     <link>https://guyueshui.github.io/__zettel/202412131501waydroid%E4%BD%BF%E7%94%A8%E5%B0%8F%E8%AE%B0</link>
     <guid>https://guyueshui.github.io/__zettel/202412131501waydroid%E4%BD%BF%E7%94%A8%E5%B0%8F%E8%AE%B0</guid>
@@ -35,36 +65,6 @@
     <guid>https://guyueshui.github.io/__zettel/202506292148texlive%E7%B2%BE%E7%AE%80%E5%AE%89%E8%A3%85</guid>
     <description><![CDATA[ 参考： 北京理工大学社区论文模板教程 谢益辉的安装脚本：gist.github.com/yihui/7ae1144e45063c4957e5c1f6f67039f4 tug.ctan.org/info/install-latex-guide-zh-cn/install-latex-guide-zh-cn.pdf 主要参考：www.cnblogs.com/eslzzyl/p/17358405.html texlive可以将安装选项保存到一个texlive.profile文件中，安装程序直接读取这个文件进行安装，无需在进行交互。这次使用的是网络安装方式，而非下载iso文件， ./install-t... ]]></description>
     <pubDate>Thu, 19 Mar 2026 15:05:42 GMT</pubDate>
-  </item><item>
-    <title>202505090847awk判断csv的id有序性</title>
-    <link>https://guyueshui.github.io/__zettel/202505090847awk%E5%88%A4%E6%96%ADcsv%E7%9A%84id%E6%9C%89%E5%BA%8F%E6%80%A7</link>
-    <guid>https://guyueshui.github.io/__zettel/202505090847awk%E5%88%A4%E6%96%ADcsv%E7%9A%84id%E6%9C%89%E5%BA%8F%E6%80%A7</guid>
-    <description><![CDATA[ 脚本化运行 利用shebang将awk处理命令写成脚本（注意：不是shell脚本，是awk本身的脚本文件。shebang指定以awk -f执行。 wc.awk #!/usr/bin/awk -f { count++ } END { print &quot;total line is: &quot; count } 运行 $ chmod +x wc.awk # 使用awk脚本获取文件本身的行数 $ ./wc.awk wc.awk total line is: 4 # 使用wc命令获取文件行数 $ wc -l wc.awk 4 wc.awk Example 1 #!/bin/bash # file... ]]></description>
-    <pubDate>Mon, 16 Mar 2026 09:41:32 GMT</pubDate>
-  </item><item>
-    <title>202601201055immich部署</title>
-    <link>https://guyueshui.github.io/__zettel/202601201055immich%E9%83%A8%E7%BD%B2</link>
-    <guid>https://guyueshui.github.io/__zettel/202601201055immich%E9%83%A8%E7%BD%B2</guid>
-    <description><![CDATA[ Immich部署及使用 提示“找不到人物” 人脸识别失效，一般是机器学习模型下载失败。官方镜像（immich-machine-learning）默认会连huggingface.co下载镜像，但国内访问不了。有个镜像站：hf-mirror.com，可以替换。 有用的帖子： The ML service can’t connect to Hugging Face. ]]></description>
-    <pubDate>Mon, 16 Mar 2026 09:41:32 GMT</pubDate>
-  </item><item>
-    <title>202601271512docker常用命令</title>
-    <link>https://guyueshui.github.io/__zettel/202601271512docker%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4</link>
-    <guid>https://guyueshui.github.io/__zettel/202601271512docker%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4</guid>
-    <description><![CDATA[ docker常用命令 Takeout 镜像（image）是模板，容器（container）是实例。 # 查看正在运行的容器 docker ps # 同上，包括已经停止的容器 docker ps -a # 查看容器运行状态，CPU、MEM、NET docker stats &lt;container&gt; # 查看镜像 docker images # 删除镜像 docker rmi &lt;image&gt; # 删除容器 docker rm &lt;container&gt; # 查看volume docker volume ls # 查看容器日志，追加显示，从倒数第十行显示 docker ... ]]></description>
-    <pubDate>Mon, 16 Mar 2026 09:41:32 GMT</pubDate>
-  </item><item>
-    <title>202602260932自托管nextcloud和onlyoffice</title>
-    <link>https://guyueshui.github.io/__zettel/202602260932%E8%87%AA%E6%89%98%E7%AE%A1nextcloud%E5%92%8Conlyoffice</link>
-    <guid>https://guyueshui.github.io/__zettel/202602260932%E8%87%AA%E6%89%98%E7%AE%A1nextcloud%E5%92%8Conlyoffice</guid>
-    <description><![CDATA[ 自托管nextcloud和onlyoffice nextcloud有两种镜像（社区维护），一个是基于apache web server，一个是nextcloud:fpm，需要额外搭配一个webserver（如nginx）使用。我目前使用的是基于apache服务的镜像。除此之外，还有一个nextcloud-all-in-one镜像，由官方维护，之前试用了一下，里面配置太复杂，在反向代理的情况下无法开箱即用。 onlyoffice采用自己搭建的服务，理论上独立于nextcloud，可以和其他app集成。 services: # Note: MariaDB is external service. ]]></description>
-    <pubDate>Mon, 16 Mar 2026 09:41:32 GMT</pubDate>
-  </item><item>
-    <title>202510100935网络小工具</title>
-    <link>https://guyueshui.github.io/__zettel/202510100935%E7%BD%91%E7%BB%9C%E5%B0%8F%E5%B7%A5%E5%85%B7</link>
-    <guid>https://guyueshui.github.io/__zettel/202510100935%E7%BD%91%E7%BB%9C%E5%B0%8F%E5%B7%A5%E5%85%B7</guid>
-    <description><![CDATA[ 网络小工具 网址描述ifconfig.co/port/24320测试公网端口是否可达你的内网设备，会自动获取你的公网IP（nat转换）然后判断指定端口是否可达。www.ip138.com查IP归属地 curl查询本机公网ip curl ifconfig.me curl icanhazip.com curl ipinfo.io/ip curl ipecho.net/plain curl cip.cc # 返回IP、地址及运营商详情 curl myip.ipip.net # 显示IP及归属地 curl ipinfo.io/json curl ifconfig.co/json NAT (Networ... ]]></description>
-    <pubDate>Wed, 11 Feb 2026 05:38:47 GMT</pubDate>
   </item>
     </channel>
   </rss>
