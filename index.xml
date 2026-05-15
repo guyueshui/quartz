@@ -6,65 +6,65 @@
       <description>最近的10条笔记 on Learn2Live</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>202304230920 cmake learn</title>
-    <link>https://guyueshui.github.io/__zettel/202304230920-cmake-learn</link>
-    <guid>https://guyueshui.github.io/__zettel/202304230920-cmake-learn</guid>
-    <description><![CDATA[ 202604140951clickhouse-cmakelists 我们从一个简单的CMakeLists.txt开始： cmake_minimum_required(VERSION 3.20) project(GREDialing VERSION 0.1) message(STATUS &quot;CMake version: &quot; ${CMAKE_VERSION}) if(NOT ${CMAKE_VERSION} VERSION_LESS &quot;3.2&quot;) set(CMAKE_CXX_STANDARD 17) set(CMAKE_CXX_STANDARD_REQUIR... ]]></description>
-    <pubDate>Thu, 23 Apr 2026 04:33:18 GMT</pubDate>
+    <title>A collection of some coding problems</title>
+    <link>https://guyueshui.github.io/Blogs/post/coding-problems</link>
+    <guid>https://guyueshui.github.io/Blogs/post/coding-problems</guid>
+    <description><![CDATA[ 场景题 场景题 题三：进制转换 2019哈罗单车实习生笔试题 将一个10进制整数转换成36进制的数，可以用0-9A-Z表示0-35. /** * Hellobike 2019 interview. ]]></description>
+    <pubDate>Fri, 15 May 2026 08:20:06 GMT</pubDate>
   </item><item>
-    <title>202305191500tcpdump抓包</title>
-    <link>https://guyueshui.github.io/__zettel/202305191500tcpdump%E6%8A%93%E5%8C%85</link>
-    <guid>https://guyueshui.github.io/__zettel/202305191500tcpdump%E6%8A%93%E5%8C%85</guid>
-    <description><![CDATA[ tcpdump -i any port 30002 and host 10.136.242.200 -X # 接口不限，指定端口和ip，进行抓包 tcpdump -i any port 27371 and host 125.7.6.51 -w aa.cap # 将抓包输出写入到aa.cap文件 tcpdump -i vEth0 # 指定接口为vEth0抓包 file aa.cap aa.cap: pcap capture file, microsecond ts (little-endian) - version 2.4 (Ethernet, capture length 262144) tc... ]]></description>
-    <pubDate>Thu, 23 Apr 2026 04:33:18 GMT</pubDate>
+    <title>设计模式学习笔记</title>
+    <link>https://guyueshui.github.io/Blogs/post/design-pattern-notes</link>
+    <guid>https://guyueshui.github.io/Blogs/post/design-pattern-notes</guid>
+    <description><![CDATA[ 如无特殊声明：本文所有UML图均出自《图说设计模式》。在此特别鸣谢！ Singleton 单例模式解决了全局变量的问题，全局只能创建一个实例，保证任何请求该实例的调用均返回同一个对象，保证不会被意外析构。 // A singleton class // c.f. ]]></description>
+    <pubDate>Fri, 15 May 2026 08:20:06 GMT</pubDate>
   </item><item>
-    <title>202604140951clickhouse-cmakelists</title>
-    <link>https://guyueshui.github.io/__zettel/202604140951clickhouse-cmakelists</link>
-    <guid>https://guyueshui.github.io/__zettel/202604140951clickhouse-cmakelists</guid>
-    <description><![CDATA[ cmake_minimum_required(VERSION 3.15) project(ClickHouse LANGUAGES C CXX ASM) set(CMAKE_THREAD_LIBS_INIT &quot;-lpthread&quot;) set(CMAKE_HAVE_THREADS_LIBRARY 1) set(CMAKE_USE_WIN32_THREADS_INIT 0) set(CMAKE_USE_PTHREADS_INIT 1) set(THREADS_PREFER_PTHREAD_FLAG ON) set(CMAKE_INCLUDE_DIRECTORIES_BEFORE... ]]></description>
-    <pubDate>Thu, 23 Apr 2026 04:33:18 GMT</pubDate>
+    <title>202604301621分治法复习</title>
+    <link>https://guyueshui.github.io/__zettel/202604301621%E5%88%86%E6%B2%BB%E6%B3%95%E5%A4%8D%E4%B9%A0</link>
+    <guid>https://guyueshui.github.io/__zettel/202604301621%E5%88%86%E6%B2%BB%E6%B3%95%E5%A4%8D%E4%B9%A0</guid>
+    <description><![CDATA[ 分治法并不仅只能二分，解决子问题，合并。根据《算法导论》，它有三种形式， 替换模型。猜一个bound，然后用数学归纳法证明其正确。 递归树模型。 主方法（master method）。形如 T(n) = aT(n/b) + f(n),where a \ge 1, b &gt; 1, f(n) is a given function. ]]></description>
+    <pubDate>Fri, 15 May 2026 08:20:06 GMT</pubDate>
   </item><item>
-    <title>202604161330std::list的size</title>
-    <link>https://guyueshui.github.io/__zettel/202604161330cpp%E4%B8%ADstl_list%E7%9A%84size</link>
-    <guid>https://guyueshui.github.io/__zettel/202604161330cpp%E4%B8%ADstl_list%E7%9A%84size</guid>
-    <description><![CDATA[ 先看一段测试代码， #include &lt;iostream&gt; #include &lt;list&gt; using namespace std; struct A {int a; char b; long c; }; int main() { list&lt;int&gt; a{1,2,3}; list&lt;A&gt; b; cout &lt;&lt; &quot;sizeof list&lt;int&gt;:&quot; &lt;&lt; sizeof(a) &lt;&lt; endl; cout &lt;&lt; &quot;sizeof A:&quot; &lt;&lt; ... ]]></description>
-    <pubDate>Thu, 23 Apr 2026 04:33:18 GMT</pubDate>
+    <title>202605111640ubuntu开启nfs共享</title>
+    <link>https://guyueshui.github.io/__zettel/202605111640ubuntu%E5%BC%80%E5%90%AFnfs%E5%85%B1%E4%BA%AB</link>
+    <guid>https://guyueshui.github.io/__zettel/202605111640ubuntu%E5%BC%80%E5%90%AFnfs%E5%85%B1%E4%BA%AB</guid>
+    <description><![CDATA[ ubuntu开启nfs共享 NFS共享： # 安装nfs相关包 apt install nfs-kernel-server /etc/exports 里面加入 /some/shared/directory 10.0.0.0/8(ro,no_all_squash,insecure,no_subtree_check,async) 执行exportfs -r生效 # 验证生效 showmount -e localhost 其他机器上挂载： sudo mount -t nfs 10.24.71.67:/some/shared/directory local_folder . ]]></description>
+    <pubDate>Fri, 15 May 2026 08:20:06 GMT</pubDate>
   </item><item>
-    <title>面试经历及笔记</title>
-    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%BB%8F%E5%8E%86</link>
-    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%BB%8F%E5%8E%86</guid>
-    <description><![CDATA[ 经历 拓蛮八方（2022.07.16） 算法题：10辆一模一样的小车，油箱最多装10升油，最多跑10公里。如何使得其中一辆小车跑出最大距离。例如：A车和B车同跑5公里，然后A车把剩下的油给B车加满，这样B车可以跑15公里。 Python迭代器，生成器 Python多进程，多线程，协程 Python list，append复杂度，remove复杂度 快排思想，最坏O(n^2)，如何改进 首先，清楚快排原理的同志都知道，快排特别热衷于凌乱的数据，最好情况下时间复杂度能达到O(nlogn)，空间复杂度为O(logn)；但是对于基本有序或者倒序的数据则无能为力，时间复杂度直接降到O(n^2），空间复杂... ]]></description>
-    <pubDate>Thu, 23 Apr 2026 04:33:18 GMT</pubDate>
+    <title>leet1053.previous-permutation-with-one-swap</title>
+    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet1053.previous-permutation-with-one-swap</link>
+    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet1053.previous-permutation-with-one-swap</guid>
+    <description><![CDATA[ 给你一个正整数数组 arr（可能存在重复的元素），请你返回可在 一次交换（交换两数字 arr[i] 和 arr[j] 的位置）后得到的、按字典序排列小于 arr 的最大排列。 如果无法这么操作，就请返回原数组。 示例 1： **输入：**arr = [3,2,1] 输出：[3,1,2] **解释：**交换 2 和 1 示例 2： **输入：**arr = [1,1,5] 输出：[1,1,5] **解释：**已经是最小排列 示例 3： **输入：**arr = [1,9,4,6,7] 输出：[1,7,4,6,9] **解释：**交换 9 和 7 提示： 1 &lt;= arr.length &l... ]]></description>
+    <pubDate>Fri, 15 May 2026 08:20:06 GMT</pubDate>
   </item><item>
-    <title>202412131501waydroid使用小记</title>
-    <link>https://guyueshui.github.io/__zettel/202412131501waydroid%E4%BD%BF%E7%94%A8%E5%B0%8F%E8%AE%B0</link>
-    <guid>https://guyueshui.github.io/__zettel/202412131501waydroid%E4%BD%BF%E7%94%A8%E5%B0%8F%E8%AE%B0</guid>
-    <description><![CDATA[ Waydroid是一款可以在linux体内跑android的容器。不同于虚拟机，它利用容器化技术直接在Linux启动android系统，性能比虚拟机要好得多。目前仅支持Wayland session. ]]></description>
-    <pubDate>Thu, 26 Mar 2026 15:34:54 GMT</pubDate>
+    <title>leet1674.minimum-moves-to-make-array-complementary</title>
+    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet1674.minimum-moves-to-make-array-complementary</link>
+    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet1674.minimum-moves-to-make-array-complementary</guid>
+    <description><![CDATA[ 给你一个长度为 偶数 n 的整数数组 nums 和一个整数 limit 。每一次操作，你可以将 nums 中的任何整数替换为 1 到 limit 之间的另一个整数。 如果对于所有下标 i（下标从 0 开始），nums[i] + nums[n - 1 - i] 都等于同一个数，则数组 nums 是 互补的 。例如，数组 [1,2,3,4] 是互补的，因为对于所有下标 i ，nums[i] + nums[n - 1 - i] = 5 。 返回使数组 互补 的 最少 操作次数。 示例 1： **输入：**nums = [1,2,4,3], limit = 4 **输出：**1 **解释：**经过 1... ]]></description>
+    <pubDate>Fri, 15 May 2026 08:20:06 GMT</pubDate>
   </item><item>
-    <title>202309080931code-smells</title>
-    <link>https://guyueshui.github.io/__zettel/202309080931code-smells</link>
-    <guid>https://guyueshui.github.io/__zettel/202309080931code-smells</guid>
-    <description><![CDATA[  滥用OO 被拒绝的遗赠 Refused Bequest 是什么 子类不需要父类的数据、方法 有什么问题 滥用继承，会造成理解困难，不必要的耦合 场景 子类只用父类部分方法 搞一个兄弟类，把不用的都放进去 Push Down Method Push Down Field 子类用了父类的实现，但接口不一样 可能这个时候要用代理，而不是继承 Replace Inheritance with Delegation 异曲同工的类 Alternative Classes with Different Interfaces 是什么 两个函数做一样的事，却有不同的签名 所以主要是接口不同，跟类的关系不大 有... ]]></description>
-    <pubDate>Tue, 24 Mar 2026 01:58:42 GMT</pubDate>
+    <title>leet31.next-permutation</title>
+    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet31.next-permutation</link>
+    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet31.next-permutation</guid>
+    <description><![CDATA[ cf. ]]></description>
+    <pubDate>Fri, 15 May 2026 08:20:06 GMT</pubDate>
   </item><item>
-    <title>202603231726webhook使用小记</title>
-    <link>https://guyueshui.github.io/__zettel/202603231726webhook%E4%BD%BF%E7%94%A8%E5%B0%8F%E8%AE%B0</link>
-    <guid>https://guyueshui.github.io/__zettel/202603231726webhook%E4%BD%BF%E7%94%A8%E5%B0%8F%E8%AE%B0</guid>
-    <description><![CDATA[ webhook使用小记 项目地址：github.com/adnanh/webhook 看着是个阿三写的，一开始用有点不放心。后来看了star很多，索性试试呗。 webhook可以用来监听一个http事件，然后触发一些自定义操作（例如执行指定脚本）。引用一下， webhook aims to do nothing more than it should do, and that is: receive the request, parse the headers, payload and query variables, check if the specified rules for the ... ]]></description>
-    <pubDate>Tue, 24 Mar 2026 01:58:42 GMT</pubDate>
+    <title>场景题</title>
+    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/%E5%9C%BA%E6%99%AF%E9%A2%98</link>
+    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/%E5%9C%BA%E6%99%AF%E9%A2%98</guid>
+    <description><![CDATA[ 场景题 题一：最高得分 一个长度为N的序列，玩家每次只能从头部或尾部拿数字，不能从中间拿。拿走的数字依次从左到右排列在自己面前。拿完N个数字之后，游戏结束。此时N个数字在玩家面前组成一个新的排列，这个数列每相邻两个数字之差的绝对值之和为玩家最终得分。假设玩家前面的N个数字从左到右标号为 n_1,n_2, \dots, n_N，则最终得分S的计算方式如下： S = \text{abs}(n_1-n_2) + \text{abs}(n_2-n_3) + \cdots + \text{abs}(n_{N-1} - n_N). ]]></description>
+    <pubDate>Fri, 15 May 2026 08:20:06 GMT</pubDate>
   </item><item>
-    <title>🌱欢迎👏</title>
-    <link>https://guyueshui.github.io/</link>
-    <guid>https://guyueshui.github.io/</guid>
-    <description><![CDATA[  Learn2live stands for “learn to live”, learn something for fun, for work, for life… 学而乐，学而用，学而活。 心系红尘万千事，辗转百年始读书。 闲言碎语何堪记，且予岁月证蹉跎。 这是一个欢迎页面。这里（下称本站）实际上是我个人obsidian仓库的一个子集。在平时工作生活中，我会将学到的知识点、踩过的坑、觉得有趣的东西，简要记录在obsidian仓库。除去其中可能包含公司、个人隐私的部分，其余部分均是可以公开的。本页面是公开之后特意新增的介绍页面。 这些笔记不会详细阐述一个话题，而是包含基础信息和必要的链接（... ]]></description>
-    <pubDate>Tue, 24 Mar 2026 01:58:42 GMT</pubDate>
+    <title>基础题</title>
+    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/%E5%9F%BA%E7%A1%80%E9%A2%98</link>
+    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/%E5%9F%BA%E7%A1%80%E9%A2%98</guid>
+    <description><![CDATA[ 基础题 反转链表 /****************************************************************************** * File: reverse_list.cpp * * Author: yychi * Created: 2022-12-29 20:35 * Description: Reverse a linked list. ]]></description>
+    <pubDate>Fri, 15 May 2026 08:20:06 GMT</pubDate>
   </item><item>
-    <title>202506292148texlive精简安装</title>
-    <link>https://guyueshui.github.io/__zettel/202506292148texlive%E7%B2%BE%E7%AE%80%E5%AE%89%E8%A3%85</link>
-    <guid>https://guyueshui.github.io/__zettel/202506292148texlive%E7%B2%BE%E7%AE%80%E5%AE%89%E8%A3%85</guid>
-    <description><![CDATA[ 参考： 北京理工大学社区论文模板教程 谢益辉的安装脚本：gist.github.com/yihui/7ae1144e45063c4957e5c1f6f67039f4 tug.ctan.org/info/install-latex-guide-zh-cn/install-latex-guide-zh-cn.pdf 主要参考：www.cnblogs.com/eslzzyl/p/17358405.html texlive可以将安装选项保存到一个texlive.profile文件中，安装程序直接读取这个文件进行安装，无需在进行交互。这次使用的是网络安装方式，而非下载iso文件， ./install-t... ]]></description>
-    <pubDate>Thu, 19 Mar 2026 15:05:42 GMT</pubDate>
+    <title>排序</title>
+    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/%E6%8E%92%E5%BA%8F</link>
+    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/%E6%8E%92%E5%BA%8F</guid>
+    <description><![CDATA[ 排序 题十一：重排并计算逆序数 腾讯2019校招 作为程序员的小Q，它的数列和其他人的不太一样，他有2^n个数。老板问了小Q一共m次，每次给出一个整数q_i (1⇐i⇐m)，要求小Q把这些数每2^{q_i}分为一组，然后把每组进行翻转，小Q想知道每次操作后整个序列中的逆序对个数是多少呢？ 例如： 对于序列1 3 4 2，逆序对有(4,2), (3,2)总数量为2. ]]></description>
+    <pubDate>Fri, 15 May 2026 08:20:06 GMT</pubDate>
   </item>
     </channel>
   </rss>
