@@ -6,65 +6,65 @@
       <description>最近的10条笔记 on Learn2Live</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>A collection of some coding problems</title>
-    <link>https://guyueshui.github.io/Blogs/post/coding-problems</link>
-    <guid>https://guyueshui.github.io/Blogs/post/coding-problems</guid>
-    <description><![CDATA[ 场景题 场景题 题三：进制转换 2019哈罗单车实习生笔试题 将一个10进制整数转换成36进制的数，可以用0-9A-Z表示0-35. /** * Hellobike 2019 interview. ]]></description>
-    <pubDate>Fri, 15 May 2026 08:20:06 GMT</pubDate>
+    <title>202305310919GO语言基础</title>
+    <link>https://guyueshui.github.io/__zettel/202305310919GO%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80</link>
+    <guid>https://guyueshui.github.io/__zettel/202305310919GO%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80</guid>
+    <description><![CDATA[ m := map[string]int {&quot;a&quot;:1, &quot;b&quot;:2} 其实是make的语法糖，它等价于 var m map[string]int = make(map[string]int, 2) m = {&quot;a&quot;:1, &quot;b&quot;:2} 内建函数 make 用来为 slice，map 或 chan 类型分配内存和初始化一个对象(注意：只能用在这三种类型上)，跟 new 类似，第一个参数也是一个类型而不是一个值，跟 new 不同的是，make 返回类型的引用而不是指针，而返回值也依赖于具体传入的类型。 make 的作用... ]]></description>
+    <pubDate>Thu, 21 May 2026 09:27:57 GMT</pubDate>
   </item><item>
-    <title>设计模式学习笔记</title>
-    <link>https://guyueshui.github.io/Blogs/post/design-pattern-notes</link>
-    <guid>https://guyueshui.github.io/Blogs/post/design-pattern-notes</guid>
-    <description><![CDATA[ 如无特殊声明：本文所有UML图均出自《图说设计模式》。在此特别鸣谢！ Singleton 单例模式解决了全局变量的问题，全局只能创建一个实例，保证任何请求该实例的调用均返回同一个对象，保证不会被意外析构。 // A singleton class // c.f. ]]></description>
-    <pubDate>Fri, 15 May 2026 08:20:06 GMT</pubDate>
+    <title>202306270923memcpy</title>
+    <link>https://guyueshui.github.io/__zettel/202306270923memcpy</link>
+    <guid>https://guyueshui.github.io/__zettel/202306270923memcpy</guid>
+    <description><![CDATA[ memcpy拷贝字符串数组时，不会自动拷贝null-terminator，除非指定的size包含它。. ]]></description>
+    <pubDate>Thu, 21 May 2026 09:27:57 GMT</pubDate>
   </item><item>
-    <title>202604301621分治法复习</title>
-    <link>https://guyueshui.github.io/__zettel/202604301621%E5%88%86%E6%B2%BB%E6%B3%95%E5%A4%8D%E4%B9%A0</link>
-    <guid>https://guyueshui.github.io/__zettel/202604301621%E5%88%86%E6%B2%BB%E6%B3%95%E5%A4%8D%E4%B9%A0</guid>
-    <description><![CDATA[ 分治法并不仅只能二分，解决子问题，合并。根据《算法导论》，它有三种形式， 替换模型。猜一个bound，然后用数学归纳法证明其正确。 递归树模型。 主方法（master method）。形如 T(n) = aT(n/b) + f(n),where a \ge 1, b &gt; 1, f(n) is a given function. ]]></description>
-    <pubDate>Fri, 15 May 2026 08:20:06 GMT</pubDate>
+    <title>202308181549SFINAE</title>
+    <link>https://guyueshui.github.io/__zettel/202308181549SFINAE</link>
+    <guid>https://guyueshui.github.io/__zettel/202308181549SFINAE</guid>
+    <description><![CDATA[ 问题背景 想要实现一个append(C&amp; contianer, T* ptr, size_t size)函数，作用是拷贝size个数组ptr中的元素到容器container中。为了防止container扩容引发的性能开销，希望如果container有reserve成员，先调用reserve分配好内存，如果没有就算了。 template &lt;typename C, typename T&gt; void append(C&amp; container, T* ptr, size_t size) { container.reserve(container.size() + size);... ]]></description>
+    <pubDate>Thu, 21 May 2026 09:27:57 GMT</pubDate>
   </item><item>
-    <title>202605111640ubuntu开启nfs共享</title>
-    <link>https://guyueshui.github.io/__zettel/202605111640ubuntu%E5%BC%80%E5%90%AFnfs%E5%85%B1%E4%BA%AB</link>
-    <guid>https://guyueshui.github.io/__zettel/202605111640ubuntu%E5%BC%80%E5%90%AFnfs%E5%85%B1%E4%BA%AB</guid>
-    <description><![CDATA[ ubuntu开启nfs共享 NFS共享： # 安装nfs相关包 apt install nfs-kernel-server /etc/exports 里面加入 /some/shared/directory 10.0.0.0/8(ro,no_all_squash,insecure,no_subtree_check,async) 执行exportfs -r生效 # 验证生效 showmount -e localhost 其他机器上挂载： sudo mount -t nfs 10.24.71.67:/some/shared/directory local_folder . ]]></description>
-    <pubDate>Fri, 15 May 2026 08:20:06 GMT</pubDate>
+    <title>202502241705crtp-in-cpp</title>
+    <link>https://guyueshui.github.io/__zettel/202502241705crtp-in-cpp</link>
+    <guid>https://guyueshui.github.io/__zettel/202502241705crtp-in-cpp</guid>
+    <description><![CDATA[ 今天学了一个新的C++知识点，诚然 life is too short to learn c++. ]]></description>
+    <pubDate>Thu, 21 May 2026 09:27:57 GMT</pubDate>
   </item><item>
-    <title>leet1053.previous-permutation-with-one-swap</title>
-    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet1053.previous-permutation-with-one-swap</link>
-    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet1053.previous-permutation-with-one-swap</guid>
-    <description><![CDATA[ 给你一个正整数数组 arr（可能存在重复的元素），请你返回可在 一次交换（交换两数字 arr[i] 和 arr[j] 的位置）后得到的、按字典序排列小于 arr 的最大排列。 如果无法这么操作，就请返回原数组。 示例 1： **输入：**arr = [3,2,1] 输出：[3,1,2] **解释：**交换 2 和 1 示例 2： **输入：**arr = [1,1,5] 输出：[1,1,5] **解释：**已经是最小排列 示例 3： **输入：**arr = [1,9,4,6,7] 输出：[1,7,4,6,9] **解释：**交换 9 和 7 提示： 1 &lt;= arr.length &l... ]]></description>
-    <pubDate>Fri, 15 May 2026 08:20:06 GMT</pubDate>
+    <title>202511171026auto&amp;&amp;-in-range-for</title>
+    <link>https://guyueshui.github.io/__zettel/202511171026auto-in-range-for</link>
+    <guid>https://guyueshui.github.io/__zettel/202511171026auto-in-range-for</guid>
+    <description><![CDATA[ 范围for循环中的auto&amp;&amp; 在范围for循环中，下面代码并不一定可以获取右值属性。 unsigned short TopicPubClient::AddPublishCache(int thd_idx, std::vector&lt;SharedBuffer&gt;&amp;&amp; bufs) { auto&amp; v = send_cache[thd_idx]; for (auto&amp;&amp; e : bufs) { // e is lvalue-reference of type SharedBuffer&amp; v.first.emplace_back... ]]></description>
+    <pubDate>Thu, 21 May 2026 09:27:57 GMT</pubDate>
   </item><item>
-    <title>leet1674.minimum-moves-to-make-array-complementary</title>
-    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet1674.minimum-moves-to-make-array-complementary</link>
-    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet1674.minimum-moves-to-make-array-complementary</guid>
-    <description><![CDATA[ 给你一个长度为 偶数 n 的整数数组 nums 和一个整数 limit 。每一次操作，你可以将 nums 中的任何整数替换为 1 到 limit 之间的另一个整数。 如果对于所有下标 i（下标从 0 开始），nums[i] + nums[n - 1 - i] 都等于同一个数，则数组 nums 是 互补的 。例如，数组 [1,2,3,4] 是互补的，因为对于所有下标 i ，nums[i] + nums[n - 1 - i] = 5 。 返回使数组 互补 的 最少 操作次数。 示例 1： **输入：**nums = [1,2,4,3], limit = 4 **输出：**1 **解释：**经过 1... ]]></description>
-    <pubDate>Fri, 15 May 2026 08:20:06 GMT</pubDate>
+    <title>202605181622placement-new</title>
+    <link>https://guyueshui.github.io/__zettel/202605181622placement-new</link>
+    <guid>https://guyueshui.github.io/__zettel/202605181622placement-new</guid>
+    <description><![CDATA[ 你是否被面试官问起：“假如我有一块申请好的内存，如何在这块内存上创建我的对象？” Bro，我经验少，实际工作中压根没用过呀。但答案是可以的，这就是placement new! 形如， #include &lt;iostream&gt; #include &lt;new&gt; // Required for placement new struct MyClass { int data; MyClass(int d) : data(d) { std::cout &lt;&lt; &quot;Constructor called!\n&quot;; } ~MyClass() { std::cou... ]]></description>
+    <pubDate>Thu, 21 May 2026 09:27:57 GMT</pubDate>
   </item><item>
-    <title>leet31.next-permutation</title>
-    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet31.next-permutation</link>
-    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet31.next-permutation</guid>
-    <description><![CDATA[ cf. ]]></description>
-    <pubDate>Fri, 15 May 2026 08:20:06 GMT</pubDate>
+    <title>202605191533完美转发</title>
+    <link>https://guyueshui.github.io/__zettel/202605191533%E5%AE%8C%E7%BE%8E%E8%BD%AC%E5%8F%91</link>
+    <guid>https://guyueshui.github.io/__zettel/202605191533%E5%AE%8C%E7%BE%8E%E8%BD%AC%E5%8F%91</guid>
+    <description><![CDATA[ From C biancheng c.biancheng.net/view/7868.html C++11 标准中规定，通常情况下右值引用形式的参数只能接收右值，不能接收左值。但对于函数模板中使用右值引用语法定义的参数来说，它不再遵守这一规定，既可以接收右值，也可以接收左值（此时的右值引用又被称为“万能引用”）。 template &lt;typename T&gt; class A { // 注意这里并非完美转发，因为T是类模板参数，而非函数模板参数 void foo(T&amp;&amp;); // 只能接收右值引用 template &lt;typename U&gt; void bar... ]]></description>
+    <pubDate>Thu, 21 May 2026 09:27:57 GMT</pubDate>
   </item><item>
-    <title>场景题</title>
-    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/%E5%9C%BA%E6%99%AF%E9%A2%98</link>
-    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/%E5%9C%BA%E6%99%AF%E9%A2%98</guid>
-    <description><![CDATA[ 场景题 题一：最高得分 一个长度为N的序列，玩家每次只能从头部或尾部拿数字，不能从中间拿。拿走的数字依次从左到右排列在自己面前。拿完N个数字之后，游戏结束。此时N个数字在玩家面前组成一个新的排列，这个数列每相邻两个数字之差的绝对值之和为玩家最终得分。假设玩家前面的N个数字从左到右标号为 n_1,n_2, \dots, n_N，则最终得分S的计算方式如下： S = \text{abs}(n_1-n_2) + \text{abs}(n_2-n_3) + \cdots + \text{abs}(n_{N-1} - n_N). ]]></description>
-    <pubDate>Fri, 15 May 2026 08:20:06 GMT</pubDate>
+    <title>多态</title>
+    <link>https://guyueshui.github.io/notes/cpp/%E5%A4%9A%E6%80%81</link>
+    <guid>https://guyueshui.github.io/notes/cpp/%E5%A4%9A%E6%80%81</guid>
+    <description><![CDATA[ 多态 Virtual function The biggest benefit of virtual functions: the ability to structure your code in such a way that newly derived classes will automatically work with the old code without modification! The signature of the derived class function must exactly match the signature of the base class vir... ]]></description>
+    <pubDate>Thu, 21 May 2026 09:27:57 GMT</pubDate>
   </item><item>
-    <title>基础题</title>
-    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/%E5%9F%BA%E7%A1%80%E9%A2%98</link>
-    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/%E5%9F%BA%E7%A1%80%E9%A2%98</guid>
-    <description><![CDATA[ 基础题 反转链表 /****************************************************************************** * File: reverse_list.cpp * * Author: yychi * Created: 2022-12-29 20:35 * Description: Reverse a linked list. ]]></description>
-    <pubDate>Fri, 15 May 2026 08:20:06 GMT</pubDate>
+    <title>模板</title>
+    <link>https://guyueshui.github.io/notes/cpp/%E6%A8%A1%E6%9D%BF</link>
+    <guid>https://guyueshui.github.io/notes/cpp/%E6%A8%A1%E6%9D%BF</guid>
+    <description><![CDATA[ 模板特化 背景：编写单一模板，使之对任何可能的模板实参都是最合适的，都能实例化，这并不总是能办到。当我们不能（或不希望）使用模板版本时，可以定义类或函数模板的一个特例化版本。 函数模板特化 举个例子，我们构造一个compare函数用于比较不同类型的大小，并重载了compare函数来处理字符串字面常量： // 函数模板一: 可以比较任意两个类型 template &lt;typename T&gt; int compare(const T&amp;, const T&amp;); // #1 // 函数模板二: 处理字符串字面常量 template &lt;size_t N, size_t M&... ]]></description>
+    <pubDate>Thu, 21 May 2026 09:27:57 GMT</pubDate>
   </item><item>
-    <title>排序</title>
-    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/%E6%8E%92%E5%BA%8F</link>
-    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/%E6%8E%92%E5%BA%8F</guid>
-    <description><![CDATA[ 排序 题十一：重排并计算逆序数 腾讯2019校招 作为程序员的小Q，它的数列和其他人的不太一样，他有2^n个数。老板问了小Q一共m次，每次给出一个整数q_i (1⇐i⇐m)，要求小Q把这些数每2^{q_i}分为一组，然后把每组进行翻转，小Q想知道每次操作后整个序列中的逆序对个数是多少呢？ 例如： 对于序列1 3 4 2，逆序对有(4,2), (3,2)总数量为2. ]]></description>
-    <pubDate>Fri, 15 May 2026 08:20:06 GMT</pubDate>
+    <title>leet1306.jump-game-iii</title>
+    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet1306.jump-game-iii</link>
+    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet1306.jump-game-iii</guid>
+    <description><![CDATA[ 给定一个非负整数数组 arr，你最开始位于该数组的起始下标 start 处。当你位于下标 i 处时，你可以跳到 i + arr[i] 或者 i - arr[i]。 请你判断自己是否能够跳到对应元素值为 0 的 任一 下标处。 注意，不管是什么情况下，你都无法跳到数组之外。 示例 1： **输入：**arr = [4,2,3,0,3,1,2], start = 5 **输出：**true 解释： 到达值为 0 的下标 3 有以下可能方案： 下标 5 → 下标 4 → 下标 1 → 下标 3 下标 5 → 下标 6 → 下标 4 → 下标 1 → 下标 3 示例 2： **输入：**arr = [... ]]></description>
+    <pubDate>Thu, 21 May 2026 09:27:57 GMT</pubDate>
   </item>
     </channel>
   </rss>
