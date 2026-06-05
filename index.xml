@@ -6,65 +6,65 @@
       <description>最近的10条笔记 on Learn2Live</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>A collection of some coding problems</title>
+    <link>https://guyueshui.github.io/Blogs/post/coding-problems</link>
+    <guid>https://guyueshui.github.io/Blogs/post/coding-problems</guid>
+    <description><![CDATA[ 场景题 场景题 题三：进制转换 2019哈罗单车实习生笔试题 将一个10进制整数转换成36进制的数，可以用0-9A-Z表示0-35. /** * Hellobike 2019 interview. ]]></description>
+    <pubDate>Fri, 05 Jun 2026 09:19:43 GMT</pubDate>
+  </item><item>
+    <title>202605181622placement-new</title>
+    <link>https://guyueshui.github.io/__zettel/202605181622placement-new</link>
+    <guid>https://guyueshui.github.io/__zettel/202605181622placement-new</guid>
+    <description><![CDATA[ 你是否被面试官问起：“假如我有一块申请好的内存，如何在这块内存上创建我的对象？” Bro，我经验少，实际工作中压根没用过呀。但答案是可以的，这就是placement new! 形如， #include &lt;iostream&gt; #include &lt;new&gt; // Required for placement new struct MyClass { int data; MyClass(int d) : data(d) { std::cout &lt;&lt; &quot;Constructor called!\n&quot;; } ~MyClass() { std::cou... ]]></description>
+    <pubDate>Fri, 05 Jun 2026 09:19:43 GMT</pubDate>
+  </item><item>
+    <title>202606041056模板技巧之传递数组参数</title>
+    <link>https://guyueshui.github.io/__zettel/202606041056%E6%A8%A1%E6%9D%BF%E6%8A%80%E5%B7%A7%E4%B9%8B%E4%BC%A0%E9%80%92%E6%95%B0%E7%BB%84%E5%8F%82%E6%95%B0</link>
+    <guid>https://guyueshui.github.io/__zettel/202606041056%E6%A8%A1%E6%9D%BF%E6%8A%80%E5%B7%A7%E4%B9%8B%E4%BC%A0%E9%80%92%E6%95%B0%E7%BB%84%E5%8F%82%E6%95%B0</guid>
+    <description><![CDATA[ 模板技巧之传递数组参数 在C/C++中，当需要把数组作为参数在函数间传递时，通常很麻烦。因为数组作为形参传递，会退化为指向数组首元素的指针。 int a[5] = {1,2,3,4,5}; cout &lt;&lt; sizeof(a) &lt;&lt; endl; // 20 = 5 * sizeof(int) void foo(int arr[5]) { for (int i = 0; i &lt; 5; ++i) { cout &lt;&lt; arr[i] &lt;&lt; endl; } cout &lt;&lt; &quot;sizeof(arr) = &quot; &lt;&lt... ]]></description>
+    <pubDate>Fri, 05 Jun 2026 09:19:43 GMT</pubDate>
+  </item><item>
+    <title>202606051714动态规划</title>
+    <link>https://guyueshui.github.io/__zettel/202606051714%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92</link>
+    <guid>https://guyueshui.github.io/__zettel/202606051714%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92</guid>
+    <description><![CDATA[ 动态规划 这里主要介绍动态规划的机制和思想。 From EPI 为了求解一个有关特定的 x 和 N 的答案，我们必须先解决对任意的 x 和 N，答案是什么。 . ]]></description>
+    <pubDate>Fri, 05 Jun 2026 09:19:43 GMT</pubDate>
+  </item><item>
     <title>2026-05-29</title>
     <link>https://guyueshui.github.io/diary/2026-05-29</link>
     <guid>https://guyueshui.github.io/diary/2026-05-29</guid>
     <description><![CDATA[  2026-05-29 There is only one corner of the universe you can be certain of improving, and that&#039;s your own self. ]]></description>
-    <pubDate>Fri, 29 May 2026 09:34:31 GMT</pubDate>
+    <pubDate>Fri, 05 Jun 2026 09:19:43 GMT</pubDate>
+  </item><item>
+    <title>leet122.best-time-to-buy-and-sell-stock-ii</title>
+    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet122.best-time-to-buy-and-sell-stock-ii</link>
+    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet122.best-time-to-buy-and-sell-stock-ii</guid>
+    <description><![CDATA[ 给你一个整数数组 prices ，其中 prices[i] 表示某支股票第 i 天的价格。 在每一天，你可以决定是否购买和/或出售股票。你在任何时候 最多 只能持有 一股 股票。然而，你可以在 同一天 多次买卖该股票，但要确保你持有的股票不超过一股。 返回 你能获得的 最大 利润 。 示例 1： 输入： prices = [7,1,5,3,6,4] 输出： 7 解释： 在第 2 天（股票价格 = 1）的时候买入，在第 3 天（股票价格 = 5）的时候卖出, 这笔交易所能获得利润 = 5 - 1 = 4。 随后，在第 4 天（股票价格 = 3）的时候买入，在第 5 天（股票价格 = 6）的时候卖... ]]></description>
+    <pubDate>Fri, 05 Jun 2026 09:19:43 GMT</pubDate>
+  </item><item>
+    <title>leet53.maximum-subarray</title>
+    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet53.maximum-subarray</link>
+    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet53.maximum-subarray</guid>
+    <description><![CDATA[ 最大连续子列 From: LeetCode53. ]]></description>
+    <pubDate>Fri, 05 Jun 2026 09:19:43 GMT</pubDate>
+  </item><item>
+    <title>leet875.koko-eating-bananas</title>
+    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet875.koko-eating-bananas</link>
+    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet875.koko-eating-bananas</guid>
+    <description><![CDATA[ 珂珂喜欢吃香蕉。这里有 n 堆香蕉，第 i 堆中有 piles[i] 根香蕉。警卫已经离开了，将在 h 小时后回来。 珂珂可以决定她吃香蕉的速度 k （单位：根/小时）。每个小时，她将会选择一堆香蕉，从中吃掉 k 根。如果这堆香蕉少于 k 根，她将吃掉这堆的所有香蕉，然后这一小时内不会再吃更多的香蕉。 珂珂喜欢慢慢吃，但仍然想在警卫回来前吃掉所有的香蕉。 返回她可以在 h 小时内吃掉所有香蕉的最小速度 k（k 为整数）。 示例 1： **输入：**piles = [3,6,7,11], h = 8 **输出：**4 示例 2： **输入：**piles = [30,11,23,4,20], h... ]]></description>
+    <pubDate>Fri, 05 Jun 2026 09:19:43 GMT</pubDate>
+  </item><item>
+    <title>场景题</title>
+    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/%E5%9C%BA%E6%99%AF%E9%A2%98</link>
+    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/%E5%9C%BA%E6%99%AF%E9%A2%98</guid>
+    <description><![CDATA[ 场景题 题一：最高得分 一个长度为N的序列，玩家每次只能从头部或尾部拿数字，不能从中间拿。拿走的数字依次从左到右排列在自己面前。拿完N个数字之后，游戏结束。此时N个数字在玩家面前组成一个新的排列，这个数列每相邻两个数字之差的绝对值之和为玩家最终得分。假设玩家前面的N个数字从左到右标号为 n_1,n_2, \dots, n_N，则最终得分S的计算方式如下： S = \text{abs}(n_1-n_2) + \text{abs}(n_2-n_3) + \cdots + \text{abs}(n_{N-1} - n_N). ]]></description>
+    <pubDate>Fri, 05 Jun 2026 09:19:43 GMT</pubDate>
   </item><item>
     <title>leet121.best-time-to-buy-and-sell-stock</title>
     <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet121.best-time-to-buy-and-sell-stock</link>
     <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet121.best-time-to-buy-and-sell-stock</guid>
     <description><![CDATA[ 给定一个数组 prices ，它的第 i 个元素 prices[i] 表示一支给定股票第 i 天的价格。 你只能选择 某一天 买入这只股票，并选择在 未来的某一个不同的日子 卖出该股票。设计一个算法来计算你所能获取的最大利润。 返回你可以从这笔交易中获取的最大利润。如果你不能获取任何利润，返回 0 。 示例 1： 输入：[7,1,5,3,6,4] **输出：**5 **解释：**在第 2 天（股票价格 = 1）的时候买入，在第 5 天（股票价格 = 6）的时候卖出，最大利润 = 6-1 = 5 。 注意利润不能是 7-1 = 6, 因为卖出价格需要大于买入价格；同时，你不能在买入前卖出股票。 ... ]]></description>
     <pubDate>Fri, 29 May 2026 09:34:31 GMT</pubDate>
-  </item><item>
-    <title>leet1340.jump-game-v</title>
-    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet1340.jump-game-v</link>
-    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet1340.jump-game-v</guid>
-    <description><![CDATA[ 1340. ]]></description>
-    <pubDate>Fri, 29 May 2026 09:34:31 GMT</pubDate>
-  </item><item>
-    <title>leet153.find-minimum-in-rotated-sorted-array</title>
-    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet153.find-minimum-in-rotated-sorted-array</link>
-    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet153.find-minimum-in-rotated-sorted-array</guid>
-    <description><![CDATA[ 已知一个长度为 n 的数组，预先按照升序排列，经由 1 到 n 次 旋转 后，得到输入数组。例如，原数组 nums = [0,1,2,4,5,6,7] 在变化后可能得到： 若旋转 4 次，则可以得到 [4,5,6,7,0,1,2] 若旋转 7 次，则可以得到 [0,1,2,4,5,6,7] 注意，数组 [a[0], a[1], a[2], ..., a[n-1]] 旋转一次 的结果为数组 [a[n-1], a[0], a[1], a[2], ..., a[n-2]] 。 给你一个元素值 互不相同 的数组 nums ，它原来是一个升序排列的数组，并按上述情形进行了多次旋转。请你找出并返回数组中的... ]]></description>
-    <pubDate>Fri, 29 May 2026 09:34:31 GMT</pubDate>
-  </item><item>
-    <title>leet154.find-minimum-in-rotated-sorted-array-ii</title>
-    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet154.find-minimum-in-rotated-sorted-array-ii</link>
-    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet154.find-minimum-in-rotated-sorted-array-ii</guid>
-    <description><![CDATA[ 已知一个长度为 n 的数组，预先按照升序排列，经由 1 到 n 次 旋转 后，得到输入数组。例如，原数组 nums = [0,1,4,4,5,6,7] 在变化后可能得到： 若旋转 4 次，则可以得到 [4,5,6,7,0,1,4] 若旋转 7 次，则可以得到 [0,1,4,4,5,6,7] 注意，数组 [a[0], a[1], a[2], ..., a[n-1]] 旋转一次 的结果为数组 [a[n-1], a[0], a[1], a[2], ..., a[n-2]] 。 给你一个可能存在 重复 元素值的数组 nums ，它原来是一个升序排列的数组，并按上述情形进行了多次旋转。请你找出并返回数组... ]]></description>
-    <pubDate>Fri, 29 May 2026 09:34:31 GMT</pubDate>
-  </item><item>
-    <title>leet1871.jump-game-vii</title>
-    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet1871.jump-game-vii</link>
-    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet1871.jump-game-vii</guid>
-    <description><![CDATA[ 给你一个下标从 0 开始的二进制字符串 s 和两个整数 minJump 和 maxJump 。一开始，你在下标 0 处，且该位置的值一定为 &#039;0&#039; 。当同时满足如下条件时，你可以从下标 i 移动到下标 j 处： i + minJump &lt;= j &lt;= min(i + maxJump, s.length - 1) 且 s[j] == &#039;0&#039;. ]]></description>
-    <pubDate>Fri, 29 May 2026 09:34:31 GMT</pubDate>
-  </item><item>
-    <title>leet33.search-in-rotated-sorted-array</title>
-    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet33.search-in-rotated-sorted-array</link>
-    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet33.search-in-rotated-sorted-array</guid>
-    <description><![CDATA[ 整数数组 nums 按升序排列，数组中的值 互不相同 。 在传递给函数之前，nums 在预先未知的某个下标 k（0 &lt;= k &lt; nums.length）上进行了 向左旋转，使数组变为 [nums[k], nums[k+1], ..., nums[n-1], nums[0], nums[1], ..., nums[k-1]]（下标 从 0 开始 计数）。例如， [0,1,2,4,5,6,7] 下标 3 上向左旋转后可能变为 [4,5,6,7,0,1,2] 。 给你 旋转后 的数组 nums 和一个整数 target ，如果 nums 中存在这个目标值 target ，则返回它的下标... ]]></description>
-    <pubDate>Fri, 29 May 2026 09:34:31 GMT</pubDate>
-  </item><item>
-    <title>leet34. 范围二分查找</title>
-    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet34.find-first-and-last-position-of-element-in-sorted-array</link>
-    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet34.find-first-and-last-position-of-element-in-sorted-array</guid>
-    <description><![CDATA[ 给你一个按照非递减顺序排列的整数数组 nums，和一个目标值 target。请你找出给定目标值在数组中的开始位置和结束位置。 如果数组中不存在目标值 target，返回 [-1, -1]。 你必须设计并实现时间复杂度为 O(log n) 的算法解决此问题。 示例 1： **输入：**nums = [5,7,7,8,8,10], target = 8 输出：[3,4] 示例 2： **输入：**nums = [5,7,7,8,8,10], target = 6 输出：[-1,-1] 示例 3： **输入：**nums = [], target = 0 输出：[-1,-1] 提示： 0 &lt;=... ]]></description>
-    <pubDate>Fri, 29 May 2026 09:34:31 GMT</pubDate>
-  </item><item>
-    <title>基础题</title>
-    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/%E5%9F%BA%E7%A1%80%E9%A2%98</link>
-    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/%E5%9F%BA%E7%A1%80%E9%A2%98</guid>
-    <description><![CDATA[ 基础题 反转链表 /****************************************************************************** * File: reverse_list.cpp * * Author: yychi * Created: 2022-12-29 20:35 * Description: Reverse a linked list. ]]></description>
-    <pubDate>Fri, 29 May 2026 09:34:31 GMT</pubDate>
-  </item><item>
-    <title>202305310919GO语言基础</title>
-    <link>https://guyueshui.github.io/__zettel/202305310919GO%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80</link>
-    <guid>https://guyueshui.github.io/__zettel/202305310919GO%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80</guid>
-    <description><![CDATA[ m := map[string]int {&quot;a&quot;:1, &quot;b&quot;:2} 其实是make的语法糖，它等价于 var m map[string]int = make(map[string]int, 2) m = {&quot;a&quot;:1, &quot;b&quot;:2} 内建函数 make 用来为 slice，map 或 chan 类型分配内存和初始化一个对象(注意：只能用在这三种类型上)，跟 new 类似，第一个参数也是一个类型而不是一个值，跟 new 不同的是，make 返回类型的引用而不是指针，而返回值也依赖于具体传入的类型。 make 的作用... ]]></description>
-    <pubDate>Thu, 21 May 2026 09:27:57 GMT</pubDate>
   </item>
     </channel>
   </rss>
