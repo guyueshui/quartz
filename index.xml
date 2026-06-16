@@ -6,6 +6,48 @@
       <description>最近的10条笔记 on Learn2Live</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>202606091445异或</title>
+    <link>https://guyueshui.github.io/__zettel/202606091445%E5%BC%82%E6%88%96</link>
+    <guid>https://guyueshui.github.io/__zettel/202606091445%E5%BC%82%E6%88%96</guid>
+    <description><![CDATA[ 异或 常用运算符： C/C++: ^ / xor Python: ^ 真值表 结果000110011101 性质1：0是异或的单位元 即，0 ^ a = a，满足交换律 性质2：任何数异或自己等于0 即，a ^ a = 0 性质3：异或同一个数两次等于啥也没做 即，a ^ b ^ b = a. ]]></description>
+    <pubDate>Tue, 16 Jun 2026 09:28:14 GMT</pubDate>
+  </item><item>
+    <title>202606120940快速幂</title>
+    <link>https://guyueshui.github.io/__zettel/202606120940%E5%BF%AB%E9%80%9F%E5%B9%82</link>
+    <guid>https://guyueshui.github.io/__zettel/202606120940%E5%BF%AB%E9%80%9F%E5%B9%82</guid>
+    <description><![CDATA[ 快速幂 问题：求一个非负数的n次方。数学表达， f_b(n) = b^n, b &gt; 0, n \ge 0 其中，b 叫底数，n 叫次数，b^n 成为 b 的 n 次幂。当 b = 0 时，有 f_b(n) = 0, n \in N^+. 特别的，约定 b^0=1，0^0 = 1. ]]></description>
+    <pubDate>Tue, 16 Jun 2026 09:28:14 GMT</pubDate>
+  </item><item>
+    <title>202606161406排列组合</title>
+    <link>https://guyueshui.github.io/__zettel/202606161406%E6%8E%92%E5%88%97%E7%BB%84%E5%90%88</link>
+    <guid>https://guyueshui.github.io/__zettel/202606161406%E6%8E%92%E5%88%97%E7%BB%84%E5%90%88</guid>
+    <description><![CDATA[ 排列组合 排列数 问题引入：有 n 个座位，坐 n 个同学，请问有多少种坐法？ 对于第一个座位，可以从 n 个同学里面任选一个坐，所以共有 n 种选择。对于第二个座位，只能从剩下的 n-1 个同学中挑一个坐，故有 n-1 种选择。依此类推，最后一个座位，只剩最后一位同学，只有 1 种选择。根据乘法原理[^a]共有， n \times (n-1) \times \cdots \times 1 = n! \triangleq A_n^n 种坐法。不失一般性，我们把它记为 A_n^k，叫做排列数，其含义是从 n 个里面选 k 个做排列，共有多少种排列方法。如无特殊说明，默认 k \le n. ]]></description>
+    <pubDate>Tue, 16 Jun 2026 09:28:14 GMT</pubDate>
+  </item><item>
+    <title>202606161447二项式定理</title>
+    <link>https://guyueshui.github.io/__zettel/202606161447%E4%BA%8C%E9%A1%B9%E5%BC%8F%E5%AE%9A%E7%90%86</link>
+    <guid>https://guyueshui.github.io/__zettel/202606161447%E4%BA%8C%E9%A1%B9%E5%BC%8F%E5%AE%9A%E7%90%86</guid>
+    <description><![CDATA[ 二项式定理 中学数学中，完全平方公式相信大家都不陌生，打交道的次数很多了。有时候要凑公式，因式分解啥的啊，代数变换等都会用到。 (a + b)^2 = a^2+2ab+b^2 推广一下，使用排列组合的思想，对于正整数 n， (a+b)^n = C_n^0a^nb^0 + C_n^1a^{n-1}b + C_n^2a^{n-2}b^2 +\cdots + C_n^{n-1}ab^{n-1} + C_n^na^0b^n 考虑原始的含义，就是 n 个 (a+b) 相乘。我们可以用排列组合的思想确定其各项系数。原式展开后，肯定是 k\cdot a^ib^j 的形式，其中 k 是系数，i, j 是次数，... ]]></description>
+    <pubDate>Tue, 16 Jun 2026 09:28:14 GMT</pubDate>
+  </item><item>
+    <title>20260616145中学数学常用公式</title>
+    <link>https://guyueshui.github.io/__zettel/20260616145%E4%B8%AD%E5%AD%A6%E6%95%B0%E5%AD%A6%E5%B8%B8%E7%94%A8%E5%85%AC%E5%BC%8F</link>
+    <guid>https://guyueshui.github.io/__zettel/20260616145%E4%B8%AD%E5%AD%A6%E6%95%B0%E5%AD%A6%E5%B8%B8%E7%94%A8%E5%85%AC%E5%BC%8F</guid>
+    <description><![CDATA[ 完全平方公式 按照分配律展开即得， (a+b)^2 = a^2+2ab+b^2 平法差公式 a^2 - b^2 = (a+b)(a-b) 立方差公式 a^3-b^3=(a-b)(a^2+ab+b^2). ]]></description>
+    <pubDate>Tue, 16 Jun 2026 09:28:14 GMT</pubDate>
+  </item><item>
+    <title>人体内脏结构</title>
+    <link>https://guyueshui.github.io/life/%E5%85%BB%E7%94%9F/%E4%BA%BA%E4%BD%93%E5%90%84%E7%B3%BB%E7%BB%9F</link>
+    <guid>https://guyueshui.github.io/life/%E5%85%BB%E7%94%9F/%E4%BA%BA%E4%BD%93%E5%90%84%E7%B3%BB%E7%BB%9F</guid>
+    <description><![CDATA[ 消化系统 图源： www.100md.com/html/dir/2003/04/03/9578.htm 图集： health.ifeng.com/c/7fE2EM2vlZN 泌尿系统 生殖系统 男性 女性 cf. ]]></description>
+    <pubDate>Tue, 16 Jun 2026 09:28:14 GMT</pubDate>
+  </item><item>
+    <title>黄帝内经纪要</title>
+    <link>https://guyueshui.github.io/life/%E5%85%BB%E7%94%9F/%E9%BB%84%E5%B8%9D%E5%86%85%E7%BB%8F%E7%BA%AA%E8%A6%81</link>
+    <guid>https://guyueshui.github.io/life/%E5%85%BB%E7%94%9F/%E9%BB%84%E5%B8%9D%E5%86%85%E7%BB%8F%E7%BA%AA%E8%A6%81</guid>
+    <description><![CDATA[ 黄帝内经纪要 五脏六腑 五脏六腑五行备注心小肠火心火旺盛肝胆木肝胆相照同属木脾胃土脾胃属土，滋养肺金肺大肠金呼吸，排泄肾膀胱水肾脏主水，水回收，泌尿；膀胱储尿心包1三焦火 Footnotes 中医理论中的第六脏。中医讲究部位功能整体，并非一定能对应到解剖学的具体部位。 ↩ . ]]></description>
+    <pubDate>Tue, 16 Jun 2026 09:28:14 GMT</pubDate>
+  </item><item>
     <title>A collection of some coding problems</title>
     <link>https://guyueshui.github.io/Blogs/post/coding-problems</link>
     <guid>https://guyueshui.github.io/Blogs/post/coding-problems</guid>
@@ -23,48 +65,6 @@
     <guid>https://guyueshui.github.io/__zettel/202606041056%E6%A8%A1%E6%9D%BF%E6%8A%80%E5%B7%A7%E4%B9%8B%E4%BC%A0%E9%80%92%E6%95%B0%E7%BB%84%E5%8F%82%E6%95%B0</guid>
     <description><![CDATA[ 模板技巧之传递数组参数 在C/C++中，当需要把数组作为参数在函数间传递时，通常很麻烦。因为数组作为形参传递，会退化为指向数组首元素的指针。 int a[5] = {1,2,3,4,5}; cout &lt;&lt; sizeof(a) &lt;&lt; endl; // 20 = 5 * sizeof(int) void foo(int arr[5]) { for (int i = 0; i &lt; 5; ++i) { cout &lt;&lt; arr[i] &lt;&lt; endl; } cout &lt;&lt; &quot;sizeof(arr) = &quot; &lt;&lt... ]]></description>
     <pubDate>Fri, 05 Jun 2026 09:19:43 GMT</pubDate>
-  </item><item>
-    <title>202606051714动态规划</title>
-    <link>https://guyueshui.github.io/__zettel/202606051714%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92</link>
-    <guid>https://guyueshui.github.io/__zettel/202606051714%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92</guid>
-    <description><![CDATA[ 动态规划 这里主要介绍动态规划的机制和思想。 From EPI 为了求解一个有关特定的 x 和 N 的答案，我们必须先解决对任意的 x 和 N，答案是什么。 . ]]></description>
-    <pubDate>Fri, 05 Jun 2026 09:19:43 GMT</pubDate>
-  </item><item>
-    <title>2026-05-29</title>
-    <link>https://guyueshui.github.io/diary/2026-05-29</link>
-    <guid>https://guyueshui.github.io/diary/2026-05-29</guid>
-    <description><![CDATA[  2026-05-29 There is only one corner of the universe you can be certain of improving, and that&#039;s your own self. ]]></description>
-    <pubDate>Fri, 05 Jun 2026 09:19:43 GMT</pubDate>
-  </item><item>
-    <title>leet122.best-time-to-buy-and-sell-stock-ii</title>
-    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet122.best-time-to-buy-and-sell-stock-ii</link>
-    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet122.best-time-to-buy-and-sell-stock-ii</guid>
-    <description><![CDATA[ 给你一个整数数组 prices ，其中 prices[i] 表示某支股票第 i 天的价格。 在每一天，你可以决定是否购买和/或出售股票。你在任何时候 最多 只能持有 一股 股票。然而，你可以在 同一天 多次买卖该股票，但要确保你持有的股票不超过一股。 返回 你能获得的 最大 利润 。 示例 1： 输入： prices = [7,1,5,3,6,4] 输出： 7 解释： 在第 2 天（股票价格 = 1）的时候买入，在第 3 天（股票价格 = 5）的时候卖出, 这笔交易所能获得利润 = 5 - 1 = 4。 随后，在第 4 天（股票价格 = 3）的时候买入，在第 5 天（股票价格 = 6）的时候卖... ]]></description>
-    <pubDate>Fri, 05 Jun 2026 09:19:43 GMT</pubDate>
-  </item><item>
-    <title>leet53.maximum-subarray</title>
-    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet53.maximum-subarray</link>
-    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet53.maximum-subarray</guid>
-    <description><![CDATA[ 最大连续子列 From: LeetCode53. ]]></description>
-    <pubDate>Fri, 05 Jun 2026 09:19:43 GMT</pubDate>
-  </item><item>
-    <title>leet875.koko-eating-bananas</title>
-    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet875.koko-eating-bananas</link>
-    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet875.koko-eating-bananas</guid>
-    <description><![CDATA[ 珂珂喜欢吃香蕉。这里有 n 堆香蕉，第 i 堆中有 piles[i] 根香蕉。警卫已经离开了，将在 h 小时后回来。 珂珂可以决定她吃香蕉的速度 k （单位：根/小时）。每个小时，她将会选择一堆香蕉，从中吃掉 k 根。如果这堆香蕉少于 k 根，她将吃掉这堆的所有香蕉，然后这一小时内不会再吃更多的香蕉。 珂珂喜欢慢慢吃，但仍然想在警卫回来前吃掉所有的香蕉。 返回她可以在 h 小时内吃掉所有香蕉的最小速度 k（k 为整数）。 示例 1： **输入：**piles = [3,6,7,11], h = 8 **输出：**4 示例 2： **输入：**piles = [30,11,23,4,20], h... ]]></description>
-    <pubDate>Fri, 05 Jun 2026 09:19:43 GMT</pubDate>
-  </item><item>
-    <title>场景题</title>
-    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/%E5%9C%BA%E6%99%AF%E9%A2%98</link>
-    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/%E5%9C%BA%E6%99%AF%E9%A2%98</guid>
-    <description><![CDATA[ 场景题 题一：最高得分 一个长度为N的序列，玩家每次只能从头部或尾部拿数字，不能从中间拿。拿走的数字依次从左到右排列在自己面前。拿完N个数字之后，游戏结束。此时N个数字在玩家面前组成一个新的排列，这个数列每相邻两个数字之差的绝对值之和为玩家最终得分。假设玩家前面的N个数字从左到右标号为 n_1,n_2, \dots, n_N，则最终得分S的计算方式如下： S = \text{abs}(n_1-n_2) + \text{abs}(n_2-n_3) + \cdots + \text{abs}(n_{N-1} - n_N). ]]></description>
-    <pubDate>Fri, 05 Jun 2026 09:19:43 GMT</pubDate>
-  </item><item>
-    <title>leet121.best-time-to-buy-and-sell-stock</title>
-    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet121.best-time-to-buy-and-sell-stock</link>
-    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet121.best-time-to-buy-and-sell-stock</guid>
-    <description><![CDATA[ 给定一个数组 prices ，它的第 i 个元素 prices[i] 表示一支给定股票第 i 天的价格。 你只能选择 某一天 买入这只股票，并选择在 未来的某一个不同的日子 卖出该股票。设计一个算法来计算你所能获取的最大利润。 返回你可以从这笔交易中获取的最大利润。如果你不能获取任何利润，返回 0 。 示例 1： 输入：[7,1,5,3,6,4] **输出：**5 **解释：**在第 2 天（股票价格 = 1）的时候买入，在第 5 天（股票价格 = 6）的时候卖出，最大利润 = 6-1 = 5 。 注意利润不能是 7-1 = 6, 因为卖出价格需要大于买入价格；同时，你不能在买入前卖出股票。 ... ]]></description>
-    <pubDate>Fri, 29 May 2026 09:34:31 GMT</pubDate>
   </item>
     </channel>
   </rss>
