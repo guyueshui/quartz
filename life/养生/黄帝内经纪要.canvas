@@ -1,0 +1,26 @@
+{
+	"nodes":[
+		{"id":"511b5b67e0cd2e40","type":"group","x":120,"y":-400,"width":290,"height":300,"label":"手三阴经"},
+		{"id":"c2876a943484b61e","type":"group","x":120,"y":200,"width":290,"height":300,"label":"手三阳经"},
+		{"id":"eefebf04e418b34d","x":840,"y":200,"width":290,"height":300,"type":"group","label":"足三阳"},
+		{"id":"1ec4fd55a694d0ea","x":840,"y":-400,"width":290,"height":300,"type":"group","label":"足三阴"},
+		{"id":"139ed9d0b670d314","type":"text","text":"手少阳三焦经","x":140,"y":320,"width":250,"height":60},
+		{"id":"d87c0db2ea8fc0dc","type":"text","text":"手太阳小肠经","x":140,"y":420,"width":250,"height":60},
+		{"id":"034210563f5050f7","type":"text","text":"手阳明大肠经","x":140,"y":220,"width":250,"height":60},
+		{"id":"6dc4f84b9a4958cd","type":"text","text":"足阳明胃经","x":860,"y":220,"width":250,"height":60},
+		{"id":"cbfea00c37e442bd","type":"text","text":"足少阳胆经","x":860,"y":320,"width":250,"height":60},
+		{"id":"b5d5539f0fb5fd5f","type":"text","text":"足太阳膀胱经","x":860,"y":420,"width":250,"height":60},
+		{"id":"5684af8461f1d689","type":"text","text":"足太阴脾经","x":860,"y":-380,"width":250,"height":60},
+		{"id":"c62354e5ee096900","type":"text","text":"足厥阴肝经","x":860,"y":-280,"width":250,"height":60},
+		{"id":"20d5c9df824a3d6c","type":"text","text":"足少阴肾经","x":860,"y":-180,"width":250,"height":60},
+		{"id":"57b483c24a5a1ba7","type":"text","text":" 手太阴肺经","x":140,"y":-380,"width":250,"height":60},
+		{"id":"dd5159af039c8e23","type":"text","text":"手厥阴心包经","x":140,"y":-280,"width":250,"height":60},
+		{"id":"2c97e1a80ccaf7a0","type":"text","text":"手少阴心经","x":140,"y":-180,"width":250,"height":60}
+	],
+	"edges":[
+		{"id":"07fdf0fa5f94fde5","fromNode":"511b5b67e0cd2e40","fromSide":"bottom","toNode":"c2876a943484b61e","toSide":"top","label":"从胸走手，交于手指末端"},
+		{"id":"2fc9d3e5ef13767f","fromNode":"c2876a943484b61e","fromSide":"right","toNode":"eefebf04e418b34d","toSide":"left","label":"从手走头，\n交于头面部"},
+		{"id":"ecc53d1aa51e4991","fromNode":"eefebf04e418b34d","fromSide":"top","toNode":"1ec4fd55a694d0ea","toSide":"bottom","label":"从头走足，交于足趾末端"},
+		{"id":"d785cd09dc40f112","fromNode":"1ec4fd55a694d0ea","fromSide":"left","toNode":"511b5b67e0cd2e40","toSide":"right","label":"从足走腹，交于胸腹腔"}
+	]
+}
