@@ -20,6 +20,7 @@ const config: QuartzConfig = {
       "__obex", ".+", "work",
       "life/亲子", "求职/ToLearn.md",
       "求职/信息汇总.md",
+      "**/*.private.md",
       "**/*.excalidraw.md",
       "**/202304261834*.md",
       "**/202304271002*.md",
