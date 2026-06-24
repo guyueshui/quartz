@@ -6,6 +6,12 @@
       <description>最近的10条笔记 on Learn2Live</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>Untitled</title>
+    <link>https://guyueshui.github.io/Untitled</link>
+    <guid>https://guyueshui.github.io/Untitled</guid>
+    <description><![CDATA[ 本地链接 IPv6 地址: fe80::f15d:8dee:d93d:6eab%12 IPv4 地址: 10.30.100.73 IPv4 DNS 服务器: 10.30.201.41 10.20.202.41 10.30.201.31 主 DNS 后缀: datayes.com 制造商: Intel 描述: Intel(R) Ethernet Connection (13) I219-V 驱动程序版本: 12.19.0.16 物理地址(MAC): 38-14-28-56-21-7D 点击展开代码示例 print(&quot;Hello, GitHub!&quot;) # 折叠后可隐藏的代码 a... ]]></description>
+    <pubDate>Wed, 24 Jun 2026 14:46:27 GMT</pubDate>
+  </item><item>
     <title>202606221117素数筛选方法</title>
     <link>https://guyueshui.github.io/__zettel/202606221117%E7%B4%A0%E6%95%B0%E7%AD%9B%E9%80%89%E6%96%B9%E6%B3%95</link>
     <guid>https://guyueshui.github.io/__zettel/202606221117%E7%B4%A0%E6%95%B0%E7%AD%9B%E9%80%89%E6%96%B9%E6%B3%95</guid>
@@ -58,12 +64,6 @@
     <link>https://guyueshui.github.io/__zettel/202606091445%E5%BC%82%E6%88%96</link>
     <guid>https://guyueshui.github.io/__zettel/202606091445%E5%BC%82%E6%88%96</guid>
     <description><![CDATA[ 异或 常用运算符： C/C++: ^ / xor Python: ^ 真值表 结果000110011101 性质1：0是异或的单位元 即，0 ^ a = a，满足交换律 性质2：任何数异或自己等于0 即，a ^ a = 0 性质3：异或同一个数两次等于啥也没做 即，a ^ b ^ b = a. ]]></description>
-    <pubDate>Tue, 16 Jun 2026 09:28:14 GMT</pubDate>
-  </item><item>
-    <title>202606120940快速幂</title>
-    <link>https://guyueshui.github.io/__zettel/202606120940%E5%BF%AB%E9%80%9F%E5%B9%82</link>
-    <guid>https://guyueshui.github.io/__zettel/202606120940%E5%BF%AB%E9%80%9F%E5%B9%82</guid>
-    <description><![CDATA[ 快速幂 问题：求一个非负数的n次方。数学表达， f_b(n) = b^n, b &gt; 0, n \ge 0 其中，b 叫底数，n 叫次数，b^n 成为 b 的 n 次幂。当 b = 0 时，有 f_b(n) = 0, n \in N^+. 特别的，约定 b^0=1，0^0 = 1. ]]></description>
     <pubDate>Tue, 16 Jun 2026 09:28:14 GMT</pubDate>
   </item>
     </channel>
