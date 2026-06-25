@@ -10,13 +10,25 @@
     <link>https://guyueshui.github.io/Untitled</link>
     <guid>https://guyueshui.github.io/Untitled</guid>
     <description><![CDATA[ 本地链接 IPv6 地址: fe80::f15d:8dee:d93d:6eab%12 IPv4 地址: 10.30.100.73 IPv4 DNS 服务器: 10.30.201.41 10.20.202.41 10.30.201.31 主 DNS 后缀: datayes.com 制造商: Intel 描述: Intel(R) Ethernet Connection (13) I219-V 驱动程序版本: 12.19.0.16 物理地址(MAC): 38-14-28-56-21-7D 点击展开代码示例 print(&quot;Hello, GitHub!&quot;) # 折叠后可隐藏的代码 a... ]]></description>
-    <pubDate>Wed, 24 Jun 2026 14:46:27 GMT</pubDate>
+    <pubDate>Thu, 25 Jun 2026 15:23:58 GMT</pubDate>
   </item><item>
     <title>202606221117素数筛选方法</title>
     <link>https://guyueshui.github.io/__zettel/202606221117%E7%B4%A0%E6%95%B0%E7%AD%9B%E9%80%89%E6%96%B9%E6%B3%95</link>
     <guid>https://guyueshui.github.io/__zettel/202606221117%E7%B4%A0%E6%95%B0%E7%AD%9B%E9%80%89%E6%96%B9%E6%B3%95</guid>
     <description><![CDATA[ 素数筛选方法 什么是素数？ 大于 1 的自然数，如果只能被 1 和该数本身整除，不能被其他自然数整除，则称为素数（质数）。相对的，大于 1 的自然数若不是素数，则称之为合数。 因此，若 a 是素数，则 a \in N^+, ~a &gt; 1； 1 既不是素数，也不是合数； 素数是在自然数即 N^+ 的范畴内讨论的。 性质 算数基本定理 每个大于 1 的整数均可以携程一个以上的素数之乘积，且除了质因数的排序不同外是唯一的。例如， \begin{align} 23244 &amp;= 2 \cdot 2\cdot3\cdot13\cdot 149 \\ &amp;= 2^2 \cdot 3\cd... ]]></description>
-    <pubDate>Mon, 22 Jun 2026 13:50:59 GMT</pubDate>
+    <pubDate>Thu, 25 Jun 2026 15:23:58 GMT</pubDate>
+  </item><item>
+    <title>202606252119最大公约数</title>
+    <link>https://guyueshui.github.io/__zettel/202606252119%E6%9C%80%E5%A4%A7%E5%85%AC%E7%BA%A6%E6%95%B0</link>
+    <guid>https://guyueshui.github.io/__zettel/202606252119%E6%9C%80%E5%A4%A7%E5%85%AC%E7%BA%A6%E6%95%B0</guid>
+    <description><![CDATA[ 最大公约数 什么是最大公约数？ 对于 a \in Z，若有 p\in Z,~p~|~a，则称 p 为 a 的约数，又叫因子或因数，称 a 是 p 的倍数。对于 a, ~b \in Z，如果 p 既是 a 的约数，又是 b 的约数，则称 p 为 a 和 b 的公约数。公约数可能不止一个，我们把最大的那个称为最大公约数。记为 \text{gcd}(a,~b). ]]></description>
+    <pubDate>Thu, 25 Jun 2026 15:23:58 GMT</pubDate>
+  </item><item>
+    <title>202606252211最小公倍数</title>
+    <link>https://guyueshui.github.io/__zettel/202606252211%E6%9C%80%E5%B0%8F%E5%85%AC%E5%80%8D%E6%95%B0</link>
+    <guid>https://guyueshui.github.io/__zettel/202606252211%E6%9C%80%E5%B0%8F%E5%85%AC%E5%80%8D%E6%95%B0</guid>
+    <description><![CDATA[ 最小公倍数 什么是最小公倍数？ 对于 a, b \in Z，若有 p \in Z 使得 a~|~p 且 b ~|~ p，则称 p 是 a,b 的公倍数。公倍数不止一个，其中最小的称为最小公倍数，记作 \text{lcm(a,~b)}. ]]></description>
+    <pubDate>Thu, 25 Jun 2026 15:23:58 GMT</pubDate>
   </item><item>
     <title>202606161406排列组合</title>
     <link>https://guyueshui.github.io/__zettel/202606161406%E6%8E%92%E5%88%97%E7%BB%84%E5%90%88</link>
@@ -53,18 +65,6 @@
     <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet239.sliding-window-maximum</guid>
     <description><![CDATA[ 给你一个整数数组 nums，有一个大小为 k 的滑动窗口从数组的最左侧移动到数组的最右侧。你只可以看到在滑动窗口内的 k 个数字。滑动窗口每次只向右移动一位。 返回 滑动窗口中的最大值 。 示例 1： 输入： nums = [1,3,-1,-3,5,3,6,7], k = 3 输出： [3,3,5,5,6,7] 解释： 滑动窗口的位置最大值[1 3 -1] -3 5 3 6 731 [3 -1 -3] 5 3 6 731 3 [-1 -3 5] 3 6 751 3 -1 [-3 5 3] 6 751 3 -1 -3 [5 3 6] 761 3 -1 -3 5 [3 6 7]7 示例 2： 输入... ]]></description>
     <pubDate>Thu, 18 Jun 2026 09:31:55 GMT</pubDate>
-  </item><item>
-    <title>leet2762.continuous-subarrays</title>
-    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet2762.continuous-subarrays</link>
-    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet2762.continuous-subarrays</guid>
-    <description><![CDATA[ 2762. ]]></description>
-    <pubDate>Thu, 18 Jun 2026 09:31:55 GMT</pubDate>
-  </item><item>
-    <title>202606091445异或</title>
-    <link>https://guyueshui.github.io/__zettel/202606091445%E5%BC%82%E6%88%96</link>
-    <guid>https://guyueshui.github.io/__zettel/202606091445%E5%BC%82%E6%88%96</guid>
-    <description><![CDATA[ 异或 常用运算符： C/C++: ^ / xor Python: ^ 真值表 结果000110011101 性质1：0是异或的单位元 即，0 ^ a = a，满足交换律 性质2：任何数异或自己等于0 即，a ^ a = 0 性质3：异或同一个数两次等于啥也没做 即，a ^ b ^ b = a. ]]></description>
-    <pubDate>Tue, 16 Jun 2026 09:28:14 GMT</pubDate>
   </item>
     </channel>
   </rss>
