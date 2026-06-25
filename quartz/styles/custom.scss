@@ -71,16 +71,22 @@ a > code {
 
   // defs
   &[data-callout="theorem"] {
-    --color: rgb(68, 207, 110);
-    // --border: #custombordercolor;
-    // --bg: #custombg;
+    --c: 8, 185, 78;
     --callout-icon: var(--callout-icon-theorem);
   }
 
   &[data-callout="lemma"] {
-    --color: rgb(83, 223, 221);
+    --c: 0, 191, 188;
     // --border: #custombordercolor;
     // --bg: #custombg;
     --callout-icon: var(--callout-icon-lemma);
+  }
+
+  // common settings
+  &[data-callout="lemma"],
+  &[data-callout="theorem"] {
+    --color: rgb(var(--c));
+    --border: rgba(var(--c), 0.25);
+    --bg: rgba(var(--c), 0.1);
   }
 }
