@@ -6,65 +6,65 @@
       <description>最近的10条笔记 on Learn2Live</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>Untitled</title>
-    <link>https://guyueshui.github.io/Untitled</link>
-    <guid>https://guyueshui.github.io/Untitled</guid>
-    <description><![CDATA[ 本地链接 IPv6 地址: fe80::f15d:8dee:d93d:6eab%12 IPv4 地址: 10.30.100.73 IPv4 DNS 服务器: 10.30.201.41 10.20.202.41 10.30.201.31 主 DNS 后缀: datayes.com 制造商: Intel 描述: Intel(R) Ethernet Connection (13) I219-V 驱动程序版本: 12.19.0.16 物理地址(MAC): 38-14-28-56-21-7D 点击展开代码示例 print(&quot;Hello, GitHub!&quot;) # 折叠后可隐藏的代码 a... ]]></description>
-    <pubDate>Thu, 25 Jun 2026 15:23:58 GMT</pubDate>
+    <title>202509302140quartz发布obsidian</title>
+    <link>https://guyueshui.github.io/__zettel/202509302140quartz%E5%8F%91%E5%B8%83obsidian</link>
+    <guid>https://guyueshui.github.io/__zettel/202509302140quartz%E5%8F%91%E5%B8%83obsidian</guid>
+    <description><![CDATA[ 问题 我有一个obsidian仓库，私有的，因为里面有一些笔记涉及公司和个人隐私。但其余部分都是可公开的，有没有一个方案同时满足， 免费 可以控制哪些发布，哪些不发布 原始仓库是私有的 方案 工具名称优点缺点obsidian-digital-garden1. ]]></description>
+    <pubDate>Fri, 26 Jun 2026 07:35:40 GMT</pubDate>
   </item><item>
-    <title>202606221117素数筛选方法</title>
-    <link>https://guyueshui.github.io/__zettel/202606221117%E7%B4%A0%E6%95%B0%E7%AD%9B%E9%80%89%E6%96%B9%E6%B3%95</link>
-    <guid>https://guyueshui.github.io/__zettel/202606221117%E7%B4%A0%E6%95%B0%E7%AD%9B%E9%80%89%E6%96%B9%E6%B3%95</guid>
-    <description><![CDATA[ 素数筛选方法 什么是素数？ 大于 1 的自然数，如果只能被 1 和该数本身整除，不能被其他自然数整除，则称为素数（质数）。相对的，大于 1 的自然数若不是素数，则称之为合数。 因此，若 a 是素数，则 a \in N^+, ~a &gt; 1； 1 既不是素数，也不是合数； 素数是在自然数即 N^+ 的范畴内讨论的。 性质 算数基本定理 每个大于 1 的整数均可以携程一个以上的素数之乘积，且除了质因数的排序不同外是唯一的。例如， \begin{align} 23244 &amp;= 2 \cdot 2\cdot3\cdot13\cdot 149 \\ &amp;= 2^2 \cdot 3\cd... ]]></description>
-    <pubDate>Thu, 25 Jun 2026 15:23:58 GMT</pubDate>
-  </item><item>
-    <title>202606252119最大公约数</title>
-    <link>https://guyueshui.github.io/__zettel/202606252119%E6%9C%80%E5%A4%A7%E5%85%AC%E7%BA%A6%E6%95%B0</link>
-    <guid>https://guyueshui.github.io/__zettel/202606252119%E6%9C%80%E5%A4%A7%E5%85%AC%E7%BA%A6%E6%95%B0</guid>
-    <description><![CDATA[ 最大公约数 什么是最大公约数？ 对于 a \in Z，若有 p\in Z,~p~|~a，则称 p 为 a 的约数，又叫因子或因数，称 a 是 p 的倍数。对于 a, ~b \in Z，如果 p 既是 a 的约数，又是 b 的约数，则称 p 为 a 和 b 的公约数。公约数可能不止一个，我们把最大的那个称为最大公约数。记为 \text{gcd}(a,~b). ]]></description>
-    <pubDate>Thu, 25 Jun 2026 15:23:58 GMT</pubDate>
-  </item><item>
-    <title>202606252211最小公倍数</title>
-    <link>https://guyueshui.github.io/__zettel/202606252211%E6%9C%80%E5%B0%8F%E5%85%AC%E5%80%8D%E6%95%B0</link>
-    <guid>https://guyueshui.github.io/__zettel/202606252211%E6%9C%80%E5%B0%8F%E5%85%AC%E5%80%8D%E6%95%B0</guid>
-    <description><![CDATA[ 最小公倍数 什么是最小公倍数？ 对于 a, b \in Z，若有 p \in Z 使得 a~|~p 且 b ~|~ p，则称 p 是 a,b 的公倍数。公倍数不止一个，其中最小的称为最小公倍数，记作 \text{lcm(a,~b)}. ]]></description>
-    <pubDate>Thu, 25 Jun 2026 15:23:58 GMT</pubDate>
+    <title>202604161330std::list的size</title>
+    <link>https://guyueshui.github.io/__zettel/202604161330cpp%E4%B8%ADstl_list%E7%9A%84size</link>
+    <guid>https://guyueshui.github.io/__zettel/202604161330cpp%E4%B8%ADstl_list%E7%9A%84size</guid>
+    <description><![CDATA[ 先看一段测试代码， #include &lt;iostream&gt; #include &lt;list&gt; using namespace std; struct A {int a; char b; long c; }; int main() { list&lt;int&gt; a{1,2,3}; list&lt;A&gt; b; cout &lt;&lt; &quot;sizeof list&lt;int&gt;:&quot; &lt;&lt; sizeof(a) &lt;&lt; endl; cout &lt;&lt; &quot;sizeof A:&quot; &lt;&lt; ... ]]></description>
+    <pubDate>Fri, 26 Jun 2026 07:35:40 GMT</pubDate>
   </item><item>
     <title>202606161406排列组合</title>
     <link>https://guyueshui.github.io/__zettel/202606161406%E6%8E%92%E5%88%97%E7%BB%84%E5%90%88</link>
     <guid>https://guyueshui.github.io/__zettel/202606161406%E6%8E%92%E5%88%97%E7%BB%84%E5%90%88</guid>
-    <description><![CDATA[ 排列组合 排列数 问题引入：有 n 个座位，坐 n 个同学，请问有多少种坐法？ 对于第一个座位，可以从 n 个同学里面任选一个坐，所以共有 n 种选择。对于第二个座位，只能从剩下的 n-1 个同学中挑一个坐，故有 n-1 种选择。依此类推，最后一个座位，只剩最后一位同学，只有 1 种选择。根据乘法原理共有， n \times (n-1) \times \cdots \times 1 = n! \triangleq A_n^n 种坐法。不失一般性，我们把它记为 A_n^k，叫做排列数，其含义是从 n 个里面选 k 个做排列，共有多少种排列方法。如无特殊说明，默认 k \le n. ]]></description>
-    <pubDate>Thu, 18 Jun 2026 09:31:55 GMT</pubDate>
+    <description><![CDATA[ 排列组合 1 排列数 问题引入：有 n 个座位，坐 n 个同学，请问有多少种坐法？ 对于第一个座位，可以从 n 个同学里面任选一个坐，所以共有 n 种选择。对于第二个座位，只能从剩下的 n-1 个同学中挑一个坐，故有 n-1 种选择。依此类推，最后一个座位，只剩最后一位同学，只有 1 种选择。根据乘法原理共有， n \times (n-1) \times \cdots \times 1 = n! \triangleq A_n^n 种坐法。不失一般性，我们把它记为 A_n^k，叫做排列数，其含义是从 n 个里面选 k 个做排列，共有多少种排列方法。如无特殊说明，默认 k \le n. ]]></description>
+    <pubDate>Fri, 26 Jun 2026 07:35:40 GMT</pubDate>
   </item><item>
-    <title>202606170907加法原理和乘法原理</title>
-    <link>https://guyueshui.github.io/__zettel/202606170907%E5%8A%A0%E6%B3%95%E5%8E%9F%E7%90%86%E5%92%8C%E4%B9%98%E6%B3%95%E5%8E%9F%E7%90%86</link>
-    <guid>https://guyueshui.github.io/__zettel/202606170907%E5%8A%A0%E6%B3%95%E5%8E%9F%E7%90%86%E5%92%8C%E4%B9%98%E6%B3%95%E5%8E%9F%E7%90%86</guid>
-    <description><![CDATA[ 加法原理 完成一件事有 n 类互斥且独立的方法，每一类方法都能单独完成这件事，那么完成这件事的总方法数为各类方法数的和。 例：从2本语文书、4本历史书、5本政治书中任取一本，总取法为 2 + 4 + 5 = 11 种。 乘法原理 完成一件事需要分成 n 个缺一不可的步骤，每个步骤都无法独立完成这件事，那么完成这件事的总方法数为各步骤方法数的乘积。 例：从2本语文书、4本历史书、5本政治书中各取一本，总取法为 2\times 4\times 5=40 种。. ]]></description>
-    <pubDate>Thu, 18 Jun 2026 09:31:55 GMT</pubDate>
+    <title>202606221117素数筛选方法</title>
+    <link>https://guyueshui.github.io/__zettel/202606221117%E7%B4%A0%E6%95%B0%E7%AD%9B%E9%80%89%E6%96%B9%E6%B3%95</link>
+    <guid>https://guyueshui.github.io/__zettel/202606221117%E7%B4%A0%E6%95%B0%E7%AD%9B%E9%80%89%E6%96%B9%E6%B3%95</guid>
+    <description><![CDATA[ 素数筛选方法 什么是素数？ 大于 1 的自然数，如果只能被 1 和该数本身整除，不能被其他自然数整除，则称为素数（质数）。相对的，大于 1 的自然数若不是素数，则称之为合数。 因此，若 a 是素数，则 a \in N^+, ~a &gt; 1； 1 既不是素数，也不是合数； 素数是在自然数即 N^+ 的范畴内讨论的。 性质 算数基本定理 每个大于 1 的整数均可以携程一个以上的素数之乘积，且除了质因数的排序不同外是唯一的。 例如， \begin{align} 23244 &amp;= 2 \cdot 2\cdot3\cdot13\cdot 149 \\ &amp;= 2^2 \cdot 3\c... ]]></description>
+    <pubDate>Fri, 26 Jun 2026 07:35:40 GMT</pubDate>
+  </item><item>
+    <title>202606231529常见排序算法</title>
+    <link>https://guyueshui.github.io/__zettel/202606231529%E5%B8%B8%E8%A7%81%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95</link>
+    <guid>https://guyueshui.github.io/__zettel/202606231529%E5%B8%B8%E8%A7%81%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95</guid>
+    <description><![CDATA[ 常见排序算法 选择排序 思想：将待排序数组分为已排序和未排序两个部分。每次从未排序部分里面选择最小的，append到已排序部分。重复直至未排序部分为空。 SelectionSort(A) For i = 1 to n do Sort[i] = Find-Minimum from A Delete-Minimum from A Return(Sort) 从 1 遍历到 n，是 O(n) 的。从未排序部分找最小值也是 O(n) 的。所以选择排序的时间复杂度是 O(n^2). ]]></description>
+    <pubDate>Fri, 26 Jun 2026 07:35:40 GMT</pubDate>
   </item><item>
     <title>🌱欢迎👏</title>
     <link>https://guyueshui.github.io/</link>
     <guid>https://guyueshui.github.io/</guid>
     <description><![CDATA[  Learn2live stands for “learn to live”, learn something for fun, for work, for life… 学而乐，学而用，学而活。 学无止境 心系红尘万千事，辗转百年始读书。 闲言碎语何堪记，且予岁月证蹉跎。 这是一个欢迎页面。这里（下称本站）实际上是我个人obsidian仓库的一个子集。在平时工作生活中，我会将学到的知识点、踩过的坑、觉得有趣的东西，简要记录在obsidian仓库。除去其中可能包含公司、个人隐私的部分，其余部分均是可以公开的。本页面是公开之后特意新增的介绍页面。 这些笔记不会详细阐述一个话题，而是包含基础信息和必... ]]></description>
-    <pubDate>Thu, 18 Jun 2026 09:31:55 GMT</pubDate>
+    <pubDate>Fri, 26 Jun 2026 07:35:40 GMT</pubDate>
   </item><item>
-    <title>黄帝内经纪要</title>
-    <link>https://guyueshui.github.io/life/%E5%85%BB%E7%94%9F/%E9%BB%84%E5%B8%9D%E5%86%85%E7%BB%8F%E7%BA%AA%E8%A6%81</link>
-    <guid>https://guyueshui.github.io/life/%E5%85%BB%E7%94%9F/%E9%BB%84%E5%B8%9D%E5%86%85%E7%BB%8F%E7%BA%AA%E8%A6%81</guid>
-    <description><![CDATA[ 黄帝内经纪要 五脏六腑 五脏六腑五行备注心小肠火心火旺盛肝胆木肝胆相照同属木脾胃土脾胃属土，滋养肺金肺大肠金呼吸，排泄肾膀胱水肾脏主水，水回收，泌尿；膀胱储尿心包1三焦火 十二正经 手太阴肺经 手厥阴心包经 手少阴心经 手阳明大肠经 手少阳三焦经 手太阳小肠经 足太阴脾经 足厥阴肝经 足少阴肾经 足阳明胃经 足少阳胆经 足太阳膀胱经 黄帝内经纪要.canvas Footnotes 中医理论中的第六脏。中医讲究部位功能整体，并非一定能对应到解剖学的具体部位。 ↩ . ]]></description>
-    <pubDate>Thu, 18 Jun 2026 09:31:55 GMT</pubDate>
+    <title>多态</title>
+    <link>https://guyueshui.github.io/notes/cpp/%E5%A4%9A%E6%80%81</link>
+    <guid>https://guyueshui.github.io/notes/cpp/%E5%A4%9A%E6%80%81</guid>
+    <description><![CDATA[ 多态 Virtual function The biggest benefit of virtual functions: the ability to structure your code in such a way that newly derived classes will automatically work with the old code without modification! The signature of the derived class function must exactly match the signature of the base class vir... ]]></description>
+    <pubDate>Fri, 26 Jun 2026 07:35:40 GMT</pubDate>
   </item><item>
-    <title>leet1438.longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit</title>
-    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet1438.longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit</link>
-    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet1438.longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit</guid>
-    <description><![CDATA[ 1438. ]]></description>
-    <pubDate>Thu, 18 Jun 2026 09:31:55 GMT</pubDate>
+    <title>面试经历及笔记</title>
+    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E6%A0%A1%E6%8B%9B%E7%BB%8F%E5%8E%86</link>
+    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E6%A0%A1%E6%8B%9B%E7%BB%8F%E5%8E%86</guid>
+    <description><![CDATA[  以下为校招经历，从博客迁移至此。 总结一下这几个月的面试经历中被问到的问题，虽说问得都很浅，但是，问深了我也不会呀！ C++相关 Q: std::vector push_back 的复杂度是多少？ A: O(1), amortized constant. ]]></description>
+    <pubDate>Fri, 26 Jun 2026 07:35:40 GMT</pubDate>
   </item><item>
-    <title>leet239.sliding-window-maximum</title>
-    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet239.sliding-window-maximum</link>
-    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet239.sliding-window-maximum</guid>
-    <description><![CDATA[ 给你一个整数数组 nums，有一个大小为 k 的滑动窗口从数组的最左侧移动到数组的最右侧。你只可以看到在滑动窗口内的 k 个数字。滑动窗口每次只向右移动一位。 返回 滑动窗口中的最大值 。 示例 1： 输入： nums = [1,3,-1,-3,5,3,6,7], k = 3 输出： [3,3,5,5,6,7] 解释： 滑动窗口的位置最大值[1 3 -1] -3 5 3 6 731 [3 -1 -3] 5 3 6 731 3 [-1 -3 5] 3 6 751 3 -1 [-3 5 3] 6 751 3 -1 -3 [5 3 6] 761 3 -1 -3 5 [3 6 7]7 示例 2： 输入... ]]></description>
-    <pubDate>Thu, 18 Jun 2026 09:31:55 GMT</pubDate>
+    <title>社招面经</title>
+    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%A4%BE%E6%8B%9B%E9%9D%A2%E7%BB%8F</link>
+    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%A4%BE%E6%8B%9B%E9%9D%A2%E7%BB%8F</guid>
+    <description><![CDATA[ 拓蛮八方（2022.07.16） 算法题：10辆一模一样的小车，油箱最多装10升油，最多跑10公里。如何使得其中一辆小车跑出最大距离。例如：A车和B车同跑5公里，然后A车把剩下的油给B车加满，这样B车可以跑15公里。 Python迭代器，生成器 Python多进程，多线程，协程 Python list，append复杂度，remove复杂度 快排思想，最坏O(n^2)，如何改进 首先，清楚快排原理的同志都知道，快排特别热衷于凌乱的数据，最好情况下时间复杂度能达到O(nlogn)，空间复杂度为O(logn)；但是对于基本有序或者倒序的数据则无能为力，时间复杂度直接降到O(n^2），空间复杂度为O... ]]></description>
+    <pubDate>Fri, 26 Jun 2026 07:35:40 GMT</pubDate>
+  </item><item>
+    <title>Untitled</title>
+    <link>https://guyueshui.github.io/Untitled</link>
+    <guid>https://guyueshui.github.io/Untitled</guid>
+    <description><![CDATA[ 本地链接 IPv6 地址: fe80::f15d:8dee:d93d:6eab%12 IPv4 地址: 10.30.100.73 IPv4 DNS 服务器: 10.30.201.41 10.20.202.41 10.30.201.31 主 DNS 后缀: datayes.com 制造商: Intel 描述: Intel(R) Ethernet Connection (13) I219-V 驱动程序版本: 12.19.0.16 物理地址(MAC): 38-14-28-56-21-7D 点击展开代码示例 print(&quot;Hello, GitHub!&quot;) # 折叠后可隐藏的代码 a... ]]></description>
+    <pubDate>Thu, 25 Jun 2026 15:23:58 GMT</pubDate>
   </item>
     </channel>
   </rss>
