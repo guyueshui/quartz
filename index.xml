@@ -6,6 +6,42 @@
       <description>最近的10条笔记 on Learn2Live</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>202606231529常见排序算法</title>
+    <link>https://guyueshui.github.io/__zettel/202606231529%E5%B8%B8%E8%A7%81%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95</link>
+    <guid>https://guyueshui.github.io/__zettel/202606231529%E5%B8%B8%E8%A7%81%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95</guid>
+    <description><![CDATA[ 常见排序算法 选择排序 思想：将待排序数组分为已排序和未排序两个部分。每次从未排序部分里面选择最小的，append到已排序部分。重复直至未排序部分为空。 SelectionSort(A) For i = 1 to n do Sort[i] = Find-Minimum from A Delete-Minimum from A Return(Sort) 从 1 遍历到 n，是 O(n) 的。从未排序部分找最小值也是 O(n) 的。所以选择排序的时间复杂度是 O(n^2). ]]></description>
+    <pubDate>Tue, 30 Jun 2026 09:38:35 GMT</pubDate>
+  </item><item>
+    <title>leet1674.minimum-moves-to-make-array-complementary</title>
+    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet1674.minimum-moves-to-make-array-complementary</link>
+    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet1674.minimum-moves-to-make-array-complementary</guid>
+    <description><![CDATA[ 给你一个长度为 偶数 n 的整数数组 nums 和一个整数 limit 。每一次操作，你可以将 nums 中的任何整数替换为 1 到 limit 之间的另一个整数。 如果对于所有下标 i（下标从 0 开始），nums[i] + nums[n - 1 - i] 都等于同一个数，则数组 nums 是 互补的 。例如，数组 [1,2,3,4] 是互补的，因为对于所有下标 i ，nums[i] + nums[n - 1 - i] = 5 。 返回使数组 互补 的 最少 操作次数。 示例 1： **输入：**nums = [1,2,4,3], limit = 4 **输出：**1 **解释：**经过 1... ]]></description>
+    <pubDate>Tue, 30 Jun 2026 09:38:35 GMT</pubDate>
+  </item><item>
+    <title>leet1871.jump-game-vii</title>
+    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet1871.jump-game-vii</link>
+    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet1871.jump-game-vii</guid>
+    <description><![CDATA[ 给你一个下标从 0 开始的二进制字符串 s 和两个整数 minJump 和 maxJump 。一开始，你在下标 0 处，且该位置的值一定为 &#039;0&#039; 。当同时满足如下条件时，你可以从下标 i 移动到下标 j 处： i + minJump &lt;= j &lt;= min(i + maxJump, s.length - 1) 且 s[j] == &#039;0&#039;. ]]></description>
+    <pubDate>Tue, 30 Jun 2026 09:38:35 GMT</pubDate>
+  </item><item>
+    <title>862. 和至少为 K 的最短子数组</title>
+    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet862.shortest-subarray-with-sum-at-least-k</link>
+    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet862.shortest-subarray-with-sum-at-least-k</guid>
+    <description><![CDATA[ 给你一个整数数组 nums 和一个整数 k ，找出 nums 中和至少为 k 的 最短非空子数组 ，并返回该子数组的长度。如果不存在这样的 子数组 ，返回 -1 。 子数组 是数组中 连续 的一部分。 示例 1： 输入： nums = [1], k = 1 输出： 1 示例 2： 输入： nums = [1,2], k = 4 输出： -1 示例 3： 输入： nums = [2,-1,2], k = 3 输出： 3 提示： 1 &lt;= nums.length &lt;= 10^5 -10^5 &lt;= nums[i] &lt;= 10^5 1 &lt;= k &lt;= 10^9 思路... ]]></description>
+    <pubDate>Tue, 30 Jun 2026 09:38:35 GMT</pubDate>
+  </item><item>
+    <title>差分数组</title>
+    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/%E5%B7%AE%E5%88%86%E6%95%B0%E7%BB%84</link>
+    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/%E5%B7%AE%E5%88%86%E6%95%B0%E7%BB%84</guid>
+    <description><![CDATA[ 差分数组简介 这道题是我头一次领略到差分数组的威力。以往听到这个名词，总是敬而远之，不知道这是个啥东西，也有点畏惧接触。直到碰到这个科普帖子， 【算法小课堂】差分数组 才让我恍然大悟。原来差分数组就是离散函数的导数。早该知道到，差分的英文是differential，也有微分的意思。 differential equations: 差分方程 differentiable: 可微分的 我们回到离散数组\{a_i\}_{i=1}^n, 其差分数组定义为 d_i = \begin{cases} a_1 &amp; \text{if}~ i=1 \\ a_i - a_{i-1} &amp; \text{... ]]></description>
+    <pubDate>Tue, 30 Jun 2026 09:38:35 GMT</pubDate>
+  </item><item>
+    <title>算法摘要</title>
+    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/%E7%AE%97%E6%B3%95%E6%91%98%E8%A6%81</link>
+    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/%E7%AE%97%E6%B3%95%E6%91%98%E8%A6%81</guid>
+    <description><![CDATA[ 单调队列可以记录子数组的最值，次最值，等等 子数组的和可以转换为前缀和的差 子数组批量增删可以转化为差分数组的边界调整 二分法要考虑边界外的元素具备什么性质，具体看灵神视频教程。. ]]></description>
+    <pubDate>Tue, 30 Jun 2026 09:38:35 GMT</pubDate>
+  </item><item>
     <title>202509302140quartz发布obsidian</title>
     <link>https://guyueshui.github.io/__zettel/202509302140quartz%E5%8F%91%E5%B8%83obsidian</link>
     <guid>https://guyueshui.github.io/__zettel/202509302140quartz%E5%8F%91%E5%B8%83obsidian</guid>
@@ -29,42 +65,6 @@
     <guid>https://guyueshui.github.io/__zettel/202606221117%E7%B4%A0%E6%95%B0%E7%AD%9B%E9%80%89%E6%96%B9%E6%B3%95</guid>
     <description><![CDATA[ 素数筛选方法 什么是素数？ 大于 1 的自然数，如果只能被 1 和该数本身整除，不能被其他自然数整除，则称为素数（质数）。相对的，大于 1 的自然数若不是素数，则称之为合数。 因此，若 a 是素数，则 a \in N^+, ~a &gt; 1； 1 既不是素数，也不是合数； 素数是在自然数即 N^+ 的范畴内讨论的。 性质 算数基本定理 每个大于 1 的整数均可以携程一个以上的素数之乘积，且除了质因数的排序不同外是唯一的。 例如， \begin{align} 23244 &amp;= 2 \cdot 2\cdot3\cdot13\cdot 149 \\ &amp;= 2^2 \cdot 3\c... ]]></description>
     <pubDate>Fri, 26 Jun 2026 07:35:40 GMT</pubDate>
-  </item><item>
-    <title>202606231529常见排序算法</title>
-    <link>https://guyueshui.github.io/__zettel/202606231529%E5%B8%B8%E8%A7%81%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95</link>
-    <guid>https://guyueshui.github.io/__zettel/202606231529%E5%B8%B8%E8%A7%81%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95</guid>
-    <description><![CDATA[ 常见排序算法 选择排序 思想：将待排序数组分为已排序和未排序两个部分。每次从未排序部分里面选择最小的，append到已排序部分。重复直至未排序部分为空。 SelectionSort(A) For i = 1 to n do Sort[i] = Find-Minimum from A Delete-Minimum from A Return(Sort) 从 1 遍历到 n，是 O(n) 的。从未排序部分找最小值也是 O(n) 的。所以选择排序的时间复杂度是 O(n^2). ]]></description>
-    <pubDate>Fri, 26 Jun 2026 07:35:40 GMT</pubDate>
-  </item><item>
-    <title>🌱欢迎👏</title>
-    <link>https://guyueshui.github.io/</link>
-    <guid>https://guyueshui.github.io/</guid>
-    <description><![CDATA[  Learn2live stands for “learn to live”, learn something for fun, for work, for life… 学而乐，学而用，学而活。 学无止境 心系红尘万千事，辗转百年始读书。 闲言碎语何堪记，且予岁月证蹉跎。 这是一个欢迎页面。这里（下称本站）实际上是我个人obsidian仓库的一个子集。在平时工作生活中，我会将学到的知识点、踩过的坑、觉得有趣的东西，简要记录在obsidian仓库。除去其中可能包含公司、个人隐私的部分，其余部分均是可以公开的。本页面是公开之后特意新增的介绍页面。 这些笔记不会详细阐述一个话题，而是包含基础信息和必... ]]></description>
-    <pubDate>Fri, 26 Jun 2026 07:35:40 GMT</pubDate>
-  </item><item>
-    <title>多态</title>
-    <link>https://guyueshui.github.io/notes/cpp/%E5%A4%9A%E6%80%81</link>
-    <guid>https://guyueshui.github.io/notes/cpp/%E5%A4%9A%E6%80%81</guid>
-    <description><![CDATA[ 多态 Virtual function The biggest benefit of virtual functions: the ability to structure your code in such a way that newly derived classes will automatically work with the old code without modification! The signature of the derived class function must exactly match the signature of the base class vir... ]]></description>
-    <pubDate>Fri, 26 Jun 2026 07:35:40 GMT</pubDate>
-  </item><item>
-    <title>面试经历及笔记</title>
-    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E6%A0%A1%E6%8B%9B%E7%BB%8F%E5%8E%86</link>
-    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E6%A0%A1%E6%8B%9B%E7%BB%8F%E5%8E%86</guid>
-    <description><![CDATA[  以下为校招经历，从博客迁移至此。 总结一下这几个月的面试经历中被问到的问题，虽说问得都很浅，但是，问深了我也不会呀！ C++相关 Q: std::vector push_back 的复杂度是多少？ A: O(1), amortized constant. ]]></description>
-    <pubDate>Fri, 26 Jun 2026 07:35:40 GMT</pubDate>
-  </item><item>
-    <title>社招面经</title>
-    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%A4%BE%E6%8B%9B%E9%9D%A2%E7%BB%8F</link>
-    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%A4%BE%E6%8B%9B%E9%9D%A2%E7%BB%8F</guid>
-    <description><![CDATA[ 拓蛮八方（2022.07.16） 算法题：10辆一模一样的小车，油箱最多装10升油，最多跑10公里。如何使得其中一辆小车跑出最大距离。例如：A车和B车同跑5公里，然后A车把剩下的油给B车加满，这样B车可以跑15公里。 Python迭代器，生成器 Python多进程，多线程，协程 Python list，append复杂度，remove复杂度 快排思想，最坏O(n^2)，如何改进 首先，清楚快排原理的同志都知道，快排特别热衷于凌乱的数据，最好情况下时间复杂度能达到O(nlogn)，空间复杂度为O(logn)；但是对于基本有序或者倒序的数据则无能为力，时间复杂度直接降到O(n^2），空间复杂度为O... ]]></description>
-    <pubDate>Fri, 26 Jun 2026 07:35:40 GMT</pubDate>
-  </item><item>
-    <title>Untitled</title>
-    <link>https://guyueshui.github.io/Untitled</link>
-    <guid>https://guyueshui.github.io/Untitled</guid>
-    <description><![CDATA[ 本地链接 IPv6 地址: fe80::f15d:8dee:d93d:6eab%12 IPv4 地址: 10.30.100.73 IPv4 DNS 服务器: 10.30.201.41 10.20.202.41 10.30.201.31 主 DNS 后缀: datayes.com 制造商: Intel 描述: Intel(R) Ethernet Connection (13) I219-V 驱动程序版本: 12.19.0.16 物理地址(MAC): 38-14-28-56-21-7D 点击展开代码示例 print(&quot;Hello, GitHub!&quot;) # 折叠后可隐藏的代码 a... ]]></description>
-    <pubDate>Thu, 25 Jun 2026 15:23:58 GMT</pubDate>
   </item>
     </channel>
   </rss>
