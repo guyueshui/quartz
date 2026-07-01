@@ -6,11 +6,53 @@
       <description>最近的10条笔记 on Learn2Live</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>20260616145中学数学常用公式</title>
+    <link>https://guyueshui.github.io/__zettel/20260616145%E4%B8%AD%E5%AD%A6%E6%95%B0%E5%AD%A6%E5%B8%B8%E7%94%A8%E5%85%AC%E5%BC%8F</link>
+    <guid>https://guyueshui.github.io/__zettel/20260616145%E4%B8%AD%E5%AD%A6%E6%95%B0%E5%AD%A6%E5%B8%B8%E7%94%A8%E5%85%AC%E5%BC%8F</guid>
+    <description><![CDATA[ 完全平方公式 按照分配律展开即得， (a+b)^2 = a^2+2ab+b^2 平方差公式 a^2 - b^2 = (a+b)(a-b) 立方差公式 a^3-b^3=(a-b)(a^2+ab+b^2) 对数相关 \log_a x = y \iff a^y = x \quad (a &gt; 0, ~a \neq 1, ~x&gt;0) 对数换底公式 \log_a b = \frac{\log_c b}{\log_c a} 证明：设 x = \log_a b，则 \begin{gathered} b = a^x \implies \frac{\log_c b}{\log_c a} = \frac... ]]></description>
+    <pubDate>Wed, 01 Jul 2026 09:25:32 GMT</pubDate>
+  </item><item>
     <title>202606231529常见排序算法</title>
     <link>https://guyueshui.github.io/__zettel/202606231529%E5%B8%B8%E8%A7%81%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95</link>
     <guid>https://guyueshui.github.io/__zettel/202606231529%E5%B8%B8%E8%A7%81%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95</guid>
     <description><![CDATA[ 常见排序算法 选择排序 思想：将待排序数组分为已排序和未排序两个部分。每次从未排序部分里面选择最小的，append到已排序部分。重复直至未排序部分为空。 SelectionSort(A) For i = 1 to n do Sort[i] = Find-Minimum from A Delete-Minimum from A Return(Sort) 从 1 遍历到 n，是 O(n) 的。从未排序部分找最小值也是 O(n) 的。所以选择排序的时间复杂度是 O(n^2). ]]></description>
-    <pubDate>Tue, 30 Jun 2026 09:38:35 GMT</pubDate>
+    <pubDate>Wed, 01 Jul 2026 09:25:32 GMT</pubDate>
+  </item><item>
+    <title>202607011314堆（heap）</title>
+    <link>https://guyueshui.github.io/__zettel/202607011314%E5%A0%86</link>
+    <guid>https://guyueshui.github.io/__zettel/202607011314%E5%A0%86</guid>
+    <description><![CDATA[ 堆是什么？ 堆是一种二叉树，大顶堆是指父亲大于等于孩子的堆，堆顶为最大值。小顶堆是指父亲小于等于孩子的堆，堆顶为最小值。为节省内存，一般用数组模拟二叉树。对于 0-indexed 数组（第一个下标是 0），父子坐标关系如下， parent = (child - 1) / 2 child_1 = 2 * parent + 1 child_2 = child_1 + 1 = 2 * parent + 2 堆是一个弱序，并没有像二叉搜索树（BST）那么严格的有序， 二叉搜索树：左子树 &lt; 父节点 &lt; 右子树 二叉堆：左右孩子 &lt; 父节点。但左右孩子之间的关系不保证有序，可以混杂。由... ]]></description>
+    <pubDate>Wed, 01 Jul 2026 09:25:32 GMT</pubDate>
+  </item><item>
+    <title>🌱欢迎👏</title>
+    <link>https://guyueshui.github.io/</link>
+    <guid>https://guyueshui.github.io/</guid>
+    <description><![CDATA[  Learn2live stands for “learn to live”, learn something for fun, for work, for life… 学而乐，学而用，学而活。 学无止境 心系红尘万千事，辗转百年始读书。 闲言碎语何堪记，且予岁月证蹉跎。 这是一个欢迎页面。这里（下称本站）实际上是我个人obsidian仓库的一个子集。在平时工作生活中，我会将学到的知识点、踩过的坑、觉得有趣的东西，简要记录在obsidian仓库。除去其中可能包含公司、个人隐私的部分，其余部分均是可以公开的。本页面是公开之后特意新增的介绍页面。 这些笔记不会详细阐述一个话题，而是包含基础信息和必... ]]></description>
+    <pubDate>Wed, 01 Jul 2026 09:25:32 GMT</pubDate>
+  </item><item>
+    <title>leet121. 买卖股票的最佳时机</title>
+    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet121.best-time-to-buy-and-sell-stock</link>
+    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet121.best-time-to-buy-and-sell-stock</guid>
+    <description><![CDATA[ 给定一个数组 prices ，它的第 i 个元素 prices[i] 表示一支给定股票第 i 天的价格。 你只能选择 某一天 买入这只股票，并选择在 未来的某一个不同的日子 卖出该股票。设计一个算法来计算你所能获取的最大利润。 返回你可以从这笔交易中获取的最大利润。如果你不能获取任何利润，返回 0 。 示例 1： 输入：[7,1,5,3,6,4] **输出：**5 **解释：**在第 2 天（股票价格 = 1）的时候买入，在第 5 天（股票价格 = 6）的时候卖出，最大利润 = 6-1 = 5 。 注意利润不能是 7-1 = 6, 因为卖出价格需要大于买入价格；同时，你不能在买入前卖出股票。 ... ]]></description>
+    <pubDate>Wed, 01 Jul 2026 09:24:02 GMT</pubDate>
+  </item><item>
+    <title>leet122. 买卖股票的最佳时机 II</title>
+    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet122.best-time-to-buy-and-sell-stock-ii</link>
+    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet122.best-time-to-buy-and-sell-stock-ii</guid>
+    <description><![CDATA[ 给你一个整数数组 prices ，其中 prices[i] 表示某支股票第 i 天的价格。 在每一天，你可以决定是否购买和/或出售股票。你在任何时候 最多 只能持有 一股 股票。然而，你可以在 同一天 多次买卖该股票，但要确保你持有的股票不超过一股。 返回 你能获得的 最大 利润 。 示例 1： 输入： prices = [7,1,5,3,6,4] 输出： 7 解释： 在第 2 天（股票价格 = 1）的时候买入，在第 3 天（股票价格 = 5）的时候卖出, 这笔交易所能获得利润 = 5 - 1 = 4。 随后，在第 4 天（股票价格 = 3）的时候买入，在第 5 天（股票价格 = 6）的时候卖... ]]></description>
+    <pubDate>Wed, 01 Jul 2026 09:24:02 GMT</pubDate>
+  </item><item>
+    <title>leet1438. 绝对差不超过限制的最长连续子数组</title>
+    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet1438.longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit</link>
+    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet1438.longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit</guid>
+    <description><![CDATA[ 给你一个整数数组 nums ，和一个表示限制的整数 limit，请你返回最长连续子数组的长度，该子数组中的任意两个元素之间的绝对差必须小于或者等于 limit。 示例 1： 输入： nums = [8,2,4,7], limit = 4 输出： 2 解释： 所有子数组如下： [8] 最大绝对差 |8-8| = 0 ⇐ 4. ]]></description>
+    <pubDate>Wed, 01 Jul 2026 09:24:02 GMT</pubDate>
+  </item><item>
+    <title>leet154. 寻找旋转排序数组中的最小值 II</title>
+    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet154.find-minimum-in-rotated-sorted-array-ii</link>
+    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet154.find-minimum-in-rotated-sorted-array-ii</guid>
+    <description><![CDATA[ 已知一个长度为 n 的数组，预先按照升序排列，经由 1 到 n 次 旋转 后，得到输入数组。例如，原数组 nums = [0,1,4,4,5,6,7] 在变化后可能得到： 若旋转 4 次，则可以得到 [4,5,6,7,0,1,4] 若旋转 7 次，则可以得到 [0,1,4,4,5,6,7] 注意，数组 [a[0], a[1], a[2], ..., a[n-1]] 旋转一次 的结果为数组 [a[n-1], a[0], a[1], a[2], ..., a[n-2]] 。 给你一个可能存在 重复 元素值的数组 nums ，它原来是一个升序排列的数组，并按上述情形进行了多次旋转。请你找出并返回数组... ]]></description>
+    <pubDate>Wed, 01 Jul 2026 09:24:02 GMT</pubDate>
   </item><item>
     <title>leet1674.minimum-moves-to-make-array-complementary</title>
     <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet1674.minimum-moves-to-make-array-complementary</link>
@@ -23,48 +65,6 @@
     <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet1871.jump-game-vii</guid>
     <description><![CDATA[ 给你一个下标从 0 开始的二进制字符串 s 和两个整数 minJump 和 maxJump 。一开始，你在下标 0 处，且该位置的值一定为 &#039;0&#039; 。当同时满足如下条件时，你可以从下标 i 移动到下标 j 处： i + minJump &lt;= j &lt;= min(i + maxJump, s.length - 1) 且 s[j] == &#039;0&#039;. ]]></description>
     <pubDate>Tue, 30 Jun 2026 09:38:35 GMT</pubDate>
-  </item><item>
-    <title>862. 和至少为 K 的最短子数组</title>
-    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet862.shortest-subarray-with-sum-at-least-k</link>
-    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet862.shortest-subarray-with-sum-at-least-k</guid>
-    <description><![CDATA[ 给你一个整数数组 nums 和一个整数 k ，找出 nums 中和至少为 k 的 最短非空子数组 ，并返回该子数组的长度。如果不存在这样的 子数组 ，返回 -1 。 子数组 是数组中 连续 的一部分。 示例 1： 输入： nums = [1], k = 1 输出： 1 示例 2： 输入： nums = [1,2], k = 4 输出： -1 示例 3： 输入： nums = [2,-1,2], k = 3 输出： 3 提示： 1 &lt;= nums.length &lt;= 10^5 -10^5 &lt;= nums[i] &lt;= 10^5 1 &lt;= k &lt;= 10^9 思路... ]]></description>
-    <pubDate>Tue, 30 Jun 2026 09:38:35 GMT</pubDate>
-  </item><item>
-    <title>差分数组</title>
-    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/%E5%B7%AE%E5%88%86%E6%95%B0%E7%BB%84</link>
-    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/%E5%B7%AE%E5%88%86%E6%95%B0%E7%BB%84</guid>
-    <description><![CDATA[ 差分数组简介 这道题是我头一次领略到差分数组的威力。以往听到这个名词，总是敬而远之，不知道这是个啥东西，也有点畏惧接触。直到碰到这个科普帖子， 【算法小课堂】差分数组 才让我恍然大悟。原来差分数组就是离散函数的导数。早该知道到，差分的英文是differential，也有微分的意思。 differential equations: 差分方程 differentiable: 可微分的 我们回到离散数组\{a_i\}_{i=1}^n, 其差分数组定义为 d_i = \begin{cases} a_1 &amp; \text{if}~ i=1 \\ a_i - a_{i-1} &amp; \text{... ]]></description>
-    <pubDate>Tue, 30 Jun 2026 09:38:35 GMT</pubDate>
-  </item><item>
-    <title>算法摘要</title>
-    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/%E7%AE%97%E6%B3%95%E6%91%98%E8%A6%81</link>
-    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/%E7%AE%97%E6%B3%95%E6%91%98%E8%A6%81</guid>
-    <description><![CDATA[ 单调队列可以记录子数组的最值，次最值，等等 子数组的和可以转换为前缀和的差 子数组批量增删可以转化为差分数组的边界调整 二分法要考虑边界外的元素具备什么性质，具体看灵神视频教程。. ]]></description>
-    <pubDate>Tue, 30 Jun 2026 09:38:35 GMT</pubDate>
-  </item><item>
-    <title>202509302140quartz发布obsidian</title>
-    <link>https://guyueshui.github.io/__zettel/202509302140quartz%E5%8F%91%E5%B8%83obsidian</link>
-    <guid>https://guyueshui.github.io/__zettel/202509302140quartz%E5%8F%91%E5%B8%83obsidian</guid>
-    <description><![CDATA[ 问题 我有一个obsidian仓库，私有的，因为里面有一些笔记涉及公司和个人隐私。但其余部分都是可公开的，有没有一个方案同时满足， 免费 可以控制哪些发布，哪些不发布 原始仓库是私有的 方案 工具名称优点缺点obsidian-digital-garden1. ]]></description>
-    <pubDate>Fri, 26 Jun 2026 07:35:40 GMT</pubDate>
-  </item><item>
-    <title>202604161330std::list的size</title>
-    <link>https://guyueshui.github.io/__zettel/202604161330cpp%E4%B8%ADstl_list%E7%9A%84size</link>
-    <guid>https://guyueshui.github.io/__zettel/202604161330cpp%E4%B8%ADstl_list%E7%9A%84size</guid>
-    <description><![CDATA[ 先看一段测试代码， #include &lt;iostream&gt; #include &lt;list&gt; using namespace std; struct A {int a; char b; long c; }; int main() { list&lt;int&gt; a{1,2,3}; list&lt;A&gt; b; cout &lt;&lt; &quot;sizeof list&lt;int&gt;:&quot; &lt;&lt; sizeof(a) &lt;&lt; endl; cout &lt;&lt; &quot;sizeof A:&quot; &lt;&lt; ... ]]></description>
-    <pubDate>Fri, 26 Jun 2026 07:35:40 GMT</pubDate>
-  </item><item>
-    <title>202606161406排列组合</title>
-    <link>https://guyueshui.github.io/__zettel/202606161406%E6%8E%92%E5%88%97%E7%BB%84%E5%90%88</link>
-    <guid>https://guyueshui.github.io/__zettel/202606161406%E6%8E%92%E5%88%97%E7%BB%84%E5%90%88</guid>
-    <description><![CDATA[ 排列组合 1 排列数 问题引入：有 n 个座位，坐 n 个同学，请问有多少种坐法？ 对于第一个座位，可以从 n 个同学里面任选一个坐，所以共有 n 种选择。对于第二个座位，只能从剩下的 n-1 个同学中挑一个坐，故有 n-1 种选择。依此类推，最后一个座位，只剩最后一位同学，只有 1 种选择。根据乘法原理共有， n \times (n-1) \times \cdots \times 1 = n! \triangleq A_n^n 种坐法。不失一般性，我们把它记为 A_n^k，叫做排列数，其含义是从 n 个里面选 k 个做排列，共有多少种排列方法。如无特殊说明，默认 k \le n. ]]></description>
-    <pubDate>Fri, 26 Jun 2026 07:35:40 GMT</pubDate>
-  </item><item>
-    <title>202606221117素数筛选方法</title>
-    <link>https://guyueshui.github.io/__zettel/202606221117%E7%B4%A0%E6%95%B0%E7%AD%9B%E9%80%89%E6%96%B9%E6%B3%95</link>
-    <guid>https://guyueshui.github.io/__zettel/202606221117%E7%B4%A0%E6%95%B0%E7%AD%9B%E9%80%89%E6%96%B9%E6%B3%95</guid>
-    <description><![CDATA[ 素数筛选方法 什么是素数？ 大于 1 的自然数，如果只能被 1 和该数本身整除，不能被其他自然数整除，则称为素数（质数）。相对的，大于 1 的自然数若不是素数，则称之为合数。 因此，若 a 是素数，则 a \in N^+, ~a &gt; 1； 1 既不是素数，也不是合数； 素数是在自然数即 N^+ 的范畴内讨论的。 性质 算数基本定理 每个大于 1 的整数均可以携程一个以上的素数之乘积，且除了质因数的排序不同外是唯一的。 例如， \begin{align} 23244 &amp;= 2 \cdot 2\cdot3\cdot13\cdot 149 \\ &amp;= 2^2 \cdot 3\c... ]]></description>
-    <pubDate>Fri, 26 Jun 2026 07:35:40 GMT</pubDate>
   </item>
     </channel>
   </rss>
