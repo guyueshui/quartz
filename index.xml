@@ -6,6 +6,36 @@
       <description>最近的10条笔记 on Learn2Live</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>202510100935网络小工具</title>
+    <link>https://guyueshui.github.io/__zettel/202510100935%E7%BD%91%E7%BB%9C%E5%B0%8F%E5%B7%A5%E5%85%B7</link>
+    <guid>https://guyueshui.github.io/__zettel/202510100935%E7%BD%91%E7%BB%9C%E5%B0%8F%E5%B7%A5%E5%85%B7</guid>
+    <description><![CDATA[ 网络小工具 网址描述ifconfig.co/port/24320测试公网端口是否可达你的内网设备，会自动获取你的公网IP（nat转换）然后判断指定端口是否可达。www.ip138.com查IP归属地 curl查询本机公网ip curl ifconfig.me curl icanhazip.com curl ipinfo.io/ip curl ipecho.net/plain curl cip.cc # 返回IP、地址及运营商详情 curl myip.ipip.net # 显示IP及归属地 curl ipinfo.io/json curl ifconfig.co/json NAT (Networ... ]]></description>
+    <pubDate>Mon, 06 Jul 2026 09:19:46 GMT</pubDate>
+  </item><item>
+    <title>202601271512docker常用命令</title>
+    <link>https://guyueshui.github.io/__zettel/202601271512docker%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4</link>
+    <guid>https://guyueshui.github.io/__zettel/202601271512docker%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4</guid>
+    <description><![CDATA[ docker常用命令 Takeout 镜像（image）是模板，容器（container）是实例。 # 查看正在运行的容器 docker ps # 同上，包括已经停止的容器 docker ps -a # 查看容器运行状态，CPU、MEM、NET docker stats &lt;container&gt; # 查看镜像 docker images # 删除镜像 docker rmi &lt;image&gt; # 删除容器 docker rm &lt;container&gt; # 查看volume docker volume ls # 查看容器日志，追加显示，从倒数第十行显示 docker ... ]]></description>
+    <pubDate>Mon, 06 Jul 2026 09:19:46 GMT</pubDate>
+  </item><item>
+    <title>leet1792. 最大平均通过率</title>
+    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet1792.maximum-average-pass-ratio</link>
+    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet1792.maximum-average-pass-ratio</guid>
+    <description><![CDATA[ 一所学校里有一些班级，每个班级里有一些学生，现在每个班都会进行一场期末考试。给你一个二维数组 classes ，其中 classes[i] = [passi, totali] ，表示你提前知道了第 i 个班级总共有 totali 个学生，其中只有 passi 个学生可以通过考试。 给你一个整数 extraStudents ，表示额外有 extraStudents 个聪明的学生，他们 一定 能通过任何班级的期末考。你需要给这 extraStudents 个学生每人都安排一个班级，使得 所有 班级的 平均 通过率 最大 。 一个班级的 通过率 等于这个班级通过考试的学生人数除以这个班级的总人数。平... ]]></description>
+    <pubDate>Mon, 06 Jul 2026 09:19:46 GMT</pubDate>
+  </item><item>
+    <title>leet2406. 将区间分为最少组数</title>
+    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet2406.divide-intervals-into-minimum-number-of-groups</link>
+    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet2406.divide-intervals-into-minimum-number-of-groups</guid>
+    <description><![CDATA[ 给你一个二维整数数组 intervals ，其中 intervals[i] = [lefti, righti] 表示 闭 区间 [lefti, righti] 。 你需要将 intervals 划分为一个或者多个区间 组 ，每个区间 只 属于一个组，且同一个组中任意两个区间 不相交 。 请你返回 最少 需要划分成多少个组。 如果两个区间覆盖的范围有重叠（即至少有一个公共数字），那么我们称这两个区间是 相交 的。比方说区间 [1, 5] 和 [5, 8] 相交。 示例 1： 输入： intervals = [[5,10],[6,8],[1,5],[2,3],[1,10]] 输出： 3 解释： 我... ]]></description>
+    <pubDate>Mon, 06 Jul 2026 09:19:46 GMT</pubDate>
+  </item><item>
+    <title>leet703.kth-largest-element-in-a-stream</title>
+    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet703.kth-largest-element-in-a-stream</link>
+    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet703.kth-largest-element-in-a-stream</guid>
+    <description><![CDATA[ 设计一个找到数据流中第 k 大元素的类（class）。注意是排序后的第 k 大元素，不是第 k 个不同的元素。 请实现 KthLargest 类： KthLargest(int k, int[] nums) 使用整数 k 和整数流 nums 初始化对象。 int add(int val) 将 val 插入数据流 nums 后，返回当前数据流中第 k 大的元素。 示例 1： 输入： [“KthLargest”, “add”, “add”, “add”, “add”, “add”] [[3, [4, 5, 8, 2]], [3], [5], [10], [9], [4]] 输出：[null, 4,... ]]></description>
+    <pubDate>Mon, 06 Jul 2026 09:19:46 GMT</pubDate>
+  </item><item>
     <title>20260616145中学数学常用公式</title>
     <link>https://guyueshui.github.io/__zettel/20260616145%E4%B8%AD%E5%AD%A6%E6%95%B0%E5%AD%A6%E5%B8%B8%E7%94%A8%E5%85%AC%E5%BC%8F</link>
     <guid>https://guyueshui.github.io/__zettel/20260616145%E4%B8%AD%E5%AD%A6%E6%95%B0%E5%AD%A6%E5%B8%B8%E7%94%A8%E5%85%AC%E5%BC%8F</guid>
@@ -35,36 +65,6 @@
     <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet121.best-time-to-buy-and-sell-stock</guid>
     <description><![CDATA[ 给定一个数组 prices ，它的第 i 个元素 prices[i] 表示一支给定股票第 i 天的价格。 你只能选择 某一天 买入这只股票，并选择在 未来的某一个不同的日子 卖出该股票。设计一个算法来计算你所能获取的最大利润。 返回你可以从这笔交易中获取的最大利润。如果你不能获取任何利润，返回 0 。 示例 1： 输入：[7,1,5,3,6,4] **输出：**5 **解释：**在第 2 天（股票价格 = 1）的时候买入，在第 5 天（股票价格 = 6）的时候卖出，最大利润 = 6-1 = 5 。 注意利润不能是 7-1 = 6, 因为卖出价格需要大于买入价格；同时，你不能在买入前卖出股票。 ... ]]></description>
     <pubDate>Wed, 01 Jul 2026 09:24:02 GMT</pubDate>
-  </item><item>
-    <title>leet122. 买卖股票的最佳时机 II</title>
-    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet122.best-time-to-buy-and-sell-stock-ii</link>
-    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet122.best-time-to-buy-and-sell-stock-ii</guid>
-    <description><![CDATA[ 给你一个整数数组 prices ，其中 prices[i] 表示某支股票第 i 天的价格。 在每一天，你可以决定是否购买和/或出售股票。你在任何时候 最多 只能持有 一股 股票。然而，你可以在 同一天 多次买卖该股票，但要确保你持有的股票不超过一股。 返回 你能获得的 最大 利润 。 示例 1： 输入： prices = [7,1,5,3,6,4] 输出： 7 解释： 在第 2 天（股票价格 = 1）的时候买入，在第 3 天（股票价格 = 5）的时候卖出, 这笔交易所能获得利润 = 5 - 1 = 4。 随后，在第 4 天（股票价格 = 3）的时候买入，在第 5 天（股票价格 = 6）的时候卖... ]]></description>
-    <pubDate>Wed, 01 Jul 2026 09:24:02 GMT</pubDate>
-  </item><item>
-    <title>leet1438. 绝对差不超过限制的最长连续子数组</title>
-    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet1438.longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit</link>
-    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet1438.longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit</guid>
-    <description><![CDATA[ 给你一个整数数组 nums ，和一个表示限制的整数 limit，请你返回最长连续子数组的长度，该子数组中的任意两个元素之间的绝对差必须小于或者等于 limit。 示例 1： 输入： nums = [8,2,4,7], limit = 4 输出： 2 解释： 所有子数组如下： [8] 最大绝对差 |8-8| = 0 ⇐ 4. ]]></description>
-    <pubDate>Wed, 01 Jul 2026 09:24:02 GMT</pubDate>
-  </item><item>
-    <title>leet154. 寻找旋转排序数组中的最小值 II</title>
-    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet154.find-minimum-in-rotated-sorted-array-ii</link>
-    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet154.find-minimum-in-rotated-sorted-array-ii</guid>
-    <description><![CDATA[ 已知一个长度为 n 的数组，预先按照升序排列，经由 1 到 n 次 旋转 后，得到输入数组。例如，原数组 nums = [0,1,4,4,5,6,7] 在变化后可能得到： 若旋转 4 次，则可以得到 [4,5,6,7,0,1,4] 若旋转 7 次，则可以得到 [0,1,4,4,5,6,7] 注意，数组 [a[0], a[1], a[2], ..., a[n-1]] 旋转一次 的结果为数组 [a[n-1], a[0], a[1], a[2], ..., a[n-2]] 。 给你一个可能存在 重复 元素值的数组 nums ，它原来是一个升序排列的数组，并按上述情形进行了多次旋转。请你找出并返回数组... ]]></description>
-    <pubDate>Wed, 01 Jul 2026 09:24:02 GMT</pubDate>
-  </item><item>
-    <title>leet1674.minimum-moves-to-make-array-complementary</title>
-    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet1674.minimum-moves-to-make-array-complementary</link>
-    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet1674.minimum-moves-to-make-array-complementary</guid>
-    <description><![CDATA[ 给你一个长度为 偶数 n 的整数数组 nums 和一个整数 limit 。每一次操作，你可以将 nums 中的任何整数替换为 1 到 limit 之间的另一个整数。 如果对于所有下标 i（下标从 0 开始），nums[i] + nums[n - 1 - i] 都等于同一个数，则数组 nums 是 互补的 。例如，数组 [1,2,3,4] 是互补的，因为对于所有下标 i ，nums[i] + nums[n - 1 - i] = 5 。 返回使数组 互补 的 最少 操作次数。 示例 1： **输入：**nums = [1,2,4,3], limit = 4 **输出：**1 **解释：**经过 1... ]]></description>
-    <pubDate>Tue, 30 Jun 2026 09:38:35 GMT</pubDate>
-  </item><item>
-    <title>leet1871.jump-game-vii</title>
-    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet1871.jump-game-vii</link>
-    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet1871.jump-game-vii</guid>
-    <description><![CDATA[ 给你一个下标从 0 开始的二进制字符串 s 和两个整数 minJump 和 maxJump 。一开始，你在下标 0 处，且该位置的值一定为 &#039;0&#039; 。当同时满足如下条件时，你可以从下标 i 移动到下标 j 处： i + minJump &lt;= j &lt;= min(i + maxJump, s.length - 1) 且 s[j] == &#039;0&#039;. ]]></description>
-    <pubDate>Tue, 30 Jun 2026 09:38:35 GMT</pubDate>
   </item>
     </channel>
   </rss>
