@@ -28,12 +28,32 @@ export const explFilterFn : ExplorerOptions["filterFn"] =
     return !omit.has(name)
 }
 
-ExternalPlugin.Explorer({
-    mapFn: explMapFn,
-    filterFn: explFilterFn,
-    order: ["filter", "map", "sort"],
+// ExternalPlugin.Explorer({
+//     mapFn: explMapFn,
+//     filterFn: explFilterFn,
+//     order: ["filter", "map", "sort"],
+// })
+const MyCustomExplorer = ExternalPlugin.Explorer({
+  mapFn: (node) => {
+    node.displayName = node.displayName.toUpperCase()
+    return node
+  },
 })
 
 const config = await loadQuartzConfig()
 export default config
-export const layout = await loadQuartzLayout()
+// export const layout = await loadQuartzLayout()
+export const layout = await loadQuartzLayout({
+  byPageType: {
+    content: {
+      left: [
+        MyCustomExplorer // This forces Quartz to use your configured instance here
+      ],
+    },
+    folder: {
+      left: [
+        MyCustomExplorer
+      ]
+    }
+  }
+})
