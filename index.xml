@@ -10,31 +10,43 @@
     <link>https://guyueshui.github.io/notes/network/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80</link>
     <guid>https://guyueshui.github.io/notes/network/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80</guid>
     <description><![CDATA[ 网络 摘自《程序员面试白皮书》 网络分层 计算级之间的交互模型通常是指Open System Interconnection model (OSI), 该模型将网络通信系统抽象成了七层。因其不太实用，工业界普遍使用简化的TCP/IP五层模型。 应用层 针对特定的协议，为应用程序做服务,比如SMP,POP3,SSH,FTP等协议。 表示层 负责数据格式的转换，把不同表现形式的信息转换成适合网络传输的格式。 会话层 负责建立和断开通信连接，什么时候建立连接，什么时候断开连接以及保持多久的连接。 传输层 在两个通信节点之间负责数据的传输，起着可靠传输的作用。(运行在这一层的设备有四层交换机，四层路由... ]]></description>
-    <pubDate>Tue, 04 Aug 2026 09:25:48 GMT</pubDate>
+    <pubDate>Wed, 05 Aug 2026 09:12:06 GMT</pubDate>
   </item><item>
     <title>2022-05-29</title>
     <link>https://guyueshui.github.io/diary/2022-05-29</link>
     <guid>https://guyueshui.github.io/diary/2022-05-29</guid>
     <description><![CDATA[  2022-05-29 The best and most beautiful things in the world cannot be seen, nor touched… but are felt in the heart. ]]></description>
-    <pubDate>Tue, 04 Aug 2026 09:25:47 GMT</pubDate>
+    <pubDate>Wed, 05 Aug 2026 09:12:05 GMT</pubDate>
   </item><item>
     <title>2022-05-26</title>
     <link>https://guyueshui.github.io/diary/2022-05-26</link>
     <guid>https://guyueshui.github.io/diary/2022-05-26</guid>
     <description><![CDATA[  2022-05-26 If you can’t explain it simply, you don’t understand it well enough. — Albert Einstein What is cpp type traits? Cf. ]]></description>
-    <pubDate>Tue, 04 Aug 2026 09:25:47 GMT</pubDate>
+    <pubDate>Wed, 05 Aug 2026 09:12:05 GMT</pubDate>
   </item><item>
     <title>TypeTraits介绍</title>
     <link>https://guyueshui.github.io/notes/cpp/TypeTraits%E4%BB%8B%E7%BB%8D</link>
     <guid>https://guyueshui.github.io/notes/cpp/TypeTraits%E4%BB%8B%E7%BB%8D</guid>
     <description><![CDATA[ Type traits are a clever technique used in C++ template metaprogramming that gives you the ability to inspect and transform the properties of types. ]]></description>
-    <pubDate>Tue, 04 Aug 2026 09:25:47 GMT</pubDate>
+    <pubDate>Wed, 05 Aug 2026 09:12:05 GMT</pubDate>
   </item><item>
     <title>生育保险</title>
     <link>https://guyueshui.github.io/life/%E7%94%9F%E8%82%B2%E4%BF%9D%E9%99%A9</link>
     <guid>https://guyueshui.github.io/life/%E7%94%9F%E8%82%B2%E4%BF%9D%E9%99%A9</guid>
     <description><![CDATA[ 第三章 居民生育保险篇 二十一、享受我市居民生育保险待遇需要符合哪些条件? （一）符合国家、省、市计划生育政策； （二）参加我市当年居民医疗保险的居民或个人通过劳动人事代理机构参加城镇职工基本医疗保险并可享受职工医疗保险待遇的参保人员。 二十二 、参保居民享受哪些生育保险待遇? 居民生育保险享受生育医疗待遇，包括下列内容： （一）妊娠期间所必需的门诊常规检查费用； （二）分娩期间所必需的检查费、接生费、手术费、住院床位费和药费； （三）分娩期间生育并发症费用； （四）分娩期间新生儿所必需的常规诊疗费和药费； （五）计划内生育发生的流产、引产费用。 二十三、居民生育保险报销比例是多少？ 参保居民... ]]></description>
-    <pubDate>Tue, 04 Aug 2026 09:25:47 GMT</pubDate>
+    <pubDate>Wed, 05 Aug 2026 09:12:05 GMT</pubDate>
+  </item><item>
+    <title>leet188.best-time-to-buy-and-sell-stock-iv</title>
+    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet188.best-time-to-buy-and-sell-stock-iv</link>
+    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet188.best-time-to-buy-and-sell-stock-iv</guid>
+    <description><![CDATA[ 给你一个整数数组 prices 和一个整数 k ，其中 prices[i] 是某支给定的股票在第 i 天的价格。 设计一个算法来计算你所能获取的最大利润。你最多可以完成 k 笔交易。也就是说，你最多可以买 k 次，卖 k 次。 注意： 你不能同时参与多笔交易（你必须在再次购买前出售掉之前的股票）。 示例 1： 输入： k = 2, prices = [2,4,1] 输出： 2 解释： 在第 1 天 (股票价格 = 2) 的时候买入，在第 2 天 (股票价格 = 4) 的时候卖出，这笔交易所能获得利润 = 4-2 = 2 。 示例 2： 输入： k = 2, prices = [3,2,6,5,... ]]></description>
+    <pubDate>Wed, 05 Aug 2026 08:42:26 GMT</pubDate>
+  </item><item>
+    <title>leet123. 买卖股票的最佳时机 III</title>
+    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet123.best-time-to-buy-and-sell-stock-iii</link>
+    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet123.best-time-to-buy-and-sell-stock-iii</guid>
+    <description><![CDATA[ 给定一个数组，它的第 i 个元素是一支给定的股票在第 i 天的价格。 设计一个算法来计算你所能获取的最大利润。你最多可以完成 两笔 交易。 注意： 你不能同时参与多笔交易（你必须在再次购买前出售掉之前的股票）。 示例 1: 输入： prices = [3,3,5,0,0,3,1,4] 输出： 6 解释： 在第 4 天（股票价格 = 0）的时候买入，在第 6 天（股票价格 = 3）的时候卖出，这笔交易所能获得利润 = 3-0 = 3 。 随后，在第 7 天（股票价格 = 1）的时候买入，在第 8 天 （股票价格 = 4）的时候卖出，这笔交易所能获得利润 = 4-1 = 3 。 示例 2： 输入：... ]]></description>
+    <pubDate>Wed, 05 Aug 2026 08:22:49 GMT</pubDate>
   </item><item>
     <title>202607160858ubuntu20.04编译适用于16.04的程序</title>
     <link>https://guyueshui.github.io/__zettel/202607160858ubuntu20.04%E7%BC%96%E8%AF%91%E9%80%82%E7%94%A8%E4%BA%8E16.04%E7%9A%84%E7%A8%8B%E5%BA%8F</link>
@@ -53,18 +65,6 @@
     <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet1792.maximum-average-pass-ratio</guid>
     <description><![CDATA[ 一所学校里有一些班级，每个班级里有一些学生，现在每个班都会进行一场期末考试。给你一个二维数组 classes ，其中 classes[i] = [passi, totali] ，表示你提前知道了第 i 个班级总共有 totali 个学生，其中只有 passi 个学生可以通过考试。 给你一个整数 extraStudents ，表示额外有 extraStudents 个聪明的学生，他们 一定 能通过任何班级的期末考。你需要给这 extraStudents 个学生每人都安排一个班级，使得 所有 班级的 平均 通过率 最大 。 一个班级的 通过率 等于这个班级通过考试的学生人数除以这个班级的总人数。平... ]]></description>
     <pubDate>Thu, 02 Jul 2026 07:40:17 GMT</pubDate>
-  </item><item>
-    <title>leet703.kth-largest-element-in-a-stream</title>
-    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet703.kth-largest-element-in-a-stream</link>
-    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet703.kth-largest-element-in-a-stream</guid>
-    <description><![CDATA[ 设计一个找到数据流中第 k 大元素的类（class）。注意是排序后的第 k 大元素，不是第 k 个不同的元素。 请实现 KthLargest 类： KthLargest(int k, int[] nums) 使用整数 k 和整数流 nums 初始化对象。 int add(int val) 将 val 插入数据流 nums 后，返回当前数据流中第 k 大的元素。 示例 1： 输入： [“KthLargest”, “add”, “add”, “add”, “add”, “add”] [[3, [4, 5, 8, 2]], [3], [5], [10], [9], [4]] 输出：[null, 4,... ]]></description>
-    <pubDate>Thu, 02 Jul 2026 05:18:16 GMT</pubDate>
-  </item><item>
-    <title>🌱欢迎👏</title>
-    <link>https://guyueshui.github.io/</link>
-    <guid>https://guyueshui.github.io/</guid>
-    <description><![CDATA[  Learn2live stands for “learn to live”, learn something for fun, for work, for life… 学而乐，学而用，学而活。 学无止境 心系红尘万千事，辗转百年始读书。 闲言碎语何堪记，且予岁月证蹉跎。 这是一个欢迎页面。这里（下称本站）实际上是我个人obsidian仓库的一个子集。在平时工作生活中，我会将学到的知识点、踩过的坑、觉得有趣的东西，简要记录在obsidian仓库。除去其中可能包含公司、个人隐私的部分，其余部分均是可以公开的。本页面是公开之后特意新增的介绍页面。 这些笔记不会详细阐述一个话题，而是包含基础信息和必... ]]></description>
-    <pubDate>Wed, 01 Jul 2026 09:25:32 GMT</pubDate>
   </item>
     </channel>
   </rss>
