@@ -6,6 +6,24 @@
       <description>最近的10条笔记 on Learn2Live</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>202608180927类定义中的三五法则</title>
+    <link>https://guyueshui.github.io/__zettel/202608180927%E7%B1%BB%E5%AE%9A%E4%B9%89%E4%B8%AD%E7%9A%84%E4%B8%89%E4%BA%94%E6%B3%95%E5%88%99</link>
+    <guid>https://guyueshui.github.io/__zettel/202608180927%E7%B1%BB%E5%AE%9A%E4%B9%89%E4%B8%AD%E7%9A%84%E4%B8%89%E4%BA%94%E6%B3%95%E5%88%99</guid>
+    <description><![CDATA[ 三法则 C++11前，没有移动语义。考虑下面三个函数， 析构函数 拷贝构造函数 拷贝复制运算符 三法则就是说：如果这三个中你需要定义一个，那么另外两个你（几乎）也得定义。 什么意思？对于普通不涉及资源管理的类，如果你不写这三个函数，编译器会自动生成默认版本，其行为通常是对成员变量逐一拷贝或析构（调用成员变量的operator=或析构函数）。这在可平凡拷贝和平凡析构的类型中没有问题。但是如果成员变量管理了某个资源（如动态内存，文件句柄，网络连接等），只是浅拷贝的话肯定会出问题。 struct A { A() : data(new int[5]) {} int* data; }; 对于上面这个类，... ]]></description>
+    <pubDate>Fri, 21 Aug 2026 07:10:06 GMT</pubDate>
+  </item><item>
+    <title>202608191411为什么需要enable_shared_from_this?</title>
+    <link>https://guyueshui.github.io/__zettel/202608191411enable_shared_from_this</link>
+    <guid>https://guyueshui.github.io/__zettel/202608191411enable_shared_from_this</guid>
+    <description><![CDATA[ 当你在成员函数内部，需要获得一个this的shared_ptr，且外部这个对象已经被另一个shared_ptr接管了。 下例摘自ref1. ]]></description>
+    <pubDate>Fri, 21 Aug 2026 07:10:06 GMT</pubDate>
+  </item><item>
+    <title>类</title>
+    <link>https://guyueshui.github.io/notes/cpp/%E7%B1%BB</link>
+    <guid>https://guyueshui.github.io/notes/cpp/%E7%B1%BB</guid>
+    <description><![CDATA[ Constructor Classes control default initialization by defining a special constructor, known as the default constructor. ]]></description>
+    <pubDate>Fri, 21 Aug 2026 07:10:06 GMT</pubDate>
+  </item><item>
     <title>Linux 使用指北</title>
     <link>https://guyueshui.github.io/Blogs/post/Linux-%E7%9B%B8%E5%85%B3%E4%BF%A1%E6%81%AF%E9%80%9F%E6%9F%A5</link>
     <guid>https://guyueshui.github.io/Blogs/post/Linux-%E7%9B%B8%E5%85%B3%E4%BF%A1%E6%81%AF%E9%80%9F%E6%9F%A5</guid>
@@ -46,24 +64,6 @@
     <link>https://guyueshui.github.io/__zettel/202306272227%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2</link>
     <guid>https://guyueshui.github.io/__zettel/202306272227%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2</guid>
     <description><![CDATA[ dynamic_cast 只能用于继承体系下的转换，一般用于将基类转换为子类，需要考虑是不是设计有问题？有运行时检查，失败返回空指针。 const_cast用于去除对象的const/volatile属性，一般用于适应接口，且明确接口不会修改对象。 reinterpret_cast 重新表达，告诉编译器将这段内存解释为指定的数据类型。因为我们知道，类型只是告诉编译器如何解释一段内存，内存还是那个内存，数据还是那份数据，在二进制上，它们没有任何区别。类型只是辅助解释！参见A view of memory and fundamental data types in cpp. ]]></description>
-    <pubDate>Tue, 04 Aug 2026 09:24:11 GMT</pubDate>
-  </item><item>
-    <title>202308012018lambda捕获的陷阱</title>
-    <link>https://guyueshui.github.io/__zettel/202308012018lambda%E8%A1%A8%E8%BE%BE%E5%BC%8F</link>
-    <guid>https://guyueshui.github.io/__zettel/202308012018lambda%E8%A1%A8%E8%BE%BE%E5%BC%8F</guid>
-    <description><![CDATA[ 一例 考虑如下代码： #include &lt;iostream&gt; #include &lt;sstream&gt; #include &lt;string&gt; #include &lt;thread&gt; using namespace std; int get_count() { static int count = 0; return ++count; } class task { public: task(int data) : data_(data) {} auto lazy_launch() { return [*this, count = get_count()]()... ]]></description>
-    <pubDate>Tue, 04 Aug 2026 09:24:11 GMT</pubDate>
-  </item><item>
-    <title>202605191533完美转发</title>
-    <link>https://guyueshui.github.io/__zettel/202605191533%E5%AE%8C%E7%BE%8E%E8%BD%AC%E5%8F%91</link>
-    <guid>https://guyueshui.github.io/__zettel/202605191533%E5%AE%8C%E7%BE%8E%E8%BD%AC%E5%8F%91</guid>
-    <description><![CDATA[ ⁠1. ]]></description>
-    <pubDate>Tue, 04 Aug 2026 09:24:11 GMT</pubDate>
-  </item><item>
-    <title>202607160858ubuntu20.04编译适用于16.04的程序</title>
-    <link>https://guyueshui.github.io/__zettel/202607160858ubuntu20.04%E7%BC%96%E8%AF%91%E9%80%82%E7%94%A8%E4%BA%8E16.04%E7%9A%84%E7%A8%8B%E5%BA%8F</link>
-    <guid>https://guyueshui.github.io/__zettel/202607160858ubuntu20.04%E7%BC%96%E8%AF%91%E9%80%82%E7%94%A8%E4%BA%8E16.04%E7%9A%84%E7%A8%8B%E5%BA%8F</guid>
-    <description><![CDATA[ ubuntu20.04编译适用于16.04的程序 前面遇到过，ubuntu20.04上编的程序，在16.04上运行会报错，因为GLIBC版本不兼容。那么除了找一台ubuntu 16.04的编译机，其实更简单的办法是在本机（ubuntu20.04）上开启一个16.04的容器，把代码目录挂载进去，在容器里面进行编译。 首先基于官方16.04的镜像，构建一个带编译环境的镜像。参考Dockerfile， # Use the following cmd to build. ]]></description>
     <pubDate>Tue, 04 Aug 2026 09:24:11 GMT</pubDate>
   </item>
     </channel>
