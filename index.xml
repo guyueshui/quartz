@@ -6,65 +6,65 @@
       <description>最近的10条笔记 on Learn2Live</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>202606161406排列组合</title>
-    <link>https://guyueshui.github.io/__zettel/202606161406%E6%8E%92%E5%88%97%E7%BB%84%E5%90%88</link>
-    <guid>https://guyueshui.github.io/__zettel/202606161406%E6%8E%92%E5%88%97%E7%BB%84%E5%90%88</guid>
-    <description><![CDATA[ 排列组合 ⁠1. ]]></description>
-    <pubDate>Wed, 16 Sep 2026 09:28:05 GMT</pubDate>
+    <title>202304101713 serach in hugo</title>
+    <link>https://guyueshui.github.io/__zettel/202304101713-serach-in-hugo</link>
+    <guid>https://guyueshui.github.io/__zettel/202304101713-serach-in-hugo</guid>
+    <description><![CDATA[ 为hugo网站添加搜索功能 几个重要参考： Building search into a Hugo website Search for your Hugo Website eddiewebb’s gist 基于上面gist整理成文：Client Side Search for your Hugo Blog with Fuse.js lunr.js . ]]></description>
+    <pubDate>Tue, 29 Sep 2026 14:11:24 GMT</pubDate>
   </item><item>
-    <title>IO模型</title>
-    <link>https://guyueshui.github.io/notes/network/IO%E6%A8%A1%E5%9E%8B</link>
-    <guid>https://guyueshui.github.io/notes/network/IO%E6%A8%A1%E5%9E%8B</guid>
-    <description><![CDATA[ I/O Multiplexing 「定义」What we need is the capability to tell the kernel that we want to be notified if one or more I/O conditions are ready (i.e., input is ready to be read, or the descriptor is capable of taking more output). ]]></description>
-    <pubDate>Wed, 16 Sep 2026 09:28:05 GMT</pubDate>
+    <title>202304202149volatile-specifier</title>
+    <link>https://guyueshui.github.io/__zettel/202304202149volatile-specifier</link>
+    <guid>https://guyueshui.github.io/__zettel/202304202149volatile-specifier</guid>
+    <description><![CDATA[ volatile修饰的变量旨在告诉编译器这个变量易失（对应缓存的术语）、易变，因此在读取变量值的时候，始终通过内存取址的方式，而不信赖缓存。 例如： int i = 10; int a = i; // 以编译器不知道的方式改变i的值为32 int b = i; cout &lt;&lt; b; // 10 这里，由于编译器的优化，编译器看到两次赋值间，i的值未发生变化。所以直接从缓存（寄存器）中拿出上次的值赋给b. ]]></description>
+    <pubDate>Tue, 29 Sep 2026 14:11:24 GMT</pubDate>
   </item><item>
-    <title>Rust学习笔记</title>
-    <link>https://guyueshui.github.io/notes/rust-learning-note</link>
-    <guid>https://guyueshui.github.io/notes/rust-learning-note</guid>
-    <description><![CDATA[ 变量定义 通过let引入变量，rust变量特征（摘自ref1）： Immutable by default: Variables in Rust cannot be changed once assigned, unless explicitly declared as mutable Static typing: Every variable has a defined type at compile time Type inference: Rust can often figure out the type for you Shadowing: You can declare a new... ]]></description>
-    <pubDate>Wed, 16 Sep 2026 09:28:05 GMT</pubDate>
+    <title>202304230920 cmake learn</title>
+    <link>https://guyueshui.github.io/__zettel/202304230920-cmake-learn</link>
+    <guid>https://guyueshui.github.io/__zettel/202304230920-cmake-learn</guid>
+    <description><![CDATA[ 202604140951clickhouse-cmakelists 我们从一个简单的CMakeLists.txt开始： cmake_minimum_required(VERSION 3.20) project(GREDialing VERSION 0.1) message(STATUS &quot;CMake version: &quot; ${CMAKE_VERSION}) if(NOT ${CMAKE_VERSION} VERSION_LESS &quot;3.2&quot;) set(CMAKE_CXX_STANDARD 17) set(CMAKE_CXX_STANDARD_REQUIR... ]]></description>
+    <pubDate>Tue, 29 Sep 2026 14:11:24 GMT</pubDate>
   </item><item>
-    <title>leet121. 买卖股票的最佳时机</title>
-    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet121.best-time-to-buy-and-sell-stock</link>
-    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet121.best-time-to-buy-and-sell-stock</guid>
-    <description><![CDATA[ 给定一个数组 prices ，它的第 i 个元素 prices[i] 表示一支给定股票第 i 天的价格。 你只能选择 某一天 买入这只股票，并选择在 未来的某一个不同的日子 卖出该股票。设计一个算法来计算你所能获取的最大利润。 返回你可以从这笔交易中获取的最大利润。如果你不能获取任何利润，返回 0 。 示例 1： 输入： [7,1,5,3,6,4] 输出： 5 解释： 在第 2 天（股票价格 = 1）的时候买入，在第 5 天（股票价格 = 6）的时候卖出，最大利润 = 6-1 = 5 。 注意利润不能是 7-1 = 6, 因为卖出价格需要大于买入价格；同时，你不能在买入前卖出股票。 示例 2：... ]]></description>
-    <pubDate>Tue, 08 Sep 2026 09:33:50 GMT</pubDate>
+    <title>202304231411 name mangling</title>
+    <link>https://guyueshui.github.io/__zettel/202304231411-name-mangling</link>
+    <guid>https://guyueshui.github.io/__zettel/202304231411-name-mangling</guid>
+    <description><![CDATA[  Name mangling is the encoding of function and variable names into unique names so that linkers can separate common names in the language. ]]></description>
+    <pubDate>Tue, 29 Sep 2026 14:11:24 GMT</pubDate>
   </item><item>
-    <title>leet188.买卖股票的最佳时机 IV</title>
-    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet188.best-time-to-buy-and-sell-stock-iv</link>
-    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet188.best-time-to-buy-and-sell-stock-iv</guid>
-    <description><![CDATA[ 给你一个整数数组 prices 和一个整数 k ，其中 prices[i] 是某支给定的股票在第 i 天的价格。 设计一个算法来计算你所能获取的最大利润。你最多可以完成 k 笔交易。也就是说，你最多可以买 k 次，卖 k 次。 注意： 你不能同时参与多笔交易（你必须在再次购买前出售掉之前的股票）。 示例 1： 输入： k = 2, prices = [2,4,1] 输出： 2 解释： 在第 1 天 (股票价格 = 2) 的时候买入，在第 2 天 (股票价格 = 4) 的时候卖出，这笔交易所能获得利润 = 4-2 = 2 。 示例 2： 输入： k = 2, prices = [3,2,6,5,... ]]></description>
-    <pubDate>Tue, 08 Sep 2026 09:33:50 GMT</pubDate>
+    <title>202304231659 firefox伪装chrome ua</title>
+    <link>https://guyueshui.github.io/__zettel/202304231659-firefox%E4%BC%AA%E8%A3%85chrome-ua</link>
+    <guid>https://guyueshui.github.io/__zettel/202304231659-firefox%E4%BC%AA%E8%A3%85chrome-ua</guid>
+    <description><![CDATA[ 许多网站强制建议使用chrome打开，但其实firefox能够完美渲染该页面。所以需要强制更改firefox的ua伪装chrome： firefox输入about:config 搜索general.useragent.override，没有则新建之，值类型为字符串 打开chrome看下它的ua，输入about:version，或者直接使用 Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36 复制chrome的ua到新建的值中... ]]></description>
+    <pubDate>Tue, 29 Sep 2026 14:11:24 GMT</pubDate>
   </item><item>
-    <title>leet3573.买卖股票的最佳时机 V</title>
-    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet3573.best-time-to-buy-and-sell-stock-v</link>
-    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet3573.best-time-to-buy-and-sell-stock-v</guid>
-    <description><![CDATA[ 给你一个整数数组 prices，其中 prices[i] 是第 i 天股票的价格（美元），以及一个整数 k。 你最多可以进行 k 笔交易，每笔交易可以是以下任一类型： 普通交易：在第 i 天买入，然后在之后的第 j 天卖出，其中 i &lt; j。你的利润是 prices[j] - prices[i]。 做空交易：在第 i 天卖出，然后在之后的第 j 天买回，其中 i &lt; j。你的利润是 prices[i] - prices[j]。 注意：你必须在开始下一笔交易之前完成当前交易。此外，你不能在已经进行买入或卖出操作的同一天再次进行买入或卖出操作。 通过进行 最多 k 笔交易，返回你可以获... ]]></description>
-    <pubDate>Tue, 08 Sep 2026 09:33:50 GMT</pubDate>
+    <title>202304241826 RTTI in cpp</title>
+    <link>https://guyueshui.github.io/__zettel/202304241826-RTTI-in-cpp</link>
+    <guid>https://guyueshui.github.io/__zettel/202304241826-RTTI-in-cpp</guid>
+    <description><![CDATA[ RTTI stands for RunTime Type Identification. Commonly two ways to achieve it. ]]></description>
+    <pubDate>Tue, 29 Sep 2026 14:11:24 GMT</pubDate>
   </item><item>
-    <title>202608180927类定义中的三五法则</title>
-    <link>https://guyueshui.github.io/__zettel/202608180927%E7%B1%BB%E5%AE%9A%E4%B9%89%E4%B8%AD%E7%9A%84%E4%B8%89%E4%BA%94%E6%B3%95%E5%88%99</link>
-    <guid>https://guyueshui.github.io/__zettel/202608180927%E7%B1%BB%E5%AE%9A%E4%B9%89%E4%B8%AD%E7%9A%84%E4%B8%89%E4%BA%94%E6%B3%95%E5%88%99</guid>
-    <description><![CDATA[ 三法则 C++11前，没有移动语义。考虑下面三个函数， 析构函数 拷贝构造函数 拷贝复制运算符 三法则就是说：如果这三个中你需要定义一个，那么另外两个你（几乎）也得定义。 什么意思？对于普通不涉及资源管理的类，如果你不写这三个函数，编译器会自动生成默认版本，其行为通常是对成员变量逐一拷贝或析构（调用成员变量的operator=或析构函数）。这在可平凡拷贝和平凡析构的类型中没有问题。但是如果成员变量管理了某个资源（如动态内存，文件句柄，网络连接等），只是浅拷贝的话肯定会出问题。 struct A { A() : data(new int[5]) {} int* data; }; 对于上面这个类，... ]]></description>
-    <pubDate>Fri, 21 Aug 2026 07:10:06 GMT</pubDate>
+    <title>202304281707-右值引用</title>
+    <link>https://guyueshui.github.io/__zettel/202304281707-%E5%8F%B3%E5%80%BC%E5%BC%95%E7%94%A8</link>
+    <guid>https://guyueshui.github.io/__zettel/202304281707-%E5%8F%B3%E5%80%BC%E5%BC%95%E7%94%A8</guid>
+    <description><![CDATA[ 右值就是没有确切地址可供访问 闭包：一个函数携带自身数据，就成为闭包，可以去cppinsight里看看lambda表达式的实现. ]]></description>
+    <pubDate>Tue, 29 Sep 2026 14:11:24 GMT</pubDate>
   </item><item>
-    <title>202608191411为什么需要enable_shared_from_this?</title>
-    <link>https://guyueshui.github.io/__zettel/202608191411enable_shared_from_this</link>
-    <guid>https://guyueshui.github.io/__zettel/202608191411enable_shared_from_this</guid>
-    <description><![CDATA[ 当你在成员函数内部，需要获得一个this的shared_ptr，且外部这个对象已经被另一个shared_ptr接管了。 下例摘自ref1. ]]></description>
-    <pubDate>Fri, 21 Aug 2026 07:10:06 GMT</pubDate>
+    <title>202305091937枚举</title>
+    <link>https://guyueshui.github.io/__zettel/202305091937%E6%9E%9A%E4%B8%BE</link>
+    <guid>https://guyueshui.github.io/__zettel/202305091937%E6%9E%9A%E4%B8%BE</guid>
+    <description><![CDATA[ C++中有两种枚举， 普通枚举（enum，unscoped enum） 枚举类（enum class, scoped enum） 通常，花括号里面的名字具有scope的作用域及可见性，但对普通枚举并非如此。普通枚举中定义的枚举常量，在花括号外也可见。而枚举类则需要加上类名+域作用符来获取花括号内的名字。 enum Color { RED = 1, GREEN, BLUE, }; enum class CMYK { C = -1, M = 0, Y = 2, K, }; enum NewColor: uint8_t { NR = 0, NG, NB }; void foo() { Color c... ]]></description>
+    <pubDate>Tue, 29 Sep 2026 14:11:24 GMT</pubDate>
   </item><item>
-    <title>类</title>
-    <link>https://guyueshui.github.io/notes/cpp/%E7%B1%BB</link>
-    <guid>https://guyueshui.github.io/notes/cpp/%E7%B1%BB</guid>
-    <description><![CDATA[ Constructor Classes control default initialization by defining a special constructor, known as the default constructor. ]]></description>
-    <pubDate>Fri, 21 Aug 2026 07:10:06 GMT</pubDate>
+    <title>202305160951初始化列表</title>
+    <link>https://guyueshui.github.io/__zettel/202305160951%E5%88%9D%E5%A7%8B%E5%8C%96%E5%88%97%E8%A1%A8</link>
+    <guid>https://guyueshui.github.io/__zettel/202305160951%E5%88%9D%E5%A7%8B%E5%8C%96%E5%88%97%E8%A1%A8</guid>
+    <description><![CDATA[ 初始化列表是轻量级的对象，用于传参是无需使用引用，可以理解为传int这种参数，无需考虑拷贝开销。此外，初始化列表中传入的视为常量，不允许修改。. ]]></description>
+    <pubDate>Tue, 29 Sep 2026 14:11:24 GMT</pubDate>
   </item><item>
-    <title>Linux 使用指北</title>
-    <link>https://guyueshui.github.io/Blogs/post/Linux-%E7%9B%B8%E5%85%B3%E4%BF%A1%E6%81%AF%E9%80%9F%E6%9F%A5</link>
-    <guid>https://guyueshui.github.io/Blogs/post/Linux-%E7%9B%B8%E5%85%B3%E4%BF%A1%E6%81%AF%E9%80%9F%E6%9F%A5</guid>
-    <description><![CDATA[ 本文主要引用 Liam Huang 的博客。 系统相关 lsb_release -a # 查看操作系统版本 head -n 1 /etc/issue # 查看操作系统版本 cat /etc/os-release # 查看操作系统版本 cat /proc/version # 查看操作系统内核信息 uname -a # 查看操作系统内核信息、CPU 信息 cat /proc/cpuinfo # 查看 CPU 信息 hostname # 查看计算机名字 env # 列出环境变量 lsmod # 列出加载的内核模块 uptime # 查看系统运行时间、负载、用户数量 cat /proc/loadavg... ]]></description>
-    <pubDate>Thu, 06 Aug 2026 07:14:37 GMT</pubDate>
+    <title>202305161028内存模型</title>
+    <link>https://guyueshui.github.io/__zettel/202305161028%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B</link>
+    <guid>https://guyueshui.github.io/__zettel/202305161028%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B</guid>
+    <description><![CDATA[ 为什么需要内存模型 编译器会优化代码，会在不影响正确结果的前提下，调整代码执行顺序，此外cpu也会乱序执行，提高效率。所以，你的代码跑起来未必是按照你写的顺序执行的。这在单线程环境下毫无问题，一旦进入多线程，这种乱序会带来不可预期的结果。 因此，我们需要一种方式来（向底层：编译器）控制，告诉，声明我这段代码必须要按顺序执行。内存模型应运而生。 此外，还有 Cache coherency 现代cpu拥有多级cache，其中cache是有访问权限的。有些cahce中的数据只能被一个核心看到，这在多线程访问数据时就会出现很大的问题。 例如： 正常理解，无论线程1，2的执行顺序如何，最后不可能出现打印... ]]></description>
+    <pubDate>Tue, 29 Sep 2026 14:11:24 GMT</pubDate>
   </item>
     </channel>
   </rss>
