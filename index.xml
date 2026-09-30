@@ -6,6 +6,24 @@
       <description>最近的10条笔记 on Learn2Live</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>瞎说 KMP 算法</title>
+    <link>https://guyueshui.github.io/Blogs/post/%E7%9E%8E%E8%AF%B4KMP%E7%AE%97%E6%B3%95</link>
+    <guid>https://guyueshui.github.io/Blogs/post/%E7%9E%8E%E8%AF%B4KMP%E7%AE%97%E6%B3%95</guid>
+    <description><![CDATA[ 前天做百度笔试，没想到居然出往年的题！哼！更惨的是出了我也不会！我以为只是一个简简单单的字符串匹配，没想到要动用这么难懂的算法。说起来算法导论上也有，只是之前没看到那里。所以，总结一下：我本有好多次机会学习它，然而一次都没有把握。:( 所以这次，拿出来好好研究一波，做点笔记，以备日后之用。说起来网络上关于该算法的博文一大堆，我也不说能比它们都好，每个人都有适合自己的理解，我这里就是瞎谈一番罢了。 在开始之前，强烈建议先读Jake Boxer的文章，它从无到有，讲得浅显易懂，介绍了 how it works！我这篇文章，也是在看了好多中文博客未解之后，开始看了那个外文博文。在理解的基础上，加一点... ]]></description>
+    <pubDate>Wed, 30 Sep 2026 07:45:53 GMT</pubDate>
+  </item><item>
+    <title>社招面经</title>
+    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%A4%BE%E6%8B%9B%E9%9D%A2%E7%BB%8F</link>
+    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%A4%BE%E6%8B%9B%E9%9D%A2%E7%BB%8F</guid>
+    <description><![CDATA[ 拓蛮八方（2022.07.16） 算法题：10辆一模一样的小车，油箱最多装10升油，最多跑10公里。如何使得其中一辆小车跑出最大距离。例如：A车和B车同跑5公里，然后A车把剩下的油给B车加满，这样B车可以跑15公里。 Python迭代器，生成器 Python多进程，多线程，协程 Python list，append复杂度，remove复杂度 快排思想，最坏O(n^2)，如何改进 首先，清楚快排原理的同志都知道，快排特别热衷于凌乱的数据，最好情况下时间复杂度能达到O(nlogn)，空间复杂度为O(logn)；但是对于基本有序或者倒序的数据则无能为力，时间复杂度直接降到O(n^2），空间复杂度为O... ]]></description>
+    <pubDate>Wed, 30 Sep 2026 07:45:53 GMT</pubDate>
+  </item><item>
+    <title>算法摘要</title>
+    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/%E7%AE%97%E6%B3%95%E6%91%98%E8%A6%81</link>
+    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/%E7%AE%97%E6%B3%95%E6%91%98%E8%A6%81</guid>
+    <description><![CDATA[ 单调队列可以记录子数组的最值，次最值，等等 子数组的和可以转换为前缀和的差 子数组批量增删可以转化为差分数组的边界调整 二分法要考虑边界外的元素具备什么性质，具体看灵神视频教程。 ⁠1. 数组类问题 技巧， ⁠1.1. ]]></description>
+    <pubDate>Wed, 30 Sep 2026 07:45:53 GMT</pubDate>
+  </item><item>
     <title>202304101713 serach in hugo</title>
     <link>https://guyueshui.github.io/__zettel/202304101713-serach-in-hugo</link>
     <guid>https://guyueshui.github.io/__zettel/202304101713-serach-in-hugo</guid>
@@ -46,24 +64,6 @@
     <link>https://guyueshui.github.io/__zettel/202304281707-%E5%8F%B3%E5%80%BC%E5%BC%95%E7%94%A8</link>
     <guid>https://guyueshui.github.io/__zettel/202304281707-%E5%8F%B3%E5%80%BC%E5%BC%95%E7%94%A8</guid>
     <description><![CDATA[ 右值就是没有确切地址可供访问 闭包：一个函数携带自身数据，就成为闭包，可以去cppinsight里看看lambda表达式的实现. ]]></description>
-    <pubDate>Tue, 29 Sep 2026 14:11:24 GMT</pubDate>
-  </item><item>
-    <title>202305091937枚举</title>
-    <link>https://guyueshui.github.io/__zettel/202305091937%E6%9E%9A%E4%B8%BE</link>
-    <guid>https://guyueshui.github.io/__zettel/202305091937%E6%9E%9A%E4%B8%BE</guid>
-    <description><![CDATA[ C++中有两种枚举， 普通枚举（enum，unscoped enum） 枚举类（enum class, scoped enum） 通常，花括号里面的名字具有scope的作用域及可见性，但对普通枚举并非如此。普通枚举中定义的枚举常量，在花括号外也可见。而枚举类则需要加上类名+域作用符来获取花括号内的名字。 enum Color { RED = 1, GREEN, BLUE, }; enum class CMYK { C = -1, M = 0, Y = 2, K, }; enum NewColor: uint8_t { NR = 0, NG, NB }; void foo() { Color c... ]]></description>
-    <pubDate>Tue, 29 Sep 2026 14:11:24 GMT</pubDate>
-  </item><item>
-    <title>202305160951初始化列表</title>
-    <link>https://guyueshui.github.io/__zettel/202305160951%E5%88%9D%E5%A7%8B%E5%8C%96%E5%88%97%E8%A1%A8</link>
-    <guid>https://guyueshui.github.io/__zettel/202305160951%E5%88%9D%E5%A7%8B%E5%8C%96%E5%88%97%E8%A1%A8</guid>
-    <description><![CDATA[ 初始化列表是轻量级的对象，用于传参是无需使用引用，可以理解为传int这种参数，无需考虑拷贝开销。此外，初始化列表中传入的视为常量，不允许修改。. ]]></description>
-    <pubDate>Tue, 29 Sep 2026 14:11:24 GMT</pubDate>
-  </item><item>
-    <title>202305161028内存模型</title>
-    <link>https://guyueshui.github.io/__zettel/202305161028%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B</link>
-    <guid>https://guyueshui.github.io/__zettel/202305161028%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B</guid>
-    <description><![CDATA[ 为什么需要内存模型 编译器会优化代码，会在不影响正确结果的前提下，调整代码执行顺序，此外cpu也会乱序执行，提高效率。所以，你的代码跑起来未必是按照你写的顺序执行的。这在单线程环境下毫无问题，一旦进入多线程，这种乱序会带来不可预期的结果。 因此，我们需要一种方式来（向底层：编译器）控制，告诉，声明我这段代码必须要按顺序执行。内存模型应运而生。 此外，还有 Cache coherency 现代cpu拥有多级cache，其中cache是有访问权限的。有些cahce中的数据只能被一个核心看到，这在多线程访问数据时就会出现很大的问题。 例如： 正常理解，无论线程1，2的执行顺序如何，最后不可能出现打印... ]]></description>
     <pubDate>Tue, 29 Sep 2026 14:11:24 GMT</pubDate>
   </item>
     </channel>
