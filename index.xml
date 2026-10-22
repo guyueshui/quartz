@@ -6,6 +6,30 @@
       <description>最近的10条笔记 on Learn2Live</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>leet142.环形链表 II</title>
+    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet142.linked-list-cycle-ii</link>
+    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet142.linked-list-cycle-ii</guid>
+    <description><![CDATA[ 给定一个链表的头节点 head ，返回链表开始入环的第一个节点。 如果链表无环，则返回 null。 不允许修改 链表。 示例 1： 输入： head = [3,2,0,-4], pos = 1 输出： 返回索引为 1 的链表节点 解释： 链表中有一个环，其尾部连接到第二个节点。 示例 2： 输入： head = [1,2], pos = 0 输出： 返回索引为 0 的链表节点 解释： 链表中有一个环，其尾部连接到第一个节点。 示例 3： 输入： head = [1], pos = -1 输出： 返回 null 解释： 链表中没有环。 提示： 链表中节点的数目范围在范围 [0, 10^4] 内 ... ]]></description>
+    <pubDate>Thu, 22 Oct 2026 09:47:59 GMT</pubDate>
+  </item><item>
+    <title>leet160.相交链表</title>
+    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet160.intersection-of-two-linked-lists</link>
+    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet160.intersection-of-two-linked-lists</guid>
+    <description><![CDATA[ 题目描述 给你两个单链表的头节点 headA 和 headB ，请你找出并返回两个单链表相交的起始节点。如果两个链表不存在相交节点，返回 null 。 图示两个链表在节点 c1 开始相交： 题目数据 保证 整个链式结构中不存在环。 注意，函数返回结果后，链表必须 保持其原始结构 。 自定义评测： 评测系统 的输入如下（你设计的程序 不适用 此输入）： intersectVal - 相交的起始节点的值。如果不存在相交节点，这一值为 0 listA - 第一个链表 listB - 第二个链表 skipA - 在 listA 中（从头节点开始）跳到交叉节点的节点数 skipB - 在 listB 中... ]]></description>
+    <pubDate>Thu, 22 Oct 2026 09:47:59 GMT</pubDate>
+  </item><item>
+    <title>基础题</title>
+    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/%E5%9F%BA%E7%A1%80%E9%A2%98</link>
+    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/%E5%9F%BA%E7%A1%80%E9%A2%98</guid>
+    <description><![CDATA[ 基础题 反转链表 /****************************************************************************** * File: reverse_list.cpp * * Author: yychi * Created: 2022-12-29 20:35 * Description: Reverse a linked list. ]]></description>
+    <pubDate>Thu, 22 Oct 2026 09:47:59 GMT</pubDate>
+  </item><item>
+    <title>算法摘要</title>
+    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/%E7%AE%97%E6%B3%95%E6%91%98%E8%A6%81</link>
+    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/%E7%AE%97%E6%B3%95%E6%91%98%E8%A6%81</guid>
+    <description><![CDATA[ 单调队列可以记录子数组的最值，次最值，等等 子数组的和可以转换为前缀和的差 子数组批量增删可以转化为差分数组的边界调整 二分法要考虑边界外的元素具备什么性质，具体看灵神视频教程。 ⁠1. 数组类问题 技巧， ⁠1.1. ]]></description>
+    <pubDate>Thu, 22 Oct 2026 09:47:59 GMT</pubDate>
+  </item><item>
     <title>瞎说 KMP 算法</title>
     <link>https://guyueshui.github.io/Blogs/post/%E7%9E%8E%E8%AF%B4KMP%E7%AE%97%E6%B3%95</link>
     <guid>https://guyueshui.github.io/Blogs/post/%E7%9E%8E%E8%AF%B4KMP%E7%AE%97%E6%B3%95</guid>
@@ -16,12 +40,6 @@
     <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%A4%BE%E6%8B%9B%E9%9D%A2%E7%BB%8F</link>
     <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%A4%BE%E6%8B%9B%E9%9D%A2%E7%BB%8F</guid>
     <description><![CDATA[ 拓蛮八方（2022.07.16） 算法题：10辆一模一样的小车，油箱最多装10升油，最多跑10公里。如何使得其中一辆小车跑出最大距离。例如：A车和B车同跑5公里，然后A车把剩下的油给B车加满，这样B车可以跑15公里。 Python迭代器，生成器 Python多进程，多线程，协程 Python list，append复杂度，remove复杂度 快排思想，最坏O(n^2)，如何改进 首先，清楚快排原理的同志都知道，快排特别热衷于凌乱的数据，最好情况下时间复杂度能达到O(nlogn)，空间复杂度为O(logn)；但是对于基本有序或者倒序的数据则无能为力，时间复杂度直接降到O(n^2），空间复杂度为O... ]]></description>
-    <pubDate>Wed, 30 Sep 2026 07:45:53 GMT</pubDate>
-  </item><item>
-    <title>算法摘要</title>
-    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/%E7%AE%97%E6%B3%95%E6%91%98%E8%A6%81</link>
-    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/%E7%AE%97%E6%B3%95%E6%91%98%E8%A6%81</guid>
-    <description><![CDATA[ 单调队列可以记录子数组的最值，次最值，等等 子数组的和可以转换为前缀和的差 子数组批量增删可以转化为差分数组的边界调整 二分法要考虑边界外的元素具备什么性质，具体看灵神视频教程。 ⁠1. 数组类问题 技巧， ⁠1.1. ]]></description>
     <pubDate>Wed, 30 Sep 2026 07:45:53 GMT</pubDate>
   </item><item>
     <title>202304101713 serach in hugo</title>
@@ -46,24 +64,6 @@
     <link>https://guyueshui.github.io/__zettel/202304231411-name-mangling</link>
     <guid>https://guyueshui.github.io/__zettel/202304231411-name-mangling</guid>
     <description><![CDATA[  Name mangling is the encoding of function and variable names into unique names so that linkers can separate common names in the language. ]]></description>
-    <pubDate>Tue, 29 Sep 2026 14:11:24 GMT</pubDate>
-  </item><item>
-    <title>202304231659 firefox伪装chrome ua</title>
-    <link>https://guyueshui.github.io/__zettel/202304231659-firefox%E4%BC%AA%E8%A3%85chrome-ua</link>
-    <guid>https://guyueshui.github.io/__zettel/202304231659-firefox%E4%BC%AA%E8%A3%85chrome-ua</guid>
-    <description><![CDATA[ 许多网站强制建议使用chrome打开，但其实firefox能够完美渲染该页面。所以需要强制更改firefox的ua伪装chrome： firefox输入about:config 搜索general.useragent.override，没有则新建之，值类型为字符串 打开chrome看下它的ua，输入about:version，或者直接使用 Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36 复制chrome的ua到新建的值中... ]]></description>
-    <pubDate>Tue, 29 Sep 2026 14:11:24 GMT</pubDate>
-  </item><item>
-    <title>202304241826 RTTI in cpp</title>
-    <link>https://guyueshui.github.io/__zettel/202304241826-RTTI-in-cpp</link>
-    <guid>https://guyueshui.github.io/__zettel/202304241826-RTTI-in-cpp</guid>
-    <description><![CDATA[ RTTI stands for RunTime Type Identification. Commonly two ways to achieve it. ]]></description>
-    <pubDate>Tue, 29 Sep 2026 14:11:24 GMT</pubDate>
-  </item><item>
-    <title>202304281707-右值引用</title>
-    <link>https://guyueshui.github.io/__zettel/202304281707-%E5%8F%B3%E5%80%BC%E5%BC%95%E7%94%A8</link>
-    <guid>https://guyueshui.github.io/__zettel/202304281707-%E5%8F%B3%E5%80%BC%E5%BC%95%E7%94%A8</guid>
-    <description><![CDATA[ 右值就是没有确切地址可供访问 闭包：一个函数携带自身数据，就成为闭包，可以去cppinsight里看看lambda表达式的实现. ]]></description>
     <pubDate>Tue, 29 Sep 2026 14:11:24 GMT</pubDate>
   </item>
     </channel>
