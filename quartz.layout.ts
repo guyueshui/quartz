@@ -27,7 +27,16 @@ export const explFilterFn : ExplOptions["filterFn"] =
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [],
-  afterBody: [],
+  // 移动端侧栏折叠成顶部栏会隐藏这两块，改为在正文末尾渲染
+  afterBody: [
+    Component.MobileOnly(Component.RandomNotes({limit: 5, title: "随机笔记"})),
+    Component.MobileOnly(
+      Component.ConditionalRender({ // 最近笔记仅在首页显示
+        component: Component.RecentNotes({limit: 3, showTags: false}),
+        condition: (page) => page.fileData.slug === "index",
+      }),
+    ),
+  ],
   footer: Component.Footer({
     links: {
       // GitHub: "https://github.com/jackyzha0/quartz",

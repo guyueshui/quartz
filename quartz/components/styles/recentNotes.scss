@@ -1,3 +1,5 @@
+@use "../../styles/variables.scss" as *;
+
 .recent-notes {
   & > h3 {
     margin: 0.5rem 0 0 0;
@@ -11,24 +13,37 @@
 
     & > li {
       line-height: unset;
-      margin: 0.5rem 0;
+      margin: 0.4rem 0;
+      .section > .desc {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 0.5rem;
+      }
+
       .section > .desc > h3 > a {
         background-color: transparent;
       }
 
       .section > .desc > h3 {
+        flex: 1 1 auto;
+        min-width: 0;
+        margin: 0;
         font-size: small;
+        line-height: 1.4;
       }
 
-      .section > .meta {
+      .section > .desc > .meta {
+        flex: 0 0 auto;
         margin: 0;
-        opacity: 0.6;
+        opacity: 0.7;
         font-size: x-small;
+        white-space: nowrap;
+        font-variant-numeric: tabular-nums;
       }
     }
   }
 }
-
 
 .random-notes {
   & > h3 {
@@ -52,6 +67,45 @@
         font-size: small;
         margin: 0;
       }
+    }
+  }
+}
+
+// Mobile: the sidebar is collapsed into a top bar, so these blocks are rendered
+// at the end of the page instead (see `afterBody` in quartz.layout.ts).
+@media all and ($mobile) {
+  .page-footer {
+    & > .random-notes,
+    & > .recent-notes {
+      // `.mobile-only` only sets `display: initial` (inline); make these real
+      // blocks so their vertical spacing applies.
+      display: block;
+      margin-top: 2rem;
+
+      & > h3 {
+        margin: 0;
+      }
+    }
+
+    // Random notes are article links, so keep them as plain stacked rows
+    // (no pill/tag look) and match the recent notes list below.
+    & > .random-notes > ul.random-ul {
+      margin-top: 0.75rem;
+
+      & > li {
+        margin: 0.4rem 0;
+
+        // Long titles wrap instead of pushing the row past the viewport.
+        & h3 {
+          margin: 0;
+          line-height: 1.4;
+          overflow-wrap: break-word;
+        }
+      }
+    }
+
+    & > .recent-notes > ul.recent-ul {
+      margin-top: 0.75rem;
     }
   }
 }

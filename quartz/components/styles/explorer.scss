@@ -29,8 +29,7 @@
 .explorer {
   display: flex;
   flex-direction: column;
-  overflow-y: hidden;
-
+  overflow: hidden;
   min-height: 1.2rem;
   flex: 0 1 auto;
   &.collapsed {
@@ -46,11 +45,21 @@
     opacity: 0.8;
   }
 
+  // The list panel itself is the one and only scroll container.
+  // Scoped with an extra class to beat `div:has(> .overflow) { overflow-y: hidden }`
+  // from base.scss, which would otherwise clip the panel without scrolling it.
+  & > .explorer-content {
+    flex: 1 1 auto;
+    min-height: 0;
+    overflow-y: auto;
+  }
+
   @media all and ($mobile) {
     order: -1;
     height: initial;
     overflow: hidden;
     flex-shrink: 0;
+    flex-grow: 0;
     align-self: flex-start;
     margin-top: auto;
     margin-bottom: auto;
@@ -114,11 +123,20 @@ button.desktop-explorer {
   overflow-y: auto;
   margin-top: 0.5rem;
 
+  // `base.scss` sets `div:has(> .overflow) { overflow-y: hidden }`, which used
+  // to push the scrolling onto the nested `ul.overflow` (sized with
+  // `max-height: 100%`). That made wheel scrolling depend on where the pointer
+  // landed and on how `max-height` resolved. Keep a single scroll container
+  // here instead, and let the list itself be a plain, non-scrolling element.
+  & > ul.explorer-ul {
+    max-height: none;
+    overflow-y: visible;
+  }
+
   & ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    overscroll-behavior: contain;
 
     & li > a {
       color: var(--dark);
@@ -169,8 +187,11 @@ button.desktop-explorer {
     display: inline-block;
   }
 
-  & div > a:hover {
-    color: var(--tertiary);
+  // Touch devices keep :hover after a tap, so scope this to hover-capable pointers.
+  @media (hover: hover) {
+    & div > a:hover {
+      color: var(--tertiary);
+    }
   }
 
   & div > button {
@@ -210,8 +231,10 @@ li:has(> .folder-outer:not(.open)) > .folder-container > svg {
   transform: rotate(-90deg);
 }
 
-.folder-icon:hover {
-  color: var(--tertiary);
+@media (hover: hover) {
+  .folder-icon:hover {
+    color: var(--tertiary);
+  }
 }
 
 .explorer {
@@ -248,7 +271,9 @@ li:has(> .folder-outer:not(.open)) > .folder-container > svg {
       transition:
         transform 200ms ease,
         visibility 200ms ease;
-      overflow: hidden;
+      overflow-x: hidden;
+      overflow-y: auto;
+      overscroll-behavior: contain;
       padding: 4rem 0 2rem 0;
       height: 100dvh;
       max-height: 100dvh;
