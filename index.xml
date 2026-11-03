@@ -6,65 +6,65 @@
       <description>最近的10条笔记 on Learn2Live</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>LeetCode: Sum of Two Integers</title>
+    <link>https://guyueshui.github.io/Blogs/post/LeetCode-Sum-of-Two-Integers</link>
+    <guid>https://guyueshui.github.io/Blogs/post/LeetCode-Sum-of-Two-Integers</guid>
+    <description><![CDATA[ 记录一下LeetCode做的一道题。要求实现两个整数的加法，但不能使用内置的+或-. ]]></description>
+    <pubDate>Tue, 03 Nov 2026 09:50:54 GMT</pubDate>
+  </item><item>
+    <title>位域结构体简介</title>
+    <link>https://guyueshui.github.io/Blogs/post/bit-field-struct</link>
+    <guid>https://guyueshui.github.io/Blogs/post/bit-field-struct</guid>
+    <description><![CDATA[ 最近实习接触到一个新的知识点，C/C++的位域结构体。 以下开始摘抄自：here 位段(bit-field)是以位为单位来定义结构体(或联合体)中的成员变量所占的空间。含有位段的结构体(联合体)称为位段结构。采用位段结构既能够节省空间，又方便于操作。 位段的定义格式为: type [var]: digits 其中type只能为int，unsigned int，signed int三种类型(int型能不能表示负数视编译器而定，比如VC中int就默认是signed int，能够表示负数)。位段名称var是可选参数，即可以省略。digits表示该位段所占的二进制位数。 举个例子，你可以这样定义一个位... ]]></description>
+    <pubDate>Tue, 03 Nov 2026 09:50:54 GMT</pubDate>
+  </item><item>
+    <title>A collection of some coding problems</title>
+    <link>https://guyueshui.github.io/Blogs/post/coding-problems</link>
+    <guid>https://guyueshui.github.io/Blogs/post/coding-problems</guid>
+    <description><![CDATA[ 场景题 场景题 题三：进制转换 2019哈罗单车实习生笔试题 将一个10进制整数转换成36进制的数，可以用0-9A-Z表示0-35. /** * Hellobike 2019 interview. ]]></description>
+    <pubDate>Tue, 03 Nov 2026 09:50:54 GMT</pubDate>
+  </item><item>
+    <title>202604301621分治法复习</title>
+    <link>https://guyueshui.github.io/__zettel/202604301621%E5%88%86%E6%B2%BB%E6%B3%95%E5%A4%8D%E4%B9%A0</link>
+    <guid>https://guyueshui.github.io/__zettel/202604301621%E5%88%86%E6%B2%BB%E6%B3%95%E5%A4%8D%E4%B9%A0</guid>
+    <description><![CDATA[ 分治法并不仅只能二分，解决子问题，合并。根据《算法导论》，它有三种形式， 替换模型。猜一个bound，然后用数学归纳法证明其正确。 递归树模型。 主方法（master method）。形如 T(n) = aT(n/b) + f(n),where a \ge 1, b &gt; 1, f(n) is a given function. ]]></description>
+    <pubDate>Tue, 03 Nov 2026 09:50:54 GMT</pubDate>
+  </item><item>
+    <title>202606091445位运算</title>
+    <link>https://guyueshui.github.io/__zettel/202606091445%E4%BD%8D%E8%BF%90%E7%AE%97</link>
+    <guid>https://guyueshui.github.io/__zettel/202606091445%E4%BD%8D%E8%BF%90%E7%AE%97</guid>
+    <description><![CDATA[ 异或 常用运算符： C/C++: ^ / xor Python: ^ 真值表 结果000110011101 性质1：0是异或的单位元 即，0 ^ a = a，满足交换律 性质2：任何数异或自己等于0 即，a ^ a = 0 性质3：异或同一个数两次等于啥也没做 即，a ^ b ^ b = a. ]]></description>
+    <pubDate>Tue, 03 Nov 2026 09:50:54 GMT</pubDate>
+  </item><item>
+    <title>内存布局</title>
+    <link>https://guyueshui.github.io/notes/cpp/%E5%86%85%E5%AD%98%E5%B8%83%E5%B1%80</link>
+    <guid>https://guyueshui.github.io/notes/cpp/%E5%86%85%E5%AD%98%E5%B8%83%E5%B1%80</guid>
+    <description><![CDATA[ 内存布局 结构体 C++规范在“结构”上使用了和C相同的，简单的内存布局原则：成员变量按其被声明的顺序排列，按具体实现所规定的对齐原则在内存地址上对齐。 struct S { char a; // memory location #1 int b : 5; // memory location #2 int c : 11, // memory location #2 (continued) char : 0, int d : 8; // memory location #3 struct { int ee : 8; // memory location #4 } e; } obj; // Th... ]]></description>
+    <pubDate>Tue, 03 Nov 2026 09:50:54 GMT</pubDate>
+  </item><item>
     <title>leet142.环形链表 II</title>
     <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet142.linked-list-cycle-ii</link>
     <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet142.linked-list-cycle-ii</guid>
     <description><![CDATA[ 给定一个链表的头节点 head ，返回链表开始入环的第一个节点。 如果链表无环，则返回 null。 不允许修改 链表。 示例 1： 输入： head = [3,2,0,-4], pos = 1 输出： 返回索引为 1 的链表节点 解释： 链表中有一个环，其尾部连接到第二个节点。 示例 2： 输入： head = [1,2], pos = 0 输出： 返回索引为 0 的链表节点 解释： 链表中有一个环，其尾部连接到第一个节点。 示例 3： 输入： head = [1], pos = -1 输出： 返回 null 解释： 链表中没有环。 提示： 链表中节点的数目范围在范围 [0, 10^4] 内 ... ]]></description>
-    <pubDate>Thu, 22 Oct 2026 09:47:59 GMT</pubDate>
+    <pubDate>Tue, 03 Nov 2026 09:50:54 GMT</pubDate>
   </item><item>
-    <title>leet160.相交链表</title>
-    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet160.intersection-of-two-linked-lists</link>
-    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet160.intersection-of-two-linked-lists</guid>
-    <description><![CDATA[ 题目描述 给你两个单链表的头节点 headA 和 headB ，请你找出并返回两个单链表相交的起始节点。如果两个链表不存在相交节点，返回 null 。 图示两个链表在节点 c1 开始相交： 题目数据 保证 整个链式结构中不存在环。 注意，函数返回结果后，链表必须 保持其原始结构 。 自定义评测： 评测系统 的输入如下（你设计的程序 不适用 此输入）： intersectVal - 相交的起始节点的值。如果不存在相交节点，这一值为 0 listA - 第一个链表 listB - 第二个链表 skipA - 在 listA 中（从头节点开始）跳到交叉节点的节点数 skipB - 在 listB 中... ]]></description>
-    <pubDate>Thu, 22 Oct 2026 09:47:59 GMT</pubDate>
+    <title>leet3644.Maximum K to Sort a Permutation</title>
+    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet3644.maximum-k-to-sort-a-permutation</link>
+    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet3644.maximum-k-to-sort-a-permutation</guid>
+    <description><![CDATA[ 题目描述 You are given an integer array nums of length n, where nums is a permutation of the numbers in the range [0..n - 1]. ]]></description>
+    <pubDate>Tue, 03 Nov 2026 09:50:54 GMT</pubDate>
+  </item><item>
+    <title>leet53.最大子数组的和</title>
+    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet53.maximum-subarray</link>
+    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet53.maximum-subarray</guid>
+    <description><![CDATA[ From: LeetCode53. ]]></description>
+    <pubDate>Tue, 03 Nov 2026 09:50:54 GMT</pubDate>
   </item><item>
     <title>基础题</title>
     <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/%E5%9F%BA%E7%A1%80%E9%A2%98</link>
     <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/%E5%9F%BA%E7%A1%80%E9%A2%98</guid>
     <description><![CDATA[ 基础题 反转链表 /****************************************************************************** * File: reverse_list.cpp * * Author: yychi * Created: 2022-12-29 20:35 * Description: Reverse a linked list. ]]></description>
-    <pubDate>Thu, 22 Oct 2026 09:47:59 GMT</pubDate>
-  </item><item>
-    <title>算法摘要</title>
-    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/%E7%AE%97%E6%B3%95%E6%91%98%E8%A6%81</link>
-    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/%E7%AE%97%E6%B3%95%E6%91%98%E8%A6%81</guid>
-    <description><![CDATA[ 单调队列可以记录子数组的最值，次最值，等等 子数组的和可以转换为前缀和的差 子数组批量增删可以转化为差分数组的边界调整 二分法要考虑边界外的元素具备什么性质，具体看灵神视频教程。 ⁠1. 数组类问题 技巧， ⁠1.1. ]]></description>
-    <pubDate>Thu, 22 Oct 2026 09:47:59 GMT</pubDate>
-  </item><item>
-    <title>瞎说 KMP 算法</title>
-    <link>https://guyueshui.github.io/Blogs/post/%E7%9E%8E%E8%AF%B4KMP%E7%AE%97%E6%B3%95</link>
-    <guid>https://guyueshui.github.io/Blogs/post/%E7%9E%8E%E8%AF%B4KMP%E7%AE%97%E6%B3%95</guid>
-    <description><![CDATA[ 前天做百度笔试，没想到居然出往年的题！哼！更惨的是出了我也不会！我以为只是一个简简单单的字符串匹配，没想到要动用这么难懂的算法。说起来算法导论上也有，只是之前没看到那里。所以，总结一下：我本有好多次机会学习它，然而一次都没有把握。:( 所以这次，拿出来好好研究一波，做点笔记，以备日后之用。说起来网络上关于该算法的博文一大堆，我也不说能比它们都好，每个人都有适合自己的理解，我这里就是瞎谈一番罢了。 在开始之前，强烈建议先读Jake Boxer的文章，它从无到有，讲得浅显易懂，介绍了 how it works！我这篇文章，也是在看了好多中文博客未解之后，开始看了那个外文博文。在理解的基础上，加一点... ]]></description>
-    <pubDate>Wed, 30 Sep 2026 07:45:53 GMT</pubDate>
-  </item><item>
-    <title>社招面经</title>
-    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%A4%BE%E6%8B%9B%E9%9D%A2%E7%BB%8F</link>
-    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%A4%BE%E6%8B%9B%E9%9D%A2%E7%BB%8F</guid>
-    <description><![CDATA[ 拓蛮八方（2022.07.16） 算法题：10辆一模一样的小车，油箱最多装10升油，最多跑10公里。如何使得其中一辆小车跑出最大距离。例如：A车和B车同跑5公里，然后A车把剩下的油给B车加满，这样B车可以跑15公里。 Python迭代器，生成器 Python多进程，多线程，协程 Python list，append复杂度，remove复杂度 快排思想，最坏O(n^2)，如何改进 首先，清楚快排原理的同志都知道，快排特别热衷于凌乱的数据，最好情况下时间复杂度能达到O(nlogn)，空间复杂度为O(logn)；但是对于基本有序或者倒序的数据则无能为力，时间复杂度直接降到O(n^2），空间复杂度为O... ]]></description>
-    <pubDate>Wed, 30 Sep 2026 07:45:53 GMT</pubDate>
-  </item><item>
-    <title>202304101713 serach in hugo</title>
-    <link>https://guyueshui.github.io/__zettel/202304101713-serach-in-hugo</link>
-    <guid>https://guyueshui.github.io/__zettel/202304101713-serach-in-hugo</guid>
-    <description><![CDATA[ 为hugo网站添加搜索功能 几个重要参考： Building search into a Hugo website Search for your Hugo Website eddiewebb’s gist 基于上面gist整理成文：Client Side Search for your Hugo Blog with Fuse.js lunr.js . ]]></description>
-    <pubDate>Tue, 29 Sep 2026 14:11:24 GMT</pubDate>
-  </item><item>
-    <title>202304202149volatile-specifier</title>
-    <link>https://guyueshui.github.io/__zettel/202304202149volatile-specifier</link>
-    <guid>https://guyueshui.github.io/__zettel/202304202149volatile-specifier</guid>
-    <description><![CDATA[ volatile修饰的变量旨在告诉编译器这个变量易失（对应缓存的术语）、易变，因此在读取变量值的时候，始终通过内存取址的方式，而不信赖缓存。 例如： int i = 10; int a = i; // 以编译器不知道的方式改变i的值为32 int b = i; cout &lt;&lt; b; // 10 这里，由于编译器的优化，编译器看到两次赋值间，i的值未发生变化。所以直接从缓存（寄存器）中拿出上次的值赋给b. ]]></description>
-    <pubDate>Tue, 29 Sep 2026 14:11:24 GMT</pubDate>
-  </item><item>
-    <title>202304230920 cmake learn</title>
-    <link>https://guyueshui.github.io/__zettel/202304230920-cmake-learn</link>
-    <guid>https://guyueshui.github.io/__zettel/202304230920-cmake-learn</guid>
-    <description><![CDATA[ 202604140951clickhouse-cmakelists 我们从一个简单的CMakeLists.txt开始： cmake_minimum_required(VERSION 3.20) project(GREDialing VERSION 0.1) message(STATUS &quot;CMake version: &quot; ${CMAKE_VERSION}) if(NOT ${CMAKE_VERSION} VERSION_LESS &quot;3.2&quot;) set(CMAKE_CXX_STANDARD 17) set(CMAKE_CXX_STANDARD_REQUIR... ]]></description>
-    <pubDate>Tue, 29 Sep 2026 14:11:24 GMT</pubDate>
-  </item><item>
-    <title>202304231411 name mangling</title>
-    <link>https://guyueshui.github.io/__zettel/202304231411-name-mangling</link>
-    <guid>https://guyueshui.github.io/__zettel/202304231411-name-mangling</guid>
-    <description><![CDATA[  Name mangling is the encoding of function and variable names into unique names so that linkers can separate common names in the language. ]]></description>
-    <pubDate>Tue, 29 Sep 2026 14:11:24 GMT</pubDate>
+    <pubDate>Tue, 03 Nov 2026 09:50:54 GMT</pubDate>
   </item>
     </channel>
   </rss>
