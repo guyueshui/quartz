@@ -6,6 +6,54 @@
       <description>最近的10条笔记 on Learn2Live</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>Untitled -1</title>
+    <link>https://guyueshui.github.io/Untitled--1</link>
+    <guid>https://guyueshui.github.io/Untitled--1</guid>
+    <description><![CDATA[ write some thing, and insert a base filters: and: - file.tags.contains(&quot;coding-problem&quot;) views: - type: table name: Sample Table Base order: - file.name - date - file.tags sort: - property: formula.未命名 direction: ASC - property: date direction: ASC - property: file.tags direction: DESC - t... ]]></description>
+    <pubDate>Fri, 06 Nov 2026 08:23:09 GMT</pubDate>
+  </item><item>
+    <title>leet102.二叉树的层序遍历</title>
+    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet102.binary-tree-level-order-traversal</link>
+    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet102.binary-tree-level-order-traversal</guid>
+    <description><![CDATA[ 题目描述 给你二叉树的根节点 root ，返回其节点值的 层序遍历 。 （即逐层地，从左到右访问所有节点）。 示例 1： 输入：root = [3,9,20,null,null,15,7] 输出：[[3],[9,20],[15,7]] 示例 2： 输入：root = [1] 输出：[[1]] 示例 3： 输入：root = [] 输出：[] 提示： 树中节点数目在范围 [0, 2000] 内 -1000 &lt;= Node.val &lt;= 1000 思路一 队列的先入先出天然适配树的层次遍历， 从队列里面取一个元素出来，遍历它 然后依次将它的左孩子和右孩子（如有）入队，这样左右孩子就在一... ]]></description>
+    <pubDate>Fri, 06 Nov 2026 08:23:09 GMT</pubDate>
+  </item><item>
+    <title>leet103.二叉树的锯齿形层序遍历</title>
+    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet103.binary-tree-zigzag-level-order-traversal</link>
+    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet103.binary-tree-zigzag-level-order-traversal</guid>
+    <description><![CDATA[ 题目描述 给你二叉树的根节点 root ，返回其节点值的 锯齿形层序遍历 。（即先从左往右，再从右往左进行下一层遍历，以此类推，层与层之间交替进行）。 示例 1： 输入：root = [3,9,20,null,null,15,7] 输出：[[3],[20,9],[15,7]] 示例 2： 输入：root = [1] 输出：[[1]] 示例 3： 输入：root = [] 输出：[] 提示： 树中节点数目在范围 [0, 2000] 内 -100 &lt;= Node.val &lt;= 100 思路 参考层次遍历，现在多了一条奇数行要反着来。同样可以使用队列和递归两种方式。 // 递归：先层次遍... ]]></description>
+    <pubDate>Fri, 06 Nov 2026 08:23:09 GMT</pubDate>
+  </item><item>
+    <title>leet1385.两个数组间的距离值</title>
+    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet1385.find-the-distance-value-between-two-arrays</link>
+    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet1385.find-the-distance-value-between-two-arrays</guid>
+    <description><![CDATA[ 题目描述 给你两个整数数组 arr1 ， arr2 和一个整数 d ，请你返回两个数组之间的 距离值 。 「距离值」 定义为符合此距离要求的元素数目：对于元素 arr1[i] ，不存在任何元素 arr2[j] 满足 |arr1[i]-arr2[j]| &lt;= d 示例 1： 输入：arr 1 = [4,5,8], arr 2 = [10,9,1,8], d = 2 输出：2 解释： 对于 arr1[0]=4 我们有： |4-9|=5 &gt; d=2 |4-1|=3 &gt; d=2 |4-8|=4 &gt; d=2 所以 arr1[0]=4 符合距离要求 对于 arr1[1]=5 我们有... ]]></description>
+    <pubDate>Fri, 06 Nov 2026 08:23:09 GMT</pubDate>
+  </item><item>
+    <title>leet236.二叉树的最近公共祖先</title>
+    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet236.lowest-common-ancestor-of-a-binary-tree</link>
+    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet236.lowest-common-ancestor-of-a-binary-tree</guid>
+    <description><![CDATA[ 题目描述 给定一个二叉树, 找到该树中两个指定节点的最近公共祖先。 百度百科中最近公共祖先的定义为：“对于有根树 T 的两个节点 p、q，最近公共祖先表示为一个节点 x，满足 x 是 p、q 的祖先且 x 的深度尽可能大（一个节点也可以是它自己的祖先）。” 示例 1： 输入：root = [3,5,1,6,2,0,8,null,null,7,4], p = 5, q = 1 输出：3 解释：节点 5 和节点 1 的最近公共祖先是节点 3 。 示例 2： 输入：root = [3,5,1,6,2,0,8,null,null,7,4], p = 5, q = 4 输出：5 解释：节点 5 和节点 ... ]]></description>
+    <pubDate>Fri, 06 Nov 2026 08:23:09 GMT</pubDate>
+  </item><item>
+    <title>leet2747.统计没有收到请求的服务器数目</title>
+    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet2747.count-zero-request-servers</link>
+    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet2747.count-zero-request-servers</guid>
+    <description><![CDATA[ 题目描述 给你一个整数 n ，表示服务器的总数目，再给你一个下标从 0 开始的 二维 整数数组 logs ，其中 logs[i] = [server_id, time] 表示 id 为 server_id 的服务器在 time 时收到了一个请求。 同时给你一个整数 x 和一个下标从 0 开始的整数数组 queries 。 请你返回一个长度等于 queries.length 的数组 arr ，其中 arr[i] 表示在时间区间 [queries[i] - x, queries[i]] 内没有收到请求的服务器数目。 注意时间区间是个闭区间。 示例 1： 输入：n = 3, logs = [[1,3... ]]></description>
+    <pubDate>Fri, 06 Nov 2026 08:23:09 GMT</pubDate>
+  </item><item>
+    <title>leet34. 范围二分查找</title>
+    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet34.find-first-and-last-position-of-element-in-sorted-array</link>
+    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet34.find-first-and-last-position-of-element-in-sorted-array</guid>
+    <description><![CDATA[ 给你一个按照非递减顺序排列的整数数组 nums，和一个目标值 target。请你找出给定目标值在数组中的开始位置和结束位置。 如果数组中不存在目标值 target，返回 [-1, -1]。 你必须设计并实现时间复杂度为 O(log n) 的算法解决此问题。 示例 1： 输入：nums = [5,7,7,8,8,10], target = 8 输出：[3,4] 示例 2： 输入：nums = [5,7,7,8,8,10], target = 6 输出：[-1,-1] 示例 3： 输入：nums = [], target = 0 输出：[-1,-1] 提示： 0 &lt;= nums.length... ]]></description>
+    <pubDate>Fri, 06 Nov 2026 08:23:09 GMT</pubDate>
+  </item><item>
+    <title>二分法</title>
+    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/%E4%BA%8C%E5%88%86%E6%B3%95</link>
+    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/%E4%BA%8C%E5%88%86%E6%B3%95</guid>
+    <description><![CDATA[ 手写 lowerbound lowerbound 说起来也就是个二分。参考灵神的二分法视频教程，写出三种二分区间。 Key Insight 不要像传统二分那样去找答案在哪，而是要把区间之外的元素想清楚。 以闭区间为例，定义区间 [L, R]，我们想要知道区间里面的元素和 target 之间的大小关系。准确说，我们是要知道区间外的元素和 target 之间的大小关系。区间内的元素总是还未访问的。取区间中点 M，如果 ，我们立刻知道 若 A[M] &lt; target，则 [L, M] 内的元素都小于 target. ]]></description>
+    <pubDate>Fri, 06 Nov 2026 08:23:09 GMT</pubDate>
+  </item><item>
     <title>LeetCode: Sum of Two Integers</title>
     <link>https://guyueshui.github.io/Blogs/post/LeetCode-Sum-of-Two-Integers</link>
     <guid>https://guyueshui.github.io/Blogs/post/LeetCode-Sum-of-Two-Integers</guid>
@@ -16,54 +64,6 @@
     <link>https://guyueshui.github.io/Blogs/post/bit-field-struct</link>
     <guid>https://guyueshui.github.io/Blogs/post/bit-field-struct</guid>
     <description><![CDATA[ 最近实习接触到一个新的知识点，C/C++的位域结构体。 以下开始摘抄自：here 位段(bit-field)是以位为单位来定义结构体(或联合体)中的成员变量所占的空间。含有位段的结构体(联合体)称为位段结构。采用位段结构既能够节省空间，又方便于操作。 位段的定义格式为: type [var]: digits 其中type只能为int，unsigned int，signed int三种类型(int型能不能表示负数视编译器而定，比如VC中int就默认是signed int，能够表示负数)。位段名称var是可选参数，即可以省略。digits表示该位段所占的二进制位数。 举个例子，你可以这样定义一个位... ]]></description>
-    <pubDate>Tue, 03 Nov 2026 09:50:54 GMT</pubDate>
-  </item><item>
-    <title>A collection of some coding problems</title>
-    <link>https://guyueshui.github.io/Blogs/post/coding-problems</link>
-    <guid>https://guyueshui.github.io/Blogs/post/coding-problems</guid>
-    <description><![CDATA[ 场景题 场景题 题三：进制转换 2019哈罗单车实习生笔试题 将一个10进制整数转换成36进制的数，可以用0-9A-Z表示0-35. /** * Hellobike 2019 interview. ]]></description>
-    <pubDate>Tue, 03 Nov 2026 09:50:54 GMT</pubDate>
-  </item><item>
-    <title>202604301621分治法复习</title>
-    <link>https://guyueshui.github.io/__zettel/202604301621%E5%88%86%E6%B2%BB%E6%B3%95%E5%A4%8D%E4%B9%A0</link>
-    <guid>https://guyueshui.github.io/__zettel/202604301621%E5%88%86%E6%B2%BB%E6%B3%95%E5%A4%8D%E4%B9%A0</guid>
-    <description><![CDATA[ 分治法并不仅只能二分，解决子问题，合并。根据《算法导论》，它有三种形式， 替换模型。猜一个bound，然后用数学归纳法证明其正确。 递归树模型。 主方法（master method）。形如 T(n) = aT(n/b) + f(n),where a \ge 1, b &gt; 1, f(n) is a given function. ]]></description>
-    <pubDate>Tue, 03 Nov 2026 09:50:54 GMT</pubDate>
-  </item><item>
-    <title>202606091445位运算</title>
-    <link>https://guyueshui.github.io/__zettel/202606091445%E4%BD%8D%E8%BF%90%E7%AE%97</link>
-    <guid>https://guyueshui.github.io/__zettel/202606091445%E4%BD%8D%E8%BF%90%E7%AE%97</guid>
-    <description><![CDATA[ 异或 常用运算符： C/C++: ^ / xor Python: ^ 真值表 结果000110011101 性质1：0是异或的单位元 即，0 ^ a = a，满足交换律 性质2：任何数异或自己等于0 即，a ^ a = 0 性质3：异或同一个数两次等于啥也没做 即，a ^ b ^ b = a. ]]></description>
-    <pubDate>Tue, 03 Nov 2026 09:50:54 GMT</pubDate>
-  </item><item>
-    <title>内存布局</title>
-    <link>https://guyueshui.github.io/notes/cpp/%E5%86%85%E5%AD%98%E5%B8%83%E5%B1%80</link>
-    <guid>https://guyueshui.github.io/notes/cpp/%E5%86%85%E5%AD%98%E5%B8%83%E5%B1%80</guid>
-    <description><![CDATA[ 内存布局 结构体 C++规范在“结构”上使用了和C相同的，简单的内存布局原则：成员变量按其被声明的顺序排列，按具体实现所规定的对齐原则在内存地址上对齐。 struct S { char a; // memory location #1 int b : 5; // memory location #2 int c : 11, // memory location #2 (continued) char : 0, int d : 8; // memory location #3 struct { int ee : 8; // memory location #4 } e; } obj; // Th... ]]></description>
-    <pubDate>Tue, 03 Nov 2026 09:50:54 GMT</pubDate>
-  </item><item>
-    <title>leet142.环形链表 II</title>
-    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet142.linked-list-cycle-ii</link>
-    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet142.linked-list-cycle-ii</guid>
-    <description><![CDATA[ 给定一个链表的头节点 head ，返回链表开始入环的第一个节点。 如果链表无环，则返回 null。 不允许修改 链表。 示例 1： 输入： head = [3,2,0,-4], pos = 1 输出： 返回索引为 1 的链表节点 解释： 链表中有一个环，其尾部连接到第二个节点。 示例 2： 输入： head = [1,2], pos = 0 输出： 返回索引为 0 的链表节点 解释： 链表中有一个环，其尾部连接到第一个节点。 示例 3： 输入： head = [1], pos = -1 输出： 返回 null 解释： 链表中没有环。 提示： 链表中节点的数目范围在范围 [0, 10^4] 内 ... ]]></description>
-    <pubDate>Tue, 03 Nov 2026 09:50:54 GMT</pubDate>
-  </item><item>
-    <title>leet3644.Maximum K to Sort a Permutation</title>
-    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet3644.maximum-k-to-sort-a-permutation</link>
-    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet3644.maximum-k-to-sort-a-permutation</guid>
-    <description><![CDATA[ 题目描述 You are given an integer array nums of length n, where nums is a permutation of the numbers in the range [0..n - 1]. ]]></description>
-    <pubDate>Tue, 03 Nov 2026 09:50:54 GMT</pubDate>
-  </item><item>
-    <title>leet53.最大子数组的和</title>
-    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet53.maximum-subarray</link>
-    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet53.maximum-subarray</guid>
-    <description><![CDATA[ From: LeetCode53. ]]></description>
-    <pubDate>Tue, 03 Nov 2026 09:50:54 GMT</pubDate>
-  </item><item>
-    <title>基础题</title>
-    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/%E5%9F%BA%E7%A1%80%E9%A2%98</link>
-    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/%E5%9F%BA%E7%A1%80%E9%A2%98</guid>
-    <description><![CDATA[ 基础题 反转链表 /****************************************************************************** * File: reverse_list.cpp * * Author: yychi * Created: 2022-12-29 20:35 * Description: Reverse a linked list. ]]></description>
     <pubDate>Tue, 03 Nov 2026 09:50:54 GMT</pubDate>
   </item>
     </channel>
