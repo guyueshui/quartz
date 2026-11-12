@@ -6,6 +6,18 @@
       <description>最近的10条笔记 on Learn2Live</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>202509151012动态库搜索路径三两事</title>
+    <link>https://guyueshui.github.io/__zettel/202509151012%E6%8C%87%E5%AE%9A%E5%8A%A8%E6%80%81%E5%BA%93%E6%90%9C%E7%B4%A2%E8%B7%AF%E5%BE%84</link>
+    <guid>https://guyueshui.github.io/__zettel/202509151012%E6%8C%87%E5%AE%9A%E5%8A%A8%E6%80%81%E5%BA%93%E6%90%9C%E7%B4%A2%E8%B7%AF%E5%BE%84</guid>
+    <description><![CDATA[ 编译器可以通过-Wl将选项传递给链接器ld。 例如指定动态库搜索路径，see also ^0d5d11 gcc -Wl,-rpath=./ # 等价于 gcc -Wl,rpath,./ # 传多个path gcc -Wl,-rpath=/path1,-rpath=/path2 gcc -Wl,-rpath=/path1 -Wl,-rpath=/path2 上面的命令其实会将这些路径写到elf文件的rpath/runpath字段下。然后运行时会读取这个路径去检索其以来的动态库。 今天（26/7/10）又踩了一个坑。如果你的代码要连接一个外部库 A，但是 libA.so 依然依赖 A 1, A 2... ]]></description>
+    <pubDate>Thu, 12 Nov 2026 09:19:30 GMT</pubDate>
+  </item><item>
+    <title>leet2747.统计没有收到请求的服务器数目</title>
+    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet2747.count-zero-request-servers</link>
+    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet2747.count-zero-request-servers</guid>
+    <description><![CDATA[ 题目描述 给你一个整数 n ，表示服务器的总数目，再给你一个下标从 0 开始的 二维 整数数组 logs ，其中 logs[i] = [server_id, time] 表示 id 为 server_id 的服务器在 time 时收到了一个请求。 同时给你一个整数 x 和一个下标从 0 开始的整数数组 queries 。 请你返回一个长度等于 queries.length 的数组 arr ，其中 arr[i] 表示在时间区间 [queries[i] - x, queries[i]] 内没有收到请求的服务器数目。 注意时间区间是个闭区间。 示例 1： 输入：n = 3, logs = [[1,3... ]]></description>
+    <pubDate>Thu, 12 Nov 2026 09:19:30 GMT</pubDate>
+  </item><item>
     <title>Untitled -1</title>
     <link>https://guyueshui.github.io/Untitled--1</link>
     <guid>https://guyueshui.github.io/Untitled--1</guid>
@@ -36,12 +48,6 @@
     <description><![CDATA[ 题目描述 给定一个二叉树, 找到该树中两个指定节点的最近公共祖先。 百度百科中最近公共祖先的定义为：“对于有根树 T 的两个节点 p、q，最近公共祖先表示为一个节点 x，满足 x 是 p、q 的祖先且 x 的深度尽可能大（一个节点也可以是它自己的祖先）。” 示例 1： 输入：root = [3,5,1,6,2,0,8,null,null,7,4], p = 5, q = 1 输出：3 解释：节点 5 和节点 1 的最近公共祖先是节点 3 。 示例 2： 输入：root = [3,5,1,6,2,0,8,null,null,7,4], p = 5, q = 4 输出：5 解释：节点 5 和节点 ... ]]></description>
     <pubDate>Fri, 06 Nov 2026 08:23:09 GMT</pubDate>
   </item><item>
-    <title>leet2747.统计没有收到请求的服务器数目</title>
-    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet2747.count-zero-request-servers</link>
-    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet2747.count-zero-request-servers</guid>
-    <description><![CDATA[ 题目描述 给你一个整数 n ，表示服务器的总数目，再给你一个下标从 0 开始的 二维 整数数组 logs ，其中 logs[i] = [server_id, time] 表示 id 为 server_id 的服务器在 time 时收到了一个请求。 同时给你一个整数 x 和一个下标从 0 开始的整数数组 queries 。 请你返回一个长度等于 queries.length 的数组 arr ，其中 arr[i] 表示在时间区间 [queries[i] - x, queries[i]] 内没有收到请求的服务器数目。 注意时间区间是个闭区间。 示例 1： 输入：n = 3, logs = [[1,3... ]]></description>
-    <pubDate>Fri, 06 Nov 2026 08:23:09 GMT</pubDate>
-  </item><item>
     <title>leet34. 范围二分查找</title>
     <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet34.find-first-and-last-position-of-element-in-sorted-array</link>
     <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet34.find-first-and-last-position-of-element-in-sorted-array</guid>
@@ -58,12 +64,6 @@
     <link>https://guyueshui.github.io/Blogs/post/LeetCode-Sum-of-Two-Integers</link>
     <guid>https://guyueshui.github.io/Blogs/post/LeetCode-Sum-of-Two-Integers</guid>
     <description><![CDATA[ 记录一下LeetCode做的一道题。要求实现两个整数的加法，但不能使用内置的+或-. ]]></description>
-    <pubDate>Tue, 03 Nov 2026 09:50:54 GMT</pubDate>
-  </item><item>
-    <title>位域结构体简介</title>
-    <link>https://guyueshui.github.io/Blogs/post/bit-field-struct</link>
-    <guid>https://guyueshui.github.io/Blogs/post/bit-field-struct</guid>
-    <description><![CDATA[ 最近实习接触到一个新的知识点，C/C++的位域结构体。 以下开始摘抄自：here 位段(bit-field)是以位为单位来定义结构体(或联合体)中的成员变量所占的空间。含有位段的结构体(联合体)称为位段结构。采用位段结构既能够节省空间，又方便于操作。 位段的定义格式为: type [var]: digits 其中type只能为int，unsigned int，signed int三种类型(int型能不能表示负数视编译器而定，比如VC中int就默认是signed int，能够表示负数)。位段名称var是可选参数，即可以省略。digits表示该位段所占的二进制位数。 举个例子，你可以这样定义一个位... ]]></description>
     <pubDate>Tue, 03 Nov 2026 09:50:54 GMT</pubDate>
   </item>
     </channel>
