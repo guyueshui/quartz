@@ -6,6 +6,24 @@
       <description>最近的10条笔记 on Learn2Live</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>202606120940快速幂</title>
+    <link>https://guyueshui.github.io/__zettel/202606120940%E5%BF%AB%E9%80%9F%E5%B9%82</link>
+    <guid>https://guyueshui.github.io/__zettel/202606120940%E5%BF%AB%E9%80%9F%E5%B9%82</guid>
+    <description><![CDATA[ 快速幂 问题：求一个非负数的n次方。数学表达， f_b(n) = b^n, b &gt; 0, n \ge 0 其中，b 叫底数，n 叫次数，b^n 成为 b 的 n 次幂。当 b = 0 时，有 f_b(n) = 0, n \in N^+. 特别的，约定 b^0=1，0^0 = 1. ]]></description>
+    <pubDate>Tue, 24 Nov 2026 09:33:01 GMT</pubDate>
+  </item><item>
+    <title>leet101.对称二叉树</title>
+    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet101.symmetric-tree</link>
+    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet101.symmetric-tree</guid>
+    <description><![CDATA[ 题目描述 给你一个二叉树的根节点 root ， 检查它是否轴对称。 示例 1： 输入：root = [1,2,2,3,4,4,3] 输出：true 示例 2： 输入：root = [1,2,2,null,3,null,3] 输出：false 提示： 树中节点数目在范围 [1, 1000] 内 -100 &lt;= Node.val &lt;= 100 进阶： 你可以运用递归和迭代两种方法解决这个问题吗？ 思路 粗看一下至少有两种写法 层序遍历，然后判断每层是否是镜像的（回文串）。注意只有一个孩子的，另一边要填充 null，否则判断不出结构 判断中序遍历序列是否为回文串。由于存在单个孩子，所以还... ]]></description>
+    <pubDate>Tue, 24 Nov 2026 09:33:01 GMT</pubDate>
+  </item><item>
+    <title>leet3411.最长乘积等价子数组</title>
+    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet3411.maximum-subarray-with-equal-products</link>
+    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet3411.maximum-subarray-with-equal-products</guid>
+    <description><![CDATA[ 题目描述 给你一个由正整数组成的数组 nums。 如果一个数组 arr 满足 prod(arr) == lcm(arr) * gcd(arr)，则称其为 乘积等价数组，其中： prod(arr) 表示 arr 中所有元素的乘积。 gcd(arr) 表示 arr 中所有元素的最大公因数 (GCD)。 lcm(arr) 表示 arr 中所有元素的最小公倍数 (LCM)。 返回数组 nums 的最长乘积等价子数组的长度。 示例 1： 输入： nums = [1,2,1,2,1,1,1] 输出： 5 解释： 最长的乘积等价子数组是 [1, 2, 1, 1, 1]，其中 prod([1, 2, 1, 1... ]]></description>
+    <pubDate>Tue, 24 Nov 2026 09:33:01 GMT</pubDate>
+  </item><item>
     <title>202509151012动态库搜索路径三两事</title>
     <link>https://guyueshui.github.io/__zettel/202509151012%E6%8C%87%E5%AE%9A%E5%8A%A8%E6%80%81%E5%BA%93%E6%90%9C%E7%B4%A2%E8%B7%AF%E5%BE%84</link>
     <guid>https://guyueshui.github.io/__zettel/202509151012%E6%8C%87%E5%AE%9A%E5%8A%A8%E6%80%81%E5%BA%93%E6%90%9C%E7%B4%A2%E8%B7%AF%E5%BE%84</guid>
@@ -47,24 +65,6 @@
     <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet236.lowest-common-ancestor-of-a-binary-tree</guid>
     <description><![CDATA[ 题目描述 给定一个二叉树, 找到该树中两个指定节点的最近公共祖先。 百度百科中最近公共祖先的定义为：“对于有根树 T 的两个节点 p、q，最近公共祖先表示为一个节点 x，满足 x 是 p、q 的祖先且 x 的深度尽可能大（一个节点也可以是它自己的祖先）。” 示例 1： 输入：root = [3,5,1,6,2,0,8,null,null,7,4], p = 5, q = 1 输出：3 解释：节点 5 和节点 1 的最近公共祖先是节点 3 。 示例 2： 输入：root = [3,5,1,6,2,0,8,null,null,7,4], p = 5, q = 4 输出：5 解释：节点 5 和节点 ... ]]></description>
     <pubDate>Fri, 06 Nov 2026 08:23:09 GMT</pubDate>
-  </item><item>
-    <title>leet34. 范围二分查找</title>
-    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet34.find-first-and-last-position-of-element-in-sorted-array</link>
-    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/leet34.find-first-and-last-position-of-element-in-sorted-array</guid>
-    <description><![CDATA[ 给你一个按照非递减顺序排列的整数数组 nums，和一个目标值 target。请你找出给定目标值在数组中的开始位置和结束位置。 如果数组中不存在目标值 target，返回 [-1, -1]。 你必须设计并实现时间复杂度为 O(log n) 的算法解决此问题。 示例 1： 输入：nums = [5,7,7,8,8,10], target = 8 输出：[3,4] 示例 2： 输入：nums = [5,7,7,8,8,10], target = 6 输出：[-1,-1] 示例 3： 输入：nums = [], target = 0 输出：[-1,-1] 提示： 0 &lt;= nums.length... ]]></description>
-    <pubDate>Fri, 06 Nov 2026 08:23:09 GMT</pubDate>
-  </item><item>
-    <title>二分法</title>
-    <link>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/%E4%BA%8C%E5%88%86%E6%B3%95</link>
-    <guid>https://guyueshui.github.io/%E6%B1%82%E8%81%8C/%E7%AE%97%E6%B3%95%E9%A2%98/%E4%BA%8C%E5%88%86%E6%B3%95</guid>
-    <description><![CDATA[ 手写 lowerbound lowerbound 说起来也就是个二分。参考灵神的二分法视频教程，写出三种二分区间。 Key Insight 不要像传统二分那样去找答案在哪，而是要把区间之外的元素想清楚。 以闭区间为例，定义区间 [L, R]，我们想要知道区间里面的元素和 target 之间的大小关系。准确说，我们是要知道区间外的元素和 target 之间的大小关系。区间内的元素总是还未访问的。取区间中点 M，如果 ，我们立刻知道 若 A[M] &lt; target，则 [L, M] 内的元素都小于 target. ]]></description>
-    <pubDate>Fri, 06 Nov 2026 08:23:09 GMT</pubDate>
-  </item><item>
-    <title>LeetCode: Sum of Two Integers</title>
-    <link>https://guyueshui.github.io/Blogs/post/LeetCode-Sum-of-Two-Integers</link>
-    <guid>https://guyueshui.github.io/Blogs/post/LeetCode-Sum-of-Two-Integers</guid>
-    <description><![CDATA[ 记录一下LeetCode做的一道题。要求实现两个整数的加法，但不能使用内置的+或-. ]]></description>
-    <pubDate>Tue, 03 Nov 2026 09:50:54 GMT</pubDate>
   </item>
     </channel>
   </rss>
